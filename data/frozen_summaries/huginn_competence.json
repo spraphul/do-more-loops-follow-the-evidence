@@ -1,0 +1,142 @@
+{
+  "input": {
+    "path": "competence.json",
+    "sha256": "b091d6fc690b2b9c5acf4aec9e532b78077d49732a76a20cb2b9a6b3e90f0dab"
+  },
+  "model": {
+    "architecture": {
+      "mean_recurrence": 32,
+      "model_type": "huginn_raven",
+      "n_layers_in_coda": 2,
+      "n_layers_in_prelude": 2,
+      "n_layers_in_recurrent_block": 4,
+      "test_time_noise": null
+    },
+    "critical_file_sha256": {
+      "config.json": "e9fe79df06a783ca33a76038c59a715b6a62f15c4a5b17b9681e697fea46c79c",
+      "tokenizer.json": "9cc201a5061b70aba0d227ef9766fcfe21e0989e0c0ba442b4d7732c4de12308",
+      "tokenizer_config.json": "ff9e171e16f200e7865c27fa38e661722848ab665af1610d5bb2b62502d6cdcf"
+    },
+    "dtype": "bfloat16",
+    "license": "Apache-2.0",
+    "manual_K4_forward_parity": {
+      "K": 4,
+      "atol": 0.0005,
+      "full_vocabulary_max_abs_logit_difference": 0.0,
+      "rtol": 1e-05,
+      "torch_allclose": true
+    },
+    "model_loaded": true,
+    "native_interface_audit": {
+      "all_methods_callable": true,
+      "attention_mask": null,
+      "config": {
+        "mean_recurrence": 32,
+        "model_type": "huginn_raven",
+        "n_layers_in_coda": 2,
+        "n_layers_in_prelude": 2,
+        "n_layers_in_recurrent_block": 4,
+        "test_time_noise": 0
+      },
+      "manual_trajectory": "embed each complete candidate once; initialize one shared pair-by-seed maximum-length state; iterate through K16; read K4 and K16",
+      "parameter_dtype": "torch.bfloat16",
+      "required_methods": [
+        "embed_inputs",
+        "initialize_state",
+        "iterate_one_step",
+        "predict_from_latents"
+      ],
+      "test_time_noise_disabled": true,
+      "use_cache": false
+    },
+    "repository": "tomg-group-umd/huginn-0125",
+    "revision": "bb6621b65e90b6a4b9b29ef88dc83866d450470c",
+    "tokenizer_audit": {
+      "all_candidates_prefix_stable": true,
+      "candidate_boundary": "complete answer continuation; EOS excluded",
+      "chat_rendering": "pinned one-user Huginn template with native assistant boundary",
+      "maximum_candidate_input_tokens": 260,
+      "maximum_candidate_tokens": 9,
+      "maximum_prompt_tokens": 256,
+      "minimum_candidate_tokens": 1,
+      "minimum_prompt_tokens": 161,
+      "rows_checked": 248,
+      "shared_state_template_token_length": 1024,
+      "special_tokens": {
+        "bos_token": "<|begin_text|>",
+        "bos_token_id": 65504,
+        "eos_token": "<|end_text|>",
+        "eos_token_id": 65505,
+        "pad_token": "<|pad|>",
+        "pad_token_id": 65509
+      },
+      "tokenizer_class": "PreTrainedTokenizerFast"
+    },
+    "torch_version": "2.13.0+cu130",
+    "trust_remote_code": true,
+    "weight_bytes": 15645609096,
+    "weight_file_count": 4,
+    "weight_files": [
+      "model-00001-of-00004.safetensors",
+      "model-00002-of-00004.safetensors",
+      "model-00003-of-00004.safetensors",
+      "model-00004-of-00004.safetensors"
+    ]
+  },
+  "registration": {
+    "path": "design.json",
+    "sha256": "20783559c38f3fe61cae73e4aa71194549c8d755401ce782d64311554ad2c8b1"
+  },
+  "schema": "huginn-2wiki-natural-competence-analysis-v1",
+  "source_design": {
+    "panel_design_sha256": "883d58bb90b3bd8df50500433287b642706d348b5862c44a7b2200724f8f148c",
+    "panel_shard": 0,
+    "path": "design.json",
+    "prompt_fingerprint": "1904f9c87453d97b8082a518b81fd5ffda9c9bf4b3d86a91336aa1c2e78f987e",
+    "schema": "ouro26-2wiki-bridge-validation-v1",
+    "sha256": "3ae81beb2936f759e8d924a963a1970eeb3adc2c526f4afdd1def529df8147f0"
+  },
+  "summary": {
+    "K16_primary_accuracy": {
+      "candidate_order": {
+        "original": 0.4717741935483871,
+        "reversed": 0.49193548387096775
+      },
+      "draws_sha256": "9a8349ee3d0d541dc2053043cc01300490cebc4e8b8cfb75126a6a8a32a253eb",
+      "estimate": 0.48185483870967744,
+      "latent_seed": {
+        "20260904": 0.4879032258064516,
+        "20260905": 0.47580645161290325
+      },
+      "query_arm": {
+        "A": 0.4717741935483871,
+        "B": 0.49193548387096775
+      },
+      "replicates": 10000,
+      "resampling_unit": "whole pair; exactly one pair represents each relation path",
+      "salt": "huginn-2wiki-natural-competence-v1:whole-pair-path-bootstrap:K16",
+      "seed": 4902201602057569789,
+      "whole_pair_path_percentile_95_CI": [
+        0.45564516129032256,
+        0.5040322580645161
+      ]
+    },
+    "K4_accuracy_diagnostic_not_a_gate": 0.5,
+    "candidate_trajectories": 496,
+    "claim_boundary": "competence gate only; no bridge-swap, topology-rescue, depth-gain, architecture-generality, or intervention claim",
+    "decision": "STOP_HUGINN_2WIKI_INCOMPETENT_SUBSTRATE",
+    "gate": {
+      "each_candidate_order_point_at_least": 0.55,
+      "each_latent_seed_point_at_least": 0.55,
+      "each_query_arm_point_at_least": 0.55,
+      "overall_point_at_least": 0.6,
+      "passes": false,
+      "whole_pair_path_lower95_strictly_above": 0.5
+    },
+    "pair_units": 31,
+    "registered_analysis_rows": 496,
+    "relation_paths": 31,
+    "trajectory_unit_rows": 248,
+    "treatment_scores_accessed": false
+  }
+}

@@ -1,0 +1,931 @@
+{
+  "dependencies": {
+    "greedy_generation_runner": {
+      "path": "run_ouro26_2wiki_terminal_binding_generation.py",
+      "sha256": "df88f71fe9ae87648bb316f77504214dbbd341eed461a88225fe043d3df722e5"
+    },
+    "musique_bridge_runner": {
+      "path": "run_ouro26_musique_bridge_validation.py",
+      "sha256": "338a878a779649c18571afb19d547b597e448fb2e0eabf56b4f8f43897949478"
+    },
+    "ouro26_adapter": {
+      "path": "ouro26_likelihood_adapter.py",
+      "sha256": "b76b91dc2b29d04a5ad86e453753a3998c2a7027a5dcc7f84ce8101f24fa3264"
+    },
+    "terminal_binding_crossover_runner": {
+      "path": "run_ouro26_2wiki_terminal_binding_crossover.py",
+      "sha256": "77af290515fe294f706e5de7a1e9a70107de223bdc1e57dc0770a392df784aec"
+    }
+  },
+  "design": {
+    "common": {
+      "bootstrap": {
+        "draws_sha256": "1e1670e7fa032084d416c725a68fd3acc6f521015db1a677f91b63cf038d8be1",
+        "method": "10,000 nonparametric bootstrap draws of 95 whole matched-pair units",
+        "pair_units_per_draw": 95,
+        "replicates": 10000,
+        "rng_seed": 9446219466336874649,
+        "shared_draws_for_all_metrics": true
+      },
+      "claim_boundary": "candidate-list-free evidence-grounded generation on frozen MuSiQue pairs; not closed-book recall or architecture generality",
+      "construction_audit": {
+        "XN_XV_prompt_token_count_and_multiset_parity": true,
+        "all_pair_audits_sha256": "98a1b76ed8e5df01c80394be858c64dcbd1591227e7b20e0f9212171019feeed",
+        "candidate_list_absent": true,
+        "four_cell_logic_checked_before_XN_XV_projection": true,
+        "official_aliases": 72,
+        "pairs_checked": 95,
+        "unsafe_alias_entries": 22,
+        "unsafe_alias_reason_counts": {
+          "shorter_than_four_alphanumerics": 22
+        },
+        "within_pair_alias_ambiguities": 0
+      },
+      "counts": {
+        "candidate_sequence_likelihoods": 1520,
+        "maximum_generation_forward_calls": 18240,
+        "pair_units": 95,
+        "prospective_generations": 760,
+        "rows_per_shard": [
+          192,
+          192,
+          192,
+          184
+        ],
+        "unique_prompts": 380
+      },
+      "decision_branches": {
+        "both_pass": "confirm candidate-list-free emitted graph control",
+        "likelihood_fail": "stop branch; interface substrate did not transfer",
+        "likelihood_pass_P0_fail_P1_or_P2_pass": "semantic/format boundary; no P0 relabel",
+        "likelihood_pass_all_generation_fail": "likelihood-to-greedy-decoding boundary"
+      },
+      "decision_question": "Does K1-to-K3 graph control reach candidate-list-free emitted answers?",
+      "descriptive_dependence_sensitivity": {
+        "explicitly_non_gating": true,
+        "leave_one_terminal_relation_out": true,
+        "metrics": [
+          "generation_P0_DX3",
+          "generation_P0_GX31",
+          "likelihood_DX3_nats",
+          "likelihood_GX31_nats"
+        ],
+        "terminal_relation_cluster_bootstrap": {
+          "replicates": 10000,
+          "salt": "ouro26-musique-answer-only-generation-terminal-relation-bootstrap-v1:",
+          "terminal_relation_clusters": 30,
+          "unit": "whole terminal-relation cluster"
+        }
+      },
+      "estimands": {
+        "generation_DXK": "0.5*(mean_arm s_XV,K - mean_arm s_XN,K), s=+1 reference,-1 paired,0 invalid",
+        "generation_GX31": "DX3-DX1",
+        "likelihood_DXK": "0.5*(reference log odds XV - XN), averaged within pair over arms"
+      },
+      "factorial": {
+        "K_values": [
+          1,
+          3
+        ],
+        "candidate_order": null,
+        "query_arms": [
+          "A",
+          "B"
+        ]
+      },
+      "gates": {
+        "generation": {
+          "DX3": "estimate>=0.15 and lower95>0",
+          "GX31": "estimate>=0.10 and lower95>0",
+          "arm_robustness": "DX3 and GX31 positive in A and B",
+          "competence": "pooled K3 P0 lower95>0.5 and each cell point>0.5"
+        },
+        "likelihood_substrate": {
+          "DX3_nats": "estimate>=0.5 and lower95>0",
+          "GX31_nats": "estimate>=0.5 and lower95>0",
+          "competence": "pooled K3 candidate-scoring state accuracy lower95>0.5"
+        }
+      },
+      "generation": {
+        "decode_mode": "manual deterministic greedy full-vocabulary argmax",
+        "max_new_tokens": 24,
+        "past_key_values": null,
+        "stops": {
+          "chat_turn_end_is_distinct_from_configured_eos": true,
+          "chat_turn_end_token": "<|im_end|>",
+          "chat_turn_end_token_id": 2,
+          "configured_eos_token_ids": [
+            0
+          ],
+          "configured_eos_tokens": [
+            "<|endoftext|>"
+          ]
+        },
+        "use_cache": false
+      },
+      "likelihood": {
+        "candidate_sequences_per_row": 2,
+        "canonical_objects_only": true,
+        "same_prompt": true,
+        "scorer_argument_order": [
+          "alternate_as_foil",
+          "reference_as_canonical"
+        ]
+      },
+      "no_generation_outcome_observed_before_freeze": true,
+      "panel_design_sha256": "d890ff27409d825e5bbdda930e2f4b5f5d6bff51199f53692bc11cb027a80568",
+      "parsers": {
+        "P0_primary": "complete-span normalized exact match to one canonical evidence object; only gating parser",
+        "P1_P2_cannot_rescue_P0": true,
+        "P1_diagnostic": "complete-span normalized exact match to canonical object or official alias",
+        "P2_diagnostic": "P1 after at most one registered answer/list/bullet wrapper; no numeral-to-identity mapping",
+        "normalization": "NFKC, casefold, punctuation to space, collapse whitespace"
+      },
+      "prompt": {
+        "candidate_list_exposed": false,
+        "ordinal_answer_labels_exposed": false,
+        "prefix": "Using only the evidence below, follow the two linked triples that begin from the entity in the question.\n\n",
+        "suffix": "Return exactly the final OBJECT string reached by the path and nothing else.\nDo not number or explain the answer.\nANSWER ="
+      },
+      "prompt_fingerprint": "9fd6ce5b7518fd4801d7b1fee2c45309482b554cf05569dc2e24ca9584686e09",
+      "selection": {
+        "full_relation_paths": 108,
+        "pair_units": 95,
+        "selection_fingerprint": "8cfdc00c478286d9dca5c900d14a4cbdfe3cb55beb167622d2d464459406cf45",
+        "terminal_relations": 30
+      },
+      "source_musique_design": {
+        "name": "design.json",
+        "panel_design_sha256": "a2fce2142268c7d56b19926995dcfe9058025bc46f06cca10a46f7b0f1b21683",
+        "path": "design.json",
+        "runner_sha256": "338a878a779649c18571afb19d547b597e448fb2e0eabf56b4f8f43897949478",
+        "selection_fingerprint": "8cfdc00c478286d9dca5c900d14a4cbdfe3cb55beb167622d2d464459406cf45",
+        "sha256": "9f1fc21d293242d38b2aa9ae6e0657f70e83b2d54858f1ed993fea531b58c21d"
+      },
+      "target_model": {
+        "repository": "ByteDance/Ouro-2.6B",
+        "revision": "1ed04250da1a9936042725d302e81c8fa2ab5abd",
+        "snapshot_binding": {
+          "architecture": {
+            "architectures": [
+              "OuroForCausalLM"
+            ],
+            "hidden_size": 2048,
+            "model_type": "ouro",
+            "num_hidden_layers": 48,
+            "torch_dtype": "bfloat16",
+            "total_ut_steps": 4,
+            "vocab_size": 49152
+          },
+          "cache_repository_dir": "models--ByteDance--Ouro-2.6B",
+          "native_K_values": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "readout_selector": "exit_at_step=K-1",
+          "remote_model_code_byte_identical_to_ouro_1_4b": true,
+          "repository": "ByteDance/Ouro-2.6B",
+          "revision": "1ed04250da1a9936042725d302e81c8fa2ab5abd",
+          "runtime_truncation_readout_parity_required": true,
+          "snapshot_file_sha256": {
+            "config.json": "23b5c6942a9f0ca8619fb15acfaca93e02c169cdc4e03dbceb4d8a2df145697a",
+            "configuration_ouro.py": "950443e32929047aa08d02abad2e1888bc1914b3db988d3d675f70787f65dafb",
+            "merges.txt": "0b54e8aa4e53d5383e2e4bc635a56b43f9647f7b13832d5d9ecd8f82dac4f510",
+            "modeling_ouro.py": "c5c68fbb368ce2909c257ae2afc50719be8c91539333d3295e19312c4316f413",
+            "special_tokens_map.json": "55087bb8409060d9cb0f80495e34f4e0d8a84f68a799a6b0cab3132be0aae319",
+            "tokenizer.json": "fcb808fe5e7642f5299be28aea07fc7f6d4f4364c3ac5e408e15a772cbc8fa8d",
+            "tokenizer_config.json": "7e010da95d71b0fa1aa809552922c74cc1dd98d628f21ba39ca6c35aa18d5d91",
+            "vocab.json": "7b9de3f47796abf8d00ab96be299fea0dc9afdf1827f34e7e0b9fb44593efe5c"
+          },
+          "tokenizer_and_chat_template_byte_identical_to_ouro_1_4b": true,
+          "weight_blob_sha256": "2fdf9805a3510b7dc82959a2db4872ef767a5bdc55520c6a1b54fc3e463c1bba",
+          "weight_bytes": 5336011242
+        }
+      }
+    },
+    "design_artifact": {
+      "name": "design.json",
+      "sha256": "504c1bddc1790560f00551af3a94e17f252a94555d8b28bc448294c9c0977da3"
+    },
+    "executed_shard_indices": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  "execution_mode": "merged_model_shards",
+  "model": {
+    "decode_mode": "manual_deterministic_greedy_argmax",
+    "dtype": "bfloat16",
+    "generation": true,
+    "key": "ouro26",
+    "likelihood": true,
+    "manual_first_step_parity": {
+      "K_values": [
+        1,
+        3
+      ],
+      "auxiliary_forward_calls": 4,
+      "comparison": "manual no-cache growing-sequence first-token forward versus the audited likelihood scorer readout",
+      "passes": true,
+      "per_K": {
+        "1": {
+          "exact_equal": true,
+          "exit_at_step": 0,
+          "full_vocabulary_max_abs_logit_difference": 0.0
+        },
+        "3": {
+          "exact_equal": true,
+          "exit_at_step": 2,
+          "full_vocabulary_max_abs_logit_difference": 0.0
+        }
+      }
+    },
+    "mock": false,
+    "model_loaded": true,
+    "native_readout_parity": {
+      "auxiliary_forward_calls": 8,
+      "checkpoint_repository": "ByteDance/Ouro-2.6B",
+      "checkpoint_revision": "1ed04250da1a9936042725d302e81c8fa2ab5abd",
+      "comparison": "four-step execution with exit_at_step=K-1 versus genuine K-step execution with no exit override",
+      "exact_zero_full_vocabulary_difference_all_K": true,
+      "native_K_values": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "passes": true,
+      "per_K": {
+        "1": {
+          "atol": 0.0005,
+          "candidate_max_abs_logit_difference": 0.0,
+          "exit_at_step": 0,
+          "full_vocabulary_max_abs_logit_difference": 0.0,
+          "rtol": 1e-05,
+          "torch_allclose": true
+        },
+        "2": {
+          "atol": 0.0005,
+          "candidate_max_abs_logit_difference": 0.0,
+          "exit_at_step": 1,
+          "full_vocabulary_max_abs_logit_difference": 0.0,
+          "rtol": 1e-05,
+          "torch_allclose": true
+        },
+        "3": {
+          "atol": 0.0005,
+          "candidate_max_abs_logit_difference": 0.0,
+          "exit_at_step": 2,
+          "full_vocabulary_max_abs_logit_difference": 0.0,
+          "rtol": 1e-05,
+          "torch_allclose": true
+        },
+        "4": {
+          "atol": 0.0005,
+          "candidate_max_abs_logit_difference": 0.0,
+          "exit_at_step": 3,
+          "full_vocabulary_max_abs_logit_difference": 0.0,
+          "rtol": 1e-05,
+          "torch_allclose": true
+        }
+      },
+      "readout_selector": "exit_at_step=K-1",
+      "scoring_unlocked": true
+    },
+    "repository": "ByteDance/Ouro-2.6B",
+    "revision": "1ed04250da1a9936042725d302e81c8fa2ab5abd",
+    "snapshot_binding": {
+      "architecture": {
+        "architectures": [
+          "OuroForCausalLM"
+        ],
+        "hidden_size": 2048,
+        "model_type": "ouro",
+        "num_hidden_layers": 48,
+        "torch_dtype": "bfloat16",
+        "total_ut_steps": 4,
+        "vocab_size": 49152
+      },
+      "cache_repository_dir": "models--ByteDance--Ouro-2.6B",
+      "native_K_values": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "readout_selector": "exit_at_step=K-1",
+      "remote_model_code_byte_identical_to_ouro_1_4b": true,
+      "repository": "ByteDance/Ouro-2.6B",
+      "revision": "1ed04250da1a9936042725d302e81c8fa2ab5abd",
+      "runtime_truncation_readout_parity_required": true,
+      "snapshot_file_sha256": {
+        "config.json": "23b5c6942a9f0ca8619fb15acfaca93e02c169cdc4e03dbceb4d8a2df145697a",
+        "configuration_ouro.py": "950443e32929047aa08d02abad2e1888bc1914b3db988d3d675f70787f65dafb",
+        "merges.txt": "0b54e8aa4e53d5383e2e4bc635a56b43f9647f7b13832d5d9ecd8f82dac4f510",
+        "modeling_ouro.py": "c5c68fbb368ce2909c257ae2afc50719be8c91539333d3295e19312c4316f413",
+        "special_tokens_map.json": "55087bb8409060d9cb0f80495e34f4e0d8a84f68a799a6b0cab3132be0aae319",
+        "tokenizer.json": "fcb808fe5e7642f5299be28aea07fc7f6d4f4364c3ac5e408e15a772cbc8fa8d",
+        "tokenizer_config.json": "7e010da95d71b0fa1aa809552922c74cc1dd98d628f21ba39ca6c35aa18d5d91",
+        "vocab.json": "7b9de3f47796abf8d00ab96be299fea0dc9afdf1827f34e7e0b9fb44593efe5c"
+      },
+      "tokenizer_and_chat_template_byte_identical_to_ouro_1_4b": true,
+      "weight_blob_sha256": "2fdf9805a3510b7dc82959a2db4872ef767a5bdc55520c6a1b54fc3e463c1bba",
+      "weight_bytes": 5336011242
+    }
+  },
+  "runner": {
+    "path": "run_ouro26_musique_answer_only_generation.py",
+    "sha256": "eb6a37b338e0a6bbbf5403cff4f31ba66743321561a3b008879bec6ce93593a9"
+  },
+  "schema": "ouro26-musique-answer-only-generation-v1",
+  "source_shards": [
+    "<local-path-removed>",
+    "<local-path-removed>",
+    "<local-path-removed>",
+    "<local-path-removed>"
+  ],
+  "summary": {
+    "actual_generation_forward_calls": 2417,
+    "bootstrap": {
+      "draws_sha256": "1e1670e7fa032084d416c725a68fd3acc6f521015db1a677f91b63cf038d8be1",
+      "method": "10,000 nonparametric bootstrap draws of 95 whole matched-pair units",
+      "pair_units_per_draw": 95,
+      "replicates": 10000,
+      "rng_seed": 9446219466336874649,
+      "shared_draws_for_all_metrics": true
+    },
+    "candidate_sequence_likelihoods": 1520,
+    "decision": "STOP_MUSIQUE_INTERFACE_LIKELIHOOD_SUBSTRATE_FAILED",
+    "descriptive_dependence_sensitivity": {
+      "explicitly_non_gating": true,
+      "leave_one_terminal_relation_out": {
+        "generation_P0_DX3": {
+          "by_omitted_relation": {
+            "award received": 0.14361702127659576,
+            "capital": 0.13333333333333333,
+            "capital of": 0.1424731182795699,
+            "child": 0.15229885057471265,
+            "contains administrative territorial entity": 0.13829787234042554,
+            "country": 0.13858695652173914,
+            "country of citizenship": 0.13829787234042554,
+            "educated at": 0.1424731182795699,
+            "employer": 0.13829787234042554,
+            "father": 0.1478494623655914,
+            "founded by": 0.14627659574468085,
+            "has part": 0.13709677419354838,
+            "headquarters location": 0.14516129032258066,
+            "instance of": 0.14516129032258066,
+            "league": 0.13829787234042554,
+            "located in or next to body of water": 0.14095744680851063,
+            "located in the administrative territorial entity": 0.12987012987012986,
+            "location of formation": 0.14361702127659576,
+            "member of": 0.14361702127659576,
+            "mother": 0.14361702127659576,
+            "mouth of the watercourse": 0.14361702127659576,
+            "movement": 0.14893617021276595,
+            "notable work": 0.14361702127659576,
+            "part of": 0.14095744680851063,
+            "place of birth": 0.11931818181818182,
+            "place of death": 0.13829787234042554,
+            "record label": 0.14722222222222223,
+            "shares border with": 0.15773809523809523,
+            "sibling": 0.14516129032258066,
+            "spouse": 0.14825581395348839
+          },
+          "maximum": 0.15773809523809523,
+          "minimum": 0.11931818181818182,
+          "not_a_gate": true
+        },
+        "generation_P0_GX31": {
+          "by_omitted_relation": {
+            "award received": 0.14361702127659576,
+            "capital": 0.13333333333333333,
+            "capital of": 0.1424731182795699,
+            "child": 0.15229885057471265,
+            "contains administrative territorial entity": 0.13829787234042554,
+            "country": 0.13858695652173914,
+            "country of citizenship": 0.13829787234042554,
+            "educated at": 0.1424731182795699,
+            "employer": 0.13829787234042554,
+            "father": 0.1478494623655914,
+            "founded by": 0.14627659574468085,
+            "has part": 0.13709677419354838,
+            "headquarters location": 0.14516129032258066,
+            "instance of": 0.14516129032258066,
+            "league": 0.13829787234042554,
+            "located in or next to body of water": 0.14095744680851063,
+            "located in the administrative territorial entity": 0.12987012987012986,
+            "location of formation": 0.14361702127659576,
+            "member of": 0.14361702127659576,
+            "mother": 0.14361702127659576,
+            "mouth of the watercourse": 0.14361702127659576,
+            "movement": 0.14893617021276595,
+            "notable work": 0.14361702127659576,
+            "part of": 0.14095744680851063,
+            "place of birth": 0.11931818181818182,
+            "place of death": 0.13829787234042554,
+            "record label": 0.14722222222222223,
+            "shares border with": 0.15773809523809523,
+            "sibling": 0.14516129032258066,
+            "spouse": 0.14825581395348839
+          },
+          "maximum": 0.15773809523809523,
+          "minimum": 0.11931818181818182,
+          "not_a_gate": true
+        },
+        "likelihood_DX3_nats": {
+          "by_omitted_relation": {
+            "award received": 0.4856098344985475,
+            "capital": 0.4537063095304701,
+            "capital of": 0.4803720212751819,
+            "child": 0.5009314123241381,
+            "contains administrative territorial entity": 0.4825348498973441,
+            "country": 0.46968243433081586,
+            "country of citizenship": 0.4792204410471815,
+            "educated at": 0.4765605016421246,
+            "employer": 0.48411407876521984,
+            "father": 0.5012861656886275,
+            "founded by": 0.49754974689889464,
+            "has part": 0.4961746046620031,
+            "headquarters location": 0.4809893164583432,
+            "instance of": 0.5031771877760528,
+            "league": 0.485924391036338,
+            "located in or next to body of water": 0.48811667269848763,
+            "located in the administrative territorial entity": 0.4133181742259434,
+            "location of formation": 0.5061567045272665,
+            "member of": 0.49130722436499086,
+            "mother": 0.4854271196304484,
+            "mouth of the watercourse": 0.48860709337477987,
+            "movement": 0.49919020749152976,
+            "notable work": 0.48246454685292345,
+            "part of": 0.5052642568628839,
+            "place of birth": 0.4034102653915232,
+            "place of death": 0.475638876570032,
+            "record label": 0.5045187936888801,
+            "shares border with": 0.5033226297015235,
+            "sibling": 0.49652021033789523,
+            "spouse": 0.5276552743689958
+          },
+          "maximum": 0.5276552743689958,
+          "minimum": 0.4034102653915232,
+          "not_a_gate": true
+        },
+        "likelihood_GX31_nats": {
+          "by_omitted_relation": {
+            "award received": 0.5121657886403672,
+            "capital": 0.487500254313151,
+            "capital of": 0.5102289517720541,
+            "child": 0.5409820888234281,
+            "contains administrative territorial entity": 0.5047223948417826,
+            "country": 0.4965037703514099,
+            "country of citizenship": 0.5054595850883646,
+            "educated at": 0.5030620008386592,
+            "employer": 0.5101755477012472,
+            "father": 0.5256802471735145,
+            "founded by": 0.5226043310571225,
+            "has part": 0.5129665636247204,
+            "headquarters location": 0.5066908674855386,
+            "instance of": 0.5214091103564027,
+            "league": 0.5121906640681815,
+            "located in or next to body of water": 0.5142961182492845,
+            "located in the administrative territorial entity": 0.4292666122510836,
+            "location of formation": 0.5324156981833438,
+            "member of": 0.5174891149744074,
+            "mother": 0.5118725591517509,
+            "mouth of the watercourse": 0.5149587836671383,
+            "movement": 0.5198708531704355,
+            "notable work": 0.5086714003948455,
+            "part of": 0.531438373504801,
+            "place of birth": 0.4342042871496894,
+            "place of death": 0.5019401413329104,
+            "record label": 0.5300011038780212,
+            "shares border with": 0.5119368093354362,
+            "sibling": 0.5234179458310527,
+            "spouse": 0.5737206298251485
+          },
+          "maximum": 0.5737206298251485,
+          "minimum": 0.4292666122510836,
+          "not_a_gate": true
+        }
+      },
+      "terminal_relation_cluster_bootstrap": {
+        "design": {
+          "draws_sha256": "ea66e7d5064064143acd8f81ea8fac62f293362f171f885ec01f3cb445450b4a",
+          "method": "descriptive whole-cluster bootstrap: resample 30 terminal relations and retain every observed pair in each sampled relation",
+          "not_a_gate": true,
+          "observed_cluster_sizes": {
+            "award received": 1,
+            "capital": 5,
+            "capital of": 2,
+            "child": 8,
+            "contains administrative territorial entity": 1,
+            "country": 3,
+            "country of citizenship": 1,
+            "educated at": 2,
+            "employer": 1,
+            "father": 2,
+            "founded by": 1,
+            "has part": 2,
+            "headquarters location": 2,
+            "instance of": 2,
+            "league": 1,
+            "located in or next to body of water": 1,
+            "located in the administrative territorial entity": 18,
+            "location of formation": 1,
+            "member of": 1,
+            "mother": 1,
+            "mouth of the watercourse": 1,
+            "movement": 1,
+            "notable work": 1,
+            "part of": 1,
+            "place of birth": 7,
+            "place of death": 1,
+            "record label": 5,
+            "shares border with": 11,
+            "sibling": 2,
+            "spouse": 9
+          },
+          "replicates": 10000,
+          "rng_seed": 9788314265103428282,
+          "terminal_relation_clusters": 30
+        },
+        "generation_P0_DX3": {
+          "bootstrap_replicates": 10000,
+          "estimate": 0.14210526315789473,
+          "pair_units": 95,
+          "percentile_95_CI": [
+            0.07336865942028986,
+            0.21283783783783783
+          ]
+        },
+        "generation_P0_GX31": {
+          "bootstrap_replicates": 10000,
+          "estimate": 0.14210526315789473,
+          "pair_units": 95,
+          "percentile_95_CI": [
+            0.07336865942028986,
+            0.21283783783783783
+          ]
+        },
+        "likelihood_DX3_nats": {
+          "bootstrap_replicates": 10000,
+          "estimate": 0.4853602258782638,
+          "pair_units": 95,
+          "percentile_95_CI": [
+            0.22358182556770018,
+            0.7178204181071798
+          ]
+        },
+        "likelihood_GX31_nats": {
+          "bootstrap_replicates": 10000,
+          "estimate": 0.5113437276137502,
+          "pair_units": 95,
+          "percentile_95_CI": [
+            0.23883438445903638,
+            0.7438129968346245
+          ]
+        }
+      }
+    },
+    "diagnostics": {
+      "1": {
+        "literal_object_rate": 0.0,
+        "literal_state_correct_rate": 0.0,
+        "p1_ambiguous": 0,
+        "p1_unsafe_alias_matches": 0,
+        "p2_wrapper_counts": {},
+        "stop_reason_counts": {
+          "newline": 380
+        }
+      },
+      "3": {
+        "literal_object_rate": 0.8631578947368421,
+        "literal_state_correct_rate": 0.5026315789473684,
+        "p1_ambiguous": 0,
+        "p1_unsafe_alias_matches": 0,
+        "p2_wrapper_counts": {},
+        "stop_reason_counts": {
+          "newline": 380
+        }
+      }
+    },
+    "generation_P0_primary": {
+      "K3_adherence": {
+        "XN": {
+          "bootstrap_replicates": 10000,
+          "estimate": 0.8421052631578947,
+          "pair_units": 95,
+          "percentile_95_CI": [
+            0.7789473684210526,
+            0.9052631578947369
+          ]
+        },
+        "XV": {
+          "bootstrap_replicates": 10000,
+          "estimate": 0.8842105263157894,
+          "pair_units": 95,
+          "percentile_95_CI": [
+            0.8263157894736842,
+            0.9368421052631579
+          ]
+        }
+      },
+      "K3_state_correct": {
+        "by_cell": {
+          "XN": {
+            "bootstrap_replicates": 10000,
+            "estimate": 0.4789473684210526,
+            "pair_units": 95,
+            "percentile_95_CI": [
+              0.42105263157894735,
+              0.5368421052631579
+            ]
+          },
+          "XV": {
+            "bootstrap_replicates": 10000,
+            "estimate": 0.5263157894736842,
+            "pair_units": 95,
+            "percentile_95_CI": [
+              0.4842105263157895,
+              0.5736842105263158
+            ]
+          }
+        },
+        "pooled": {
+          "bootstrap_replicates": 10000,
+          "estimate": 0.5026315789473684,
+          "pair_units": 95,
+          "percentile_95_CI": [
+            0.4605263157894737,
+            0.5447368421052632
+          ]
+        }
+      },
+      "arm_signs": {
+        "A": {
+          "DX3": 0.17894736842105263,
+          "GX31": 0.17894736842105263
+        },
+        "B": {
+          "DX3": 0.10526315789473684,
+          "GX31": 0.10526315789473684
+        }
+      },
+      "gates": {
+        "DX3": false,
+        "GX31": true,
+        "arm_signs": true,
+        "each_cell_K3_point": false,
+        "pooled_K3_correct": false
+      },
+      "metrics": {
+        "DX3": {
+          "bootstrap_replicates": 10000,
+          "estimate": 0.14210526315789473,
+          "pair_units": 95,
+          "percentile_95_CI": [
+            0.08157894736842106,
+            0.20526315789473684
+          ]
+        },
+        "GX31": {
+          "bootstrap_replicates": 10000,
+          "estimate": 0.14210526315789473,
+          "pair_units": 95,
+          "percentile_95_CI": [
+            0.08157894736842106,
+            0.20526315789473684
+          ]
+        }
+      },
+      "passes": false
+    },
+    "generation_P1_alias_diagnostic": {
+      "K3_adherence": {
+        "XN": {
+          "bootstrap_replicates": 10000,
+          "estimate": 0.8421052631578947,
+          "pair_units": 95,
+          "percentile_95_CI": [
+            0.7789473684210526,
+            0.9052631578947369
+          ]
+        },
+        "XV": {
+          "bootstrap_replicates": 10000,
+          "estimate": 0.8894736842105263,
+          "pair_units": 95,
+          "percentile_95_CI": [
+            0.8315789473684211,
+            0.9368421052631579
+          ]
+        }
+      },
+      "K3_state_correct": {
+        "by_cell": {
+          "XN": {
+            "bootstrap_replicates": 10000,
+            "estimate": 0.4789473684210526,
+            "pair_units": 95,
+            "percentile_95_CI": [
+              0.42105263157894735,
+              0.5368421052631579
+            ]
+          },
+          "XV": {
+            "bootstrap_replicates": 10000,
+            "estimate": 0.531578947368421,
+            "pair_units": 95,
+            "percentile_95_CI": [
+              0.48947368421052634,
+              0.5789473684210527
+            ]
+          }
+        },
+        "pooled": {
+          "bootstrap_replicates": 10000,
+          "estimate": 0.5052631578947369,
+          "pair_units": 95,
+          "percentile_95_CI": [
+            0.4631578947368421,
+            0.5473684210526316
+          ]
+        }
+      },
+      "arm_signs": {
+        "A": {
+          "DX3": 0.18421052631578946,
+          "GX31": 0.18421052631578946
+        },
+        "B": {
+          "DX3": 0.10526315789473684,
+          "GX31": 0.10526315789473684
+        }
+      },
+      "gates": {
+        "DX3": false,
+        "GX31": true,
+        "arm_signs": true,
+        "each_cell_K3_point": false,
+        "pooled_K3_correct": false
+      },
+      "metrics": {
+        "DX3": {
+          "bootstrap_replicates": 10000,
+          "estimate": 0.14473684210526316,
+          "pair_units": 95,
+          "percentile_95_CI": [
+            0.08421052631578947,
+            0.20789473684210527
+          ]
+        },
+        "GX31": {
+          "bootstrap_replicates": 10000,
+          "estimate": 0.14473684210526316,
+          "pair_units": 95,
+          "percentile_95_CI": [
+            0.08421052631578947,
+            0.20789473684210527
+          ]
+        }
+      },
+      "passes": false
+    },
+    "generation_P2_wrapper_diagnostic": {
+      "K3_adherence": {
+        "XN": {
+          "bootstrap_replicates": 10000,
+          "estimate": 0.8421052631578947,
+          "pair_units": 95,
+          "percentile_95_CI": [
+            0.7789473684210526,
+            0.9052631578947369
+          ]
+        },
+        "XV": {
+          "bootstrap_replicates": 10000,
+          "estimate": 0.8894736842105263,
+          "pair_units": 95,
+          "percentile_95_CI": [
+            0.8315789473684211,
+            0.9368421052631579
+          ]
+        }
+      },
+      "K3_state_correct": {
+        "by_cell": {
+          "XN": {
+            "bootstrap_replicates": 10000,
+            "estimate": 0.4789473684210526,
+            "pair_units": 95,
+            "percentile_95_CI": [
+              0.42105263157894735,
+              0.5368421052631579
+            ]
+          },
+          "XV": {
+            "bootstrap_replicates": 10000,
+            "estimate": 0.531578947368421,
+            "pair_units": 95,
+            "percentile_95_CI": [
+              0.48947368421052634,
+              0.5789473684210527
+            ]
+          }
+        },
+        "pooled": {
+          "bootstrap_replicates": 10000,
+          "estimate": 0.5052631578947369,
+          "pair_units": 95,
+          "percentile_95_CI": [
+            0.4631578947368421,
+            0.5473684210526316
+          ]
+        }
+      },
+      "arm_signs": {
+        "A": {
+          "DX3": 0.18421052631578946,
+          "GX31": 0.18421052631578946
+        },
+        "B": {
+          "DX3": 0.10526315789473684,
+          "GX31": 0.10526315789473684
+        }
+      },
+      "gates": {
+        "DX3": false,
+        "GX31": true,
+        "arm_signs": true,
+        "each_cell_K3_point": false,
+        "pooled_K3_correct": false
+      },
+      "metrics": {
+        "DX3": {
+          "bootstrap_replicates": 10000,
+          "estimate": 0.14473684210526316,
+          "pair_units": 95,
+          "percentile_95_CI": [
+            0.08421052631578947,
+            0.20789473684210527
+          ]
+        },
+        "GX31": {
+          "bootstrap_replicates": 10000,
+          "estimate": 0.14473684210526316,
+          "pair_units": 95,
+          "percentile_95_CI": [
+            0.08421052631578947,
+            0.20789473684210527
+          ]
+        }
+      },
+      "passes": false
+    },
+    "joint_conjunctive_success": false,
+    "likelihood_substrate": {
+      "gates": {
+        "DX3": false,
+        "GX31": true,
+        "pooled_K3_state_accuracy": true
+      },
+      "metrics": {
+        "DX3_nats": {
+          "bootstrap_replicates": 10000,
+          "estimate": 0.4853602258782638,
+          "pair_units": 95,
+          "percentile_95_CI": [
+            0.32187612160256035,
+            0.658773522157418
+          ]
+        },
+        "GX31_nats": {
+          "bootstrap_replicates": 10000,
+          "estimate": 0.5113437276137502,
+          "pair_units": 95,
+          "percentile_95_CI": [
+            0.3506018302942577,
+            0.6831827780447507
+          ]
+        },
+        "pooled_K3_state_accuracy": {
+          "bootstrap_replicates": 10000,
+          "estimate": 0.5513157894736842,
+          "pair_units": 95,
+          "percentile_95_CI": [
+            0.5236842105263158,
+            0.5815789473684211
+          ]
+        }
+      },
+      "passes": false
+    },
+    "maximum_generation_forward_calls": 18240,
+    "pair_units": 95,
+    "prospective_generations": 760
+  }
+}

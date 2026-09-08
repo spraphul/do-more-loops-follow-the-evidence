@@ -1,0 +1,515 @@
+{
+  "schema": "iclr2027.nonce_structural_falsifiers.result.v1",
+  "mode": "confirm",
+  "model": "ByteDance/Ouro-2.6B",
+  "worlds": 144,
+  "inference": "10,000 shared world bootstrap draws stratified within six relation families",
+  "execution": {
+    "runner_sha256": "db65b1c8a8be197000f1f88698245fcec2e9aac080acd142f00da3c75fd14fe9",
+    "mock": false,
+    "shards": [
+      {
+        "path": "shard_0.json",
+        "sha256": "8654a63cd028164e3ef57fc2b8c1f6d067d48c4a7492671652ae794d666efc8f"
+      },
+      {
+        "path": "shard_1.json",
+        "sha256": "d56aa988562b9a45e58a1d00050f78bd28f7df9911c1a8d6824bac67da5191bf"
+      },
+      {
+        "path": "shard_2.json",
+        "sha256": "dbdef542a3851c17e74f93647b3767f06ab8966e4d3a2e9c5b64b51ab98ceffd"
+      },
+      {
+        "path": "shard_3.json",
+        "sha256": "3ae844b41b75d781b78521b7166be024f5a174d32aa9b4111ec04dccce327553"
+      }
+    ]
+  },
+  "results": {
+    "on_effect_raw_K1": {
+      "estimate": -0.0005425347222222222,
+      "ci95": [
+        -0.002875434027777778,
+        0.0018446180555555555
+      ],
+      "bootstrap_replicates": 10000
+    },
+    "off_effect_raw_K1": {
+      "estimate": -0.002007378472222222,
+      "ci95": [
+        -0.004069010416666667,
+        0.00010850694444444444
+      ],
+      "bootstrap_replicates": 10000
+    },
+    "specificity_raw_K1": {
+      "estimate": 0.00146484375,
+      "ci95": [
+        -0.00146484375,
+        0.00439453125
+      ],
+      "bootstrap_replicates": 10000
+    },
+    "on_effect_choice_K1": {
+      "estimate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "bootstrap_replicates": 10000
+    },
+    "off_effect_choice_K1": {
+      "estimate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "bootstrap_replicates": 10000
+    },
+    "specificity_choice_K1": {
+      "estimate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "bootstrap_replicates": 10000
+    },
+    "graph_effect_raw_matched_K1": {
+      "estimate": -0.0027669270833333335,
+      "ci95": [
+        -0.005316840277777778,
+        -0.00016276041666666666
+      ],
+      "bootstrap_replicates": 10000
+    },
+    "graph_effect_choice_matched_K1": {
+      "estimate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "bootstrap_replicates": 10000
+    },
+    "state_accuracy_matched_K1": {
+      "estimate": 0.5,
+      "ci95": [
+        0.5,
+        0.5
+      ],
+      "bootstrap_replicates": 10000
+    },
+    "graph_effect_raw_crossed_K1": {
+      "estimate": -0.0005425347222222222,
+      "ci95": [
+        -0.0030381944444444445,
+        0.001953125
+      ],
+      "bootstrap_replicates": 10000
+    },
+    "graph_effect_choice_crossed_K1": {
+      "estimate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "bootstrap_replicates": 10000
+    },
+    "state_accuracy_crossed_K1": {
+      "estimate": 0.5,
+      "ci95": [
+        0.5,
+        0.5
+      ],
+      "bootstrap_replicates": 10000
+    },
+    "locality_amplification_raw_K1": {
+      "estimate": -0.002224392361111111,
+      "ci95": [
+        -0.005642361111111111,
+        0.0013020833333333333
+      ],
+      "bootstrap_replicates": 10000
+    },
+    "locality_amplification_choice_K1": {
+      "estimate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "bootstrap_replicates": 10000
+    },
+    "on_effect_raw_K2": {
+      "estimate": 0.03732638888888889,
+      "ci95": [
+        0.03331163194444445,
+        0.041341145833333336
+      ],
+      "bootstrap_replicates": 10000
+    },
+    "off_effect_raw_K2": {
+      "estimate": -0.0022786458333333335,
+      "ci95": [
+        -0.006293402777777778,
+        0.0018446180555555555
+      ],
+      "bootstrap_replicates": 10000
+    },
+    "specificity_raw_K2": {
+      "estimate": 0.039605034722222224,
+      "ci95": [
+        0.033959960937500006,
+        0.04525010850694441
+      ],
+      "bootstrap_replicates": 10000
+    },
+    "on_effect_choice_K2": {
+      "estimate": 0.028645833333333332,
+      "ci95": [
+        0.017361111111111112,
+        0.04079861111111111
+      ],
+      "bootstrap_replicates": 10000
+    },
+    "off_effect_choice_K2": {
+      "estimate": 0.0026041666666666665,
+      "ci95": [
+        -0.006076388888888889,
+        0.011284722222222222
+      ],
+      "bootstrap_replicates": 10000
+    },
+    "specificity_choice_K2": {
+      "estimate": 0.026041666666666668,
+      "ci95": [
+        0.011284722222222222,
+        0.041666666666666664
+      ],
+      "bootstrap_replicates": 10000
+    },
+    "graph_effect_raw_matched_K2": {
+      "estimate": 0.11588541666666667,
+      "ci95": [
+        0.10796440972222222,
+        0.12369791666666667
+      ],
+      "bootstrap_replicates": 10000
+    },
+    "graph_effect_choice_matched_K2": {
+      "estimate": 0.20399305555555555,
+      "ci95": [
+        0.1753472222222222,
+        0.23350694444444445
+      ],
+      "bootstrap_replicates": 10000
+    },
+    "state_accuracy_matched_K2": {
+      "estimate": 0.6019965277777778,
+      "ci95": [
+        0.5876736111111112,
+        0.6167534722222222
+      ],
+      "bootstrap_replicates": 10000
+    },
+    "graph_effect_raw_crossed_K2": {
+      "estimate": 0.013671875,
+      "ci95": [
+        0.008355034722222222,
+        0.018880208333333332
+      ],
+      "bootstrap_replicates": 10000
+    },
+    "graph_effect_choice_crossed_K2": {
+      "estimate": 0.006944444444444444,
+      "ci95": [
+        -0.008680555555555556,
+        0.022569444444444444
+      ],
+      "bootstrap_replicates": 10000
+    },
+    "state_accuracy_crossed_K2": {
+      "estimate": 0.5034722222222222,
+      "ci95": [
+        0.4956597222222222,
+        0.5112847222222222
+      ],
+      "bootstrap_replicates": 10000
+    },
+    "locality_amplification_raw_K2": {
+      "estimate": 0.10221354166666667,
+      "ci95": [
+        0.09364149305555555,
+        0.11067708333333333
+      ],
+      "bootstrap_replicates": 10000
+    },
+    "locality_amplification_choice_K2": {
+      "estimate": 0.1970486111111111,
+      "ci95": [
+        0.16493055555555555,
+        0.2300347222222222
+      ],
+      "bootstrap_replicates": 10000
+    },
+    "on_effect_raw_K3": {
+      "estimate": 0.19498697916666666,
+      "ci95": [
+        0.18153211805555555,
+        0.20909288194444445
+      ],
+      "bootstrap_replicates": 10000
+    },
+    "off_effect_raw_K3": {
+      "estimate": -0.0037977430555555555,
+      "ci95": [
+        -0.009006076388888888,
+        0.0015190972222222222
+      ],
+      "bootstrap_replicates": 10000
+    },
+    "specificity_raw_K3": {
+      "estimate": 0.1987847222222222,
+      "ci95": [
+        0.18348524305555555,
+        0.2144097222222222
+      ],
+      "bootstrap_replicates": 10000
+    },
+    "on_effect_choice_K3": {
+      "estimate": 0.2690972222222222,
+      "ci95": [
+        0.23177083333333334,
+        0.3072916666666667
+      ],
+      "bootstrap_replicates": 10000
+    },
+    "off_effect_choice_K3": {
+      "estimate": 0.0,
+      "ci95": [
+        -0.017361111111111112,
+        0.017361111111111112
+      ],
+      "bootstrap_replicates": 10000
+    },
+    "specificity_choice_K3": {
+      "estimate": 0.2690972222222222,
+      "ci95": [
+        0.22916666666666666,
+        0.3098958333333333
+      ],
+      "bootstrap_replicates": 10000
+    },
+    "graph_effect_raw_matched_K3": {
+      "estimate": 0.5872395833333334,
+      "ci95": [
+        0.5574001736111112,
+        0.6163194444444444
+      ],
+      "bootstrap_replicates": 10000
+    },
+    "graph_effect_choice_matched_K3": {
+      "estimate": 0.6432291666666666,
+      "ci95": [
+        0.5980902777777778,
+        0.6892361111111112
+      ],
+      "bootstrap_replicates": 10000
+    },
+    "state_accuracy_matched_K3": {
+      "estimate": 0.8216145833333334,
+      "ci95": [
+        0.7990451388888888,
+        0.8446180555555556
+      ],
+      "bootstrap_replicates": 10000
+    },
+    "graph_effect_raw_crossed_K3": {
+      "estimate": 0.1636284722222222,
+      "ci95": [
+        0.1470269097222222,
+        0.18001302083333334
+      ],
+      "bootstrap_replicates": 10000
+    },
+    "graph_effect_choice_crossed_K3": {
+      "estimate": 0.2282986111111111,
+      "ci95": [
+        0.1875,
+        0.2699652777777778
+      ],
+      "bootstrap_replicates": 10000
+    },
+    "state_accuracy_crossed_K3": {
+      "estimate": 0.6141493055555556,
+      "ci95": [
+        0.59375,
+        0.6349826388888888
+      ],
+      "bootstrap_replicates": 10000
+    },
+    "locality_amplification_raw_K3": {
+      "estimate": 0.4236111111111111,
+      "ci95": [
+        0.4008246527777778,
+        0.4462890625
+      ],
+      "bootstrap_replicates": 10000
+    },
+    "locality_amplification_choice_K3": {
+      "estimate": 0.4149305555555556,
+      "ci95": [
+        0.3784722222222222,
+        0.4513888888888889
+      ],
+      "bootstrap_replicates": 10000
+    },
+    "on_effect_raw_K4": {
+      "estimate": 0.2703993055555556,
+      "ci95": [
+        0.2520616319444444,
+        0.2908013237847222
+      ],
+      "bootstrap_replicates": 10000
+    },
+    "off_effect_raw_K4": {
+      "estimate": -0.00043402777777777775,
+      "ci95": [
+        -0.006184895833333333,
+        0.005316840277777778
+      ],
+      "bootstrap_replicates": 10000
+    },
+    "specificity_raw_K4": {
+      "estimate": 0.2708333333333333,
+      "ci95": [
+        0.2509765625,
+        0.2926432291666667
+      ],
+      "bootstrap_replicates": 10000
+    },
+    "on_effect_choice_K4": {
+      "estimate": 0.4817708333333333,
+      "ci95": [
+        0.4401041666666667,
+        0.5234375
+      ],
+      "bootstrap_replicates": 10000
+    },
+    "off_effect_choice_K4": {
+      "estimate": 0.018229166666666668,
+      "ci95": [
+        -0.004340277777777778,
+        0.039952256944444126
+      ],
+      "bootstrap_replicates": 10000
+    },
+    "specificity_choice_K4": {
+      "estimate": 0.4635416666666667,
+      "ci95": [
+        0.4149305555555556,
+        0.5130208333333334
+      ],
+      "bootstrap_replicates": 10000
+    },
+    "graph_effect_raw_matched_K4": {
+      "estimate": 0.6636284722222222,
+      "ci95": [
+        0.6335720486111112,
+        0.6939019097222222
+      ],
+      "bootstrap_replicates": 10000
+    },
+    "graph_effect_choice_matched_K4": {
+      "estimate": 0.7395833333333334,
+      "ci95": [
+        0.6935763888888888,
+        0.7855902777777778
+      ],
+      "bootstrap_replicates": 10000
+    },
+    "state_accuracy_matched_K4": {
+      "estimate": 0.8697916666666666,
+      "ci95": [
+        0.8467881944444444,
+        0.8927951388888888
+      ],
+      "bootstrap_replicates": 10000
+    },
+    "graph_effect_raw_crossed_K4": {
+      "estimate": 0.2580295138888889,
+      "ci95": [
+        0.2314425998263889,
+        0.2849392361111111
+      ],
+      "bootstrap_replicates": 10000
+    },
+    "graph_effect_choice_crossed_K4": {
+      "estimate": 0.4383680555555556,
+      "ci95": [
+        0.3784722222222222,
+        0.4991319444444444
+      ],
+      "bootstrap_replicates": 10000
+    },
+    "state_accuracy_crossed_K4": {
+      "estimate": 0.7191840277777778,
+      "ci95": [
+        0.6892361111111112,
+        0.7495659722222222
+      ],
+      "bootstrap_replicates": 10000
+    },
+    "locality_amplification_raw_K4": {
+      "estimate": 0.4055989583333333,
+      "ci95": [
+        0.3878038194444444,
+        0.423828125
+      ],
+      "bootstrap_replicates": 10000
+    },
+    "locality_amplification_choice_K4": {
+      "estimate": 0.3012152777777778,
+      "ci95": [
+        0.2595486111111111,
+        0.3428819444444444
+      ],
+      "bootstrap_replicates": 10000
+    },
+    "specificity_raw_K4_minus_K1": {
+      "estimate": 0.2693684895833333,
+      "ci95": [
+        0.2495659722222222,
+        0.291015625
+      ],
+      "bootstrap_replicates": 10000
+    },
+    "crossed_graph_raw_K4_minus_K1": {
+      "estimate": 0.2585720486111111,
+      "ci95": [
+        0.23171522352430554,
+        0.2854275173611111
+      ],
+      "bootstrap_replicates": 10000
+    },
+    "specificity_choice_K4_minus_K1": {
+      "estimate": 0.4635416666666667,
+      "ci95": [
+        0.4149305555555556,
+        0.5130208333333334
+      ],
+      "bootstrap_replicates": 10000
+    },
+    "crossed_graph_choice_K4_minus_K1": {
+      "estimate": 0.4383680555555556,
+      "ci95": [
+        0.3784722222222222,
+        0.4991319444444444
+      ],
+      "bootstrap_replicates": 10000
+    }
+  },
+  "decisions": {
+    "answer_path_relevance_supported": true,
+    "graph_control_survives_adverse_locality": true
+  }
+}

@@ -1,0 +1,2867 @@
+{
+  "backend_audit": {
+    "snapshot_and_source": {
+      "architecture": {
+        "N": 20,
+        "base_model_name_or_path": "Qwen/Qwen3-8B",
+        "decoder_layer_indices": [
+          35
+        ],
+        "encoder_layer_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "reasoning_layer_indices": [
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34
+        ]
+      },
+      "loader_compatibility": {
+        "lds_has_no_defaults_at_init": true,
+        "purpose": "avoid unrelated default Qwen3-0.6B config lookup"
+      },
+      "repository": "Thrillcrazyer/Qwen3-8B_LoopUS",
+      "revision": "4424cfd8e36c77fee337a04602e3ddf6faae533f",
+      "small_files_sha256": {
+        "chat_template.jinja": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8",
+        "config.json": "68177578d238877d3d40565e5620cd13f99528490f5b1a12c1b32cdb54ed1800",
+        "tokenizer.json": "be75606093db2094d7cd20f3c2f385c212750648bd6ea4fb2bf507a6a4c55506",
+        "tokenizer_config.json": "d9bf1d78a80bad5eb65b83c2608910e3be00a9d3250c8153a5a393ad1257e1d6"
+      },
+      "source_dir": "<local-path-removed>",
+      "source_revision": "dd655b77861d9edf8fb981e90763436b95b1f3ff",
+      "weight_blobs": [
+        "9398f3199f618b1c09b216307f46737612efddc16d1c219c4489725fca19ba66"
+      ],
+      "weights_bytes": 16385754482
+    },
+    "tokenization": {
+      "all_labels_exact_one_token_extensions": true,
+      "maximum_prompt_tokens": 639,
+      "minimum_prompt_tokens": 599,
+      "prompts_checked": 192,
+      "target_token_ids": {
+        "A": 32,
+        "B": 33
+      }
+    }
+  },
+  "depths": [
+    1,
+    8
+  ],
+  "mock": false,
+  "model_key": "loopus8",
+  "path_length": 4,
+  "result": {
+    "choice_control_C1": {
+      "ci95": [
+        -0.03125,
+        0.010416666666666666
+      ],
+      "estimate": -0.010416666666666666
+    },
+    "choice_control_C8": {
+      "ci95": [
+        -0.03125,
+        0.020833333333333332
+      ],
+      "estimate": -0.005208333333333333
+    },
+    "choice_gain_H81": {
+      "ci95": [
+        -0.010416666666666666,
+        0.020833333333333332
+      ],
+      "estimate": 0.005208333333333333
+    },
+    "original_accuracy_K1": {
+      "ci95": [
+        0.484375,
+        0.5416666666666666
+      ],
+      "estimate": 0.5104166666666666
+    },
+    "original_accuracy_K8": {
+      "ci95": [
+        0.46875,
+        0.5416666666666666
+      ],
+      "estimate": 0.5052083333333334
+    },
+    "path_effect_D1": {
+      "ci95": [
+        -0.015625,
+        0.049479166666666664
+      ],
+      "estimate": 0.016927083333333332
+    },
+    "path_effect_D8": {
+      "ci95": [
+        -0.018229166666666668,
+        0.057291666666666664
+      ],
+      "estimate": 0.01953125
+    },
+    "promotion_eligible": false,
+    "raw_gain_G81": {
+      "ci95": [
+        -0.014322916666666666,
+        0.01953125
+      ],
+      "estimate": 0.0026041666666666665
+    },
+    "worlds": 24
+  },
+  "runner": {
+    "path": "run_loopus8_long_path_development.py",
+    "sha256": "75803bbe14ab21ee5ddfc42b5d142c064da90965b01c889cd62925f05e941e52"
+  },
+  "schema": "iclr2027.loopus8_long_path_development.run.v1",
+  "status": "exploratory_development_only",
+  "worlds": [
+    {
+      "edge_order": [
+        [
+          1,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "focal_terminal_codes": [
+        "red",
+        "blue"
+      ],
+      "ordered_focal_code_pair_index": 0,
+      "path_length": 4,
+      "paths": [
+        [
+          "NODE_0364A3A1",
+          "NODE_1FF9FE4D",
+          "NODE_78578954",
+          "NODE_704447E0",
+          "red"
+        ],
+        [
+          "NODE_4F338DA2",
+          "NODE_8F3D73E5",
+          "NODE_0F1C6843",
+          "NODE_7C0F8B0F",
+          "blue"
+        ],
+        [
+          "NODE_170D551B",
+          "NODE_93D669F0",
+          "NODE_AF09FEFF",
+          "NODE_019F4A9B",
+          "green"
+        ],
+        [
+          "NODE_9E5DD786",
+          "NODE_562B0C81",
+          "NODE_91A3A8B4",
+          "NODE_5F89697F",
+          "black"
+        ]
+      ],
+      "relation_family_index": 0,
+      "relations": [
+        "ROUTES_TO",
+        "PASSES_TO",
+        "RELAYS_TO",
+        "ENDS_AT"
+      ],
+      "world_id": "LP4_001",
+      "world_index": 0
+    },
+    {
+      "edge_order": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "focal_terminal_codes": [
+        "red",
+        "green"
+      ],
+      "ordered_focal_code_pair_index": 1,
+      "path_length": 4,
+      "paths": [
+        [
+          "NODE_ADC889DA",
+          "NODE_F0FCB94E",
+          "NODE_E2E0BA5D",
+          "NODE_A2543DAF",
+          "red"
+        ],
+        [
+          "NODE_6DF1307A",
+          "NODE_23CE9131",
+          "NODE_31089F68",
+          "NODE_A094C627",
+          "green"
+        ],
+        [
+          "NODE_0E957B6F",
+          "NODE_2C03B8A7",
+          "NODE_B2277F32",
+          "NODE_A54C8F09",
+          "black"
+        ],
+        [
+          "NODE_3C90B200",
+          "NODE_1C7A544A",
+          "NODE_5EECD33E",
+          "NODE_2D538906",
+          "blue"
+        ]
+      ],
+      "relation_family_index": 1,
+      "relations": [
+        "LINKS_TO",
+        "TRANSFERS_TO",
+        "FORWARDS_TO",
+        "RETURNS"
+      ],
+      "world_id": "LP4_002",
+      "world_index": 1
+    },
+    {
+      "edge_order": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "focal_terminal_codes": [
+        "red",
+        "black"
+      ],
+      "ordered_focal_code_pair_index": 2,
+      "path_length": 4,
+      "paths": [
+        [
+          "NODE_55EDC3BB",
+          "NODE_FB0C6C5C",
+          "NODE_09948374",
+          "NODE_20A1E5F6",
+          "red"
+        ],
+        [
+          "NODE_D1307A01",
+          "NODE_D1CB08B1",
+          "NODE_586F5A21",
+          "NODE_E555FDE2",
+          "black"
+        ],
+        [
+          "NODE_584E365C",
+          "NODE_3DF630D8",
+          "NODE_0A7B5178",
+          "NODE_C9F09105",
+          "blue"
+        ],
+        [
+          "NODE_1AECBBDC",
+          "NODE_46F6AE96",
+          "NODE_B21962DF",
+          "NODE_72CCD96D",
+          "green"
+        ]
+      ],
+      "relation_family_index": 2,
+      "relations": [
+        "POINTS_TO",
+        "LEADS_TO",
+        "SENDS_TO",
+        "YIELDS"
+      ],
+      "world_id": "LP4_003",
+      "world_index": 2
+    },
+    {
+      "edge_order": [
+        [
+          3,
+          3
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "focal_terminal_codes": [
+        "blue",
+        "red"
+      ],
+      "ordered_focal_code_pair_index": 3,
+      "path_length": 4,
+      "paths": [
+        [
+          "NODE_EE1AB49F",
+          "NODE_8CB0D9EF",
+          "NODE_1C88F106",
+          "NODE_E11C8B15",
+          "blue"
+        ],
+        [
+          "NODE_C5474F7E",
+          "NODE_BE0F45E9",
+          "NODE_9B5FA076",
+          "NODE_5EAD65DF",
+          "red"
+        ],
+        [
+          "NODE_C6B8B038",
+          "NODE_9585D6E6",
+          "NODE_BCB43B8C",
+          "NODE_E5078CF2",
+          "black"
+        ],
+        [
+          "NODE_5D427545",
+          "NODE_0F84777E",
+          "NODE_6A5A7BBB",
+          "NODE_9FA9C22B",
+          "green"
+        ]
+      ],
+      "relation_family_index": 3,
+      "relations": [
+        "CONNECTS_TO",
+        "CONTINUES_TO",
+        "TRAVELS_TO",
+        "RESOLVES_TO"
+      ],
+      "world_id": "LP4_004",
+      "world_index": 3
+    },
+    {
+      "edge_order": [
+        [
+          1,
+          1
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "focal_terminal_codes": [
+        "blue",
+        "green"
+      ],
+      "ordered_focal_code_pair_index": 4,
+      "path_length": 4,
+      "paths": [
+        [
+          "NODE_077A47D9",
+          "NODE_2E0DF6F6",
+          "NODE_F5630AC5",
+          "NODE_61E861BD",
+          "blue"
+        ],
+        [
+          "NODE_AB32F3B9",
+          "NODE_066FFCC5",
+          "NODE_C000550F",
+          "NODE_48913D07",
+          "green"
+        ],
+        [
+          "NODE_DCDD5A13",
+          "NODE_4489FBD0",
+          "NODE_9E7618FB",
+          "NODE_EDA5AA20",
+          "red"
+        ],
+        [
+          "NODE_D6EBF62B",
+          "NODE_1B5CFA86",
+          "NODE_6A103E04",
+          "NODE_0F9182A0",
+          "black"
+        ]
+      ],
+      "relation_family_index": 4,
+      "relations": [
+        "FIRST_HOP",
+        "SECOND_HOP",
+        "THIRD_HOP",
+        "FINAL_HOP"
+      ],
+      "world_id": "LP4_005",
+      "world_index": 4
+    },
+    {
+      "edge_order": [
+        [
+          3,
+          0
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "focal_terminal_codes": [
+        "blue",
+        "black"
+      ],
+      "ordered_focal_code_pair_index": 5,
+      "path_length": 4,
+      "paths": [
+        [
+          "NODE_EB734C89",
+          "NODE_F220ABDF",
+          "NODE_08714278",
+          "NODE_3E096B49",
+          "blue"
+        ],
+        [
+          "NODE_EA76CDE8",
+          "NODE_AB196864",
+          "NODE_152B3D16",
+          "NODE_AC8A5470",
+          "black"
+        ],
+        [
+          "NODE_15F15B98",
+          "NODE_96B2BB84",
+          "NODE_4E80529C",
+          "NODE_A877DA28",
+          "green"
+        ],
+        [
+          "NODE_AAA3D549",
+          "NODE_1C855432",
+          "NODE_DAC7ADF3",
+          "NODE_53F3DACC",
+          "red"
+        ]
+      ],
+      "relation_family_index": 5,
+      "relations": [
+        "MAPS_TO",
+        "PROJECTS_TO",
+        "RELAYS_TO",
+        "TERMINATES_AT"
+      ],
+      "world_id": "LP4_006",
+      "world_index": 5
+    },
+    {
+      "edge_order": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "focal_terminal_codes": [
+        "green",
+        "red"
+      ],
+      "ordered_focal_code_pair_index": 6,
+      "path_length": 4,
+      "paths": [
+        [
+          "NODE_29A5F433",
+          "NODE_5F13DBB6",
+          "NODE_80E39448",
+          "NODE_E796119A",
+          "green"
+        ],
+        [
+          "NODE_0B6D5E02",
+          "NODE_00BECE9D",
+          "NODE_8A273D9B",
+          "NODE_C6185C60",
+          "red"
+        ],
+        [
+          "NODE_E4E2784B",
+          "NODE_E5BEFA4A",
+          "NODE_C07F6637",
+          "NODE_52E14383",
+          "blue"
+        ],
+        [
+          "NODE_8354DEE5",
+          "NODE_EFBF54EF",
+          "NODE_6BDF5A2E",
+          "NODE_2E5F3518",
+          "black"
+        ]
+      ],
+      "relation_family_index": 0,
+      "relations": [
+        "ROUTES_TO",
+        "PASSES_TO",
+        "RELAYS_TO",
+        "ENDS_AT"
+      ],
+      "world_id": "LP4_007",
+      "world_index": 6
+    },
+    {
+      "edge_order": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "focal_terminal_codes": [
+        "green",
+        "blue"
+      ],
+      "ordered_focal_code_pair_index": 7,
+      "path_length": 4,
+      "paths": [
+        [
+          "NODE_7058A309",
+          "NODE_0B4801E5",
+          "NODE_CB6D305D",
+          "NODE_22D2F510",
+          "green"
+        ],
+        [
+          "NODE_2573B54E",
+          "NODE_70E6F017",
+          "NODE_07EE594E",
+          "NODE_E987A8F1",
+          "blue"
+        ],
+        [
+          "NODE_8CB65BB9",
+          "NODE_4FE32D28",
+          "NODE_2A016B07",
+          "NODE_0AF4D17A",
+          "black"
+        ],
+        [
+          "NODE_E2175356",
+          "NODE_9E8404D9",
+          "NODE_F8552DDD",
+          "NODE_E9C1A7C0",
+          "red"
+        ]
+      ],
+      "relation_family_index": 1,
+      "relations": [
+        "LINKS_TO",
+        "TRANSFERS_TO",
+        "FORWARDS_TO",
+        "RETURNS"
+      ],
+      "world_id": "LP4_008",
+      "world_index": 7
+    },
+    {
+      "edge_order": [
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "focal_terminal_codes": [
+        "green",
+        "black"
+      ],
+      "ordered_focal_code_pair_index": 8,
+      "path_length": 4,
+      "paths": [
+        [
+          "NODE_E0582DFF",
+          "NODE_C4DF306C",
+          "NODE_4A85FDF2",
+          "NODE_CE0AD2CF",
+          "green"
+        ],
+        [
+          "NODE_ED932852",
+          "NODE_18A4CFA0",
+          "NODE_C1DAC8C9",
+          "NODE_F38F98FD",
+          "black"
+        ],
+        [
+          "NODE_636F9D95",
+          "NODE_3D71AD62",
+          "NODE_7910D537",
+          "NODE_8D800AF8",
+          "red"
+        ],
+        [
+          "NODE_1FAD2649",
+          "NODE_675C976D",
+          "NODE_66C530B2",
+          "NODE_6E3417A5",
+          "blue"
+        ]
+      ],
+      "relation_family_index": 2,
+      "relations": [
+        "POINTS_TO",
+        "LEADS_TO",
+        "SENDS_TO",
+        "YIELDS"
+      ],
+      "world_id": "LP4_009",
+      "world_index": 8
+    },
+    {
+      "edge_order": [
+        [
+          3,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "focal_terminal_codes": [
+        "black",
+        "red"
+      ],
+      "ordered_focal_code_pair_index": 9,
+      "path_length": 4,
+      "paths": [
+        [
+          "NODE_98016700",
+          "NODE_9A7EB463",
+          "NODE_E86203EB",
+          "NODE_0AE40C28",
+          "black"
+        ],
+        [
+          "NODE_87DF37E9",
+          "NODE_30DF20ED",
+          "NODE_14893057",
+          "NODE_10133DD8",
+          "red"
+        ],
+        [
+          "NODE_7989DDEE",
+          "NODE_5851126E",
+          "NODE_95275A1C",
+          "NODE_240658E0",
+          "green"
+        ],
+        [
+          "NODE_2767EA87",
+          "NODE_0A0FEEEC",
+          "NODE_36B1F3C1",
+          "NODE_F074F334",
+          "blue"
+        ]
+      ],
+      "relation_family_index": 3,
+      "relations": [
+        "CONNECTS_TO",
+        "CONTINUES_TO",
+        "TRAVELS_TO",
+        "RESOLVES_TO"
+      ],
+      "world_id": "LP4_010",
+      "world_index": 9
+    },
+    {
+      "edge_order": [
+        [
+          1,
+          0
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "focal_terminal_codes": [
+        "black",
+        "blue"
+      ],
+      "ordered_focal_code_pair_index": 10,
+      "path_length": 4,
+      "paths": [
+        [
+          "NODE_A1C4493D",
+          "NODE_AB3FA817",
+          "NODE_35F3BA7C",
+          "NODE_68F3C910",
+          "black"
+        ],
+        [
+          "NODE_4CF57379",
+          "NODE_B5F7091B",
+          "NODE_240A21EE",
+          "NODE_7D97EEF2",
+          "blue"
+        ],
+        [
+          "NODE_ECE7FD8B",
+          "NODE_3BB1EEDD",
+          "NODE_C7507C51",
+          "NODE_9F920541",
+          "red"
+        ],
+        [
+          "NODE_E49FEE2B",
+          "NODE_BF2F2DFB",
+          "NODE_F1136869",
+          "NODE_BEA2BA95",
+          "green"
+        ]
+      ],
+      "relation_family_index": 4,
+      "relations": [
+        "FIRST_HOP",
+        "SECOND_HOP",
+        "THIRD_HOP",
+        "FINAL_HOP"
+      ],
+      "world_id": "LP4_011",
+      "world_index": 10
+    },
+    {
+      "edge_order": [
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "focal_terminal_codes": [
+        "black",
+        "green"
+      ],
+      "ordered_focal_code_pair_index": 11,
+      "path_length": 4,
+      "paths": [
+        [
+          "NODE_F1CF0911",
+          "NODE_FD1FF5A0",
+          "NODE_AF49C12F",
+          "NODE_63FE862B",
+          "black"
+        ],
+        [
+          "NODE_C3627412",
+          "NODE_B90462D6",
+          "NODE_FA2AB0B2",
+          "NODE_B891D3DC",
+          "green"
+        ],
+        [
+          "NODE_D42B0BCC",
+          "NODE_1A3361C2",
+          "NODE_ADB01806",
+          "NODE_863D56E5",
+          "blue"
+        ],
+        [
+          "NODE_87F7F346",
+          "NODE_0A030CF9",
+          "NODE_43A48FF7",
+          "NODE_6EC6DDF9",
+          "red"
+        ]
+      ],
+      "relation_family_index": 5,
+      "relations": [
+        "MAPS_TO",
+        "PROJECTS_TO",
+        "RELAYS_TO",
+        "TERMINATES_AT"
+      ],
+      "world_id": "LP4_012",
+      "world_index": 11
+    },
+    {
+      "edge_order": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "focal_terminal_codes": [
+        "red",
+        "blue"
+      ],
+      "ordered_focal_code_pair_index": 0,
+      "path_length": 4,
+      "paths": [
+        [
+          "NODE_454976C5",
+          "NODE_04A96BB9",
+          "NODE_B8103FD5",
+          "NODE_EBCC0CDB",
+          "red"
+        ],
+        [
+          "NODE_B2B6220D",
+          "NODE_07C456AF",
+          "NODE_16060CC4",
+          "NODE_4497C95A",
+          "blue"
+        ],
+        [
+          "NODE_A62502E7",
+          "NODE_8986AB25",
+          "NODE_250A301F",
+          "NODE_A9C472F9",
+          "green"
+        ],
+        [
+          "NODE_2A5F85A2",
+          "NODE_02C1A85C",
+          "NODE_9D57455C",
+          "NODE_142317A2",
+          "black"
+        ]
+      ],
+      "relation_family_index": 0,
+      "relations": [
+        "ROUTES_TO",
+        "PASSES_TO",
+        "RELAYS_TO",
+        "ENDS_AT"
+      ],
+      "world_id": "LP4_013",
+      "world_index": 12
+    },
+    {
+      "edge_order": [
+        [
+          2,
+          3
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "focal_terminal_codes": [
+        "red",
+        "green"
+      ],
+      "ordered_focal_code_pair_index": 1,
+      "path_length": 4,
+      "paths": [
+        [
+          "NODE_59FCF29D",
+          "NODE_7B01809A",
+          "NODE_7BAC79BF",
+          "NODE_1958F895",
+          "red"
+        ],
+        [
+          "NODE_2DE94FB4",
+          "NODE_8F576C2D",
+          "NODE_4431247F",
+          "NODE_8F84D5B6",
+          "green"
+        ],
+        [
+          "NODE_9A6442E4",
+          "NODE_B9FB5F5A",
+          "NODE_CF27F19B",
+          "NODE_7E821D37",
+          "black"
+        ],
+        [
+          "NODE_71B669E4",
+          "NODE_D7407A19",
+          "NODE_FDF45764",
+          "NODE_C39E5759",
+          "blue"
+        ]
+      ],
+      "relation_family_index": 1,
+      "relations": [
+        "LINKS_TO",
+        "TRANSFERS_TO",
+        "FORWARDS_TO",
+        "RETURNS"
+      ],
+      "world_id": "LP4_014",
+      "world_index": 13
+    },
+    {
+      "edge_order": [
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "focal_terminal_codes": [
+        "red",
+        "black"
+      ],
+      "ordered_focal_code_pair_index": 2,
+      "path_length": 4,
+      "paths": [
+        [
+          "NODE_3926C7AB",
+          "NODE_26B1DEFB",
+          "NODE_B24E7A11",
+          "NODE_EAB10BC1",
+          "red"
+        ],
+        [
+          "NODE_326878FD",
+          "NODE_E74149CB",
+          "NODE_E12B42CB",
+          "NODE_7D3B8614",
+          "black"
+        ],
+        [
+          "NODE_07BE1711",
+          "NODE_7F61004B",
+          "NODE_62CC79EE",
+          "NODE_E17D5995",
+          "blue"
+        ],
+        [
+          "NODE_A2043176",
+          "NODE_E9FF4184",
+          "NODE_0DA82A95",
+          "NODE_89390BA8",
+          "green"
+        ]
+      ],
+      "relation_family_index": 2,
+      "relations": [
+        "POINTS_TO",
+        "LEADS_TO",
+        "SENDS_TO",
+        "YIELDS"
+      ],
+      "world_id": "LP4_015",
+      "world_index": 14
+    },
+    {
+      "edge_order": [
+        [
+          0,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "focal_terminal_codes": [
+        "blue",
+        "red"
+      ],
+      "ordered_focal_code_pair_index": 3,
+      "path_length": 4,
+      "paths": [
+        [
+          "NODE_AF983759",
+          "NODE_D5A6EB3C",
+          "NODE_7B4F011E",
+          "NODE_B8BC2C2E",
+          "blue"
+        ],
+        [
+          "NODE_43F04294",
+          "NODE_32463B39",
+          "NODE_728FDA83",
+          "NODE_24E05262",
+          "red"
+        ],
+        [
+          "NODE_ADE21E4E",
+          "NODE_8E0BE97F",
+          "NODE_DA54EFB3",
+          "NODE_5EB65639",
+          "black"
+        ],
+        [
+          "NODE_425F7879",
+          "NODE_9DCB6324",
+          "NODE_E9F24DAA",
+          "NODE_A8A9C005",
+          "green"
+        ]
+      ],
+      "relation_family_index": 3,
+      "relations": [
+        "CONNECTS_TO",
+        "CONTINUES_TO",
+        "TRAVELS_TO",
+        "RESOLVES_TO"
+      ],
+      "world_id": "LP4_016",
+      "world_index": 15
+    },
+    {
+      "edge_order": [
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "focal_terminal_codes": [
+        "blue",
+        "green"
+      ],
+      "ordered_focal_code_pair_index": 4,
+      "path_length": 4,
+      "paths": [
+        [
+          "NODE_FD57DDE3",
+          "NODE_05B42C4E",
+          "NODE_4F2C5031",
+          "NODE_053B8291",
+          "blue"
+        ],
+        [
+          "NODE_9D769E2C",
+          "NODE_DEB72DAE",
+          "NODE_31C9A8D7",
+          "NODE_94E770A9",
+          "green"
+        ],
+        [
+          "NODE_D3C81DC9",
+          "NODE_01805A15",
+          "NODE_846AE053",
+          "NODE_23BF317B",
+          "red"
+        ],
+        [
+          "NODE_1DDA5EFD",
+          "NODE_0993AE68",
+          "NODE_810F9B32",
+          "NODE_7445DFB3",
+          "black"
+        ]
+      ],
+      "relation_family_index": 4,
+      "relations": [
+        "FIRST_HOP",
+        "SECOND_HOP",
+        "THIRD_HOP",
+        "FINAL_HOP"
+      ],
+      "world_id": "LP4_017",
+      "world_index": 16
+    },
+    {
+      "edge_order": [
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "focal_terminal_codes": [
+        "blue",
+        "black"
+      ],
+      "ordered_focal_code_pair_index": 5,
+      "path_length": 4,
+      "paths": [
+        [
+          "NODE_A42706DC",
+          "NODE_0E490B6B",
+          "NODE_EF7F2EDA",
+          "NODE_259D2310",
+          "blue"
+        ],
+        [
+          "NODE_05D7C994",
+          "NODE_E027A796",
+          "NODE_DF297866",
+          "NODE_8B916596",
+          "black"
+        ],
+        [
+          "NODE_B5E10F88",
+          "NODE_312B7109",
+          "NODE_8D3EF4C6",
+          "NODE_40DBA012",
+          "green"
+        ],
+        [
+          "NODE_FA78BD0E",
+          "NODE_606BD184",
+          "NODE_7AACC1DF",
+          "NODE_8C46A551",
+          "red"
+        ]
+      ],
+      "relation_family_index": 5,
+      "relations": [
+        "MAPS_TO",
+        "PROJECTS_TO",
+        "RELAYS_TO",
+        "TERMINATES_AT"
+      ],
+      "world_id": "LP4_018",
+      "world_index": 17
+    },
+    {
+      "edge_order": [
+        [
+          2,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "focal_terminal_codes": [
+        "green",
+        "red"
+      ],
+      "ordered_focal_code_pair_index": 6,
+      "path_length": 4,
+      "paths": [
+        [
+          "NODE_C7ECB592",
+          "NODE_BAC82869",
+          "NODE_BDA21E8B",
+          "NODE_5D8D4AB2",
+          "green"
+        ],
+        [
+          "NODE_9E127F5E",
+          "NODE_05A1D652",
+          "NODE_FFC2ADD2",
+          "NODE_4CEBD524",
+          "red"
+        ],
+        [
+          "NODE_4DD2A3FB",
+          "NODE_ECC845A0",
+          "NODE_461670C2",
+          "NODE_C9E4998C",
+          "blue"
+        ],
+        [
+          "NODE_5F0553D5",
+          "NODE_1C918D06",
+          "NODE_35A2260B",
+          "NODE_24D49694",
+          "black"
+        ]
+      ],
+      "relation_family_index": 0,
+      "relations": [
+        "ROUTES_TO",
+        "PASSES_TO",
+        "RELAYS_TO",
+        "ENDS_AT"
+      ],
+      "world_id": "LP4_019",
+      "world_index": 18
+    },
+    {
+      "edge_order": [
+        [
+          3,
+          2
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "focal_terminal_codes": [
+        "green",
+        "blue"
+      ],
+      "ordered_focal_code_pair_index": 7,
+      "path_length": 4,
+      "paths": [
+        [
+          "NODE_F1873C6E",
+          "NODE_6AA8CFB2",
+          "NODE_96069B9D",
+          "NODE_D70C1876",
+          "green"
+        ],
+        [
+          "NODE_E55FE535",
+          "NODE_D9B27FC5",
+          "NODE_DFFE01F8",
+          "NODE_4839BADB",
+          "blue"
+        ],
+        [
+          "NODE_87386EF8",
+          "NODE_8F2EA194",
+          "NODE_C459DC89",
+          "NODE_4327FF0A",
+          "black"
+        ],
+        [
+          "NODE_FDEF0745",
+          "NODE_E3A61226",
+          "NODE_F13EEC19",
+          "NODE_1293E55A",
+          "red"
+        ]
+      ],
+      "relation_family_index": 1,
+      "relations": [
+        "LINKS_TO",
+        "TRANSFERS_TO",
+        "FORWARDS_TO",
+        "RETURNS"
+      ],
+      "world_id": "LP4_020",
+      "world_index": 19
+    },
+    {
+      "edge_order": [
+        [
+          3,
+          0
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "focal_terminal_codes": [
+        "green",
+        "black"
+      ],
+      "ordered_focal_code_pair_index": 8,
+      "path_length": 4,
+      "paths": [
+        [
+          "NODE_5E9F784B",
+          "NODE_49ED6BE3",
+          "NODE_A4D83C4F",
+          "NODE_B3E9826D",
+          "green"
+        ],
+        [
+          "NODE_D8EEA58C",
+          "NODE_66CED3B8",
+          "NODE_F926DB8D",
+          "NODE_8AEB8789",
+          "black"
+        ],
+        [
+          "NODE_992900AC",
+          "NODE_70AF0BA9",
+          "NODE_FAD31285",
+          "NODE_AB09B241",
+          "red"
+        ],
+        [
+          "NODE_63788A24",
+          "NODE_338E2848",
+          "NODE_9C69C1E5",
+          "NODE_286B23F7",
+          "blue"
+        ]
+      ],
+      "relation_family_index": 2,
+      "relations": [
+        "POINTS_TO",
+        "LEADS_TO",
+        "SENDS_TO",
+        "YIELDS"
+      ],
+      "world_id": "LP4_021",
+      "world_index": 20
+    },
+    {
+      "edge_order": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "focal_terminal_codes": [
+        "black",
+        "red"
+      ],
+      "ordered_focal_code_pair_index": 9,
+      "path_length": 4,
+      "paths": [
+        [
+          "NODE_A89F01A0",
+          "NODE_1F8FB9C7",
+          "NODE_840CA2B6",
+          "NODE_0D58E965",
+          "black"
+        ],
+        [
+          "NODE_506A8AA4",
+          "NODE_870F1C5F",
+          "NODE_940E2244",
+          "NODE_6D6BF806",
+          "red"
+        ],
+        [
+          "NODE_FA2A219C",
+          "NODE_F0D5E7DE",
+          "NODE_C1118958",
+          "NODE_6F88C0E3",
+          "green"
+        ],
+        [
+          "NODE_71345687",
+          "NODE_11EF34A6",
+          "NODE_48FBF391",
+          "NODE_2DA96495",
+          "blue"
+        ]
+      ],
+      "relation_family_index": 3,
+      "relations": [
+        "CONNECTS_TO",
+        "CONTINUES_TO",
+        "TRAVELS_TO",
+        "RESOLVES_TO"
+      ],
+      "world_id": "LP4_022",
+      "world_index": 21
+    },
+    {
+      "edge_order": [
+        [
+          2,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "focal_terminal_codes": [
+        "black",
+        "blue"
+      ],
+      "ordered_focal_code_pair_index": 10,
+      "path_length": 4,
+      "paths": [
+        [
+          "NODE_CDCDE92C",
+          "NODE_9844747B",
+          "NODE_70357AD3",
+          "NODE_C99CA127",
+          "black"
+        ],
+        [
+          "NODE_ADE1C719",
+          "NODE_886C822B",
+          "NODE_DBF39F86",
+          "NODE_1678BF28",
+          "blue"
+        ],
+        [
+          "NODE_DB5BBB21",
+          "NODE_984B8669",
+          "NODE_4BA3B2DB",
+          "NODE_C1A2AD42",
+          "red"
+        ],
+        [
+          "NODE_9AB3EFFD",
+          "NODE_07319AC1",
+          "NODE_4979BD8D",
+          "NODE_B93868C9",
+          "green"
+        ]
+      ],
+      "relation_family_index": 4,
+      "relations": [
+        "FIRST_HOP",
+        "SECOND_HOP",
+        "THIRD_HOP",
+        "FINAL_HOP"
+      ],
+      "world_id": "LP4_023",
+      "world_index": 22
+    },
+    {
+      "edge_order": [
+        [
+          3,
+          2
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "focal_terminal_codes": [
+        "black",
+        "green"
+      ],
+      "ordered_focal_code_pair_index": 11,
+      "path_length": 4,
+      "paths": [
+        [
+          "NODE_66FF6551",
+          "NODE_18E7F014",
+          "NODE_D8BDBA80",
+          "NODE_904164BE",
+          "black"
+        ],
+        [
+          "NODE_1A49ECF3",
+          "NODE_9808B806",
+          "NODE_0B0515B6",
+          "NODE_3B1E8FC1",
+          "green"
+        ],
+        [
+          "NODE_6136C0DD",
+          "NODE_3D048313",
+          "NODE_477D0A86",
+          "NODE_30368A46",
+          "blue"
+        ],
+        [
+          "NODE_0985C729",
+          "NODE_7CAAAB19",
+          "NODE_6F74A7A8",
+          "NODE_583AE0D6",
+          "red"
+        ]
+      ],
+      "relation_family_index": 5,
+      "relations": [
+        "MAPS_TO",
+        "PROJECTS_TO",
+        "RELAYS_TO",
+        "TERMINATES_AT"
+      ],
+      "world_id": "LP4_024",
+      "world_index": 23
+    }
+  ]
+}

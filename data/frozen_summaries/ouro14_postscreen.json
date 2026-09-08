@@ -1,0 +1,824 @@
+{
+  "reference_ouro26": {
+    "path": "merged.json",
+    "repository": "ByteDance/Ouro-2.6B",
+    "revision": "1ed04250da1a9936042725d302e81c8fa2ab5abd",
+    "sha256": "04c2beadecdca18563224200c8bfef26d237f40c142efdc387536ba0a56353cd"
+  },
+  "registration": {
+    "path": "design.json",
+    "sha256": "7219d4761655ad1c81bc209645b48e964433ddf574368e935cf769d38bb6d846"
+  },
+  "schema": "ouro14-2wiki-postscreen-k4-treatment-analysis-v1",
+  "source_design": {
+    "path": "design.json",
+    "sha256": "3ae81beb2936f759e8d924a963a1970eeb3adc2c526f4afdd1def529df8147f0"
+  },
+  "source_shards": [
+    {
+      "path": "shard0.json",
+      "sha256": "2fcf951d985aa76c44105256afde0a269c3ebcb10aac9b62fe7a0001d7da986c",
+      "shard_index": 0
+    },
+    {
+      "path": "shard1.json",
+      "sha256": "e0c83d0aca6865b1142002c60e57dfaa64ca0194580d531586bb58e3a9b7866c",
+      "shard_index": 1
+    },
+    {
+      "path": "shard2.json",
+      "sha256": "4987bcc10d5a221d69b14c0704376d7252e9fe736193ec02e5cdeda8fbdac1fb",
+      "shard_index": 2
+    },
+    {
+      "path": "shard3.json",
+      "sha256": "e71121efe8293f98b2eff9fde452042198630bccbdbf8ce44107c4921f59c8f1",
+      "shard_index": 3
+    }
+  ],
+  "summary": {
+    "bootstrap": {
+      "draws_sha256": "a73fb7dd541dc8b03b4cf5ed1d50d2ee347bf537608b35dd7b8fed893ca26282",
+      "method": "hierarchical nonparametric bootstrap: sample exact relation paths with replacement, then sample four whole pair units with replacement within each sampled path",
+      "pair_units_per_draw": 124,
+      "pairs_per_path_per_draw": 4,
+      "relation_path_clusters": 31,
+      "replicates": 10000,
+      "rng_seed": 987535634705159947,
+      "shared_draws_for_all_metrics": true
+    },
+    "candidate_sequence_forwards": 11904,
+    "claim_boundary": "A full pass supports late K4 candidate-likelihood topology control at the pinned Ouro-1.4B checkpoint on this fixed exposed 2Wiki panel. It does not constitute an independent or fresh-data confirmation, free-generation competence, architecture universality, or a causal or general law of model scale.",
+    "decision": "CONFIRM_POSTSCREEN_OURO14_LATE_K4_TOPOLOGY_CONTROL",
+    "multiplicity_and_selection": "The registered decision is an all-required conjunction. G31, G41, other trajectory increments, path summaries, and cross-scale intervals are descriptive and cannot rescue a failed primary gate. The K4 hypothesis was selected after the original-only Stage A depth trajectory was observed, so this is conditional post-screen evidence rather than a globally prospective test across the research search.",
+    "pair_units": 124,
+    "paired_cross_scale_descriptive_not_a_gate": {
+      "D_K": {
+        "1": {
+          "bootstrap_replicates": 10000,
+          "estimate": 0.03209114266980079,
+          "pair_units": 124,
+          "percentile_95_CI": [
+            0.0016207720483503037,
+            0.06966743286578886
+          ]
+        },
+        "2": {
+          "bootstrap_replicates": 10000,
+          "estimate": -1.7217876348764665,
+          "pair_units": 124,
+          "percentile_95_CI": [
+            -2.003840476322559,
+            -1.4572300862520933
+          ]
+        },
+        "3": {
+          "bootstrap_replicates": 10000,
+          "estimate": -1.201160793342898,
+          "pair_units": 124,
+          "percentile_95_CI": [
+            -1.4792610745035832,
+            -0.9407318636534675
+          ]
+        },
+        "4": {
+          "bootstrap_replicates": 10000,
+          "estimate": 0.45608573815514963,
+          "pair_units": 124,
+          "percentile_95_CI": [
+            0.0626772770718221,
+            0.8644167831468004
+          ]
+        }
+      },
+      "F4_ratio_of_means": {
+        "estimate": -0.07887123486448744,
+        "invalid_bootstrap_draws": 0,
+        "minimum_bootstrap_denominator": {
+          "Ouro_1_4B": 3.0616328884516992,
+          "Ouro_2_6B": 2.735510878985928
+        },
+        "paired_pair_units": 124,
+        "percentile_95_CI": [
+          -0.13472881544630982,
+          -0.023667251900659107
+        ],
+        "point_denominators_valid": true,
+        "valid_bootstrap_draws": 10000
+      },
+      "R4": {
+        "bootstrap_replicates": 10000,
+        "estimate": 0.01789154689158163,
+        "pair_units": 124,
+        "percentile_95_CI": [
+          -0.33201343549355383,
+          0.39213437463247003
+        ]
+      },
+      "direction": "Ouro-1.4B minus Ouro-2.6B",
+      "incremental_depth_gains": {
+        "G21": {
+          "bootstrap_replicates": 10000,
+          "estimate": -1.7538787775462674,
+          "pair_units": 124,
+          "percentile_95_CI": [
+            -2.034207476939886,
+            -1.487398994774107
+          ]
+        },
+        "G31": {
+          "bootstrap_replicates": 10000,
+          "estimate": -1.2332519360126988,
+          "pair_units": 124,
+          "percentile_95_CI": [
+            -1.508196764511447,
+            -0.9746220129151498
+          ]
+        },
+        "G32": {
+          "bootstrap_replicates": 10000,
+          "estimate": 0.5206268415335686,
+          "pair_units": 124,
+          "percentile_95_CI": [
+            0.22211027527528424,
+            0.8406278514453479
+          ]
+        },
+        "G41": {
+          "bootstrap_replicates": 10000,
+          "estimate": 0.42399459548534885,
+          "pair_units": 124,
+          "percentile_95_CI": [
+            0.03211511440815466,
+            0.8311184722209166
+          ]
+        },
+        "G43": {
+          "bootstrap_replicates": 10000,
+          "estimate": 1.6572465314980476,
+          "pair_units": 124,
+          "percentile_95_CI": [
+            1.3157859936476715,
+            2.0340982450112217
+          ]
+        }
+      },
+      "interpretation": "paired descriptive comparison on identical prompts and pairs; nominal intervals do not identify a causal effect or general law of parameter scale"
+    },
+    "primary": {
+      "K4_competence": {
+        "bootstrap_replicates": 10000,
+        "estimate": 0.678763440860215,
+        "pair_units": 124,
+        "passes": true,
+        "percentile_95_CI": [
+          0.6428007392473118,
+          0.7174059139784946
+        ],
+        "strata": {
+          "candidate_order": {
+            "original": 0.6619623655913979,
+            "reversed": 0.6955645161290323
+          },
+          "evidence_state": {
+            "bridge_swap": 0.6088709677419355,
+            "original": 0.7671370967741935,
+            "topology_rescue": 0.6602822580645161
+          },
+          "query_arm": {
+            "A": 0.6989247311827957,
+            "B": 0.6586021505376344
+          },
+          "reference_display_position": {
+            "1": 0.7036290322580645,
+            "2": 0.6538978494623656
+          }
+        }
+      },
+      "K4_graph_control": {
+        "D4": {
+          "bootstrap_replicates": 10000,
+          "estimate": 4.036536933433625,
+          "pair_units": 124,
+          "passes_lower95_gt_0": true,
+          "percentile_95_CI": [
+            3.4810028024618664,
+            4.631562305386027
+          ]
+        },
+        "passes": true
+      },
+      "K4_topology_rescue": {
+        "F4_ratio_of_means": {
+          "component_means_nats": {
+            "denominator": 4.036536933433625,
+            "numerator": 2.6576497574006357
+          },
+          "definition": "mean(z_topology_rescue-z_bridge_swap) divided by mean(z_original-z_bridge_swap), at K4",
+          "denominator_guard": {
+            "all_bootstrap_draws_pass": true,
+            "epsilon_nats": 1e-08,
+            "invalid_bootstrap_denominators": 0,
+            "minimum_bootstrap_denominator": 3.0616328884516992,
+            "point_denominator_passes": true,
+            "valid_bootstrap_ratios": 10000
+          },
+          "estimate": 0.6583984740454095,
+          "passes_lower95_gt_0_5": true,
+          "percentile_95_CI": [
+            0.5626535529688849,
+            0.7415013780884231
+          ]
+        },
+        "R4": {
+          "bootstrap_replicates": 10000,
+          "estimate": 2.6576497574006357,
+          "pair_units": 124,
+          "percentile_95_CI": [
+            2.0396362847137834,
+            3.2999809184862716
+          ]
+        },
+        "denominator_guard_passes": true,
+        "passes": true
+      },
+      "conjunctive_primary_success": true,
+      "factor_sign_robustness": {
+        "metrics": {
+          "by_candidate_order": {
+            "original": {
+              "D4": {
+                "bootstrap_replicates": 10000,
+                "estimate": 3.9933776951605275,
+                "pair_units": 124,
+                "percentile_95_CI": [
+                  3.4163801279279493,
+                  4.624692154651688
+                ]
+              },
+              "G43": {
+                "bootstrap_replicates": 10000,
+                "estimate": 2.0709041558927104,
+                "pair_units": 124,
+                "percentile_95_CI": [
+                  1.6963146684871564,
+                  2.4901203889279593
+                ]
+              }
+            },
+            "reversed": {
+              "D4": {
+                "bootstrap_replicates": 10000,
+                "estimate": 4.079696171706723,
+                "pair_units": 124,
+                "percentile_95_CI": [
+                  3.5103236841338297,
+                  4.675979951793148
+                ]
+              },
+              "G43": {
+                "bootstrap_replicates": 10000,
+                "estimate": 2.1765651126061716,
+                "pair_units": 124,
+                "percentile_95_CI": [
+                  1.8002767904631554,
+                  2.5858712279508187
+                ]
+              }
+            }
+          },
+          "by_query_arm": {
+            "A": {
+              "D4": {
+                "bootstrap_replicates": 10000,
+                "estimate": 4.157856016389785,
+                "pair_units": 124,
+                "percentile_95_CI": [
+                  3.2863510597377052,
+                  5.033863470535125
+                ]
+              },
+              "G43": {
+                "bootstrap_replicates": 10000,
+                "estimate": 2.0902893850880284,
+                "pair_units": 124,
+                "percentile_95_CI": [
+                  1.6695346522715786,
+                  2.5353423655754135
+                ]
+              }
+            },
+            "B": {
+              "D4": {
+                "bootstrap_replicates": 10000,
+                "estimate": 3.9152178504774646,
+                "pair_units": 124,
+                "percentile_95_CI": [
+                  3.0849132412623974,
+                  4.795298492980579
+                ]
+              },
+              "G43": {
+                "bootstrap_replicates": 10000,
+                "estimate": 2.1571798834108535,
+                "pair_units": 124,
+                "percentile_95_CI": [
+                  1.6803496625394592,
+                  2.664653855009425
+                ]
+              }
+            }
+          }
+        },
+        "passes_positive_D4_and_G43_points_in_all_registered_slices": true
+      },
+      "late_increment": {
+        "G43_D4_minus_D3": {
+          "bootstrap_replicates": 10000,
+          "estimate": 2.123734634249441,
+          "pair_units": 124,
+          "passes_lower95_gt_0": true,
+          "percentile_95_CI": [
+            1.7666135445838014,
+            2.5272261053323746
+          ]
+        },
+        "passes": true
+      }
+    },
+    "relation_path_clusters": 31,
+    "scored_rows": 5952,
+    "trajectory_descriptive_not_additional_gates": {
+      "D_K": {
+        "1": {
+          "bootstrap_replicates": 10000,
+          "estimate": 0.03070294472479051,
+          "pair_units": 124,
+          "percentile_95_CI": [
+            -0.0003599222629301009,
+            0.06528794876029413
+          ]
+        },
+        "2": {
+          "bootstrap_replicates": 10000,
+          "estimate": 0.039252433084672494,
+          "pair_units": 124,
+          "percentile_95_CI": [
+            0.011693975473603894,
+            0.07603306313676218
+          ]
+        },
+        "3": {
+          "bootstrap_replicates": 10000,
+          "estimate": 1.912802299184184,
+          "pair_units": 124,
+          "percentile_95_CI": [
+            1.6057967873350267,
+            2.269581021909272
+          ]
+        },
+        "4": {
+          "bootstrap_replicates": 10000,
+          "estimate": 4.036536933433625,
+          "pair_units": 124,
+          "percentile_95_CI": [
+            3.4810028024618664,
+            4.631562305386027
+          ]
+        }
+      },
+      "F_K_ratio_of_means": {
+        "1": {
+          "component_means_nats": {
+            "denominator": 0.03070294472479051,
+            "numerator": 0.010290136260371055
+          },
+          "denominator_guard": {
+            "all_bootstrap_draws_pass": false,
+            "epsilon_nats": 1e-08,
+            "invalid_bootstrap_denominators": 267,
+            "minimum_bootstrap_denominator": -0.04132246394311228,
+            "point_denominator_passes": true,
+            "valid_bootstrap_ratios": 9733
+          },
+          "estimate": 0.3351514440262298,
+          "percentile_95_CI": [
+            -0.964042732293092,
+            2.6606608247783092
+          ]
+        },
+        "2": {
+          "component_means_nats": {
+            "denominator": 0.039252433084672494,
+            "numerator": 0.013832984432097404
+          },
+          "denominator_guard": {
+            "all_bootstrap_draws_pass": false,
+            "epsilon_nats": 1e-08,
+            "invalid_bootstrap_denominators": 15,
+            "minimum_bootstrap_denominator": -0.006993426430609918,
+            "point_denominator_passes": true,
+            "valid_bootstrap_ratios": 9985
+          },
+          "estimate": 0.3524108786392399,
+          "percentile_95_CI": [
+            -0.5296426386450303,
+            0.8156280061903955
+          ]
+        },
+        "3": {
+          "component_means_nats": {
+            "denominator": 1.912802299184184,
+            "numerator": 1.1700692080682324
+          },
+          "denominator_guard": {
+            "all_bootstrap_draws_pass": true,
+            "epsilon_nats": 1e-08,
+            "invalid_bootstrap_denominators": 0,
+            "minimum_bootstrap_denominator": 1.350185158752626,
+            "point_denominator_passes": true,
+            "valid_bootstrap_ratios": 10000
+          },
+          "estimate": 0.6117042041235891,
+          "percentile_95_CI": [
+            0.49246488478206873,
+            0.7159992214078829
+          ]
+        },
+        "4": {
+          "component_means_nats": {
+            "denominator": 4.036536933433625,
+            "numerator": 2.6576497574006357
+          },
+          "denominator_guard": {
+            "all_bootstrap_draws_pass": true,
+            "epsilon_nats": 1e-08,
+            "invalid_bootstrap_denominators": 0,
+            "minimum_bootstrap_denominator": 3.0616328884516992,
+            "point_denominator_passes": true,
+            "valid_bootstrap_ratios": 10000
+          },
+          "estimate": 0.6583984740454095,
+          "percentile_95_CI": [
+            0.5626535529688849,
+            0.7415013780884231
+          ]
+        }
+      },
+      "R_K": {
+        "1": {
+          "bootstrap_replicates": 10000,
+          "estimate": 0.010290136260371055,
+          "pair_units": 124,
+          "percentile_95_CI": [
+            -0.02039101282435079,
+            0.04097890536631307
+          ]
+        },
+        "2": {
+          "bootstrap_replicates": 10000,
+          "estimate": 0.013832984432097404,
+          "pair_units": 124,
+          "percentile_95_CI": [
+            -0.009765271890547966,
+            0.04493719190359114
+          ]
+        },
+        "3": {
+          "bootstrap_replicates": 10000,
+          "estimate": 1.1700692080682324,
+          "pair_units": 124,
+          "percentile_95_CI": [
+            0.8486519321078254,
+            1.5230497684690258
+          ]
+        },
+        "4": {
+          "bootstrap_replicates": 10000,
+          "estimate": 2.6576497574006357,
+          "pair_units": 124,
+          "percentile_95_CI": [
+            2.0396362847137834,
+            3.2999809184862716
+          ]
+        }
+      },
+      "incremental_and_cumulative_depth_gains": {
+        "G21": {
+          "bootstrap_replicates": 10000,
+          "estimate": 0.008549488359881986,
+          "pair_units": 124,
+          "percentile_95_CI": [
+            -0.037471427119547325,
+            0.061402240491682455
+          ]
+        },
+        "G31": {
+          "bootstrap_replicates": 10000,
+          "estimate": 1.8820993544593934,
+          "pair_units": 124,
+          "percentile_95_CI": [
+            1.5779202224506488,
+            2.2374353601927717
+          ]
+        },
+        "G32": {
+          "bootstrap_replicates": 10000,
+          "estimate": 1.8735498660995114,
+          "pair_units": 124,
+          "percentile_95_CI": [
+            1.5700802865648462,
+            2.222749327543762
+          ]
+        },
+        "G41": {
+          "bootstrap_replicates": 10000,
+          "estimate": 4.005833988708835,
+          "pair_units": 124,
+          "percentile_95_CI": [
+            3.4587036257189125,
+            4.5972009405493734
+          ]
+        },
+        "G43": {
+          "bootstrap_replicates": 10000,
+          "estimate": 2.123734634249441,
+          "pair_units": 124,
+          "percentile_95_CI": [
+            1.7666135445838014,
+            2.5272261053323746
+          ]
+        }
+      },
+      "original_minus_rescue_residual_by_K": {
+        "1": {
+          "bootstrap_replicates": 10000,
+          "estimate": 0.02041280846441946,
+          "pair_units": 124,
+          "percentile_95_CI": [
+            -0.021129397423036638,
+            0.06231419838243912
+          ]
+        },
+        "2": {
+          "bootstrap_replicates": 10000,
+          "estimate": 0.025419448652575092,
+          "pair_units": 124,
+          "percentile_95_CI": [
+            0.005602964374326891,
+            0.05194212635678628
+          ]
+        },
+        "3": {
+          "bootstrap_replicates": 10000,
+          "estimate": 0.7427330911159515,
+          "pair_units": 124,
+          "percentile_95_CI": [
+            0.5428909544142023,
+            0.9612318078356403
+          ]
+        },
+        "4": {
+          "bootstrap_replicates": 10000,
+          "estimate": 1.3788871760329893,
+          "pair_units": 124,
+          "percentile_95_CI": [
+            1.0715071768409783,
+            1.7028807605827043
+          ]
+        }
+      },
+      "per_relation_path": {
+        "composer -> country of citizenship": {
+          "D4": 6.836011230945587,
+          "G43": 3.199173867702484,
+          "R4": 5.6091644167900085,
+          "pair_units": 4
+        },
+        "composer -> place of birth": {
+          "D4": 6.368090808391571,
+          "G43": 3.9175101667642593,
+          "R4": 4.837588116526604,
+          "pair_units": 4
+        },
+        "composer -> place of death": {
+          "D4": 6.738114058971405,
+          "G43": 4.696824371814728,
+          "R4": 4.6729556620121,
+          "pair_units": 4
+        },
+        "director -> award received": {
+          "D4": 5.7170566618442535,
+          "G43": 3.2233966290950775,
+          "R4": 5.400251746177673,
+          "pair_units": 4
+        },
+        "director -> child": {
+          "D4": 4.450183928012848,
+          "G43": 3.1816710233688354,
+          "R4": 1.936200588941574,
+          "pair_units": 4
+        },
+        "director -> country of citizenship": {
+          "D4": 6.186523348093033,
+          "G43": 2.6147460341453552,
+          "R4": 4.001953035593033,
+          "pair_units": 4
+        },
+        "director -> educated at": {
+          "D4": 5.375466495752335,
+          "G43": 3.453151673078537,
+          "R4": 4.703710705041885,
+          "pair_units": 4
+        },
+        "director -> employer": {
+          "D4": 3.850539952516556,
+          "G43": 1.823238730430603,
+          "R4": 2.7714380621910095,
+          "pair_units": 4
+        },
+        "director -> father": {
+          "D4": 4.5904560983181,
+          "G43": 3.162509024143219,
+          "R4": 2.147133082151413,
+          "pair_units": 4
+        },
+        "director -> place of birth": {
+          "D4": 4.899355351924896,
+          "G43": 3.201398193836212,
+          "R4": 4.563320100307465,
+          "pair_units": 4
+        },
+        "director -> place of death": {
+          "D4": 3.7097764909267426,
+          "G43": 2.4646914303302765,
+          "R4": 2.9848710894584656,
+          "pair_units": 4
+        },
+        "director -> spouse": {
+          "D4": 4.757406324148178,
+          "G43": 2.943775713443756,
+          "R4": 3.703053832054138,
+          "pair_units": 4
+        },
+        "father -> cause of death": {
+          "D4": 2.9059950411319733,
+          "G43": 1.8851837515830994,
+          "R4": 1.2090142965316772,
+          "pair_units": 4
+        },
+        "father -> country of citizenship": {
+          "D4": 2.887669116258621,
+          "G43": 1.0744862854480743,
+          "R4": 0.5322282612323761,
+          "pair_units": 4
+        },
+        "father -> educated at": {
+          "D4": 2.415220707654953,
+          "G43": 1.2121875286102295,
+          "R4": 1.474456936120987,
+          "pair_units": 4
+        },
+        "father -> place of birth": {
+          "D4": 2.808376133441925,
+          "G43": 1.5630647242069244,
+          "R4": 1.488606333732605,
+          "pair_units": 4
+        },
+        "father -> place of burial": {
+          "D4": 2.471777319908142,
+          "G43": 1.1915822625160217,
+          "R4": 0.9820131659507751,
+          "pair_units": 4
+        },
+        "father -> place of death": {
+          "D4": 1.8399718552827835,
+          "G43": 0.9449983388185501,
+          "R4": 0.848206639289856,
+          "pair_units": 4
+        },
+        "founded by -> place of birth": {
+          "D4": 4.487896099686623,
+          "G43": 1.1682913154363632,
+          "R4": 3.584983617067337,
+          "pair_units": 4
+        },
+        "mother -> country of citizenship": {
+          "D4": 3.427978515625,
+          "G43": 1.2473144233226776,
+          "R4": 2.1813964247703552,
+          "pair_units": 4
+        },
+        "mother -> place of birth": {
+          "D4": 2.0898929834365845,
+          "G43": 1.1428331136703491,
+          "R4": 1.519654929637909,
+          "pair_units": 4
+        },
+        "mother -> place of death": {
+          "D4": 2.848053067922592,
+          "G43": 1.5313033163547516,
+          "R4": 1.8476009964942932,
+          "pair_units": 4
+        },
+        "performer -> award received": {
+          "D4": 3.26423841714859,
+          "G43": 1.1937244534492493,
+          "R4": 2.7861166894435883,
+          "pair_units": 4
+        },
+        "performer -> country of citizenship": {
+          "D4": 5.9233399629592896,
+          "G43": 1.6748048663139343,
+          "R4": 4.2470704317092896,
+          "pair_units": 4
+        },
+        "performer -> place of birth": {
+          "D4": 4.79316084086895,
+          "G43": 2.3033508509397507,
+          "R4": 4.413957923650742,
+          "pair_units": 4
+        },
+        "performer -> place of death": {
+          "D4": 4.219093233346939,
+          "G43": 2.2893974483013153,
+          "R4": 4.027227610349655,
+          "pair_units": 4
+        },
+        "spouse -> country of citizenship": {
+          "D4": 3.368614286184311,
+          "G43": 1.5196241736412048,
+          "R4": 1.3626290559768677,
+          "pair_units": 4
+        },
+        "spouse -> educated at": {
+          "D4": 4.440326780080795,
+          "G43": 2.1891739070415497,
+          "R4": 1.8639580309391022,
+          "pair_units": 4
+        },
+        "spouse -> place of birth": {
+          "D4": 1.9470751881599426,
+          "G43": 1.1164277493953705,
+          "R4": 0.16638246178627014,
+          "pair_units": 4
+        },
+        "spouse -> place of burial": {
+          "D4": 2.9433082938194275,
+          "G43": 1.453295737504959,
+          "R4": 0.774014800786972,
+          "pair_units": 4
+        },
+        "spouse -> place of death": {
+          "D4": 2.571676343679428,
+          "G43": 1.2526425570249557,
+          "R4": -0.25401656329631805,
+          "pair_units": 4
+        }
+      },
+      "positive_pair_counts": {
+        "D4": 123,
+        "G43": 122,
+        "R4": 115
+      },
+      "state_correct_accuracy_by_K": {
+        "1": {
+          "bootstrap_replicates": 10000,
+          "estimate": 0.5040322580645161,
+          "pair_units": 124,
+          "percentile_95_CI": [
+            0.49798387096774194,
+            0.511760752688172
+          ]
+        },
+        "2": {
+          "bootstrap_replicates": 10000,
+          "estimate": 0.5070564516129032,
+          "pair_units": 124,
+          "percentile_95_CI": [
+            0.5003360215053764,
+            0.5147849462365591
+          ]
+        },
+        "3": {
+          "bootstrap_replicates": 10000,
+          "estimate": 0.5903897849462366,
+          "pair_units": 124,
+          "percentile_95_CI": [
+            0.5641801075268817,
+            0.6182879704301074
+          ]
+        },
+        "4": {
+          "bootstrap_replicates": 10000,
+          "estimate": 0.678763440860215,
+          "pair_units": 124,
+          "percentile_95_CI": [
+            0.6428007392473118,
+            0.7174059139784946
+          ]
+        }
+      }
+    }
+  }
+}

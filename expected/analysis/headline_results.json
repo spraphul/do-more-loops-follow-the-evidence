@@ -1,0 +1,366 @@
+{
+  "schema": "evidence-loops.headline-claim-table.v1",
+  "note": "Values are copied from reproduced outputs without recomputation or rerounding.",
+  "claims": [
+    {
+      "claim_id": "natural-ouro26_2wiki-margin-gain",
+      "evidence_status": "held-out confirmation",
+      "system": "Ouro-2.6B",
+      "panel": "2Wiki",
+      "estimand": "full-answer path-margin depth gain",
+      "contrast": "K1 to K3",
+      "estimate": 3.115351290472092,
+      "ci95": [
+        2.721954595309592,
+        3.5318558708674486
+      ],
+      "unit": "nats",
+      "source": "scale_invariant_path_control.json"
+    },
+    {
+      "claim_id": "natural-ouro26_2wiki-choice-gain",
+      "evidence_status": "held-out confirmation",
+      "system": "Ouro-2.6B",
+      "panel": "2Wiki",
+      "estimand": "first-divergence exact-choice depth gain",
+      "contrast": "K1 to K3",
+      "estimate": 0.3840725806451613,
+      "ci95": [
+        0.3013860887096774,
+        0.46975806451612906
+      ],
+      "unit": "proportion",
+      "source": "scale_invariant_path_control.json"
+    },
+    {
+      "claim_id": "natural-ouro26_2wiki-repair",
+      "evidence_status": "held-out confirmation",
+      "system": "Ouro-2.6B",
+      "panel": "2Wiki",
+      "estimand": "coherent-repair fraction",
+      "contrast": "K3",
+      "estimate": 0.7111666197135752,
+      "ci95": [
+        0.6234409447218597,
+        0.7840646352129501
+      ],
+      "unit": "fraction",
+      "source": "natural_depth_curves.json"
+    },
+    {
+      "claim_id": "natural-ouro26_musique-margin-gain",
+      "evidence_status": "independent confirmation",
+      "system": "Ouro-2.6B",
+      "panel": "MuSiQue",
+      "estimand": "full-answer path-margin depth gain",
+      "contrast": "K1 to K3",
+      "estimate": 3.1411755612022,
+      "ci95": [
+        2.775798117800763,
+        3.508182684402717
+      ],
+      "unit": "nats",
+      "source": "scale_invariant_path_control.json"
+    },
+    {
+      "claim_id": "natural-ouro26_musique-choice-gain",
+      "evidence_status": "independent confirmation",
+      "system": "Ouro-2.6B",
+      "panel": "MuSiQue",
+      "estimand": "first-divergence exact-choice depth gain",
+      "contrast": "K1 to K3",
+      "estimate": 0.3539473684210526,
+      "ci95": [
+        0.2881578947368421,
+        0.41973684210526313
+      ],
+      "unit": "proportion",
+      "source": "scale_invariant_path_control.json"
+    },
+    {
+      "claim_id": "natural-ouro26_musique-repair",
+      "evidence_status": "independent confirmation",
+      "system": "Ouro-2.6B",
+      "panel": "MuSiQue",
+      "estimand": "coherent-repair fraction",
+      "contrast": "K3",
+      "estimate": 0.6481816796816395,
+      "ci95": [
+        0.5614710264757897,
+        0.7255480441805711
+      ],
+      "unit": "fraction",
+      "source": "natural_depth_curves.json"
+    },
+    {
+      "claim_id": "natural-loopus_2wiki-margin-gain",
+      "evidence_status": "registered transfer",
+      "system": "LoopUS-1.7B",
+      "panel": "2Wiki",
+      "estimand": "full-answer path-margin depth gain",
+      "contrast": "K1 to K8",
+      "estimate": 1.1076776025321093,
+      "ci95": [
+        0.8354275616618769,
+        1.389535023101733
+      ],
+      "unit": "nats",
+      "source": "scale_invariant_path_control.json"
+    },
+    {
+      "claim_id": "natural-loopus_2wiki-choice-gain",
+      "evidence_status": "registered transfer",
+      "system": "LoopUS-1.7B",
+      "panel": "2Wiki",
+      "estimand": "first-divergence exact-choice depth gain",
+      "contrast": "K1 to K8",
+      "estimate": 0.14112903225806453,
+      "ci95": [
+        0.05779569892473118,
+        0.22849462365591397
+      ],
+      "unit": "proportion",
+      "source": "scale_invariant_path_control.json"
+    },
+    {
+      "claim_id": "natural-loopus_2wiki-repair",
+      "evidence_status": "registered transfer",
+      "system": "LoopUS-1.7B",
+      "panel": "2Wiki",
+      "estimand": "coherent-repair fraction",
+      "contrast": "K8",
+      "estimate": 0.7897399177018251,
+      "ci95": [
+        0.710347426906705,
+        0.8594035392351761
+      ],
+      "unit": "fraction",
+      "source": "natural_depth_curves.json"
+    },
+    {
+      "claim_id": "natural-loopus_musique-margin-gain",
+      "evidence_status": "registered transfer",
+      "system": "LoopUS-1.7B",
+      "panel": "MuSiQue",
+      "estimand": "full-answer path-margin depth gain",
+      "contrast": "K1 to K8",
+      "estimate": 0.6865062816509683,
+      "ci95": [
+        0.4829246270786481,
+        0.9146635238209887
+      ],
+      "unit": "nats",
+      "source": "scale_invariant_path_control.json"
+    },
+    {
+      "claim_id": "natural-loopus_musique-choice-gain",
+      "evidence_status": "registered transfer",
+      "system": "LoopUS-1.7B",
+      "panel": "MuSiQue",
+      "estimand": "first-divergence exact-choice depth gain",
+      "contrast": "K1 to K8",
+      "estimate": 0.08552631578947369,
+      "ci95": [
+        0.014473684210526316,
+        0.16052631578947368
+      ],
+      "unit": "proportion",
+      "source": "scale_invariant_path_control.json"
+    },
+    {
+      "claim_id": "natural-loopus_musique-repair",
+      "evidence_status": "registered transfer",
+      "system": "LoopUS-1.7B",
+      "panel": "MuSiQue",
+      "estimand": "coherent-repair fraction",
+      "contrast": "K8",
+      "estimate": 0.6700245033956667,
+      "ci95": [
+        0.572955900175463,
+        0.7533622741863616
+      ],
+      "unit": "fraction",
+      "source": "natural_depth_curves.json"
+    },
+    {
+      "claim_id": "fictional-ouro-choice-acquisition",
+      "evidence_status": "prospective confirmation",
+      "system": "Ouro-2.6B",
+      "panel": "arbitrary fictional two-hop worlds",
+      "estimand": "exact-choice gain",
+      "contrast": "K1 to K4",
+      "estimate": 0.48046875,
+      "ci95": [
+        0.4509548611111111,
+        0.5091145833333334
+      ],
+      "unit": "proportion",
+      "source": "fictional_ouro/nonce_path_control_ouro26.json"
+    },
+    {
+      "claim_id": "fictional-ouro-margin-acquisition",
+      "evidence_status": "prospective confirmation",
+      "system": "Ouro-2.6B",
+      "panel": "arbitrary fictional two-hop worlds",
+      "estimand": "path-margin gain",
+      "contrast": "K1 to K4",
+      "estimate": 0.2767469618055556,
+      "ci95": [
+        0.26375257703993055,
+        0.29001261393229166
+      ],
+      "unit": "label-logit units",
+      "source": "fictional_ouro/nonce_path_control_ouro26.json"
+    },
+    {
+      "claim_id": "fictional-loopus-choice-change",
+      "evidence_status": "frozen extension",
+      "system": "LoopUS-8B",
+      "panel": "arbitrary fictional two-hop worlds",
+      "estimand": "exact-choice gain",
+      "contrast": "K1 to K8",
+      "estimate": -0.00043402777777777775,
+      "ci95": [
+        -0.010416666666666666,
+        0.009548611111111112
+      ],
+      "unit": "proportion",
+      "source": "fictional_loopus8.json"
+    },
+    {
+      "claim_id": "fictional-loopus-margin-sharpening",
+      "evidence_status": "frozen extension",
+      "system": "LoopUS-8B",
+      "panel": "arbitrary fictional two-hop worlds",
+      "estimand": "path-margin gain",
+      "contrast": "K1 to K8",
+      "estimate": 0.216796875,
+      "ci95": [
+        0.2082248263888889,
+        0.22526041666666666
+      ],
+      "unit": "label-logit units",
+      "source": "fictional_loopus8.json"
+    },
+    {
+      "claim_id": "structural-on-off-specificity",
+      "evidence_status": "prospective confirmation",
+      "system": "Ouro-2.6B",
+      "panel": "held-out structural worlds",
+      "estimand": "on-path minus off-path choice effect",
+      "contrast": "K4",
+      "estimate": 0.4635416666666667,
+      "ci95": [
+        0.4149305555555556,
+        0.5130208333333334
+      ],
+      "unit": "proportion",
+      "source": "structural_falsifiers.json"
+    },
+    {
+      "claim_id": "structural-crossed-locality",
+      "evidence_status": "prospective confirmation",
+      "system": "Ouro-2.6B",
+      "panel": "held-out structural worlds",
+      "estimand": "graph-directed choice under adverse locality",
+      "contrast": "K4",
+      "estimate": 0.4383680555555556,
+      "ci95": [
+        0.3784722222222222,
+        0.4991319444444444
+      ],
+      "unit": "proportion",
+      "source": "structural_falsifiers.json"
+    },
+    {
+      "claim_id": "structural-locality-amplification",
+      "evidence_status": "prospective confirmation",
+      "system": "Ouro-2.6B",
+      "panel": "held-out structural worlds",
+      "estimand": "matched minus crossed locality contribution",
+      "contrast": "K4",
+      "estimate": 0.3012152777777778,
+      "ci95": [
+        0.2595486111111111,
+        0.3428819444444444
+      ],
+      "unit": "proportion",
+      "source": "structural_falsifiers.json"
+    },
+    {
+      "claim_id": "factorial-tying-final-only",
+      "evidence_status": "confirmatory factorial",
+      "system": "controlled graph-memory model",
+      "panel": "eight confirmation seeds",
+      "estimand": "tied minus untied depth gain under final-only supervision",
+      "contrast": "K1 to K4 choice gain",
+      "estimate": 0.0053124999999999995,
+      "ci95": [
+        -0.014791666666666668,
+        0.024375
+      ],
+      "unit": "proportion",
+      "source": "training_factorial.json"
+    },
+    {
+      "claim_id": "factorial-tying-all-exit",
+      "evidence_status": "confirmatory factorial",
+      "system": "controlled graph-memory model",
+      "panel": "eight confirmation seeds",
+      "estimand": "tied minus untied depth gain under all-exit supervision",
+      "contrast": "K1 to K4 choice gain",
+      "estimate": 0.25927083333333334,
+      "ci95": [
+        0.21051822916666665,
+        0.30885416666666665
+      ],
+      "unit": "proportion",
+      "source": "training_factorial.json"
+    },
+    {
+      "claim_id": "factorial-supervision-tied",
+      "evidence_status": "confirmatory factorial",
+      "system": "controlled graph-memory model",
+      "panel": "eight confirmation seeds",
+      "estimand": "all-exit minus final-only depth gain in tied model",
+      "contrast": "K1 to K4 choice gain",
+      "estimate": -0.575,
+      "ci95": [
+        -0.6386484375,
+        -0.5038541666666667
+      ],
+      "unit": "proportion",
+      "source": "training_factorial.json"
+    },
+    {
+      "claim_id": "factorial-supervision-untied",
+      "evidence_status": "confirmatory factorial",
+      "system": "controlled graph-memory model",
+      "panel": "eight confirmation seeds",
+      "estimand": "all-exit minus final-only depth gain in untied model",
+      "contrast": "K1 to K4 choice gain",
+      "estimate": -0.8289583333333334,
+      "ci95": [
+        -0.8911458333333333,
+        -0.7611458333333334
+      ],
+      "unit": "proportion",
+      "source": "training_factorial.json"
+    },
+    {
+      "claim_id": "factorial-interaction",
+      "evidence_status": "confirmatory factorial",
+      "system": "controlled graph-memory model",
+      "panel": "eight confirmation seeds",
+      "estimand": "tying by supervision interaction",
+      "contrast": "K1 to K4 choice gain",
+      "estimate": 0.25395833333333334,
+      "ci95": [
+        0.19843489583333332,
+        0.31052083333333336
+      ],
+      "unit": "proportion",
+      "source": "training_factorial.json"
+    }
+  ]
+}

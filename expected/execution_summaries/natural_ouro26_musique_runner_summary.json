@@ -1,0 +1,931 @@
+{
+  "candidate_sequence_forwards": 9120,
+  "claim_boundary": "a primary pass confirms cross-dataset candidate-likelihood bridge sensitivity, its K3-vs-K1 increase, and graph-topology-specific K3 recovery in Ouro-2.6B; relation sensitivities and competence are diagnostic and cannot rescue a failed gate",
+  "decision": "CONFIRM_MUSIQUE_BRIDGE_DEPTH_AND_TOPOLOGY_RESCUE",
+  "descriptive": {
+    "D3_G31_F3_factor_breakdowns_no_additional_gates": {
+      "by_candidate_order": {
+        "original": {
+          "D3": {
+            "bootstrap_replicates": 10000,
+            "estimate": 3.0994226330205015,
+            "pair_units": 95,
+            "percentile_95_CI": [
+              2.7465149427087683,
+              3.460008630752563
+            ]
+          },
+          "F3_ratio_of_means": {
+            "component_means_nats": {
+              "denominator": 3.0994226330205015,
+              "numerator": 1.9774979164725857
+            },
+            "denominator_guard": {
+              "all_bootstrap_draws_pass": true,
+              "epsilon_nats": 1e-08,
+              "invalid_bootstrap_denominators": 0,
+              "minimum_bootstrap_denominator": 2.334912347793579,
+              "point_denominator_passes": true,
+              "valid_bootstrap_ratios": 10000
+            },
+            "estimate": 0.6380213835327908,
+            "percentile_95_CI": [
+              0.5459725968386144,
+              0.7207642809773086
+            ]
+          },
+          "G31": {
+            "bootstrap_replicates": 10000,
+            "estimate": 3.071714714953774,
+            "pair_units": 95,
+            "percentile_95_CI": [
+              2.7203672946754254,
+              3.428416998825575
+            ]
+          }
+        },
+        "reversed": {
+          "D3": {
+            "bootstrap_replicates": 10000,
+            "estimate": 3.231129583559538,
+            "pair_units": 95,
+            "percentile_95_CI": [
+              2.8588636058255243,
+              3.612149290599321
+            ]
+          },
+          "F3_ratio_of_means": {
+            "component_means_nats": {
+              "denominator": 3.231129583559538,
+              "numerator": 2.12585005258259
+            },
+            "denominator_guard": {
+              "all_bootstrap_draws_pass": true,
+              "epsilon_nats": 1e-08,
+              "invalid_bootstrap_denominators": 0,
+              "minimum_bootstrap_denominator": 2.474950215691014,
+              "point_denominator_passes": true,
+              "valid_bootstrap_ratios": 10000
+            },
+            "estimate": 0.6579278229505952,
+            "percentile_95_CI": [
+              0.5730919511742575,
+              0.7333687247651037
+            ]
+          },
+          "G31": {
+            "bootstrap_replicates": 10000,
+            "estimate": 3.2106364074506257,
+            "pair_units": 95,
+            "percentile_95_CI": [
+              2.8278723989034953,
+              3.59898638624894
+            ]
+          }
+        }
+      },
+      "by_query_arm": {
+        "A": {
+          "D3": {
+            "bootstrap_replicates": 10000,
+            "estimate": 3.1632167314228257,
+            "pair_units": 95,
+            "percentile_95_CI": [
+              2.7618160420969913,
+              3.5697981286676304
+            ]
+          },
+          "F3_ratio_of_means": {
+            "component_means_nats": {
+              "denominator": 3.1632167314228257,
+              "numerator": 1.9638478806144313
+            },
+            "denominator_guard": {
+              "all_bootstrap_draws_pass": true,
+              "epsilon_nats": 1e-08,
+              "invalid_bootstrap_denominators": 0,
+              "minimum_bootstrap_denominator": 2.4083727334675036,
+              "point_denominator_passes": true,
+              "valid_bootstrap_ratios": 10000
+            },
+            "estimate": 0.6208388635232989,
+            "percentile_95_CI": [
+              0.5039745138168239,
+              0.7228573099106027
+            ]
+          },
+          "G31": {
+            "bootstrap_replicates": 10000,
+            "estimate": 3.1711520596554403,
+            "pair_units": 95,
+            "percentile_95_CI": [
+              2.7644994656035773,
+              3.578849430711646
+            ]
+          }
+        },
+        "B": {
+          "D3": {
+            "bootstrap_replicates": 10000,
+            "estimate": 3.1673354851572135,
+            "pair_units": 95,
+            "percentile_95_CI": [
+              2.7109791155865315,
+              3.6285779262843882
+            ]
+          },
+          "F3_ratio_of_means": {
+            "component_means_nats": {
+              "denominator": 3.1673354851572135,
+              "numerator": 2.1395000884407445
+            },
+            "denominator_guard": {
+              "all_bootstrap_draws_pass": true,
+              "epsilon_nats": 1e-08,
+              "invalid_bootstrap_denominators": 0,
+              "minimum_bootstrap_denominator": 2.3391794982709384,
+              "point_denominator_passes": true,
+              "valid_bootstrap_ratios": 10000
+            },
+            "estimate": 0.6754889396677057,
+            "percentile_95_CI": [
+              0.5563213469586692,
+              0.7830101171565317
+            ]
+          },
+          "G31": {
+            "bootstrap_replicates": 10000,
+            "estimate": 3.1111990627489594,
+            "pair_units": 95,
+            "percentile_95_CI": [
+              2.6277288936313834,
+              3.589960403316899
+            ]
+          }
+        }
+      }
+    },
+    "D_K_original_minus_bridge_swap": {
+      "1": {
+        "bootstrap_replicates": 10000,
+        "estimate": 0.024100547087819953,
+        "pair_units": 95,
+        "percentile_95_CI": [
+          -0.00291191866523341,
+          0.05345204089817247
+        ]
+      },
+      "2": {
+        "bootstrap_replicates": 10000,
+        "estimate": 1.8642420705996061,
+        "pair_units": 95,
+        "percentile_95_CI": [
+          1.627601032037484,
+          2.115896520269544
+        ]
+      },
+      "3": {
+        "bootstrap_replicates": 10000,
+        "estimate": 3.1652761082900196,
+        "pair_units": 95,
+        "percentile_95_CI": [
+          2.8127519873568887,
+          3.520985135467429
+        ]
+      },
+      "4": {
+        "bootstrap_replicates": 10000,
+        "estimate": 3.496736765535254,
+        "pair_units": 95,
+        "percentile_95_CI": [
+          3.120611038364862,
+          3.8809066973861897
+        ]
+      }
+    },
+    "F_K_topology_rescue_fraction_where_denominator_valid": {
+      "1": {
+        "component_means_nats": {
+          "denominator": 0.024100547087819953,
+          "numerator": -0.007075708790829307
+        },
+        "denominator_guard": {
+          "all_bootstrap_draws_pass": false,
+          "epsilon_nats": 1e-08,
+          "invalid_bootstrap_denominators": 402,
+          "minimum_bootstrap_denominator": -0.03009749964663857,
+          "point_denominator_passes": true,
+          "valid_bootstrap_ratios": 9598
+        },
+        "estimate": -0.29359121040058306,
+        "percentile_95_CI": [
+          -2.465798027918972,
+          0.3044051771349036
+        ]
+      },
+      "2": {
+        "component_means_nats": {
+          "denominator": 1.8642420705996061,
+          "numerator": 1.0725276231765748
+        },
+        "denominator_guard": {
+          "all_bootstrap_draws_pass": true,
+          "epsilon_nats": 1e-08,
+          "invalid_bootstrap_denominators": 0,
+          "minimum_bootstrap_denominator": 1.4090328235375253,
+          "point_denominator_passes": true,
+          "valid_bootstrap_ratios": 10000
+        },
+        "estimate": 0.5753156417243669,
+        "percentile_95_CI": [
+          0.45563599497167717,
+          0.6772589135438387
+        ]
+      },
+      "3": {
+        "component_means_nats": {
+          "denominator": 3.1652761082900196,
+          "numerator": 2.051673984527588
+        },
+        "denominator_guard": {
+          "all_bootstrap_draws_pass": true,
+          "epsilon_nats": 1e-08,
+          "invalid_bootstrap_denominators": 0,
+          "minimum_bootstrap_denominator": 2.453570889171801,
+          "point_denominator_passes": true,
+          "valid_bootstrap_ratios": 10000
+        },
+        "estimate": 0.6481816796816395,
+        "percentile_95_CI": [
+          0.5614710264757897,
+          0.7255480441805711
+        ]
+      },
+      "4": {
+        "component_means_nats": {
+          "denominator": 3.496736765535254,
+          "numerator": 2.390647418248026
+        },
+        "denominator_guard": {
+          "all_bootstrap_draws_pass": true,
+          "epsilon_nats": 1e-08,
+          "invalid_bootstrap_denominators": 0,
+          "minimum_bootstrap_denominator": 2.7167025873535557,
+          "point_denominator_passes": true,
+          "valid_bootstrap_ratios": 10000
+        },
+        "estimate": 0.6836795499766719,
+        "percentile_95_CI": [
+          0.6095138520964599,
+          0.7487801641996543
+        ]
+      }
+    },
+    "K3_topology_rescue_minus_original": {
+      "bootstrap_replicates": 10000,
+      "estimate": -1.1136021237624318,
+      "pair_units": 95,
+      "percentile_95_CI": [
+        -1.3545650773299367,
+        -0.8783121154810254
+      ]
+    },
+    "leave_one_terminal_relation_out": {
+      "by_omitted_relation": {
+        "award received": {
+          "D3": 3.1585501965056073,
+          "F3": 0.6446188363187209,
+          "F3_denominator_valid": true,
+          "G31": 3.1342315826010196,
+          "retained_pair_units": 94
+        },
+        "capital": {
+          "D3": 3.1156237999598186,
+          "F3": 0.6473063304341802,
+          "F3_denominator_valid": true,
+          "G31": 3.092102869351705,
+          "retained_pair_units": 90
+        },
+        "capital of": {
+          "D3": 3.146599095354798,
+          "F3": 0.6498341912840079,
+          "F3_denominator_valid": true,
+          "G31": 3.125597981996434,
+          "retained_pair_units": 93
+        },
+        "child": {
+          "D3": 3.31017722069532,
+          "F3": 0.6519370814146829,
+          "F3_denominator_valid": true,
+          "G31": 3.28334112139954,
+          "retained_pair_units": 87
+        },
+        "contains administrative territorial entity": {
+          "D3": 3.18967785606993,
+          "F3": 0.6469648861159683,
+          "F3_denominator_valid": true,
+          "G31": 3.165182520734503,
+          "retained_pair_units": 94
+        },
+        "country": {
+          "D3": 3.1383965248646946,
+          "F3": 0.6571111807066778,
+          "F3_denominator_valid": true,
+          "G31": 3.1138151832248853,
+          "retained_pair_units": 92
+        },
+        "country of citizenship": {
+          "D3": 3.168281039024921,
+          "F3": 0.6472420088054265,
+          "F3_denominator_valid": true,
+          "G31": 3.1438799500465393,
+          "retained_pair_units": 94
+        },
+        "educated at": {
+          "D3": 3.117495204812737,
+          "F3": 0.6395049681674185,
+          "F3_denominator_valid": true,
+          "G31": 3.0926564726778256,
+          "retained_pair_units": 93
+        },
+        "employer": {
+          "D3": 3.158284139125905,
+          "F3": 0.6430442293355233,
+          "F3_denominator_valid": true,
+          "G31": 3.133739707317758,
+          "retained_pair_units": 94
+        },
+        "father": {
+          "D3": 3.2064619346331527,
+          "F3": 0.6525567177364948,
+          "F3_denominator_valid": true,
+          "G31": 3.183886968961326,
+          "retained_pair_units": 93
+        },
+        "founded by": {
+          "D3": 3.180562820840389,
+          "F3": 0.6512262621510674,
+          "F3_denominator_valid": true,
+          "G31": 3.1517536868440343,
+          "retained_pair_units": 94
+        },
+        "has part": {
+          "D3": 3.1876518880167315,
+          "F3": 0.6486841486981655,
+          "F3_denominator_valid": true,
+          "G31": 3.1640494228691183,
+          "retained_pair_units": 93
+        },
+        "headquarters location": {
+          "D3": 3.1517855608335106,
+          "F3": 0.6477762807431369,
+          "F3_denominator_valid": true,
+          "G31": 3.1334570043830463,
+          "retained_pair_units": 93
+        },
+        "instance of": {
+          "D3": 3.1816367308298745,
+          "F3": 0.6618459592472947,
+          "F3_denominator_valid": true,
+          "G31": 3.155176308847243,
+          "retained_pair_units": 93
+        },
+        "league": {
+          "D3": 3.162061123137778,
+          "F3": 0.6575158160093934,
+          "F3_denominator_valid": true,
+          "G31": 3.138001928938196,
+          "retained_pair_units": 94
+        },
+        "located in or next to body of water": {
+          "D3": 3.1608257598065315,
+          "F3": 0.648750773418184,
+          "F3_denominator_valid": true,
+          "G31": 3.1365904985590185,
+          "retained_pair_units": 94
+        },
+        "located in the administrative territorial entity": {
+          "D3": 2.9111149976779886,
+          "F3": 0.638864408368605,
+          "F3_denominator_valid": true,
+          "G31": 2.8887522174166396,
+          "retained_pair_units": 77
+        },
+        "location of formation": {
+          "D3": 3.1734491916413003,
+          "F3": 0.6582636743467319,
+          "F3_denominator_valid": true,
+          "G31": 3.1493187255047737,
+          "retained_pair_units": 94
+        },
+        "member of": {
+          "D3": 3.158947396785655,
+          "F3": 0.6558359167996337,
+          "F3_denominator_valid": true,
+          "G31": 3.1288399112985488,
+          "retained_pair_units": 94
+        },
+        "mother": {
+          "D3": 3.1773358291768012,
+          "F3": 0.6491373083604373,
+          "F3_denominator_valid": true,
+          "G31": 3.152634875571474,
+          "retained_pair_units": 94
+        },
+        "mouth of the watercourse": {
+          "D3": 3.170938675707959,
+          "F3": 0.6403531365043812,
+          "F3_denominator_valid": true,
+          "G31": 3.146509641028465,
+          "retained_pair_units": 94
+        },
+        "movement": {
+          "D3": 3.1767753159746213,
+          "F3": 0.6563017614672751,
+          "F3_denominator_valid": true,
+          "G31": 3.1530725271143814,
+          "retained_pair_units": 94
+        },
+        "notable work": {
+          "D3": 3.1716678573730146,
+          "F3": 0.6461734868425328,
+          "F3_denominator_valid": true,
+          "G31": 3.147453926979227,
+          "retained_pair_units": 94
+        },
+        "part of": {
+          "D3": 3.1891481584690986,
+          "F3": 0.6557399718571605,
+          "F3_denominator_valid": true,
+          "G31": 3.1651067340627628,
+          "retained_pair_units": 94
+        },
+        "place of birth": {
+          "D3": 2.9700674455274236,
+          "F3": 0.6152990442230492,
+          "F3_denominator_valid": true,
+          "G31": 2.9454473677006634,
+          "retained_pair_units": 88
+        },
+        "place of death": {
+          "D3": 3.1530681404661625,
+          "F3": 0.6455652781304742,
+          "F3_denominator_valid": true,
+          "G31": 3.1286628893081176,
+          "retained_pair_units": 94
+        },
+        "record label": {
+          "D3": 3.162776874171363,
+          "F3": 0.6401608614340034,
+          "F3_denominator_valid": true,
+          "G31": 3.147360524866316,
+          "retained_pair_units": 90
+        },
+        "shares border with": {
+          "D3": 3.3777484638350352,
+          "F3": 0.6507936008159068,
+          "F3_denominator_valid": true,
+          "G31": 3.3500271439552307,
+          "retained_pair_units": 84
+        },
+        "sibling": {
+          "D3": 3.1693540670538463,
+          "F3": 0.6498513137659209,
+          "F3_denominator_valid": true,
+          "G31": 3.1476168863234983,
+          "retained_pair_units": 93
+        },
+        "spouse": {
+          "D3": 3.2404371208922806,
+          "F3": 0.6402795214892815,
+          "F3_denominator_valid": true,
+          "G31": 3.215751962606297,
+          "retained_pair_units": 86
+        }
+      },
+      "not_a_primary_gate": true,
+      "ranges": {
+        "D3": [
+          2.9111149976779886,
+          3.3777484638350352
+        ],
+        "F3": [
+          0.6152990442230492,
+          0.6618459592472947
+        ],
+        "G31": [
+          2.8887522174166396,
+          3.3500271439552307
+        ],
+        "invalid_F3_denominators": 0
+      }
+    },
+    "per_terminal_relation_no_additional_gates": {
+      "award received": {
+        "D3": 3.7975118160247803,
+        "F3": 0.9267381382338773,
+        "F3_denominator_valid": true,
+        "G31": 3.7939095497131348,
+        "pair_units": 1
+      },
+      "capital": {
+        "D3": 4.059017658233643,
+        "F3": 0.6602759017839553,
+        "F3_denominator_valid": true,
+        "G31": 4.024484014511108,
+        "pair_units": 5
+      },
+      "capital of": {
+        "D3": 4.033757209777832,
+        "F3": 0.5882399695628604,
+        "F3_denominator_valid": true,
+        "G31": 3.8655329942703247,
+        "pair_units": 2
+      },
+      "child": {
+        "D3": 1.5894765108823776,
+        "F3": 0.5631300187104914,
+        "F3_denominator_valid": true,
+        "G31": 1.5951250940561295,
+        "pair_units": 8
+      },
+      "contains administrative territorial entity": {
+        "D3": 0.8715118169784546,
+        "F3": 1.0668000680092429,
+        "F3_denominator_valid": true,
+        "G31": 0.8845213651657104,
+        "pair_units": 1
+      },
+      "country": {
+        "D3": 3.9895833333333335,
+        "F3": 0.4327676240208877,
+        "F3_denominator_valid": true,
+        "G31": 3.9802271525065103,
+        "pair_units": 3
+      },
+      "country of citizenship": {
+        "D3": 2.8828126192092896,
+        "F3": 0.7452574631085709,
+        "F3_denominator_valid": true,
+        "G31": 2.8869630098342896,
+        "pair_units": 1
+      },
+      "educated at": {
+        "D3": 5.387088119983673,
+        "F3": 0.8816671315723404,
+        "F3_denominator_valid": true,
+        "G31": 5.397313177585602,
+        "pair_units": 2
+      },
+      "employer": {
+        "D3": 3.822521209716797,
+        "F3": 1.0471852542934441,
+        "F3_denominator_valid": true,
+        "G31": 3.8401458263397217,
+        "pair_units": 1
+      },
+      "father": {
+        "D3": 1.2501351833343506,
+        "F3": 0.12638189153051418,
+        "F3_denominator_valid": true,
+        "G31": 1.155095100402832,
+        "pair_units": 2
+      },
+      "founded by": {
+        "D3": 1.7283251285552979,
+        "F3": 0.12151707772569943,
+        "F3_denominator_valid": true,
+        "G31": 2.146831750869751,
+        "pair_units": 1
+      },
+      "has part": {
+        "D3": 2.124802350997925,
+        "F3": 0.6131295354938422,
+        "F3_denominator_valid": true,
+        "G31": 2.0775409936904907,
+        "pair_units": 2
+      },
+      "headquarters location": {
+        "D3": 3.7925865650177,
+        "F3": 0.6638476290795756,
+        "F3_denominator_valid": true,
+        "G31": 3.5000884532928467,
+        "pair_units": 2
+      },
+      "instance of": {
+        "D3": 2.4045071601867676,
+        "F3": -0.1925631571860405,
+        "F3_denominator_valid": true,
+        "G31": 2.4901407957077026,
+        "pair_units": 2
+      },
+      "league": {
+        "D3": 3.467484712600708,
+        "F3": -0.15194305982287157,
+        "F3_denominator_valid": true,
+        "G31": 3.4394969940185547,
+        "pair_units": 1
+      },
+      "located in or next to body of water": {
+        "D3": 3.583608865737915,
+        "F3": 0.6009980210561752,
+        "F3_denominator_valid": true,
+        "G31": 3.572171449661255,
+        "pair_units": 1
+      },
+      "located in the administrative territorial entity": {
+        "D3": 4.252520859241486,
+        "F3": 0.675466422921191,
+        "F3_denominator_valid": true,
+        "G31": 4.22098653184043,
+        "pair_units": 18
+      },
+      "location of formation": {
+        "D3": 2.3970062732696533,
+        "F3": -0.6065090687844255,
+        "F3_denominator_valid": true,
+        "G31": 2.375718116760254,
+        "pair_units": 1
+      },
+      "member of": {
+        "D3": 3.7601749897003174,
+        "F3": 0.04372650045649327,
+        "F3_denominator_valid": true,
+        "G31": 4.300726652145386,
+        "pair_units": 1
+      },
+      "mother": {
+        "D3": 2.031662344932556,
+        "F3": 0.5076971127839826,
+        "F3_denominator_valid": true,
+        "G31": 2.0640000104904175,
+        "pair_units": 1
+      },
+      "mouth of the watercourse": {
+        "D3": 2.632994771003723,
+        "F3": 1.5344120957872314,
+        "F3_denominator_valid": true,
+        "G31": 2.639772057533264,
+        "pair_units": 1
+      },
+      "movement": {
+        "D3": 2.0843505859375,
+        "F3": -0.515151159864568,
+        "F3_denominator_valid": true,
+        "G31": 2.0228607654571533,
+        "pair_units": 1
+      },
+      "notable work": {
+        "D3": 2.5644516944885254,
+        "F3": 0.8816491866468206,
+        "F3_denominator_valid": true,
+        "G31": 2.551009178161621,
+        "pair_units": 1
+      },
+      "part of": {
+        "D3": 0.921303391456604,
+        "F3": -1.811186533708622,
+        "F3_denominator_valid": true,
+        "G31": 0.8916453123092651,
+        "pair_units": 1
+      },
+      "place of birth": {
+        "D3": 5.6193278687340875,
+        "F3": 0.8666724969224399,
+        "F3_denominator_valid": true,
+        "G31": 5.601758565221514,
+        "pair_units": 7
+      },
+      "place of death": {
+        "D3": 4.312825083732605,
+        "F3": 0.8279875072000439,
+        "F3_denominator_valid": true,
+        "G31": 4.317366719245911,
+        "pair_units": 1
+      },
+      "record label": {
+        "D3": 3.210262322425842,
+        "F3": 0.7904208509761972,
+        "F3_denominator_valid": true,
+        "G31": 3.029846215248108,
+        "pair_units": 5
+      },
+      "shares border with": {
+        "D3": 1.5427599386735396,
+        "F3": 0.6045124418004754,
+        "F3_denominator_valid": true,
+        "G31": 1.546308929269964,
+        "pair_units": 11
+      },
+      "sibling": {
+        "D3": 2.9756510257720947,
+        "F3": 0.5654897708757902,
+        "F3_denominator_valid": true,
+        "G31": 2.8416539430618286,
+        "pair_units": 2
+      },
+      "spouse": {
+        "D3": 2.4470708767573037,
+        "F3": 0.7481721731097387,
+        "F3_denominator_valid": true,
+        "G31": 2.428556614451938,
+        "pair_units": 9
+      }
+    },
+    "positive_pair_counts": {
+      "D3": 95,
+      "G31": 95,
+      "denominator": 95
+    },
+    "state_reference_margin_nats_by_K": {
+      "bridge_swap": {
+        "1": -0.0061455550946687395,
+        "2": -0.09770226290351466,
+        "3": -0.64765229852576,
+        "4": -0.9299404690140172
+      },
+      "original": {
+        "1": 0.017954991993151214,
+        "2": 1.7665398076960914,
+        "3": 2.5176238097642596,
+        "4": 2.566796296521237
+      },
+      "topology_rescue": {
+        "1": -0.013221263885498047,
+        "2": 0.97482536027306,
+        "3": 1.4040216860018278,
+        "4": 1.4607069492340088
+      }
+    },
+    "successive_D_K_increments": {
+      "D2_minus_D1": 1.8401415235117862,
+      "D3_minus_D2": 1.3010340376904137,
+      "D4_minus_D3": 0.33146065724523444
+    },
+    "terminal_relation_cluster_bootstrap_sensitivity": {
+      "D3": {
+        "bootstrap_replicates": 10000,
+        "estimate": 3.1652761082900196,
+        "pair_units": 95,
+        "percentile_95_CI": [
+          2.380765357383502,
+          3.9077385636218978
+        ]
+      },
+      "F3_ratio_of_means": {
+        "component_means_nats": {
+          "denominator": 3.1652761082900196,
+          "numerator": 2.051673984527588
+        },
+        "denominator_guard": {
+          "all_bootstrap_draws_pass": true,
+          "epsilon_nats": 1e-08,
+          "invalid_bootstrap_denominators": 0,
+          "minimum_bootstrap_denominator": 1.7548112952709198,
+          "point_denominator_passes": true,
+          "valid_bootstrap_ratios": 10000
+        },
+        "estimate": 0.6481816796816395,
+        "percentile_95_CI": [
+          0.5142662693416071,
+          0.7392859225822006
+        ]
+      },
+      "G31": {
+        "bootstrap_replicates": 10000,
+        "estimate": 3.1411755612022,
+        "pair_units": 95,
+        "percentile_95_CI": [
+          2.366630759954216,
+          3.8785778437373266
+        ]
+      },
+      "bootstrap": {
+        "draws_sha256": "69676a2c1fbbf1f3b2ade5536799ee4e2889f36be5b2170c8bbdb75d6aa424a9",
+        "method": "descriptive two-stage terminal-relation cluster bootstrap: sample 30 r2 clusters with replacement, then sample the original cluster-size number of whole pairs within each selected cluster",
+        "not_a_primary_gate": true,
+        "observed_cluster_sizes": {
+          "award received": 1,
+          "capital": 5,
+          "capital of": 2,
+          "child": 8,
+          "contains administrative territorial entity": 1,
+          "country": 3,
+          "country of citizenship": 1,
+          "educated at": 2,
+          "employer": 1,
+          "father": 2,
+          "founded by": 1,
+          "has part": 2,
+          "headquarters location": 2,
+          "instance of": 2,
+          "league": 1,
+          "located in or next to body of water": 1,
+          "located in the administrative territorial entity": 18,
+          "location of formation": 1,
+          "member of": 1,
+          "mother": 1,
+          "mouth of the watercourse": 1,
+          "movement": 1,
+          "notable work": 1,
+          "part of": 1,
+          "place of birth": 7,
+          "place of death": 1,
+          "record label": 5,
+          "shares border with": 11,
+          "sibling": 2,
+          "spouse": 9
+        },
+        "replicates": 10000,
+        "rng_seed": 9590205303910352427,
+        "terminal_relation_clusters": 30
+      },
+      "not_a_primary_gate": true
+    }
+  },
+  "pair_units": 95,
+  "primary": {
+    "co_primary_depth_gate": {
+      "D3": {
+        "bootstrap_replicates": 10000,
+        "estimate": 3.1652761082900196,
+        "pair_units": 95,
+        "passes_lower_95_gt_0": true,
+        "percentile_95_CI": [
+          2.8127519873568887,
+          3.520985135467429
+        ]
+      },
+      "G31": {
+        "bootstrap_replicates": 10000,
+        "estimate": 3.1411755612022,
+        "pair_units": 95,
+        "passes_lower_95_gt_0": true,
+        "percentile_95_CI": [
+          2.7871951836661286,
+          3.5010996104855283
+        ]
+      },
+      "passes": true
+    },
+    "co_primary_topology_gate": {
+      "F3_ratio_of_means": {
+        "component_means_nats": {
+          "denominator": 3.1652761082900196,
+          "numerator": 2.051673984527588
+        },
+        "definition": "mean(z_topology_rescue-z_bridge_swap) / mean(z_original-z_bridge_swap), K=3",
+        "denominator_guard": {
+          "all_bootstrap_draws_pass": true,
+          "epsilon_nats": 1e-08,
+          "invalid_bootstrap_denominators": 0,
+          "minimum_bootstrap_denominator": 2.453570889171801,
+          "point_denominator_passes": true,
+          "valid_bootstrap_ratios": 10000
+        },
+        "estimate": 0.6481816796816395,
+        "passes_lower_95_gt_0_5": true,
+        "percentile_95_CI": [
+          0.5614710264757897,
+          0.7255480441805711
+        ]
+      },
+      "component_means_nats": {
+        "mean_original_minus_bridge_swap": 3.1652761082900196,
+        "mean_topology_rescue_minus_bridge_swap": 2.051673984527588
+      },
+      "denominator_guard": {
+        "all_bootstrap_draws_pass": true,
+        "epsilon_nats": 1e-08,
+        "invalid_bootstrap_denominators": 0,
+        "minimum_bootstrap_denominator": 2.453570889171801,
+        "point_denominator_passes": true,
+        "valid_bootstrap_ratios": 10000
+      },
+      "passes": true
+    },
+    "conjunctive_primary_success": true
+  },
+  "primary_bootstrap": {
+    "draws_sha256": "d0eb39207978a68830b3bb2eff0c058006544d0b8147c46af2d706eb88b166f9",
+    "method": "nonparametric bootstrap of 95 whole matched-pair units; all query arms, candidate orders, graph states, and recurrent depths stay coupled",
+    "pair_units_per_draw": 95,
+    "replicates": 10000,
+    "rng_seed": 17924897406598346847,
+    "shared_draws_for_all_primary_metrics": true
+  },
+  "sanity_only_not_a_primary_gate": {
+    "pooled_K3_state_correct_pair_argmax_accuracy": {
+      "bootstrap_replicates": 10000,
+      "estimate": 0.6754385964912281,
+      "pair_units": 95,
+      "passes_lower_95_gt_0_5": true,
+      "percentile_95_CI": [
+        0.6456140350877193,
+        0.7052631578947368
+      ]
+    }
+  },
+  "scored_rows": 4560,
+  "terminal_relation_clusters": 30
+}

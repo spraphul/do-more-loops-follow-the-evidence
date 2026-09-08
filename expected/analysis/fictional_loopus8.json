@@ -1,0 +1,425 @@
+{
+  "schema": "iclr2027.loopus8_nonce_path_control.result.v1",
+  "model_key": "loopus8",
+  "model_repository": "Thrillcrazyer/Qwen3-8B_LoopUS",
+  "model_revision": "4424cfd8e36c77fee337a04602e3ddf6faae533f",
+  "decision": "DO_NOT_SUPPORT_FULL_TREATMENT_CONJUNCTION",
+  "competence": {
+    "candidate_order_accuracy": {
+      "original": 0.9479166666666666,
+      "reversed": 0.9375
+    },
+    "decision": "PROMOTE_TO_TREATMENT",
+    "gate_depth": 8,
+    "graph_correct_accuracy": {
+      "bootstrap_replicates": 10000,
+      "ci95": [
+        0.9088541666666666,
+        0.9713541666666666
+      ],
+      "estimate": 0.9427083333333334,
+      "resampling": "48 worlds stratified within six relation families"
+    },
+    "passes_competence_gate": true,
+    "query_arm_accuracy": {
+      "A": 0.96875,
+      "B": 0.9166666666666666
+    },
+    "requirements": {
+      "each_candidate_order_point_at_least": 0.55,
+      "each_query_arm_point_at_least": 0.55,
+      "lower95_strictly_above": 0.5,
+      "point_at_least": 0.65
+    },
+    "rows": 192,
+    "worlds": 48
+  },
+  "execution": {
+    "runner_sha256": "cf8202a65f0ae670ecb05cae6f7044b3486ac5c94a2904d12ef673fb1ef981bc",
+    "backend_runner_sha256": "353ef265e101b5aa853bfcadd7cf428bddc7d83b03ca13e3c9e8fba801e68501",
+    "competence_artifact_sha256": "743ace22f96840c9ce36acb7f52c86933759bd1e47207c476bf615691ba27578",
+    "mock": false,
+    "shards": [
+      {
+        "path": "shard_0.json",
+        "sha256": "1cd7b649b2336423b84668d10cdeff6b46e48a17f4709a00e7aea2e942d43406"
+      },
+      {
+        "path": "shard_1.json",
+        "sha256": "7d8e12105094d30c4ecccfc660ef3ea722df234cb86364f87c1d4639e834d431"
+      },
+      {
+        "path": "shard_2.json",
+        "sha256": "db2d897519f2a6c2066752054eb7552fc5a947503afe169311d22f66d54f88b8"
+      },
+      {
+        "path": "shard_3.json",
+        "sha256": "27e77eb98eb9d79df69b8e1879a8d953df71840280336922fcf75fd4d6273a76"
+      }
+    ]
+  },
+  "result": {
+    "worlds": 288,
+    "world_cells": 2592,
+    "bootstrap": {
+      "replicates": 10000,
+      "seed": 837171108064221182,
+      "resampling": "48 whole worlds within each of six relation families"
+    },
+    "by_K": {
+      "1": {
+        "path_margin_D": {
+          "estimate": 4.249565972222222,
+          "ci95": [
+            4.154182942708333,
+            4.345269097222222
+          ],
+          "bootstrap_replicates": 10000,
+          "finite_replicates": 10000
+        },
+        "choice_control_C": {
+          "estimate": 0.8819444444444444,
+          "ci95": [
+            0.8628472222222222,
+            0.8997395833333334
+          ],
+          "bootstrap_replicates": 10000,
+          "finite_replicates": 10000
+        },
+        "original_accuracy": {
+          "estimate": 0.9344618055555556,
+          "ci95": [
+            0.9197048611111112,
+            0.9487847222222222
+          ],
+          "bootstrap_replicates": 10000,
+          "finite_replicates": 10000
+        },
+        "swap_accuracy": {
+          "estimate": 0.9474826388888888,
+          "ci95": [
+            0.9348958333333334,
+            0.9592013888888888
+          ],
+          "bootstrap_replicates": 10000,
+          "finite_replicates": 10000
+        }
+      },
+      "2": {
+        "path_margin_D": {
+          "estimate": 4.338324652777778,
+          "ci95": [
+            4.2412109375,
+            4.435875108506944
+          ],
+          "bootstrap_replicates": 10000,
+          "finite_replicates": 10000
+        },
+        "choice_control_C": {
+          "estimate": 0.8832465277777778,
+          "ci95": [
+            0.8637152777777778,
+            0.9019097222222222
+          ],
+          "bootstrap_replicates": 10000,
+          "finite_replicates": 10000
+        },
+        "original_accuracy": {
+          "estimate": 0.9348958333333334,
+          "ci95": [
+            0.9197048611111112,
+            0.94921875
+          ],
+          "bootstrap_replicates": 10000,
+          "finite_replicates": 10000
+        },
+        "swap_accuracy": {
+          "estimate": 0.9483506944444444,
+          "ci95": [
+            0.9357638888888888,
+            0.9600694444444444
+          ],
+          "bootstrap_replicates": 10000,
+          "finite_replicates": 10000
+        }
+      },
+      "4": {
+        "path_margin_D": {
+          "estimate": 4.469401041666667,
+          "ci95": [
+            4.368923611111111,
+            4.569661458333333
+          ],
+          "bootstrap_replicates": 10000,
+          "finite_replicates": 10000
+        },
+        "choice_control_C": {
+          "estimate": 0.8806423611111112,
+          "ci95": [
+            0.8606770833333334,
+            0.9006076388888888
+          ],
+          "bootstrap_replicates": 10000,
+          "finite_replicates": 10000
+        },
+        "original_accuracy": {
+          "estimate": 0.9305555555555556,
+          "ci95": [
+            0.9149305555555556,
+            0.9457465277777778
+          ],
+          "bootstrap_replicates": 10000,
+          "finite_replicates": 10000
+        },
+        "swap_accuracy": {
+          "estimate": 0.9500868055555556,
+          "ci95": [
+            0.9375,
+            0.9618055555555556
+          ],
+          "bootstrap_replicates": 10000,
+          "finite_replicates": 10000
+        }
+      },
+      "8": {
+        "path_margin_D": {
+          "estimate": 4.466362847222222,
+          "ci95": [
+            4.366102430555555,
+            4.567165798611111
+          ],
+          "bootstrap_replicates": 10000,
+          "finite_replicates": 10000
+        },
+        "choice_control_C": {
+          "estimate": 0.8815104166666666,
+          "ci95": [
+            0.8619791666666666,
+            0.9006076388888888
+          ],
+          "bootstrap_replicates": 10000,
+          "finite_replicates": 10000
+        },
+        "original_accuracy": {
+          "estimate": 0.9309895833333334,
+          "ci95": [
+            0.9157986111111112,
+            0.9461805555555556
+          ],
+          "bootstrap_replicates": 10000,
+          "finite_replicates": 10000
+        },
+        "swap_accuracy": {
+          "estimate": 0.9505208333333334,
+          "ci95": [
+            0.9379340277777778,
+            0.9622395833333334
+          ],
+          "bootstrap_replicates": 10000,
+          "finite_replicates": 10000
+        }
+      }
+    },
+    "primary_choice_gain_H": {
+      "estimate": -0.00043402777777777775,
+      "ci95": [
+        -0.010416666666666666,
+        0.009548611111111112
+      ],
+      "bootstrap_replicates": 10000,
+      "finite_replicates": 10000
+    },
+    "secondary_raw_margin_gain_G": {
+      "estimate": 0.216796875,
+      "ci95": [
+        0.2082248263888889,
+        0.22526041666666666
+      ],
+      "bootstrap_replicates": 10000,
+      "finite_replicates": 10000
+    },
+    "deep_repair_accuracy": {
+      "estimate": 0.9340277777777778,
+      "ci95": [
+        0.9205729166666666,
+        0.9466145833333334
+      ],
+      "bootstrap_replicates": 10000,
+      "finite_replicates": 10000
+    },
+    "deep_repair_increment_R": {
+      "estimate": 4.832682291666667,
+      "ci95": [
+        4.711580403645834,
+        4.955514865451389
+      ],
+      "bootstrap_replicates": 10000,
+      "finite_replicates": 10000
+    },
+    "deep_topology_recovery_fraction_F": {
+      "estimate": 1.0820173946844176,
+      "ci95": [
+        1.0612282217083417,
+        1.1035332205512463
+      ],
+      "point_denominator": 4.466362847222222,
+      "bootstrap_replicates": 10000,
+      "finite_replicates": 10000,
+      "estimable": true
+    },
+    "deep_topology_recovery_interpretable": true,
+    "repair_curve": {},
+    "timing": {},
+    "robustness": {
+      "unstratified_whole_world_bootstrap": {
+        "choice_gain": {
+          "estimate": -0.00043402777777777775,
+          "ci95": [
+            -0.010416666666666666,
+            0.009548611111111112
+          ],
+          "bootstrap_replicates": 10000,
+          "finite_replicates": 10000
+        },
+        "raw_gain": {
+          "estimate": 0.216796875,
+          "ci95": [
+            0.2075737847222222,
+            0.2260199652777778
+          ],
+          "bootstrap_replicates": 10000,
+          "finite_replicates": 10000
+        }
+      },
+      "leave_one_relation_family_out": {
+        "0": {
+          "choice_gain": 0.0015625,
+          "raw_gain": 0.2203125
+        },
+        "1": {
+          "choice_gain": 0.003125,
+          "raw_gain": 0.21783854166666666
+        },
+        "2": {
+          "choice_gain": -0.0005208333333333333,
+          "raw_gain": 0.22278645833333333
+        },
+        "3": {
+          "choice_gain": -0.0010416666666666667,
+          "raw_gain": 0.21145833333333333
+        },
+        "4": {
+          "choice_gain": -0.005208333333333333,
+          "raw_gain": 0.20950520833333333
+        },
+        "5": {
+          "choice_gain": -0.0005208333333333333,
+          "raw_gain": 0.21888020833333333
+        }
+      },
+      "by_ordered_terminal_code_pair": {
+        "black__blue": {
+          "worlds": 24,
+          "choice_gain": -0.020833333333333332,
+          "raw_gain": 0.18229166666666666
+        },
+        "black__green": {
+          "worlds": 24,
+          "choice_gain": 0.0,
+          "raw_gain": 0.24088541666666666
+        },
+        "black__red": {
+          "worlds": 24,
+          "choice_gain": 0.026041666666666668,
+          "raw_gain": 0.22135416666666666
+        },
+        "blue__black": {
+          "worlds": 24,
+          "choice_gain": -0.005208333333333333,
+          "raw_gain": 0.20052083333333334
+        },
+        "blue__green": {
+          "worlds": 24,
+          "choice_gain": -0.015625,
+          "raw_gain": 0.234375
+        },
+        "blue__red": {
+          "worlds": 24,
+          "choice_gain": 0.005208333333333333,
+          "raw_gain": 0.19270833333333334
+        },
+        "green__black": {
+          "worlds": 24,
+          "choice_gain": -0.005208333333333333,
+          "raw_gain": 0.22916666666666666
+        },
+        "green__blue": {
+          "worlds": 24,
+          "choice_gain": -0.005208333333333333,
+          "raw_gain": 0.20833333333333334
+        },
+        "green__red": {
+          "worlds": 24,
+          "choice_gain": 0.03125,
+          "raw_gain": 0.2604166666666667
+        },
+        "red__black": {
+          "worlds": 24,
+          "choice_gain": 0.0,
+          "raw_gain": 0.18619791666666666
+        },
+        "red__blue": {
+          "worlds": 24,
+          "choice_gain": -0.036458333333333336,
+          "raw_gain": 0.20572916666666666
+        },
+        "red__green": {
+          "worlds": 24,
+          "choice_gain": 0.020833333333333332,
+          "raw_gain": 0.23958333333333334
+        }
+      }
+    },
+    "treatment_conjunction_passes_given_competence": false,
+    "treatment_decision": "DO_NOT_SUPPORT_FULL_TREATMENT_CONJUNCTION"
+  },
+  "gate_excluded_sensitivity": {
+    "worlds": 240,
+    "relation_worlds": [
+      40,
+      40,
+      40,
+      40,
+      40,
+      40
+    ],
+    "deep_path_effect_D8": {
+      "estimate": 4.452734375,
+      "ci95": [
+        4.34634765625,
+        4.565104166666667
+      ],
+      "bootstrap_replicates": 10000
+    },
+    "raw_margin_gain_G81": {
+      "estimate": 0.214453125,
+      "ci95": [
+        0.20481770833333332,
+        0.22421875
+      ],
+      "bootstrap_replicates": 10000
+    },
+    "choice_gain_H81": {
+      "estimate": -0.0020833333333333333,
+      "ci95": [
+        -0.013541666666666667,
+        0.009375
+      ],
+      "bootstrap_replicates": 10000
+    }
+  },
+  "analysis": {
+    "path": "analyze_fictional_loopus8.py",
+    "sha256": "df9f9aade99aff3c192ec09f9909bac1f21fb4630c40eebb800d51867375372e"
+  }
+}

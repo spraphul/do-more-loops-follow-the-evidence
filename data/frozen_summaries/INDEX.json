@@ -1,0 +1,102 @@
+[
+  {
+    "artifact_id": "ouro_candidate_list_ablation",
+    "path": "data/frozen_summaries/ouro_candidate_list_ablation.json",
+    "role": "appendix diagnostic or stopped-branch evidence"
+  },
+  {
+    "artifact_id": "ouro_candidate_state_transplant",
+    "path": "data/frozen_summaries/ouro_candidate_state_transplant.json",
+    "role": "appendix diagnostic or stopped-branch evidence"
+  },
+  {
+    "artifact_id": "ouro_musique_generation",
+    "path": "data/frozen_summaries/ouro_musique_generation.json",
+    "role": "appendix diagnostic or stopped-branch evidence"
+  },
+  {
+    "artifact_id": "loopus_2wiki_generation",
+    "path": "data/frozen_summaries/loopus_2wiki_generation.json",
+    "role": "appendix diagnostic or stopped-branch evidence"
+  },
+  {
+    "artifact_id": "ouro_terminal_compatibility",
+    "path": "data/frozen_summaries/ouro_terminal_compatibility.json",
+    "role": "appendix diagnostic or stopped-branch evidence"
+  },
+  {
+    "artifact_id": "ouro_instruction_intervention",
+    "path": "data/frozen_summaries/ouro_instruction_intervention.json",
+    "role": "appendix diagnostic or stopped-branch evidence"
+  },
+  {
+    "artifact_id": "ouro_natural_offpath",
+    "path": "data/frozen_summaries/ouro_natural_offpath.json",
+    "role": "appendix diagnostic or stopped-branch evidence"
+  },
+  {
+    "artifact_id": "loopus_natural_offpath",
+    "path": "data/frozen_summaries/loopus_natural_offpath.json",
+    "role": "appendix diagnostic or stopped-branch evidence"
+  },
+  {
+    "artifact_id": "ouro_natural_locality",
+    "path": "data/frozen_summaries/ouro_natural_locality.json",
+    "role": "appendix diagnostic or stopped-branch evidence"
+  },
+  {
+    "artifact_id": "ouro14_competence",
+    "path": "data/frozen_summaries/ouro14_competence.json",
+    "role": "appendix diagnostic or stopped-branch evidence"
+  },
+  {
+    "artifact_id": "ouro14_postscreen",
+    "path": "data/frozen_summaries/ouro14_postscreen.json",
+    "role": "appendix diagnostic or stopped-branch evidence"
+  },
+  {
+    "artifact_id": "huginn_competence",
+    "path": "data/frozen_summaries/huginn_competence.json",
+    "role": "appendix diagnostic or stopped-branch evidence"
+  },
+  {
+    "artifact_id": "loopus_early_choice",
+    "path": "data/frozen_summaries/loopus_early_choice.json",
+    "role": "appendix diagnostic or stopped-branch evidence"
+  },
+  {
+    "artifact_id": "ouro_k3_headroom",
+    "path": "data/frozen_summaries/ouro_k3_headroom.json",
+    "role": "appendix diagnostic or stopped-branch evidence"
+  },
+  {
+    "artifact_id": "ouro_k3_k4_change",
+    "path": "data/frozen_summaries/ouro_k3_k4_change.json",
+    "role": "appendix diagnostic or stopped-branch evidence"
+  },
+  {
+    "artifact_id": "tfqwen_fictional",
+    "path": "data/frozen_summaries/tfqwen_fictional.json",
+    "role": "appendix diagnostic or stopped-branch evidence"
+  },
+  {
+    "artifact_id": "ouro_threehop_development",
+    "path": "data/frozen_summaries/ouro_threehop_development.json",
+    "role": "appendix diagnostic or stopped-branch evidence"
+  },
+  {
+    "artifact_id": "loopus_longpath_3",
+    "path": "data/frozen_summaries/loopus_longpath_3.json",
+    "role": "appendix diagnostic or stopped-branch evidence"
+  },
+  {
+    "artifact_id": "loopus_longpath_4",
+    "path": "data/frozen_summaries/loopus_longpath_4.json",
+    "role": "appendix diagnostic or stopped-branch evidence"
+  },
+  {
+    "artifact_id": "loopus_longpath_5",
+    "path": "data/frozen_summaries/loopus_longpath_5.json",
+    "role": "appendix diagnostic or stopped-branch evidence"
+  }
+]

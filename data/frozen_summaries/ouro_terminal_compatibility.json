@@ -1,0 +1,2815 @@
+{
+  "analysis": {
+    "path": "analyze_ouro26_terminal_fact_compatibility.py",
+    "sha256": "fed3556e70f39185fed848063bee3feea623e54f7bf2f2b366e46ced2c268707"
+  },
+  "compatibility_artifact": {
+    "execution_mode": "merged_model_shards",
+    "path": "merged.json",
+    "sha256": "d1c4c322d8c45473b5bed7cd313c57796562dbb5df8ea0edecdca98886756d02"
+  },
+  "cross_dataset": {
+    "both_dataset_validity_gates_pass": true,
+    "conjunctive_primary_success": true,
+    "decision": "STAGE1_DIAGNOSTIC_ALIGNED_BOTH_DATASETS",
+    "stage_2_instruction_intervention_triggered": true,
+    "stage_2_trigger_rule": "both validity gates pass, both Spearman points are positive, and the supportive Fisher-summary lower 95 percent bound is positive",
+    "supportive_fisher_meta_summary": {
+      "bootstrap_replicates": 10000,
+      "estimate": 0.49844171068768994,
+      "finite_bootstrap_replicates": 10000,
+      "method": "fixed N-3 weighted Fisher-z average with paired independent bootstrap draws",
+      "percentile_95_CI": [
+        0.35889600090415413,
+        0.6179358604000327
+      ],
+      "supportive_only": true,
+      "weights": {
+        "2wiki": 121,
+        "musique": 92
+      }
+    }
+  },
+  "datasets": {
+    "2wiki": {
+      "association_passes": true,
+      "bootstrap": {
+        "all_within_pair_conditions_coupled": true,
+        "draws_sha256": "827becc802f51c0815f67fd03337cdde29a963074c93a51eb691076dd10b36cc",
+        "method": "hierarchical nonparametric bootstrap of 31 exact relation paths, then four whole pairs per sampled path",
+        "replicates": 10000,
+        "rng_seed": 4060825229001080496
+      },
+      "candidate_order_audit": {
+        "by_order": {
+          "original": {
+            "mean_compatibility_nats": {
+              "bootstrap_replicates": 10000,
+              "estimate": 1.5618859500654283,
+              "finite_bootstrap_replicates": 10000,
+              "percentile_95_CI": [
+                1.2368359337891304,
+                1.9151758904899316
+              ]
+            },
+            "original_assignment_argmax_accuracy": {
+              "bootstrap_replicates": 10000,
+              "estimate": 0.6794354838709677,
+              "finite_bootstrap_replicates": 10000,
+              "percentile_95_CI": [
+                0.625,
+                0.7379032258064516
+              ]
+            }
+          },
+          "reversed": {
+            "mean_compatibility_nats": {
+              "bootstrap_replicates": 10000,
+              "estimate": 1.5289509363712803,
+              "finite_bootstrap_replicates": 10000,
+              "percentile_95_CI": [
+                1.2185187403953845,
+                1.8750129997730256
+              ]
+            },
+            "original_assignment_argmax_accuracy": {
+              "bootstrap_replicates": 10000,
+              "estimate": 0.6834677419354839,
+              "finite_bootstrap_replicates": 10000,
+              "percentile_95_CI": [
+                0.6209677419354839,
+                0.7459677419354839
+              ]
+            }
+          }
+        },
+        "cross_order_pair_rank_correlation": {
+          "bootstrap_replicates": 10000,
+          "estimate": 0.7405144957786076,
+          "finite_bootstrap_replicates": 10000,
+          "percentile_95_CI": [
+            0.5851592818332647,
+            0.8389777672358727
+          ]
+        },
+        "paired_original_minus_reversed_compatibility_nats": {
+          "bootstrap_replicates": 10000,
+          "estimate": 0.03293501369414791,
+          "finite_bootstrap_replicates": 10000,
+          "percentile_95_CI": [
+            -0.1582809381427303,
+            0.23156268058284635
+          ]
+        },
+        "passes_frozen_rule": true
+      },
+      "cluster_units": 31,
+      "mean_pair_compatibility_C3_nats": {
+        "bootstrap_replicates": 10000,
+        "estimate": 1.5454184432183542,
+        "finite_bootstrap_replicates": 10000,
+        "percentile_95_CI": [
+          1.2401115013226387,
+          1.883152363689676
+        ]
+      },
+      "original_assignment_argmax_accuracy": {
+        "bootstrap_replicates": 10000,
+        "estimate": 0.6814516129032258,
+        "finite_bootstrap_replicates": 10000,
+        "percentile_95_CI": [
+          0.6330645161290323,
+          0.7318548387096774
+        ]
+      },
+      "pair_records": [
+        {
+          "C3_by_candidate_order": {
+            "original": 1.125,
+            "reversed": 1.390625
+          },
+          "C3_nats": 1.2578125,
+          "cluster_key": "director -> place of birth",
+          "historical_E3_original_minus_rescue_nats": 1.601562738418579,
+          "original_assignment_argmax_accuracy": 0.75,
+          "pair_id": "validationpair-000018097a85d94e697fda79"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 0.8125,
+            "reversed": 1.3125
+          },
+          "C3_nats": 1.0625,
+          "cluster_key": "director -> place of birth",
+          "historical_E3_original_minus_rescue_nats": 0.34375011920928955,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "validationpair-0001c51f0e11de75f6204b95"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 3.4375,
+            "reversed": 3.5625
+          },
+          "C3_nats": 3.5,
+          "cluster_key": "spouse -> place of death",
+          "historical_E3_original_minus_rescue_nats": 4.033203363418579,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "validationpair-00059b256f0f8987d0b6f7ff"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 2.384185791015625e-07,
+            "reversed": -0.40625
+          },
+          "C3_nats": -0.20312488079071045,
+          "cluster_key": "director -> place of birth",
+          "historical_E3_original_minus_rescue_nats": -0.5703123211860657,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "validationpair-000719f625022018955953dc"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 1.0625,
+            "reversed": 2.046875
+          },
+          "C3_nats": 1.5546875,
+          "cluster_key": "father -> place of death",
+          "historical_E3_original_minus_rescue_nats": 1.4843753576278687,
+          "original_assignment_argmax_accuracy": 0.75,
+          "pair_id": "validationpair-00098120094af3d764b4794a"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 3.220252752304077,
+            "reversed": 4.658210754394531
+          },
+          "C3_nats": 3.939231753349304,
+          "cluster_key": "father -> place of birth",
+          "historical_E3_original_minus_rescue_nats": 0.7239770889282227,
+          "original_assignment_argmax_accuracy": 1.0,
+          "pair_id": "validationpair-0009aaac71c0754b82eda3d5"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 1.2215445041656494,
+            "reversed": 1.32887601852417
+          },
+          "C3_nats": 1.2752102613449097,
+          "cluster_key": "director -> place of birth",
+          "historical_E3_original_minus_rescue_nats": 0.1945418119430542,
+          "original_assignment_argmax_accuracy": 0.75,
+          "pair_id": "validationpair-000a8222bf5144ca7eb0745a"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 0.2151777744293213,
+            "reversed": 0.2179572582244873
+          },
+          "C3_nats": 0.2165675163269043,
+          "cluster_key": "spouse -> place of death",
+          "historical_E3_original_minus_rescue_nats": 2.455569863319397,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "validationpair-000ad41337058a8541cd1ac7"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 2.0625,
+            "reversed": 2.171875
+          },
+          "C3_nats": 2.1171875,
+          "cluster_key": "director -> country of citizenship",
+          "historical_E3_original_minus_rescue_nats": 1.2265623807907104,
+          "original_assignment_argmax_accuracy": 1.0,
+          "pair_id": "validationpair-000df6b319a284c72b7aa8c6"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 3.812499761581421,
+            "reversed": 3.46875
+          },
+          "C3_nats": 3.6406248807907104,
+          "cluster_key": "performer -> country of citizenship",
+          "historical_E3_original_minus_rescue_nats": 2.6328125,
+          "original_assignment_argmax_accuracy": 1.0,
+          "pair_id": "validationpair-000e2dd71ec79947f5850535"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 0.140625,
+            "reversed": -0.109375
+          },
+          "C3_nats": 0.015625,
+          "cluster_key": "director -> place of death",
+          "historical_E3_original_minus_rescue_nats": 0.6249997615814209,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "validationpair-001132c869995b344feebe1b"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 1.6708574295043945,
+            "reversed": 2.6097769737243652
+          },
+          "C3_nats": 2.14031720161438,
+          "cluster_key": "spouse -> place of death",
+          "historical_E3_original_minus_rescue_nats": 0.9375214576721191,
+          "original_assignment_argmax_accuracy": 1.0,
+          "pair_id": "validationpair-00113844e60fa233838cf74e"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 1.4123106002807617,
+            "reversed": 1.1271886825561523
+          },
+          "C3_nats": 1.269749641418457,
+          "cluster_key": "spouse -> place of birth",
+          "historical_E3_original_minus_rescue_nats": 0.4238929748535156,
+          "original_assignment_argmax_accuracy": 1.0,
+          "pair_id": "validationpair-0013498bd5f4ab6e57159fe8"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 4.718749761581421,
+            "reversed": 2.347655773162842
+          },
+          "C3_nats": 3.5332027673721313,
+          "cluster_key": "father -> country of citizenship",
+          "historical_E3_original_minus_rescue_nats": 1.736327886581421,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "validationpair-001617913f4101c561adea99"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 1.2523126602172852,
+            "reversed": 0.2270798683166504
+          },
+          "C3_nats": 0.7396962642669678,
+          "cluster_key": "father -> place of death",
+          "historical_E3_original_minus_rescue_nats": 1.0681763887405396,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "validationpair-00166ec85011b773b35476f9"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 2.640625238418579,
+            "reversed": 2.593749523162842
+          },
+          "C3_nats": 2.6171873807907104,
+          "cluster_key": "father -> place of death",
+          "historical_E3_original_minus_rescue_nats": -0.1015629768371582,
+          "original_assignment_argmax_accuracy": 1.0,
+          "pair_id": "validationpair-0016fbdec6bd8f1ccffb6dd0"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 2.109375238418579,
+            "reversed": 2.937500238418579
+          },
+          "C3_nats": 2.523437738418579,
+          "cluster_key": "father -> place of birth",
+          "historical_E3_original_minus_rescue_nats": 2.0390626192092896,
+          "original_assignment_argmax_accuracy": 1.0,
+          "pair_id": "validationpair-0017937e77c1be3dcae75434"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 2.187499761581421,
+            "reversed": 3.0625
+          },
+          "C3_nats": 2.6249998807907104,
+          "cluster_key": "director -> country of citizenship",
+          "historical_E3_original_minus_rescue_nats": 2.062500238418579,
+          "original_assignment_argmax_accuracy": 0.75,
+          "pair_id": "validationpair-00180ec658dc0c0e50e85d40"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": -0.7417811155319214,
+            "reversed": -0.09843051433563232
+          },
+          "C3_nats": -0.42010581493377686,
+          "cluster_key": "father -> place of death",
+          "historical_E3_original_minus_rescue_nats": 0.7814202904701233,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "validationpair-002abc34f868c61232512528"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 2.703124761581421,
+            "reversed": 2.203125238418579
+          },
+          "C3_nats": 2.453125,
+          "cluster_key": "director -> country of citizenship",
+          "historical_E3_original_minus_rescue_nats": 1.3671875,
+          "original_assignment_argmax_accuracy": 0.75,
+          "pair_id": "validationpair-002b76a69e4ae991c0f70042"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 1.156249761581421,
+            "reversed": 0.0
+          },
+          "C3_nats": 0.5781248807907104,
+          "cluster_key": "spouse -> country of citizenship",
+          "historical_E3_original_minus_rescue_nats": 0.5546873807907104,
+          "original_assignment_argmax_accuracy": 0.75,
+          "pair_id": "validationpair-002fb1f3a775a15015b9701c"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 0.8097460269927979,
+            "reversed": 0.4987337589263916
+          },
+          "C3_nats": 0.6542398929595947,
+          "cluster_key": "father -> place of birth",
+          "historical_E3_original_minus_rescue_nats": 0.7379753589630127,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "validationpair-00329ce87732ee5a2f611221"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 4.632812976837158,
+            "reversed": 5.417968511581421
+          },
+          "C3_nats": 5.0253907442092896,
+          "cluster_key": "director -> country of citizenship",
+          "historical_E3_original_minus_rescue_nats": 1.5859375,
+          "original_assignment_argmax_accuracy": 1.0,
+          "pair_id": "validationpair-0036fafd524650f71fc2e7f1"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 4.164281845092773,
+            "reversed": 3.857435703277588
+          },
+          "C3_nats": 4.010858774185181,
+          "cluster_key": "father -> country of citizenship",
+          "historical_E3_original_minus_rescue_nats": 1.047993779182434,
+          "original_assignment_argmax_accuracy": 1.0,
+          "pair_id": "validationpair-003b8e5025f72ae25a373699"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 0.8906247615814209,
+            "reversed": 0.765625
+          },
+          "C3_nats": 0.8281248807907104,
+          "cluster_key": "director -> place of death",
+          "historical_E3_original_minus_rescue_nats": 0.623046875,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "validationpair-003e901771cd1287309232c7"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 0.9544792175292969,
+            "reversed": 0.9704358577728271
+          },
+          "C3_nats": 0.962457537651062,
+          "cluster_key": "performer -> place of death",
+          "historical_E3_original_minus_rescue_nats": -0.05520153045654297,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "validationpair-0043ce9db521f43e7d3a3a35"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 4.203125,
+            "reversed": 4.65625
+          },
+          "C3_nats": 4.4296875,
+          "cluster_key": "father -> place of birth",
+          "historical_E3_original_minus_rescue_nats": 2.0781251192092896,
+          "original_assignment_argmax_accuracy": 1.0,
+          "pair_id": "validationpair-0049b92ec1fa7cdcbd4ca98e"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 0.875,
+            "reversed": 1.21875
+          },
+          "C3_nats": 1.046875,
+          "cluster_key": "performer -> place of death",
+          "historical_E3_original_minus_rescue_nats": 0.9531247615814209,
+          "original_assignment_argmax_accuracy": 0.625,
+          "pair_id": "validationpair-004d9190e29d6148c589151e"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 2.156250238418579,
+            "reversed": 1.90625
+          },
+          "C3_nats": 2.0312501192092896,
+          "cluster_key": "spouse -> place of birth",
+          "historical_E3_original_minus_rescue_nats": 1.3359375,
+          "original_assignment_argmax_accuracy": 1.0,
+          "pair_id": "validationpair-005cad7f71a7057c9fefbfd4"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 0.6093754768371582,
+            "reversed": 0.375
+          },
+          "C3_nats": 0.4921877384185791,
+          "cluster_key": "director -> place of death",
+          "historical_E3_original_minus_rescue_nats": 0.4062502384185791,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "validationpair-0061e52f767e8966676966c3"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 0.5024464130401611,
+            "reversed": 0.9361588954925537
+          },
+          "C3_nats": 0.7193026542663574,
+          "cluster_key": "director -> spouse",
+          "historical_E3_original_minus_rescue_nats": 0.30387914180755615,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "validationpair-00643eb8161a6a739449ada7"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 1.4547927379608154,
+            "reversed": 1.2508115768432617
+          },
+          "C3_nats": 1.3528021574020386,
+          "cluster_key": "spouse -> place of death",
+          "historical_E3_original_minus_rescue_nats": 3.352009892463684,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "validationpair-0065e02227392ebcd582fc05"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 0.8125,
+            "reversed": 0.546875
+          },
+          "C3_nats": 0.6796875,
+          "cluster_key": "mother -> place of birth",
+          "historical_E3_original_minus_rescue_nats": 0.63671875,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "validationpair-0066421540023838af006d7c"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 0.9687175750732422,
+            "reversed": 1.7142388820648193
+          },
+          "C3_nats": 1.3414782285690308,
+          "cluster_key": "director -> place of death",
+          "historical_E3_original_minus_rescue_nats": 0.8381404876708984,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "validationpair-00686789913d7b402c5e0cef"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 0.5781252384185791,
+            "reversed": 0.8437497615814209
+          },
+          "C3_nats": 0.7109375,
+          "cluster_key": "father -> country of citizenship",
+          "historical_E3_original_minus_rescue_nats": 1.328125,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "validationpair-0069184fd6ff919310d3e3fb"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 0.04585909843444824,
+            "reversed": -0.34935855865478516
+          },
+          "C3_nats": -0.15174973011016846,
+          "cluster_key": "director -> spouse",
+          "historical_E3_original_minus_rescue_nats": 1.1649690866470337,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "validationpair-00792a051f07fe35d713ea17"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 0.9309885501861572,
+            "reversed": 1.6334748268127441
+          },
+          "C3_nats": 1.2822316884994507,
+          "cluster_key": "performer -> place of birth",
+          "historical_E3_original_minus_rescue_nats": -0.025656938552856445,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "validationpair-007c5fc36b90b87240f13d1c"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 0.8317551612854004,
+            "reversed": 1.0196731090545654
+          },
+          "C3_nats": 0.9257141351699829,
+          "cluster_key": "director -> award received",
+          "historical_E3_original_minus_rescue_nats": 0.6479651927947998,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "validationpair-007e52b0d9ba06b249e31593"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 3.7109375,
+            "reversed": 2.734375238418579
+          },
+          "C3_nats": 3.2226563692092896,
+          "cluster_key": "father -> country of citizenship",
+          "historical_E3_original_minus_rescue_nats": 1.906249761581421,
+          "original_assignment_argmax_accuracy": 0.75,
+          "pair_id": "validationpair-008a5701272a8743557961e4"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 0.7318315505981445,
+            "reversed": -0.1143941879272461
+          },
+          "C3_nats": 0.3087186813354492,
+          "cluster_key": "spouse -> place of birth",
+          "historical_E3_original_minus_rescue_nats": 1.176525354385376,
+          "original_assignment_argmax_accuracy": 0.75,
+          "pair_id": "validationpair-009f46c7309fcb9490640f35"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 1.3125,
+            "reversed": 3.320312261581421
+          },
+          "C3_nats": 2.3164061307907104,
+          "cluster_key": "composer -> place of death",
+          "historical_E3_original_minus_rescue_nats": 0.5000004768371582,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "validationpair-00bf31388a0b5ead4fb35ba6"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 1.6723003387451172,
+            "reversed": 2.195455551147461
+          },
+          "C3_nats": 1.933877944946289,
+          "cluster_key": "spouse -> place of birth",
+          "historical_E3_original_minus_rescue_nats": 1.0238044261932373,
+          "original_assignment_argmax_accuracy": 0.75,
+          "pair_id": "validationpair-00c2b2e72057a64034b5cbbc"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 1.484375,
+            "reversed": 2.421875
+          },
+          "C3_nats": 1.953125,
+          "cluster_key": "composer -> country of citizenship",
+          "historical_E3_original_minus_rescue_nats": 1.671875,
+          "original_assignment_argmax_accuracy": 0.75,
+          "pair_id": "validationpair-00c9f6e99fed79d201f6fdfb"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 1.2745623588562012,
+            "reversed": 1.3007121086120605
+          },
+          "C3_nats": 1.2876372337341309,
+          "cluster_key": "performer -> place of birth",
+          "historical_E3_original_minus_rescue_nats": 0.49101531505584717,
+          "original_assignment_argmax_accuracy": 0.75,
+          "pair_id": "validationpair-00d0ba26484c7f83842bb2c0"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 0.6808438301086426,
+            "reversed": 0.8255414962768555
+          },
+          "C3_nats": 0.753192663192749,
+          "cluster_key": "director -> spouse",
+          "historical_E3_original_minus_rescue_nats": 0.14653968811035156,
+          "original_assignment_argmax_accuracy": 1.0,
+          "pair_id": "validationpair-00fb520d69f6ab372d7b144d"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 2.456853151321411,
+            "reversed": 2.723714590072632
+          },
+          "C3_nats": 2.5902838706970215,
+          "cluster_key": "father -> place of burial",
+          "historical_E3_original_minus_rescue_nats": 1.9602751731872559,
+          "original_assignment_argmax_accuracy": 0.75,
+          "pair_id": "validationpair-012fa4e38845d7fc6c76e011"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 0.9687502384185791,
+            "reversed": 0.5625
+          },
+          "C3_nats": 0.7656251192092896,
+          "cluster_key": "performer -> place of birth",
+          "historical_E3_original_minus_rescue_nats": 0.6874998807907104,
+          "original_assignment_argmax_accuracy": 0.625,
+          "pair_id": "validationpair-0144ad89d1e3e13cc6c4d0d4"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 4.312500238418579,
+            "reversed": 3.8125
+          },
+          "C3_nats": 4.0625001192092896,
+          "cluster_key": "performer -> country of citizenship",
+          "historical_E3_original_minus_rescue_nats": 0.6406253576278687,
+          "original_assignment_argmax_accuracy": 0.75,
+          "pair_id": "validationpair-0155d694746300b6707e2b7c"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 4.047999858856201,
+            "reversed": 3.2062058448791504
+          },
+          "C3_nats": 3.627102851867676,
+          "cluster_key": "spouse -> country of citizenship",
+          "historical_E3_original_minus_rescue_nats": 0.8416833877563477,
+          "original_assignment_argmax_accuracy": 1.0,
+          "pair_id": "validationpair-017a4ad7b81ca01703e22ffd"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 0.75,
+            "reversed": 1.625
+          },
+          "C3_nats": 1.1875,
+          "cluster_key": "father -> place of burial",
+          "historical_E3_original_minus_rescue_nats": 1.2187498807907104,
+          "original_assignment_argmax_accuracy": 0.75,
+          "pair_id": "validationpair-01bd794d12c27ea689098c49"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 1.1947596073150635,
+            "reversed": 0.8635129928588867
+          },
+          "C3_nats": 1.029136300086975,
+          "cluster_key": "mother -> place of death",
+          "historical_E3_original_minus_rescue_nats": 0.2102954387664795,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "validationpair-01f918ebfc50160c2981301e"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 1.3906254768371582,
+            "reversed": 0.7968747615814209
+          },
+          "C3_nats": 1.0937501192092896,
+          "cluster_key": "mother -> place of birth",
+          "historical_E3_original_minus_rescue_nats": 0.6640625,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "validationpair-020be509862d8a5a948ab3a8"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 2.3828125,
+            "reversed": 1.4375
+          },
+          "C3_nats": 1.91015625,
+          "cluster_key": "mother -> country of citizenship",
+          "historical_E3_original_minus_rescue_nats": 1.316406011581421,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "validationpair-021b33284070eb666a14a60a"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 3.937499761581421,
+            "reversed": 1.859375
+          },
+          "C3_nats": 2.8984373807907104,
+          "cluster_key": "spouse -> country of citizenship",
+          "historical_E3_original_minus_rescue_nats": 1.765624761581421,
+          "original_assignment_argmax_accuracy": 0.75,
+          "pair_id": "validationpair-022bbcbacbf6944a212744a1"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 2.484375,
+            "reversed": 2.531249761581421
+          },
+          "C3_nats": 2.5078123807907104,
+          "cluster_key": "spouse -> country of citizenship",
+          "historical_E3_original_minus_rescue_nats": 2.624999761581421,
+          "original_assignment_argmax_accuracy": 1.0,
+          "pair_id": "validationpair-0235e43a220092ebc7dfb112"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 2.2125144004821777,
+            "reversed": 1.4300055503845215
+          },
+          "C3_nats": 1.8212599754333496,
+          "cluster_key": "mother -> place of death",
+          "historical_E3_original_minus_rescue_nats": 0.32772183418273926,
+          "original_assignment_argmax_accuracy": 0.75,
+          "pair_id": "validationpair-02af52ae457eb18f7c100718"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 0.5615019798278809,
+            "reversed": 0.46858930587768555
+          },
+          "C3_nats": 0.5150456428527832,
+          "cluster_key": "director -> spouse",
+          "historical_E3_original_minus_rescue_nats": 0.2502427101135254,
+          "original_assignment_argmax_accuracy": 0.75,
+          "pair_id": "validationpair-030d8841c49790031264a926"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 0.864783763885498,
+            "reversed": 1.2842597961425781
+          },
+          "C3_nats": 1.074521780014038,
+          "cluster_key": "mother -> place of death",
+          "historical_E3_original_minus_rescue_nats": -0.22579383850097656,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "validationpair-033b638f10bb64939d239f3e"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 2.199998378753662,
+            "reversed": 1.3076171875
+          },
+          "C3_nats": 1.753807783126831,
+          "cluster_key": "performer -> place of birth",
+          "historical_E3_original_minus_rescue_nats": -0.05724287033081055,
+          "original_assignment_argmax_accuracy": 0.75,
+          "pair_id": "validationpair-036c677a60e01001eb347205"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 0.9375,
+            "reversed": 0.90625
+          },
+          "C3_nats": 0.921875,
+          "cluster_key": "mother -> country of citizenship",
+          "historical_E3_original_minus_rescue_nats": -0.023437857627868652,
+          "original_assignment_argmax_accuracy": 0.75,
+          "pair_id": "validationpair-0385e87b34c6526f554f0df5"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 0.7943601608276367,
+            "reversed": 0.402616024017334
+          },
+          "C3_nats": 0.5984880924224854,
+          "cluster_key": "director -> educated at",
+          "historical_E3_original_minus_rescue_nats": -0.12519598007202148,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "validationpair-038c64221e14a9b933d10d9f"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 1.9628403186798096,
+            "reversed": 0.7079529762268066
+          },
+          "C3_nats": 1.335396647453308,
+          "cluster_key": "director -> father",
+          "historical_E3_original_minus_rescue_nats": 1.3428664207458496,
+          "original_assignment_argmax_accuracy": 0.75,
+          "pair_id": "validationpair-039747123572017f7b02f4cd"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 0.1917128562927246,
+            "reversed": 0.5219864845275879
+          },
+          "C3_nats": 0.35684967041015625,
+          "cluster_key": "father -> educated at",
+          "historical_E3_original_minus_rescue_nats": 0.5312862396240234,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "validationpair-0446f33d29a0547719f4dd5e"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 1.5349292755126953,
+            "reversed": 1.2018318176269531
+          },
+          "C3_nats": 1.3683805465698242,
+          "cluster_key": "director -> child",
+          "historical_E3_original_minus_rescue_nats": 1.4696853160858154,
+          "original_assignment_argmax_accuracy": 1.0,
+          "pair_id": "validationpair-048146cad5c2203103de94ce"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": -0.0634150505065918,
+            "reversed": -0.2530512809753418
+          },
+          "C3_nats": -0.1582331657409668,
+          "cluster_key": "director -> educated at",
+          "historical_E3_original_minus_rescue_nats": 0.047377824783325195,
+          "original_assignment_argmax_accuracy": 0.25,
+          "pair_id": "validationpair-0482daa08b9117154cb688da"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 0.09321355819702148,
+            "reversed": 0.030139446258544922
+          },
+          "C3_nats": 0.0616765022277832,
+          "cluster_key": "director -> award received",
+          "historical_E3_original_minus_rescue_nats": 0.8378113508224487,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "validationpair-048ecd20c4f54a228bdd4d59"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 0.31281280517578125,
+            "reversed": 0.45374345779418945
+          },
+          "C3_nats": 0.38327813148498535,
+          "cluster_key": "director -> educated at",
+          "historical_E3_original_minus_rescue_nats": 0.5159533023834229,
+          "original_assignment_argmax_accuracy": 0.75,
+          "pair_id": "validationpair-04a580d4742e61d6cf934c58"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 0.5390629768371582,
+            "reversed": 1.96875
+          },
+          "C3_nats": 1.253906488418579,
+          "cluster_key": "mother -> country of citizenship",
+          "historical_E3_original_minus_rescue_nats": 0.10888683795928955,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "validationpair-04b23a0125a03743a6d31111"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 1.6399550437927246,
+            "reversed": 0.9201889038085938
+          },
+          "C3_nats": 1.2800719738006592,
+          "cluster_key": "father -> educated at",
+          "historical_E3_original_minus_rescue_nats": 1.4815889596939087,
+          "original_assignment_argmax_accuracy": 0.75,
+          "pair_id": "validationpair-04b2d1114dbbb7b7ee804cf8"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 1.703125,
+            "reversed": 1.218750238418579
+          },
+          "C3_nats": 1.4609376192092896,
+          "cluster_key": "mother -> place of birth",
+          "historical_E3_original_minus_rescue_nats": 0.22656285762786865,
+          "original_assignment_argmax_accuracy": 1.0,
+          "pair_id": "validationpair-04fc25d9ed9910c69798611a"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 0.8906247615814209,
+            "reversed": 2.749999523162842
+          },
+          "C3_nats": 1.8203121423721313,
+          "cluster_key": "performer -> country of citizenship",
+          "historical_E3_original_minus_rescue_nats": 0.0273435115814209,
+          "original_assignment_argmax_accuracy": 0.75,
+          "pair_id": "validationpair-0507d8790364442d80d7a7b1"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 7.144531488418579,
+            "reversed": 5.01953125
+          },
+          "C3_nats": 6.0820313692092896,
+          "cluster_key": "composer -> country of citizenship",
+          "historical_E3_original_minus_rescue_nats": 3.390625238418579,
+          "original_assignment_argmax_accuracy": 1.0,
+          "pair_id": "validationpair-05100efaa9e61dc0772d48b9"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 0.7369556427001953,
+            "reversed": 0.14346623420715332
+          },
+          "C3_nats": 0.4402109384536743,
+          "cluster_key": "director -> award received",
+          "historical_E3_original_minus_rescue_nats": -1.0710452795028687,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "validationpair-05a92cf53c95dfd0359da5a3"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 0.9755856990814209,
+            "reversed": 2.416252374649048
+          },
+          "C3_nats": 1.6959190368652344,
+          "cluster_key": "director -> educated at",
+          "historical_E3_original_minus_rescue_nats": 1.2425754070281982,
+          "original_assignment_argmax_accuracy": 0.75,
+          "pair_id": "validationpair-05e4ffe7e1a147afc154f38e"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 1.4279353618621826,
+            "reversed": 1.5758991241455078
+          },
+          "C3_nats": 1.5019172430038452,
+          "cluster_key": "father -> place of burial",
+          "historical_E3_original_minus_rescue_nats": 0.7404897212982178,
+          "original_assignment_argmax_accuracy": 0.75,
+          "pair_id": "validationpair-05fbe22992ba4565123ea503"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 0.9338803291320801,
+            "reversed": 0.1448497772216797
+          },
+          "C3_nats": 0.5393650531768799,
+          "cluster_key": "mother -> place of birth",
+          "historical_E3_original_minus_rescue_nats": 0.3511984348297119,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "validationpair-062ee0e656b133913ec6a2ba"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 3.01621675491333,
+            "reversed": 1.2961397171020508
+          },
+          "C3_nats": 2.1561782360076904,
+          "cluster_key": "father -> educated at",
+          "historical_E3_original_minus_rescue_nats": 0.8749617338180542,
+          "original_assignment_argmax_accuracy": 1.0,
+          "pair_id": "validationpair-06352ef1c1ce6cfcad9c2ae8"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 0.78125,
+            "reversed": 0.5
+          },
+          "C3_nats": 0.640625,
+          "cluster_key": "mother -> place of death",
+          "historical_E3_original_minus_rescue_nats": 0.02343738079071045,
+          "original_assignment_argmax_accuracy": 0.75,
+          "pair_id": "validationpair-063ac999808acccd36a6a8c4"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 0.2030198574066162,
+            "reversed": 0.2022857666015625
+          },
+          "C3_nats": 0.20265281200408936,
+          "cluster_key": "director -> father",
+          "historical_E3_original_minus_rescue_nats": 0.8086795806884766,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "validationpair-06df81fe4873c43e181a8069"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 0.9975886344909668,
+            "reversed": 0.29573893547058105
+          },
+          "C3_nats": 0.6466637849807739,
+          "cluster_key": "performer -> award received",
+          "historical_E3_original_minus_rescue_nats": 0.47669517993927,
+          "original_assignment_argmax_accuracy": 0.75,
+          "pair_id": "validationpair-071c72ead16a34482a7d5348"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 0.029953956604003906,
+            "reversed": -0.12693452835083008
+          },
+          "C3_nats": -0.048490285873413086,
+          "cluster_key": "father -> educated at",
+          "historical_E3_original_minus_rescue_nats": 1.0945643186569214,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "validationpair-071ca1d5eb11c1641f74bafc"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 0.6438162326812744,
+            "reversed": 1.2670788764953613
+          },
+          "C3_nats": 0.9554475545883179,
+          "cluster_key": "father -> place of burial",
+          "historical_E3_original_minus_rescue_nats": 0.6719658374786377,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "validationpair-079bf4c56c2494b52e8f3671"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 0.8588957786560059,
+            "reversed": 1.0997555255889893
+          },
+          "C3_nats": 0.9793256521224976,
+          "cluster_key": "director -> award received",
+          "historical_E3_original_minus_rescue_nats": 0.29658830165863037,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "validationpair-0b5cf1217165c2d506d96032"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 2.4921875,
+            "reversed": 2.0
+          },
+          "C3_nats": 2.24609375,
+          "cluster_key": "mother -> country of citizenship",
+          "historical_E3_original_minus_rescue_nats": 0.40624988079071045,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "validationpair-0b8728cf773f4cbb509f99c1"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 1.8125,
+            "reversed": 1.546875238418579
+          },
+          "C3_nats": 1.6796876192092896,
+          "cluster_key": "composer -> country of citizenship",
+          "historical_E3_original_minus_rescue_nats": 0.03906261920928955,
+          "original_assignment_argmax_accuracy": 1.0,
+          "pair_id": "validationpair-0bc33710b14faf18dfff0ed3"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 1.875,
+            "reversed": 2.140625
+          },
+          "C3_nats": 2.0078125,
+          "cluster_key": "composer -> place of birth",
+          "historical_E3_original_minus_rescue_nats": 1.015624761581421,
+          "original_assignment_argmax_accuracy": 1.0,
+          "pair_id": "validationpair-0ca578c2d68271794ce83e0d"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 1.3125,
+            "reversed": 1.9375
+          },
+          "C3_nats": 1.625,
+          "cluster_key": "father -> cause of death",
+          "historical_E3_original_minus_rescue_nats": 1.5703125,
+          "original_assignment_argmax_accuracy": 0.75,
+          "pair_id": "validationpair-0d0dbd767ef3c6a216ed39ec"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": -0.4989445209503174,
+            "reversed": 0.20494627952575684
+          },
+          "C3_nats": -0.14699912071228027,
+          "cluster_key": "director -> employer",
+          "historical_E3_original_minus_rescue_nats": -0.13283812999725342,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "validationpair-0e0b131a3c483909198180f8"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 0.17160511016845703,
+            "reversed": 0.4376804828643799
+          },
+          "C3_nats": 0.30464279651641846,
+          "cluster_key": "composer -> place of death",
+          "historical_E3_original_minus_rescue_nats": 0.19915318489074707,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "validationpair-0f847793a223ea452273194b"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 2.062499761581421,
+            "reversed": 3.281250238418579
+          },
+          "C3_nats": 2.671875,
+          "cluster_key": "performer -> country of citizenship",
+          "historical_E3_original_minus_rescue_nats": 1.7734373807907104,
+          "original_assignment_argmax_accuracy": 1.0,
+          "pair_id": "validationpair-0fc0304ae287612aa49dcedb"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 2.249540090560913,
+            "reversed": 1.2435104846954346
+          },
+          "C3_nats": 1.7465252876281738,
+          "cluster_key": "director -> father",
+          "historical_E3_original_minus_rescue_nats": 2.0769139528274536,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "validationpair-100c361204da086eee255207"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 4.921875238418579,
+            "reversed": 3.296875
+          },
+          "C3_nats": 4.1093751192092896,
+          "cluster_key": "composer -> place of death",
+          "historical_E3_original_minus_rescue_nats": 1.2578125,
+          "original_assignment_argmax_accuracy": 1.0,
+          "pair_id": "validationpair-1032e3f94ee3095e17ebcdff"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 1.531249761581421,
+            "reversed": 1.406250238418579
+          },
+          "C3_nats": 1.46875,
+          "cluster_key": "composer -> place of death",
+          "historical_E3_original_minus_rescue_nats": 0.890625,
+          "original_assignment_argmax_accuracy": 0.75,
+          "pair_id": "validationpair-115b80596759aec8c81812d6"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 0.9990940093994141,
+            "reversed": 2.1550984382629395
+          },
+          "C3_nats": 1.5770962238311768,
+          "cluster_key": "spouse -> place of burial",
+          "historical_E3_original_minus_rescue_nats": 1.2484028339385986,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "validationpair-1341d6d80e5c642580c874df"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 2.031378746032715,
+            "reversed": 1.5775446891784668
+          },
+          "C3_nats": 1.8044617176055908,
+          "cluster_key": "director -> employer",
+          "historical_E3_original_minus_rescue_nats": 2.0201103687286377,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "validationpair-154f1e245bfb9502d73d1e20"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 2.3168203830718994,
+            "reversed": 2.4482736587524414
+          },
+          "C3_nats": 2.3825470209121704,
+          "cluster_key": "spouse -> place of burial",
+          "historical_E3_original_minus_rescue_nats": 1.343239188194275,
+          "original_assignment_argmax_accuracy": 0.75,
+          "pair_id": "validationpair-16c4545b14e48fb76fff115d"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 1.23557710647583,
+            "reversed": 1.9852840900421143
+          },
+          "C3_nats": 1.6104305982589722,
+          "cluster_key": "composer -> country of citizenship",
+          "historical_E3_original_minus_rescue_nats": 1.1604158878326416,
+          "original_assignment_argmax_accuracy": 0.75,
+          "pair_id": "validationpair-18e9faadc8c0e390900da01c"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 5.0366950035095215,
+            "reversed": 3.795576572418213
+          },
+          "C3_nats": 4.416135787963867,
+          "cluster_key": "composer -> place of birth",
+          "historical_E3_original_minus_rescue_nats": 2.0386319160461426,
+          "original_assignment_argmax_accuracy": 1.0,
+          "pair_id": "validationpair-1a53898daff7b767b896e119"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 1.9215881824493408,
+            "reversed": 1.500044822692871
+          },
+          "C3_nats": 1.710816502571106,
+          "cluster_key": "founded by -> place of birth",
+          "historical_E3_original_minus_rescue_nats": 0.7186932563781738,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "validationpair-1af8acdd97ccaa4e12b14e8d"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 0.3281245231628418,
+            "reversed": 1.109375238418579
+          },
+          "C3_nats": 0.7187498807907104,
+          "cluster_key": "spouse -> educated at",
+          "historical_E3_original_minus_rescue_nats": -0.19921875,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "validationpair-1c0f369ff06d4d9e10cb4cc5"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 3.867246389389038,
+            "reversed": 4.868451356887817
+          },
+          "C3_nats": 4.367848873138428,
+          "cluster_key": "spouse -> place of burial",
+          "historical_E3_original_minus_rescue_nats": 2.67749559879303,
+          "original_assignment_argmax_accuracy": 1.0,
+          "pair_id": "validationpair-1c56666fe0a25e55c4fdefdc"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 0.90625,
+            "reversed": 1.84375
+          },
+          "C3_nats": 1.375,
+          "cluster_key": "composer -> place of birth",
+          "historical_E3_original_minus_rescue_nats": 0.8125,
+          "original_assignment_argmax_accuracy": 0.75,
+          "pair_id": "validationpair-1d8b69f5fa26189360fb1cdb"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 0.8272595405578613,
+            "reversed": 0.3574056625366211
+          },
+          "C3_nats": 0.5923326015472412,
+          "cluster_key": "composer -> place of birth",
+          "historical_E3_original_minus_rescue_nats": -0.5860464572906494,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "validationpair-1e463d625146f682c9b4f338"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 0.1503903865814209,
+            "reversed": 1.1710658073425293
+          },
+          "C3_nats": 0.6607280969619751,
+          "cluster_key": "performer -> place of death",
+          "historical_E3_original_minus_rescue_nats": 0.4144173860549927,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "validationpair-1fc500e45d30996b4e6bca29"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 0.8588056564331055,
+            "reversed": 1.251558780670166
+          },
+          "C3_nats": 1.0551822185516357,
+          "cluster_key": "director -> father",
+          "historical_E3_original_minus_rescue_nats": 0.2663259506225586,
+          "original_assignment_argmax_accuracy": 0.75,
+          "pair_id": "validationpair-1fd51acd9f3777d5dea3c238"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 0.24012041091918945,
+            "reversed": 0.14945650100708008
+          },
+          "C3_nats": 0.19478845596313477,
+          "cluster_key": "spouse -> educated at",
+          "historical_E3_original_minus_rescue_nats": 2.37069034576416,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "validationpair-211792c8091200c2235c74d3"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 1.3814995288848877,
+            "reversed": 0.5470178127288818
+          },
+          "C3_nats": 0.9642586708068848,
+          "cluster_key": "spouse -> place of burial",
+          "historical_E3_original_minus_rescue_nats": 0.5780308246612549,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "validationpair-22264a689abe13454578154f"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 0.7500002384185791,
+            "reversed": 2.203125
+          },
+          "C3_nats": 1.4765626192092896,
+          "cluster_key": "founded by -> place of birth",
+          "historical_E3_original_minus_rescue_nats": 0.6875003576278687,
+          "original_assignment_argmax_accuracy": 0.75,
+          "pair_id": "validationpair-245578bf2f7bab946b2d2d36"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 2.34375,
+            "reversed": 0.703125
+          },
+          "C3_nats": 1.5234375,
+          "cluster_key": "performer -> place of death",
+          "historical_E3_original_minus_rescue_nats": 0.32031238079071045,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "validationpair-25ce59649b48e5f7200e65bb"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 1.6183722019195557,
+            "reversed": 1.266672134399414
+          },
+          "C3_nats": 1.4425221681594849,
+          "cluster_key": "performer -> award received",
+          "historical_E3_original_minus_rescue_nats": 0.8294647932052612,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "validationpair-28915a75c4c747af0e39db88"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": -0.07611465454101562,
+            "reversed": 0.49782824516296387
+          },
+          "C3_nats": 0.21085679531097412,
+          "cluster_key": "spouse -> educated at",
+          "historical_E3_original_minus_rescue_nats": 1.5007416009902954,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "validationpair-295a0442e5aaaef0591d1977"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 0.4402189254760742,
+            "reversed": 0.570641279220581
+          },
+          "C3_nats": 0.5054301023483276,
+          "cluster_key": "spouse -> educated at",
+          "historical_E3_original_minus_rescue_nats": 0.1105109453201294,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "validationpair-2a62a9956f0bcca7cf715078"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 3.6875,
+            "reversed": 1.484375
+          },
+          "C3_nats": 2.5859375,
+          "cluster_key": "founded by -> place of birth",
+          "historical_E3_original_minus_rescue_nats": 0.2968752384185791,
+          "original_assignment_argmax_accuracy": 0.75,
+          "pair_id": "validationpair-305f326b134b8fef4b4cd5de"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 1.656249761581421,
+            "reversed": 0.2500004768371582
+          },
+          "C3_nats": 0.9531251192092896,
+          "cluster_key": "founded by -> place of birth",
+          "historical_E3_original_minus_rescue_nats": -0.1015625,
+          "original_assignment_argmax_accuracy": 0.75,
+          "pair_id": "validationpair-351a49268a19bfdafec2c36e"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 0.09375,
+            "reversed": 0.15625
+          },
+          "C3_nats": 0.125,
+          "cluster_key": "father -> cause of death",
+          "historical_E3_original_minus_rescue_nats": 0.1562497615814209,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "validationpair-3a7b3d37b8d13364af6b3aa3"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 0.41532135009765625,
+            "reversed": 1.5959436893463135
+          },
+          "C3_nats": 1.0056325197219849,
+          "cluster_key": "director -> employer",
+          "historical_E3_original_minus_rescue_nats": 0.015966415405273438,
+          "original_assignment_argmax_accuracy": 0.75,
+          "pair_id": "validationpair-3d98072e3628fa41de05b0d4"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 1.5628175735473633,
+            "reversed": 0.2809278964996338
+          },
+          "C3_nats": 0.9218727350234985,
+          "cluster_key": "performer -> award received",
+          "historical_E3_original_minus_rescue_nats": 0.6083842515945435,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "validationpair-411410836a51d62a2c8a95d0"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 0.49612927436828613,
+            "reversed": 0.9753413200378418
+          },
+          "C3_nats": 0.735735297203064,
+          "cluster_key": "director -> employer",
+          "historical_E3_original_minus_rescue_nats": 1.5633448362350464,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "validationpair-52ed5fa9f5eefe106a35f13e"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 1.1634793281555176,
+            "reversed": 1.4836430549621582
+          },
+          "C3_nats": 1.323561191558838,
+          "cluster_key": "director -> child",
+          "historical_E3_original_minus_rescue_nats": 0.7724840641021729,
+          "original_assignment_argmax_accuracy": 0.75,
+          "pair_id": "validationpair-81533af25e90bdca8e99c084"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 0.6938705444335938,
+            "reversed": 1.364081859588623
+          },
+          "C3_nats": 1.0289762020111084,
+          "cluster_key": "director -> child",
+          "historical_E3_original_minus_rescue_nats": 1.0196418762207031,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "validationpair-aedc941b93663e16c4409764"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 2.2896978855133057,
+            "reversed": 1.800414800643921
+          },
+          "C3_nats": 2.0450563430786133,
+          "cluster_key": "father -> cause of death",
+          "historical_E3_original_minus_rescue_nats": 0.7889788150787354,
+          "original_assignment_argmax_accuracy": 1.0,
+          "pair_id": "validationpair-bb16869c0b84de1bcc8b55e4"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 2.656256675720215,
+            "reversed": 3.0286269187927246
+          },
+          "C3_nats": 2.8424417972564697,
+          "cluster_key": "performer -> award received",
+          "historical_E3_original_minus_rescue_nats": 0.46850812435150146,
+          "original_assignment_argmax_accuracy": 1.0,
+          "pair_id": "validationpair-ca8183d1ab1df60841783d1a"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 1.8125,
+            "reversed": 1.828125
+          },
+          "C3_nats": 1.8203125,
+          "cluster_key": "father -> cause of death",
+          "historical_E3_original_minus_rescue_nats": 0.5390626192092896,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "validationpair-e96bc08347018396f77af2ed"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 1.480215072631836,
+            "reversed": 2.6746129989624023
+          },
+          "C3_nats": 2.077414035797119,
+          "cluster_key": "director -> child",
+          "historical_E3_original_minus_rescue_nats": 0.928917407989502,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "validationpair-f872abc374a47f69c0cc5f5c"
+        }
+      ],
+      "pair_units": 124,
+      "primary_spearman_C3_vs_historical_E3": {
+        "bootstrap_replicates": 10000,
+        "estimate": 0.4583855232100707,
+        "finite_bootstrap_replicates": 10000,
+        "passes_lower95_gt_0_after_validity": true,
+        "percentile_95_CI": [
+          0.2339433898142198,
+          0.6393032170887254
+        ]
+      },
+      "top_minus_bottom_compatibility_quartile_historical_E3_nats": {
+        "bootstrap_replicates": 10000,
+        "estimate": 0.9675822219540997,
+        "finite_bootstrap_replicates": 10000,
+        "membership_tie_break": "compatibility then pair ID",
+        "percentile_95_CI": [
+          0.43678360809381966,
+          1.5012569957785473
+        ],
+        "quartile_size": 31
+      },
+      "validity": {
+        "all_pass": true,
+        "all_primary_bootstrap_draws_finite": true,
+        "candidate_order_audit_passes": true,
+        "isolated_fact_competence_passes": true,
+        "structural_checks_passed": true,
+        "variation_guard_passes": true
+      },
+      "variation_guard": {
+        "C3_standard_deviation": 1.2003601756291888,
+        "distinct_C3_values": 124,
+        "passes": true
+      }
+    },
+    "musique": {
+      "association_passes": true,
+      "bootstrap": {
+        "all_within_pair_conditions_coupled": true,
+        "draws_sha256": "e5050523b9792ecaa8d974bfc69d75eacd930f68b5c8457a0dbfaacb0b257814",
+        "method": "nonparametric bootstrap of 95 whole matched-pair units",
+        "replicates": 10000,
+        "rng_seed": 10230398129623817074
+      },
+      "candidate_order_audit": {
+        "by_order": {
+          "original": {
+            "mean_compatibility_nats": {
+              "bootstrap_replicates": 10000,
+              "estimate": 1.4139929056167602,
+              "finite_bootstrap_replicates": 10000,
+              "percentile_95_CI": [
+                1.1692944316801273,
+                1.674470789338413
+              ]
+            },
+            "original_assignment_argmax_accuracy": {
+              "bootstrap_replicates": 10000,
+              "estimate": 0.6842105263157895,
+              "finite_bootstrap_replicates": 10000,
+              "percentile_95_CI": [
+                0.6368421052631579,
+                0.7315789473684211
+              ]
+            }
+          },
+          "reversed": {
+            "mean_compatibility_nats": {
+              "bootstrap_replicates": 10000,
+              "estimate": 1.292270130860178,
+              "finite_bootstrap_replicates": 10000,
+              "percentile_95_CI": [
+                1.0448152523919154,
+                1.5583173647052362
+              ]
+            },
+            "original_assignment_argmax_accuracy": {
+              "bootstrap_replicates": 10000,
+              "estimate": 0.6263157894736842,
+              "finite_bootstrap_replicates": 10000,
+              "percentile_95_CI": [
+                0.5789473684210527,
+                0.6736842105263158
+              ]
+            }
+          }
+        },
+        "cross_order_pair_rank_correlation": {
+          "bootstrap_replicates": 10000,
+          "estimate": 0.6745660694288914,
+          "finite_bootstrap_replicates": 10000,
+          "percentile_95_CI": [
+            0.5325908116919963,
+            0.780945517084244
+          ]
+        },
+        "paired_original_minus_reversed_compatibility_nats": {
+          "bootstrap_replicates": 10000,
+          "estimate": 0.12172277475658216,
+          "finite_bootstrap_replicates": 10000,
+          "percentile_95_CI": [
+            -0.05982141466517197,
+            0.3072592737800196
+          ]
+        },
+        "passes_frozen_rule": true
+      },
+      "cluster_units": 30,
+      "mean_pair_compatibility_C3_nats": {
+        "bootstrap_replicates": 10000,
+        "estimate": 1.353131518238469,
+        "finite_bootstrap_replicates": 10000,
+        "percentile_95_CI": [
+          1.1220643734618236,
+          1.5980095223690334
+        ]
+      },
+      "original_assignment_argmax_accuracy": {
+        "bootstrap_replicates": 10000,
+        "estimate": 0.6552631578947369,
+        "finite_bootstrap_replicates": 10000,
+        "percentile_95_CI": [
+          0.6210526315789474,
+          0.6921052631578948
+        ]
+      },
+      "pair_records": [
+        {
+          "C3_by_candidate_order": {
+            "original": 0.9237079620361328,
+            "reversed": 0.8296523094177246
+          },
+          "C3_nats": 0.8766801357269287,
+          "cluster_key": "located in or next to body of water",
+          "historical_E3_original_minus_rescue_nats": 1.4298670291900635,
+          "original_assignment_argmax_accuracy": 0.75,
+          "pair_id": "musiquepair-00f27207f0e78d94be612437"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 0.5166587829589844,
+            "reversed": 0.46164369583129883
+          },
+          "C3_nats": 0.4891512393951416,
+          "cluster_key": "record label",
+          "historical_E3_original_minus_rescue_nats": 0.3688298463821411,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "musiquepair-014c701139472c309e487c79"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": -0.09389519691467285,
+            "reversed": 0.15664291381835938
+          },
+          "C3_nats": 0.03137385845184326,
+          "cluster_key": "contains administrative territorial entity",
+          "historical_E3_original_minus_rescue_nats": -0.05821704864501953,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "musiquepair-0250f8fb950d2ee57743e1f5"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 2.3024020195007324,
+            "reversed": 3.36258864402771
+          },
+          "C3_nats": 2.832495331764221,
+          "cluster_key": "spouse",
+          "historical_E3_original_minus_rescue_nats": 0.4378316402435303,
+          "original_assignment_argmax_accuracy": 0.75,
+          "pair_id": "musiquepair-068d52f57b80e17f2aac37aa"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": -0.06419515609741211,
+            "reversed": 0.00012254714965820312
+          },
+          "C3_nats": -0.03203630447387695,
+          "cluster_key": "capital of",
+          "historical_E3_original_minus_rescue_nats": -0.3312561511993408,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "musiquepair-06ef5a40033025eff356be9a"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 0.19128847122192383,
+            "reversed": 0.40291881561279297
+          },
+          "C3_nats": 0.2971036434173584,
+          "cluster_key": "shares border with",
+          "historical_E3_original_minus_rescue_nats": 0.015063762664794922,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "musiquepair-09baf1d4e9e07e9ceabc2ef4"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 0.5017802715301514,
+            "reversed": 0.7793276309967041
+          },
+          "C3_nats": 0.6405539512634277,
+          "cluster_key": "located in the administrative territorial entity",
+          "historical_E3_original_minus_rescue_nats": 1.3522570133209229,
+          "original_assignment_argmax_accuracy": 0.75,
+          "pair_id": "musiquepair-0eb16c53553feba7237344bb"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 0.12893199920654297,
+            "reversed": 0.8815405368804932
+          },
+          "C3_nats": 0.5052362680435181,
+          "cluster_key": "child",
+          "historical_E3_original_minus_rescue_nats": 0.12432670593261719,
+          "original_assignment_argmax_accuracy": 0.75,
+          "pair_id": "musiquepair-102decf67dc5a69f941655bd"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 1.6481616497039795,
+            "reversed": 1.5198116302490234
+          },
+          "C3_nats": 1.5839866399765015,
+          "cluster_key": "capital of",
+          "historical_E3_original_minus_rescue_nats": 3.653136134147644,
+          "original_assignment_argmax_accuracy": 1.0,
+          "pair_id": "musiquepair-16a7227ae9d402038c8279dd"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 3.735701322555542,
+            "reversed": 1.6557812690734863
+          },
+          "C3_nats": 2.695741295814514,
+          "cluster_key": "capital",
+          "historical_E3_original_minus_rescue_nats": 3.5845232009887695,
+          "original_assignment_argmax_accuracy": 1.0,
+          "pair_id": "musiquepair-198d0cb5110922c2c75251e3"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 2.6676952838897705,
+            "reversed": 1.209883689880371
+          },
+          "C3_nats": 1.9387894868850708,
+          "cluster_key": "instance of",
+          "historical_E3_original_minus_rescue_nats": 3.178006172180176,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "musiquepair-1cfd11c199a9b493918012ea"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 0.3600039482116699,
+            "reversed": 0.6421077251434326
+          },
+          "C3_nats": 0.5010558366775513,
+          "cluster_key": "employer",
+          "historical_E3_original_minus_rescue_nats": -0.1803666353225708,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "musiquepair-204b27059d288b73bc38159f"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 1.84375,
+            "reversed": 2.484375
+          },
+          "C3_nats": 2.1640625,
+          "cluster_key": "headquarters location",
+          "historical_E3_original_minus_rescue_nats": 0.53125,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "musiquepair-2104087454f284187f8f5648"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 1.1094212532043457,
+            "reversed": 1.3216133117675781
+          },
+          "C3_nats": 1.215517282485962,
+          "cluster_key": "shares border with",
+          "historical_E3_original_minus_rescue_nats": 0.6526268720626831,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "musiquepair-2287863b5cc7be012efd9735"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 1.2623000144958496,
+            "reversed": 2.5207948684692383
+          },
+          "C3_nats": 1.891547441482544,
+          "cluster_key": "league",
+          "historical_E3_original_minus_rescue_nats": 3.99434494972229,
+          "original_assignment_argmax_accuracy": 0.75,
+          "pair_id": "musiquepair-27d00777b202530543e05b72"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 0.36841702461242676,
+            "reversed": 1.6184053421020508
+          },
+          "C3_nats": 0.9934111833572388,
+          "cluster_key": "located in the administrative territorial entity",
+          "historical_E3_original_minus_rescue_nats": 3.397605299949646,
+          "original_assignment_argmax_accuracy": 0.75,
+          "pair_id": "musiquepair-29d33eb26b907a92115eff99"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 1.5275096893310547,
+            "reversed": 0.3104090690612793
+          },
+          "C3_nats": 0.918959379196167,
+          "cluster_key": "founded by",
+          "historical_E3_original_minus_rescue_nats": 1.5183041095733643,
+          "original_assignment_argmax_accuracy": 0.75,
+          "pair_id": "musiquepair-2fcbb0c5c8f0c5ab43003e67"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 0.9706916809082031,
+            "reversed": 1.5046958923339844
+          },
+          "C3_nats": 1.2376937866210938,
+          "cluster_key": "child",
+          "historical_E3_original_minus_rescue_nats": 0.24023771286010742,
+          "original_assignment_argmax_accuracy": 0.75,
+          "pair_id": "musiquepair-3264f3297f9a7d6f38bc62d0"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 1.7309412956237793,
+            "reversed": 0.7191071510314941
+          },
+          "C3_nats": 1.2250242233276367,
+          "cluster_key": "shares border with",
+          "historical_E3_original_minus_rescue_nats": 1.156988501548767,
+          "original_assignment_argmax_accuracy": 0.75,
+          "pair_id": "musiquepair-332453aa8980cab7a7249f42"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 0.7678143978118896,
+            "reversed": 0.2621269226074219
+          },
+          "C3_nats": 0.5149706602096558,
+          "cluster_key": "spouse",
+          "historical_E3_original_minus_rescue_nats": 0.5174493789672852,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "musiquepair-3329bc76e560bd591b6146c6"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 6.619140863418579,
+            "reversed": 5.699218511581421
+          },
+          "C3_nats": 6.1591796875,
+          "cluster_key": "place of birth",
+          "historical_E3_original_minus_rescue_nats": 1.0410157442092896,
+          "original_assignment_argmax_accuracy": 1.0,
+          "pair_id": "musiquepair-3a446f734e759a80c936ff4c"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 1.452929973602295,
+            "reversed": 3.1090757846832275
+          },
+          "C3_nats": 2.2810028791427612,
+          "cluster_key": "location of formation",
+          "historical_E3_original_minus_rescue_nats": 3.850812315940857,
+          "original_assignment_argmax_accuracy": 1.0,
+          "pair_id": "musiquepair-3a78875386c6055c9b13ca32"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 0.6257009506225586,
+            "reversed": 0.672039270401001
+          },
+          "C3_nats": 0.6488701105117798,
+          "cluster_key": "shares border with",
+          "historical_E3_original_minus_rescue_nats": 0.4067955017089844,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "musiquepair-3a8fc4b64fa53903096b1bcb"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 3.58518648147583,
+            "reversed": 2.119962215423584
+          },
+          "C3_nats": 2.852574348449707,
+          "cluster_key": "located in the administrative territorial entity",
+          "historical_E3_original_minus_rescue_nats": 2.474368095397949,
+          "original_assignment_argmax_accuracy": 1.0,
+          "pair_id": "musiquepair-3d1d0e17f1d4006541ba8a93"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 1.3469419479370117,
+            "reversed": 1.7635893821716309
+          },
+          "C3_nats": 1.5552656650543213,
+          "cluster_key": "child",
+          "historical_E3_original_minus_rescue_nats": 0.5985660552978516,
+          "original_assignment_argmax_accuracy": 0.75,
+          "pair_id": "musiquepair-3e7c2f480a44b9225a746833"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 1.2151365280151367,
+            "reversed": 1.4123709201812744
+          },
+          "C3_nats": 1.3137537240982056,
+          "cluster_key": "notable work",
+          "historical_E3_original_minus_rescue_nats": 0.30350494384765625,
+          "original_assignment_argmax_accuracy": 0.75,
+          "pair_id": "musiquepair-40191e45a420046d67d63354"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 1.0645806789398193,
+            "reversed": 0.159013032913208
+          },
+          "C3_nats": 0.6117968559265137,
+          "cluster_key": "place of birth",
+          "historical_E3_original_minus_rescue_nats": 0.8364115953445435,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "musiquepair-42dba61fd259deae4a47a2b5"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 5.620637893676758,
+            "reversed": 5.934133052825928
+          },
+          "C3_nats": 5.777385473251343,
+          "cluster_key": "located in the administrative territorial entity",
+          "historical_E3_original_minus_rescue_nats": 1.7376447916030884,
+          "original_assignment_argmax_accuracy": 1.0,
+          "pair_id": "musiquepair-44cb08c527dc2be5c5614bb0"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 2.16709303855896,
+            "reversed": 1.3556137084960938
+          },
+          "C3_nats": 1.7613533735275269,
+          "cluster_key": "spouse",
+          "historical_E3_original_minus_rescue_nats": 0.08609879016876221,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "musiquepair-474bd8074ccf191d4f307abb"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 1.750000238418579,
+            "reversed": 1.84375
+          },
+          "C3_nats": 1.7968751192092896,
+          "cluster_key": "capital",
+          "historical_E3_original_minus_rescue_nats": 0.7226564884185791,
+          "original_assignment_argmax_accuracy": 0.75,
+          "pair_id": "musiquepair-4ca6abc1cfe4ed04a4da535d"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 3.7626709938049316,
+            "reversed": 2.3253397941589355
+          },
+          "C3_nats": 3.0440053939819336,
+          "cluster_key": "place of birth",
+          "historical_E3_original_minus_rescue_nats": 1.4130539894104004,
+          "original_assignment_argmax_accuracy": 1.0,
+          "pair_id": "musiquepair-4e9ab9b18f33dcfdc63b7f82"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 2.5404906272888184,
+            "reversed": 1.2266311645507812
+          },
+          "C3_nats": 1.8835608959197998,
+          "cluster_key": "award received",
+          "historical_E3_original_minus_rescue_nats": 0.2782127857208252,
+          "original_assignment_argmax_accuracy": 0.75,
+          "pair_id": "musiquepair-528275a0c223acc8a28462a2"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 1.8125,
+            "reversed": -0.609375
+          },
+          "C3_nats": 0.6015625,
+          "cluster_key": "place of birth",
+          "historical_E3_original_minus_rescue_nats": 0.6171875,
+          "original_assignment_argmax_accuracy": 0.25,
+          "pair_id": "musiquepair-535234c1175e7c3d1226405a"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 0.7884993553161621,
+            "reversed": 0.8909754753112793
+          },
+          "C3_nats": 0.8397374153137207,
+          "cluster_key": "child",
+          "historical_E3_original_minus_rescue_nats": 0.8355511426925659,
+          "original_assignment_argmax_accuracy": 0.75,
+          "pair_id": "musiquepair-54432c1be198e77da332edac"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 1.630920648574829,
+            "reversed": 1.4781441688537598
+          },
+          "C3_nats": 1.5545324087142944,
+          "cluster_key": "child",
+          "historical_E3_original_minus_rescue_nats": 0.5976375341415405,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "musiquepair-56c1d7898408c30ba79c87a1"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 0.29674768447875977,
+            "reversed": 0.3433084487915039
+          },
+          "C3_nats": 0.32002806663513184,
+          "cluster_key": "place of birth",
+          "historical_E3_original_minus_rescue_nats": 0.17764651775360107,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "musiquepair-5d1c9da77e2f127254eb2494"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 0.04759073257446289,
+            "reversed": 0.7839856147766113
+          },
+          "C3_nats": 0.4157881736755371,
+          "cluster_key": "child",
+          "historical_E3_original_minus_rescue_nats": 0.16826510429382324,
+          "original_assignment_argmax_accuracy": 0.75,
+          "pair_id": "musiquepair-5f15ad46a77cadbad56871e9"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 1.30149507522583,
+            "reversed": 1.4902565479278564
+          },
+          "C3_nats": 1.3958758115768433,
+          "cluster_key": "located in the administrative territorial entity",
+          "historical_E3_original_minus_rescue_nats": 1.5007461309432983,
+          "original_assignment_argmax_accuracy": 0.75,
+          "pair_id": "musiquepair-60f6d81f0a4180bb7c980725"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 2.8496698141098022,
+            "reversed": 2.7936346530914307
+          },
+          "C3_nats": 2.8216522336006165,
+          "cluster_key": "father",
+          "historical_E3_original_minus_rescue_nats": 0.5400844812393188,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "musiquepair-62b48a5db61800aef6c28de0"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 1.118311882019043,
+            "reversed": 0.3430185317993164
+          },
+          "C3_nats": 0.7306652069091797,
+          "cluster_key": "located in the administrative territorial entity",
+          "historical_E3_original_minus_rescue_nats": -1.3822764158248901,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "musiquepair-69473d29fc5d7dcdfb883174"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 1.433427095413208,
+            "reversed": 1.240203619003296
+          },
+          "C3_nats": 1.336815357208252,
+          "cluster_key": "shares border with",
+          "historical_E3_original_minus_rescue_nats": 1.6248801946640015,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "musiquepair-6c9f09594b39ff8737d8c3e9"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 2.450289487838745,
+            "reversed": 1.8951351642608643
+          },
+          "C3_nats": 2.1727123260498047,
+          "cluster_key": "child",
+          "historical_E3_original_minus_rescue_nats": 0.2568931579589844,
+          "original_assignment_argmax_accuracy": 0.75,
+          "pair_id": "musiquepair-7217e485be8911b6b5e56b74"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": -0.2212982177734375,
+            "reversed": -0.9066314697265625
+          },
+          "C3_nats": -0.56396484375,
+          "cluster_key": "shares border with",
+          "historical_E3_original_minus_rescue_nats": -0.49983954429626465,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "musiquepair-739dda0b8a23426dbdc1b394"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 0.25101709365844727,
+            "reversed": 0.7073659896850586
+          },
+          "C3_nats": 0.47919154167175293,
+          "cluster_key": "spouse",
+          "historical_E3_original_minus_rescue_nats": 1.482921838760376,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "musiquepair-754946b7012ad5e220dc3679"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 0.8447823524475098,
+            "reversed": 1.0948710441589355
+          },
+          "C3_nats": 0.9698266983032227,
+          "cluster_key": "educated at",
+          "historical_E3_original_minus_rescue_nats": -0.1363433599472046,
+          "original_assignment_argmax_accuracy": 0.75,
+          "pair_id": "musiquepair-7ad7d1fd1de25f0e64f99384"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 2.498840570449829,
+            "reversed": 2.671677350997925
+          },
+          "C3_nats": 2.585258960723877,
+          "cluster_key": "sibling",
+          "historical_E3_original_minus_rescue_nats": 0.6869145631790161,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "musiquepair-7b0e7158c8dc242659cf8c67"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 1.3394484519958496,
+            "reversed": 0.8746123313903809
+          },
+          "C3_nats": 1.1070303916931152,
+          "cluster_key": "place of birth",
+          "historical_E3_original_minus_rescue_nats": 1.1044739484786987,
+          "original_assignment_argmax_accuracy": 0.75,
+          "pair_id": "musiquepair-7cf63e36c5dfacdd69469fe0"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 0.9269979000091553,
+            "reversed": 0.01729440689086914
+          },
+          "C3_nats": 0.4721461534500122,
+          "cluster_key": "mother",
+          "historical_E3_original_minus_rescue_nats": 1.0001932382583618,
+          "original_assignment_argmax_accuracy": 0.75,
+          "pair_id": "musiquepair-7dc30cb045e744ab783308ec"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 0.3288094997406006,
+            "reversed": -0.15457868576049805
+          },
+          "C3_nats": 0.08711540699005127,
+          "cluster_key": "record label",
+          "historical_E3_original_minus_rescue_nats": 0.1496269702911377,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "musiquepair-7e0860fdfff874c819a39039"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 0.7526078224182129,
+            "reversed": -0.7687258720397949
+          },
+          "C3_nats": -0.008059024810791016,
+          "cluster_key": "capital",
+          "historical_E3_original_minus_rescue_nats": 1.0230379104614258,
+          "original_assignment_argmax_accuracy": 0.75,
+          "pair_id": "musiquepair-7e275e25ea7bab67faad76c8"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 1.0,
+            "reversed": 1.71875
+          },
+          "C3_nats": 1.359375,
+          "cluster_key": "country of citizenship",
+          "historical_E3_original_minus_rescue_nats": 0.734375,
+          "original_assignment_argmax_accuracy": 0.75,
+          "pair_id": "musiquepair-8161eba917c1c0b796bc4416"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 2.3880796432495117,
+            "reversed": 2.0892834663391113
+          },
+          "C3_nats": 2.2386815547943115,
+          "cluster_key": "child",
+          "historical_E3_original_minus_rescue_nats": 2.733679175376892,
+          "original_assignment_argmax_accuracy": 1.0,
+          "pair_id": "musiquepair-8f0e72bf1a1ec22782a4cbbc"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 1.4695196151733398,
+            "reversed": -0.06397533416748047
+          },
+          "C3_nats": 0.7027721405029297,
+          "cluster_key": "mouth of the watercourse",
+          "historical_E3_original_minus_rescue_nats": -1.407104253768921,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "musiquepair-93b364570921e8480e25a538"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 0.5627915859222412,
+            "reversed": -0.43660449981689453
+          },
+          "C3_nats": 0.06309354305267334,
+          "cluster_key": "located in the administrative territorial entity",
+          "historical_E3_original_minus_rescue_nats": 0.5153703689575195,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "musiquepair-9605001aa036c0249c532014"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 1.359374761581421,
+            "reversed": 0.46875
+          },
+          "C3_nats": 0.9140623807907104,
+          "cluster_key": "country",
+          "historical_E3_original_minus_rescue_nats": 1.1249998807907104,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "musiquepair-9bd12159eb66204802c9dcb2"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 2.579793691635132,
+            "reversed": 3.240147352218628
+          },
+          "C3_nats": 2.90997052192688,
+          "cluster_key": "located in the administrative territorial entity",
+          "historical_E3_original_minus_rescue_nats": 1.9571455717086792,
+          "original_assignment_argmax_accuracy": 0.75,
+          "pair_id": "musiquepair-9bf2588d4140bc6f21a131c0"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 0.6665856838226318,
+            "reversed": 1.7943997383117676
+          },
+          "C3_nats": 1.2304927110671997,
+          "cluster_key": "father",
+          "historical_E3_original_minus_rescue_nats": 1.6441969871520996,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "musiquepair-a062fdc5a4f87745e745d7da"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 1.691436529159546,
+            "reversed": 1.562243938446045
+          },
+          "C3_nats": 1.6268402338027954,
+          "cluster_key": "sibling",
+          "historical_E3_original_minus_rescue_nats": 1.898987054824829,
+          "original_assignment_argmax_accuracy": 1.0,
+          "pair_id": "musiquepair-a326144a3fb43c5f690c1b63"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": -0.26417040824890137,
+            "reversed": 0.42391180992126465
+          },
+          "C3_nats": 0.07987070083618164,
+          "cluster_key": "capital",
+          "historical_E3_original_minus_rescue_nats": 0.0020265579223632812,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "musiquepair-a637aab86892a598f6c3fa9c"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 1.9256064891815186,
+            "reversed": 1.2642414569854736
+          },
+          "C3_nats": 1.594923973083496,
+          "cluster_key": "movement",
+          "historical_E3_original_minus_rescue_nats": 3.158106207847595,
+          "original_assignment_argmax_accuracy": 0.75,
+          "pair_id": "musiquepair-a66c70d428167751d9df9f47"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 1.5236687660217285,
+            "reversed": 1.2802867889404297
+          },
+          "C3_nats": 1.401977777481079,
+          "cluster_key": "record label",
+          "historical_E3_original_minus_rescue_nats": 2.2819736003875732,
+          "original_assignment_argmax_accuracy": 0.75,
+          "pair_id": "musiquepair-a9485818e6dd5b2a01261b63"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 1.4235785007476807,
+            "reversed": 0.11814546585083008
+          },
+          "C3_nats": 0.7708619832992554,
+          "cluster_key": "shares border with",
+          "historical_E3_original_minus_rescue_nats": 0.9826058149337769,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "musiquepair-ac74dc43a5b59d63e784f946"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 0.6875574588775635,
+            "reversed": 1.0758936405181885
+          },
+          "C3_nats": 0.881725549697876,
+          "cluster_key": "located in the administrative territorial entity",
+          "historical_E3_original_minus_rescue_nats": 0.4805874824523926,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "musiquepair-ad5f8ae0f2c7270345e2e27a"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 3.2120559215545654,
+            "reversed": 3.3321774005889893
+          },
+          "C3_nats": 3.2721166610717773,
+          "cluster_key": "headquarters location",
+          "historical_E3_original_minus_rescue_nats": 2.018523931503296,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "musiquepair-b01a5d995fe91bc09fa4d90b"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 2.453125238418579,
+            "reversed": 1.21875
+          },
+          "C3_nats": 1.8359376192092896,
+          "cluster_key": "country",
+          "historical_E3_original_minus_rescue_nats": 3.4531251192092896,
+          "original_assignment_argmax_accuracy": 0.75,
+          "pair_id": "musiquepair-b5890b756ba015b97c029a16"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 3.5554957389831543,
+            "reversed": 3.924968719482422
+          },
+          "C3_nats": 3.740232229232788,
+          "cluster_key": "member of",
+          "historical_E3_original_minus_rescue_nats": 3.595755696296692,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "musiquepair-ba39025d1e2fd6840303807f"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": -0.018346309661865234,
+            "reversed": -0.364670991897583
+          },
+          "C3_nats": -0.19150865077972412,
+          "cluster_key": "has part",
+          "historical_E3_original_minus_rescue_nats": 1.5507588386535645,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "musiquepair-ba3bd541d1c6e7b798dae72d"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 1.2646229267120361,
+            "reversed": 0.9133775234222412
+          },
+          "C3_nats": 1.0890002250671387,
+          "cluster_key": "record label",
+          "historical_E3_original_minus_rescue_nats": 0.46987295150756836,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "musiquepair-bc6addf903122802a01778de"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 2.69128155708313,
+            "reversed": 3.921612501144409
+          },
+          "C3_nats": 3.3064470291137695,
+          "cluster_key": "located in the administrative territorial entity",
+          "historical_E3_original_minus_rescue_nats": 2.10967218875885,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "musiquepair-bf031fbd1e4d7de2c2f526b7"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 1.0723848342895508,
+            "reversed": 1.5114643573760986
+          },
+          "C3_nats": 1.2919245958328247,
+          "cluster_key": "spouse",
+          "historical_E3_original_minus_rescue_nats": -0.015027046203613281,
+          "original_assignment_argmax_accuracy": 0.75,
+          "pair_id": "musiquepair-c2d00b2401476a909524183c"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": -0.48498964309692383,
+            "reversed": -0.1251678466796875
+          },
+          "C3_nats": -0.30507874488830566,
+          "cluster_key": "shares border with",
+          "historical_E3_original_minus_rescue_nats": -0.023391246795654297,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "musiquepair-c468f363a5867914fde94057"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 0.6673808097839355,
+            "reversed": 1.4136221408843994
+          },
+          "C3_nats": 1.0405014753341675,
+          "cluster_key": "capital",
+          "historical_E3_original_minus_rescue_nats": 1.5624864101409912,
+          "original_assignment_argmax_accuracy": 0.75,
+          "pair_id": "musiquepair-c751edb10eab7c78149fa62d"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 0.9218003749847412,
+            "reversed": 1.4052300453186035
+          },
+          "C3_nats": 1.1635152101516724,
+          "cluster_key": "located in the administrative territorial entity",
+          "historical_E3_original_minus_rescue_nats": 0.34792840480804443,
+          "original_assignment_argmax_accuracy": 0.75,
+          "pair_id": "musiquepair-c993f93dcde314c046608a39"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 0.3743622303009033,
+            "reversed": 0.12833523750305176
+          },
+          "C3_nats": 0.25134873390197754,
+          "cluster_key": "spouse",
+          "historical_E3_original_minus_rescue_nats": 0.24123013019561768,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "musiquepair-ca3aaa136e49877196a5dd93"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": -0.4418673515319824,
+            "reversed": -0.7802464962005615
+          },
+          "C3_nats": -0.611056923866272,
+          "cluster_key": "shares border with",
+          "historical_E3_original_minus_rescue_nats": -0.07815361022949219,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "musiquepair-cc0d95842df4b86e464160d1"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 0.6855001449584961,
+            "reversed": -0.7208714485168457
+          },
+          "C3_nats": -0.017685651779174805,
+          "cluster_key": "has part",
+          "historical_E3_original_minus_rescue_nats": 0.09328770637512207,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "musiquepair-ccf45617d8cd102b54a699bd"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 2.3192896842956543,
+            "reversed": 2.8100221157073975
+          },
+          "C3_nats": 2.564655900001526,
+          "cluster_key": "located in the administrative territorial entity",
+          "historical_E3_original_minus_rescue_nats": -0.32781410217285156,
+          "original_assignment_argmax_accuracy": 1.0,
+          "pair_id": "musiquepair-ce29a29998811bcd95df175e"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 0.24941253662109375,
+            "reversed": 0.812302827835083
+          },
+          "C3_nats": 0.5308576822280884,
+          "cluster_key": "educated at",
+          "historical_E3_original_minus_rescue_nats": 1.4112825393676758,
+          "original_assignment_argmax_accuracy": 0.75,
+          "pair_id": "musiquepair-d11adbe9480f9e14133348a9"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": -0.5643670558929443,
+            "reversed": 0.872603178024292
+          },
+          "C3_nats": 0.15411806106567383,
+          "cluster_key": "located in the administrative territorial entity",
+          "historical_E3_original_minus_rescue_nats": 0.4603445529937744,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "musiquepair-d1807b1b56c8be3acad74c5a"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": -0.2593073844909668,
+            "reversed": 0.6430606842041016
+          },
+          "C3_nats": 0.19187664985656738,
+          "cluster_key": "spouse",
+          "historical_E3_original_minus_rescue_nats": 0.1850595474243164,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "musiquepair-d1d758d52454e794fa08ea15"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 1.8344216346740723,
+            "reversed": 1.5609593391418457
+          },
+          "C3_nats": 1.697690486907959,
+          "cluster_key": "shares border with",
+          "historical_E3_original_minus_rescue_nats": 0.7792400121688843,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "musiquepair-d31a4a3341575bb2c5b2e4c4"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 2.66037917137146,
+            "reversed": 2.174177885055542
+          },
+          "C3_nats": 2.417278528213501,
+          "cluster_key": "part of",
+          "historical_E3_original_minus_rescue_nats": 2.589955687522888,
+          "original_assignment_argmax_accuracy": 1.0,
+          "pair_id": "musiquepair-d4749b2de90c58f41467e98a"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 1.1680526733398438,
+            "reversed": 3.6906838417053223
+          },
+          "C3_nats": 2.429368257522583,
+          "cluster_key": "located in the administrative territorial entity",
+          "historical_E3_original_minus_rescue_nats": 4.335578918457031,
+          "original_assignment_argmax_accuracy": 0.75,
+          "pair_id": "musiquepair-daabc597116189afa61e3be2"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 1.5574615001678467,
+            "reversed": 1.209932804107666
+          },
+          "C3_nats": 1.3836971521377563,
+          "cluster_key": "place of death",
+          "historical_E3_original_minus_rescue_nats": 0.7418597936630249,
+          "original_assignment_argmax_accuracy": 0.75,
+          "pair_id": "musiquepair-e2b9a2563f97ebf6271c5519"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 2.7255609035491943,
+            "reversed": 0.019452333450317383
+          },
+          "C3_nats": 1.3725066184997559,
+          "cluster_key": "located in the administrative territorial entity",
+          "historical_E3_original_minus_rescue_nats": 1.7853682041168213,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "musiquepair-e46d459fd7d3f521aa6ad24d"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 2.9066600799560547,
+            "reversed": 1.6365246772766113
+          },
+          "C3_nats": 2.271592378616333,
+          "cluster_key": "spouse",
+          "historical_E3_original_minus_rescue_nats": 1.3206607103347778,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "musiquepair-e49ce6f3ea74ab2d02e6d3dd"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 0.90625,
+            "reversed": 3.3984375
+          },
+          "C3_nats": 2.15234375,
+          "cluster_key": "place of birth",
+          "historical_E3_original_minus_rescue_nats": 0.05468738079071045,
+          "original_assignment_argmax_accuracy": 1.0,
+          "pair_id": "musiquepair-e82c058ce85172e8cc82ee50"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 0.8629562854766846,
+            "reversed": 0.6718845367431641
+          },
+          "C3_nats": 0.7674204111099243,
+          "cluster_key": "shares border with",
+          "historical_E3_original_minus_rescue_nats": 1.6947497129440308,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "musiquepair-e9627a01c2a6df53285016c2"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 2.15625,
+            "reversed": 1.421875
+          },
+          "C3_nats": 1.7890625,
+          "cluster_key": "country",
+          "historical_E3_original_minus_rescue_nats": 2.2109375,
+          "original_assignment_argmax_accuracy": 0.75,
+          "pair_id": "musiquepair-e9af6e236c256d92d5a9ec62"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 2.6422948837280273,
+            "reversed": 2.0832560062408447
+          },
+          "C3_nats": 2.362775444984436,
+          "cluster_key": "spouse",
+          "historical_E3_original_minus_rescue_nats": 1.2899398803710938,
+          "original_assignment_argmax_accuracy": 0.75,
+          "pair_id": "musiquepair-eab741b145f903ef83394ce9"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": -0.18279528617858887,
+            "reversed": 0.39913153648376465
+          },
+          "C3_nats": 0.10816812515258789,
+          "cluster_key": "located in the administrative territorial entity",
+          "historical_E3_original_minus_rescue_nats": 0.7417906522750854,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "musiquepair-eab92e74ea1c1f10b0f13452"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 2.670473098754883,
+            "reversed": 1.58589768409729
+          },
+          "C3_nats": 2.1281853914260864,
+          "cluster_key": "instance of",
+          "historical_E3_original_minus_rescue_nats": 2.557047128677368,
+          "original_assignment_argmax_accuracy": 0.75,
+          "pair_id": "musiquepair-eb4b4f3127cb2f5513abf13d"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 2.9233224391937256,
+            "reversed": 2.8572161197662354
+          },
+          "C3_nats": 2.8902692794799805,
+          "cluster_key": "located in the administrative territorial entity",
+          "historical_E3_original_minus_rescue_nats": 2.8812367916107178,
+          "original_assignment_argmax_accuracy": 0.75,
+          "pair_id": "musiquepair-f7840e67b8778d67e1d1b923"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": -0.5410153865814209,
+            "reversed": -0.15701580047607422
+          },
+          "C3_nats": -0.34901559352874756,
+          "cluster_key": "located in the administrative territorial entity",
+          "historical_E3_original_minus_rescue_nats": 0.4739905595779419,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "musiquepair-fd2df47d5ff1031b2d9a5922"
+        },
+        {
+          "C3_by_candidate_order": {
+            "original": 0.7271432876586914,
+            "reversed": 0.31174707412719727
+          },
+          "C3_nats": 0.5194451808929443,
+          "cluster_key": "record label",
+          "historical_E3_original_minus_rescue_nats": 0.09371685981750488,
+          "original_assignment_argmax_accuracy": 0.5,
+          "pair_id": "musiquepair-fd4f29f21090c12695f90104"
+        }
+      ],
+      "pair_units": 95,
+      "primary_spearman_C3_vs_historical_E3": {
+        "bootstrap_replicates": 10000,
+        "estimate": 0.5480403135498321,
+        "finite_bootstrap_replicates": 10000,
+        "passes_lower95_gt_0_after_validity": true,
+        "percentile_95_CI": [
+          0.3827564385627945,
+          0.6801642664559184
+        ]
+      },
+      "terminal_relation_cluster_sensitivity": {
+        "bootstrap": {
+          "draws_sha256": "9f2e91a42f0d19d7821ea87a97783178206378dd61d6bfac112704b616490bd5",
+          "method": "two-stage bootstrap of 30 terminal relations, then the observed number of whole pairs within each sampled relation",
+          "observed_relation_sizes": {
+            "award received": 1,
+            "capital": 5,
+            "capital of": 2,
+            "child": 8,
+            "contains administrative territorial entity": 1,
+            "country": 3,
+            "country of citizenship": 1,
+            "educated at": 2,
+            "employer": 1,
+            "father": 2,
+            "founded by": 1,
+            "has part": 2,
+            "headquarters location": 2,
+            "instance of": 2,
+            "league": 1,
+            "located in or next to body of water": 1,
+            "located in the administrative territorial entity": 18,
+            "location of formation": 1,
+            "member of": 1,
+            "mother": 1,
+            "mouth of the watercourse": 1,
+            "movement": 1,
+            "notable work": 1,
+            "part of": 1,
+            "place of birth": 7,
+            "place of death": 1,
+            "record label": 5,
+            "shares border with": 11,
+            "sibling": 2,
+            "spouse": 9
+          },
+          "replicates": 10000,
+          "required_sensitivity_not_primary_gate": true,
+          "rng_seed": 17877142403538393298
+        },
+        "cannot_override_primary_pair_bootstrap": true,
+        "spearman_C3_vs_historical_E3": {
+          "bootstrap_replicates": 10000,
+          "estimate": 0.5480403135498321,
+          "finite_bootstrap_replicates": 10000,
+          "percentile_95_CI": [
+            0.33735525922744597,
+            0.7168972498470836
+          ]
+        },
+        "top_minus_bottom_quartile_E3_nats": {
+          "bootstrap_replicates": 10000,
+          "estimate": 1.5028297652800877,
+          "finite_bootstrap_replicates": 10000,
+          "percentile_95_CI": [
+            0.8133642328596513,
+            2.284019525522825
+          ]
+        }
+      },
+      "top_minus_bottom_compatibility_quartile_historical_E3_nats": {
+        "bootstrap_replicates": 10000,
+        "estimate": 1.5028297652800877,
+        "finite_bootstrap_replicates": 10000,
+        "membership_tie_break": "compatibility then pair ID",
+        "percentile_95_CI": [
+          0.9502227554132041,
+          2.0622860032279293
+        ],
+        "quartile_size": 24
+      },
+      "validity": {
+        "all_pass": true,
+        "all_primary_bootstrap_draws_finite": true,
+        "candidate_order_audit_passes": true,
+        "isolated_fact_competence_passes": true,
+        "structural_checks_passed": true,
+        "variation_guard_passes": true
+      },
+      "variation_guard": {
+        "C3_standard_deviation": 1.1829460740964413,
+        "distinct_C3_values": 95,
+        "passes": true
+      }
+    }
+  },
+  "historical_source_bindings": {
+    "2wiki": {
+      "dataset": "2wiki",
+      "design": {
+        "relpath": "reports/discovery/ouro26_2wiki_bridge_validation_v1_20260905T172500Z/design.json",
+        "runner_sha256": "c7c923d2c0c1b14dcaa83875e6a7e68fc6191e2d9de0a2ebd3cf40d44be343d2",
+        "schema": "ouro26-2wiki-bridge-validation-v1",
+        "sha256": "3ae81beb2936f759e8d924a963a1970eeb3adc2c526f4afdd1def529df8147f0"
+      },
+      "historical_result_was_observed_before_this_followup": true,
+      "merged": {
+        "execution_mode": "merged_model_shards",
+        "relpath": "reports/discovery/ouro26_2wiki_bridge_validation_v1_20260905T172500Z/merged.json",
+        "sha256": "04c2beadecdca18563224200c8bfef26d237f40c142efdc387536ba0a56353cd"
+      },
+      "pair_units": 124
+    },
+    "musique": {
+      "dataset": "musique",
+      "design": {
+        "relpath": "reports/discovery/ouro26_musique_bridge_validation_v1_20260905T181200Z/design.json",
+        "runner_sha256": "338a878a779649c18571afb19d547b597e448fb2e0eabf56b4f8f43897949478",
+        "schema": "ouro26-musique-bridge-validation-v1",
+        "sha256": "9f1fc21d293242d38b2aa9ae6e0657f70e83b2d54858f1ed993fea531b58c21d"
+      },
+      "historical_result_was_observed_before_this_followup": true,
+      "merged": {
+        "execution_mode": "merged_model_shards",
+        "relpath": "reports/discovery/ouro26_musique_bridge_validation_v1_20260905T181200Z/merged.json",
+        "sha256": "4f6c2e2d5f96f92ad4e604b23c71d1e6b17909f71465aa7e6e3733fd31723805"
+      },
+      "pair_units": 95
+    }
+  },
+  "interpretation": {
+    "endogeneity_warning": "C3 and E3 share the same frozen model, answer candidates, and teacher-forced likelihood interface. Correlated candidate or entity difficulty can induce an association without compatibility causing the rescue residual.",
+    "not_supported_by_this_design": [
+      "causal mediation by factual compatibility",
+      "an explanatory effect of compatibility on incomplete rescue",
+      "a unique hidden-state mechanism",
+      "separation of factual memory from entity or relation familiarity",
+      "repair or reinterpretation of any frozen main-result gate"
+    ],
+    "stage_2_if_triggered": "Add exactly: Treat the supplied statements as authoritative fictional facts. Ignore outside knowledge and answer using only these statements. Test whether residual_standard minus residual_fact_only is positive while D and competence remain intact under a separate prospective registration.",
+    "supported_if_conjunction_passes": "The isolated compatibility diagnostic aligns with frozen rescue residuals in both datasets and prioritizes the separately registered fact-only instruction intervention. It is not an explanation of incomplete rescue.",
+    "timing": "The question was motivated after observing incomplete rescue, but every new compatibility prompt, score, estimand, gate, and analysis rule was registered before the new model scores."
+  },
+  "registration": {
+    "path": "design.json",
+    "sha256": "cb0cd19224b78f127d72310f6a69aed0f7dd54da1437d0bbe16b26d8ce15c1a1",
+    "status": "frozen_before_any_new_terminal_compatibility_score"
+  },
+  "schema": "ouro26-terminal-fact-compatibility-v1-analysis-v1"
+}

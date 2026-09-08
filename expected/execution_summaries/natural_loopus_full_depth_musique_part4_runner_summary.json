@@ -1,0 +1,25 @@
+{
+  "pairs": 23,
+  "panel_shard": 3,
+  "row_schedule_sha256": "46f4d7398e74eb57ccb2cdb33e5b7d3ed01a7b06f4b82cac9db3ed4b78c068db",
+  "rows_by_state_and_depth": {
+    "bridge_swap:K1": 92,
+    "bridge_swap:K2": 92,
+    "bridge_swap:K3": 92,
+    "bridge_swap:K4": 92,
+    "bridge_swap:K5": 92,
+    "bridge_swap:K6": 92,
+    "bridge_swap:K7": 92,
+    "bridge_swap:K8": 92,
+    "original:K1": 92,
+    "original:K2": 92,
+    "original:K3": 92,
+    "original:K4": 92,
+    "original:K5": 92,
+    "original:K6": 92,
+    "original:K7": 92,
+    "original:K8": 92,
+    "topology_rescue:K8": 92
+  },
+  "terminal_relations": 12
+}

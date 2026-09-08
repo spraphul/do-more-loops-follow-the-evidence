@@ -1,0 +1,244 @@
+{
+  "input": {
+    "path": "competence.json",
+    "sha256": "42f3cdc172503286557fa5c6fc281007b840222fdf32bac723987224a67fa469"
+  },
+  "model": {
+    "architecture": {
+      "architectures": [
+        "OuroForCausalLM"
+      ],
+      "model_type": "ouro",
+      "torch_dtype": "bfloat16",
+      "total_ut_steps": 4,
+      "vocab_size": 49152
+    },
+    "cache_repository_dir": "models--ByteDance--Ouro-1.4B",
+    "config_sha256": "ce9cc13da41591b8b4deca053d7dfee06424c0228628ee862ea86d725bc163f3",
+    "dtype": "bfloat16",
+    "frozen": true,
+    "generation": false,
+    "identity_based_candidate_scoring": true,
+    "labels_argument_omitted": true,
+    "model_loaded": true,
+    "native_K_values": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "native_readout_parity": {
+      "auxiliary_forward_calls": 8,
+      "comparison": "four-step execution with exit_at_step=K-1 versus genuine K-step execution with no exit override",
+      "passes": true,
+      "per_K": {
+        "1": {
+          "atol": 0.0005,
+          "candidate_max_abs_logit_difference": 0.0,
+          "exit_at_step": 0,
+          "full_vocabulary_max_abs_logit_difference": 0.0,
+          "rtol": 1e-05,
+          "torch_allclose": true
+        },
+        "2": {
+          "atol": 0.0005,
+          "candidate_max_abs_logit_difference": 0.0,
+          "exit_at_step": 1,
+          "full_vocabulary_max_abs_logit_difference": 0.0,
+          "rtol": 1e-05,
+          "torch_allclose": true
+        },
+        "3": {
+          "atol": 0.0005,
+          "candidate_max_abs_logit_difference": 0.0,
+          "exit_at_step": 2,
+          "full_vocabulary_max_abs_logit_difference": 0.0,
+          "rtol": 1e-05,
+          "torch_allclose": true
+        },
+        "4": {
+          "atol": 0.0005,
+          "candidate_max_abs_logit_difference": 0.0,
+          "exit_at_step": 3,
+          "full_vocabulary_max_abs_logit_difference": 0.0,
+          "rtol": 1e-05,
+          "torch_allclose": true
+        }
+      }
+    },
+    "readout_selector": "exit_at_step=K-1",
+    "repository": "ByteDance/Ouro-1.4B",
+    "revision": "574fa66cb8bf5abdc979642d01cf2b79b16bfab1",
+    "snapshot_file_sha256": {
+      "modeling_ouro.py": "c5c68fbb368ce2909c257ae2afc50719be8c91539333d3295e19312c4316f413",
+      "tokenizer.json": "fcb808fe5e7642f5299be28aea07fc7f6d4f4364c3ac5e408e15a772cbc8fa8d"
+    },
+    "tokenizer_preflight": {
+      "candidate_identity_extensions_checked": 248,
+      "candidate_token_ids_match_frozen_2_6B_design": true,
+      "chat_string_and_token_renderings_identical": true,
+      "maximum_candidate_tokens": 8,
+      "maximum_prompt_tokens": 264,
+      "minimum_candidate_tokens": 1,
+      "minimum_prompt_tokens": 173,
+      "prompt_boundaries_checked": 124,
+      "prompt_token_counts_match_frozen_2_6B_design": true
+    },
+    "use_cache": false,
+    "weight_blob_sha256": "58872a72616c736595b8b7662079c5b12c5a162ec16eae94f21c348dfa9885af",
+    "weight_bytes": 2869336434
+  },
+  "registration": {
+    "path": "design.json",
+    "sha256": "f76c3f42544f63a69f66bec10cc083e10dbad735e32362cdaeca1e141b20d389"
+  },
+  "schema": "ouro14-2wiki-matched-scale-competence-analysis-v1",
+  "source_design": {
+    "path": "design.json",
+    "sha256": "3ae81beb2936f759e8d924a963a1970eeb3adc2c526f4afdd1def529df8147f0"
+  },
+  "summary": {
+    "K3_primary_accuracy": {
+      "candidate_order": {
+        "original": 0.5967741935483871,
+        "reversed": 0.5967741935483871
+      },
+      "draws_sha256": "6a8f6ad84c90ddecfdbe6bc05bf530d1e51f468f4a25a8c27dcad8333389a10c",
+      "estimate": 0.5967741935483871,
+      "query_arm": {
+        "A": 0.5483870967741935,
+        "B": 0.6451612903225806
+      },
+      "reference_display_position": {
+        "1": 0.6612903225806451,
+        "2": 0.532258064516129
+      },
+      "replicates": 10000,
+      "resampling_unit": "whole pair; exactly one pair represents each relation path",
+      "salt": "ouro14-2wiki-matched-scale-competence-v1:whole-pair-path-bootstrap:K3",
+      "seed": 15622167197057002780,
+      "whole_pair_path_percentile_95_CI": [
+        0.5403225806451613,
+        0.661290322580645
+      ]
+    },
+    "candidate_sequence_forwards": 992,
+    "claim_boundary": "competence on one exposed-panel pair per relation path only; no bridge-swap, topology-rescue, depth-gain, scale-transfer, held-out-dataset, or architecture-generality claim",
+    "decision": "STOP_OURO14_2WIKI_INCOMPETENT_SUBSTRATE",
+    "diagnostic_not_gates": {
+      "reference_margin_nats_by_K": {
+        "1": {
+          "draws_sha256": "6a8f6ad84c90ddecfdbe6bc05bf530d1e51f468f4a25a8c27dcad8333389a10c",
+          "estimate": 0.006151406995711788,
+          "replicates": 10000,
+          "resampling_unit": "whole pair; exactly one pair represents each relation path",
+          "salt": "ouro14-2wiki-matched-scale-competence-v1:whole-pair-path-bootstrap:K3",
+          "seed": 15622167197057002780,
+          "whole_pair_path_percentile_95_CI": [
+            -0.060557227942251386,
+            0.06810041800622016
+          ]
+        },
+        "2": {
+          "draws_sha256": "6a8f6ad84c90ddecfdbe6bc05bf530d1e51f468f4a25a8c27dcad8333389a10c",
+          "estimate": 0.03414121750862368,
+          "replicates": 10000,
+          "resampling_unit": "whole pair; exactly one pair represents each relation path",
+          "salt": "ouro14-2wiki-matched-scale-competence-v1:whole-pair-path-bootstrap:K3",
+          "seed": 15622167197057002780,
+          "whole_pair_path_percentile_95_CI": [
+            0.00923675625554977,
+            0.06030956660547564
+          ]
+        },
+        "3": {
+          "draws_sha256": "6a8f6ad84c90ddecfdbe6bc05bf530d1e51f468f4a25a8c27dcad8333389a10c",
+          "estimate": 1.3616825342178345,
+          "replicates": 10000,
+          "resampling_unit": "whole pair; exactly one pair represents each relation path",
+          "salt": "ouro14-2wiki-matched-scale-competence-v1:whole-pair-path-bootstrap:K3",
+          "seed": 15622167197057002780,
+          "whole_pair_path_percentile_95_CI": [
+            1.0602189060180418,
+            1.6637361596668918
+          ]
+        },
+        "4": {
+          "draws_sha256": "6a8f6ad84c90ddecfdbe6bc05bf530d1e51f468f4a25a8c27dcad8333389a10c",
+          "estimate": 2.518211691610275,
+          "replicates": 10000,
+          "resampling_unit": "whole pair; exactly one pair represents each relation path",
+          "salt": "ouro14-2wiki-matched-scale-competence-v1:whole-pair-path-bootstrap:K3",
+          "seed": 15622167197057002780,
+          "whole_pair_path_percentile_95_CI": [
+            2.0140137478228537,
+            3.0208479517890563
+          ]
+        }
+      },
+      "state_correct_accuracy_by_K": {
+        "1": {
+          "draws_sha256": "6a8f6ad84c90ddecfdbe6bc05bf530d1e51f468f4a25a8c27dcad8333389a10c",
+          "estimate": 0.5080645161290323,
+          "replicates": 10000,
+          "resampling_unit": "whole pair; exactly one pair represents each relation path",
+          "salt": "ouro14-2wiki-matched-scale-competence-v1:whole-pair-path-bootstrap:K3",
+          "seed": 15622167197057002780,
+          "whole_pair_path_percentile_95_CI": [
+            0.47580645161290325,
+            0.5483870967741935
+          ]
+        },
+        "2": {
+          "draws_sha256": "6a8f6ad84c90ddecfdbe6bc05bf530d1e51f468f4a25a8c27dcad8333389a10c",
+          "estimate": 0.5161290322580645,
+          "replicates": 10000,
+          "resampling_unit": "whole pair; exactly one pair represents each relation path",
+          "salt": "ouro14-2wiki-matched-scale-competence-v1:whole-pair-path-bootstrap:K3",
+          "seed": 15622167197057002780,
+          "whole_pair_path_percentile_95_CI": [
+            0.5,
+            0.5403225806451613
+          ]
+        },
+        "3": {
+          "draws_sha256": "6a8f6ad84c90ddecfdbe6bc05bf530d1e51f468f4a25a8c27dcad8333389a10c",
+          "estimate": 0.5967741935483871,
+          "replicates": 10000,
+          "resampling_unit": "whole pair; exactly one pair represents each relation path",
+          "salt": "ouro14-2wiki-matched-scale-competence-v1:whole-pair-path-bootstrap:K3",
+          "seed": 15622167197057002780,
+          "whole_pair_path_percentile_95_CI": [
+            0.5403225806451613,
+            0.661290322580645
+          ]
+        },
+        "4": {
+          "draws_sha256": "6a8f6ad84c90ddecfdbe6bc05bf530d1e51f468f4a25a8c27dcad8333389a10c",
+          "estimate": 0.7338709677419355,
+          "replicates": 10000,
+          "resampling_unit": "whole pair; exactly one pair represents each relation path",
+          "salt": "ouro14-2wiki-matched-scale-competence-v1:whole-pair-path-bootstrap:K3",
+          "seed": 15622167197057002780,
+          "whole_pair_path_percentile_95_CI": [
+            0.6532258064516129,
+            0.8145161290322581
+          ]
+        }
+      }
+    },
+    "future_stage_status": "separate_registration_and_authorization_required_even_if_competence_passes",
+    "gate": {
+      "each_candidate_order_point_at_least": 0.55,
+      "each_query_arm_point_at_least": 0.55,
+      "each_reference_display_position_point_at_least": 0.55,
+      "overall_point_at_least": 0.6,
+      "passes": false,
+      "whole_pair_path_lower95_strictly_above": 0.5
+    },
+    "pair_units": 31,
+    "relation_paths": 31,
+    "scored_rows": 496,
+    "treatment_scores_accessed": false
+  }
+}

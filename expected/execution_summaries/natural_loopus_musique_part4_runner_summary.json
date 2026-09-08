@@ -1,0 +1,13 @@
+{
+  "pairs": 23,
+  "panel_shard": 3,
+  "row_schedule_sha256": "42d352f22a0d9ea2ff413d2147474e3a643e13a517f0a952c089a3e3b113a623",
+  "rows_by_state_and_depth": {
+    "bridge_swap:K1": 92,
+    "bridge_swap:K8": 92,
+    "original:K1": 92,
+    "original:K8": 92,
+    "topology_rescue:K8": 92
+  },
+  "terminal_relations": 12
+}

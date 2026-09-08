@@ -1,0 +1,1603 @@
+{
+  "schema": "iclr2027.scale_invariant_path_control.v2",
+  "status": "retrospective_reviewer_driven_analysis",
+  "claim_boundary": "Tests robustness of the depth-by-path interaction to confidence scaling. The strongest exact control concerns the first candidate-identifying token; the analysis does not retroactively alter registered endpoints or establish recurrence specificity.",
+  "results": {
+    "ouro26_2wiki": {
+      "model": "Ouro-2.6B",
+      "dataset": "2Wiki",
+      "shallow_K": 1,
+      "deep_K": 3,
+      "inputs": [
+        {
+          "path": "ouro26_2wiki.json",
+          "sha256": "593a8104419da38f0a93e03436185e94cfa7466618278e9da95a119bd9a4bb27"
+        }
+      ],
+      "data": {
+        "rows_loaded": 5952,
+        "rows_used": 1984,
+        "pairs": 124,
+        "clusters": 31,
+        "counterbalanced_rows_per_pair_state_exit": [
+          4
+        ],
+        "first_divergence_position_counts_zero_based": {
+          "0": 5904,
+          "5": 48
+        },
+        "first_divergence_tie_counts_all_saved_states_and_exits": {
+          "bridge_swap__K1": 3,
+          "bridge_swap__K2": 1,
+          "bridge_swap__K3": 2,
+          "bridge_swap__K4": 1,
+          "original__K1": 1,
+          "original__K2": 1,
+          "original__K3": 3,
+          "original__K4": 2,
+          "topology_rescue__K1": 2,
+          "topology_rescue__K2": 3,
+          "topology_rescue__K3": 1,
+          "topology_rescue__K4": 4
+        }
+      },
+      "bootstrap": {
+        "primary": "cluster_then_pair",
+        "replicates": 10000,
+        "seed_salt": "iclr2027-strong-accept:scale-invariant-path-control:v1",
+        "MuSiQue_sensitivity": null
+      },
+      "raw_margin": {
+        "original_shallow": {
+          "estimate": -0.009646513769703527,
+          "ci95": [
+            -0.06327277436371771,
+            0.031396562630130395
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "swap_shallow": {
+          "estimate": -0.00825831582469325,
+          "ci95": [
+            -0.0509555715226358,
+            0.02868649709609245
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "original_deep": {
+          "estimate": 2.231815353997292,
+          "ci95": [
+            1.997565473063338,
+            2.477527355018162
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "swap_deep": {
+          "estimate": -0.8821477385297898,
+          "ci95": [
+            -1.109390132778114,
+            -0.6570977259307139
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "D_shallow": {
+          "estimate": -0.0013881979450102776,
+          "ci95": [
+            -0.018803630096297107,
+            0.014040178877692057
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "D_deep": {
+          "estimate": 3.113963092527082,
+          "ci95": [
+            2.717122812304766,
+            3.5346966733134564
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "depth_gain": {
+          "estimate": 3.115351290472092,
+          "ci95": [
+            2.721954595309592,
+            3.5318558708674486
+          ],
+          "bootstrap_replicates": 10000
+        }
+      },
+      "exact_first_divergence_token": {
+        "definition": "Reference-minus-other log probability at the first candidate token where token IDs diverge. The context is identical at that position, so the value is exactly the corresponding token-logit difference.",
+        "original_shallow": {
+          "estimate": 0.01367178252868114,
+          "ci95": [
+            -0.0004026505254930064,
+            0.02876688327880636
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "swap_shallow": {
+          "estimate": 0.00934939254676142,
+          "ci95": [
+            -0.003254041129783276,
+            0.022451574577679552
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "original_deep": {
+          "estimate": 2.2322368126122223,
+          "ci95": [
+            1.9986016184542208,
+            2.4776895993779746
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "swap_deep": {
+          "estimate": -0.881056283946119,
+          "ci95": [
+            -1.1082163543331496,
+            -0.6561167237187375
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "D_shallow": {
+          "estimate": 0.004322389981919719,
+          "ci95": [
+            -0.0013047687468990203,
+            0.011071728387727369
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "D_deep": {
+          "estimate": 3.113293096558341,
+          "ci95": [
+            2.716385114199722,
+            3.5335464227340005
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "continuous_depth_gain": {
+          "estimate": 3.108970706576421,
+          "ci95": [
+            2.7118458961057774,
+            3.528800402249345
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "graph_directed_state_accuracy_shallow": {
+          "estimate": 0.5020161290322581,
+          "ci95": [
+            0.4944556451612903,
+            0.5095766129032258
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "graph_directed_state_accuracy_deep": {
+          "estimate": 0.6940524193548387,
+          "ci95": [
+            0.6532258064516129,
+            0.735383064516129
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "choice_control_shallow": {
+          "estimate": 0.004032258064516129,
+          "ci95": [
+            -0.011088709677419355,
+            0.019153225806451613
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "choice_control_deep": {
+          "estimate": 0.38810483870967744,
+          "ci95": [
+            0.3064516129032258,
+            0.47076612903225806
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "choice_control_gain": {
+          "estimate": 0.3840725806451613,
+          "ci95": [
+            0.3013860887096774,
+            0.46975806451612906
+          ],
+          "bootstrap_replicates": 10000
+        }
+      },
+      "scale_invariant_choice": {
+        "scope_note": "Sign of the saved complete-string pairwise margin. This is invariant to positive rescaling of that margin, but it is not an exact token-level temperature intervention when candidate token lengths differ.",
+        "graph_directed_state_accuracy_shallow": {
+          "estimate": 0.5045362903225806,
+          "ci95": [
+            0.4939516129032258,
+            0.5171370967741935
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "graph_directed_state_accuracy_deep": {
+          "estimate": 0.6940524193548387,
+          "ci95": [
+            0.6527217741935484,
+            0.7358870967741935
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "state_accuracy_gain": {
+          "estimate": 0.18951612903225806,
+          "ci95": [
+            0.14717741935483872,
+            0.23286290322580644
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "choice_control_shallow": {
+          "estimate": 0.009072580645161291,
+          "ci95": [
+            -0.012096774193548387,
+            0.034274193548387094
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "choice_control_deep": {
+          "estimate": 0.38810483870967744,
+          "ci95": [
+            0.30544354838709675,
+            0.4717741935483871
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "choice_control_gain": {
+          "estimate": 0.3790322580645161,
+          "ci95": [
+            0.29435483870967744,
+            0.4657258064516129
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "joint_follow_rate_shallow": {
+          "estimate": 0.14516129032258066,
+          "ci95": [
+            0.06451612903225806,
+            0.24193548387096775
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "joint_follow_rate_deep": {
+          "estimate": 0.8951612903225806,
+          "ci95": [
+            0.8064516129032258,
+            0.967741935483871
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "joint_follow_rate_gain": {
+          "estimate": 0.75,
+          "ci95": [
+            0.6290322580645161,
+            0.8548387096774194
+          ],
+          "bootstrap_replicates": 10000
+        }
+      },
+      "scale_normalized_margin": {
+        "original_state_row_RMS_normalized_D_shallow": {
+          "estimate": -0.0009500885568099534,
+          "ci95": [
+            -0.012114679748964786,
+            0.010268843835319274
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "original_state_row_RMS_normalized_D_deep": {
+          "estimate": 0.787331076815715,
+          "ci95": [
+            0.6737025424589302,
+            0.9120840405950716
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "original_state_row_RMS_normalized_gain": {
+          "estimate": 0.788281165372525,
+          "ci95": [
+            0.6756286253472699,
+            0.9111086920856869
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "pooled_state_row_RMS_normalized_gain": {
+          "estimate": 0.8334817909583513,
+          "ci95": [
+            0.7059210115416785,
+            0.9783834531499188
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "paired_standardized_D_shallow": {
+          "estimate": -0.018489288405519517,
+          "ci95": [
+            -0.21582233676300752,
+            0.22062251008248535
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "paired_standardized_D_deep": {
+          "estimate": 2.2460986532077523,
+          "ci95": [
+            1.9639022470290024,
+            2.6684533557895844
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "paired_standardized_gain": {
+          "estimate": 2.264587941613272,
+          "ci95": [
+            1.9476398078099204,
+            2.6890534044958
+          ],
+          "bootstrap_replicates": 10000
+        }
+      },
+      "crossfit_positive_scale_control": {
+        "interpretation": "Deep path contrast after mapping deep margins to the shallow scale with one nonnegative, zero-intercept scale fit only on held-out intact controls, minus the shallow path contrast.",
+        "residual_depth_gain": {
+          "estimate": 0.0021606229140222386,
+          "ci95": [
+            -0.007124186967312233,
+            0.040435110488020135
+          ],
+          "bootstrap_replicates": 10000,
+          "calibration_refit_within_each_bootstrap_draw": true
+        },
+        "point_estimate_fold_fits": [
+          {
+            "fold": 0.0,
+            "training_observations": 100.0,
+            "deep_to_shallow_positive_scale": 0.0
+          },
+          {
+            "fold": 1.0,
+            "training_observations": 112.0,
+            "deep_to_shallow_positive_scale": 0.0
+          },
+          {
+            "fold": 2.0,
+            "training_observations": 80.0,
+            "deep_to_shallow_positive_scale": 0.0
+          },
+          {
+            "fold": 3.0,
+            "training_observations": 92.0,
+            "deep_to_shallow_positive_scale": 0.00011957879836983309
+          },
+          {
+            "fold": 4.0,
+            "training_observations": 112.0,
+            "deep_to_shallow_positive_scale": 0.0019316574454060736
+          }
+        ]
+      },
+      "crossfit_monotone_calibration_sensitivity": {
+        "interpretation": "Sensitivity only: deep margins are mapped to the shallow scale by a five-fold relation-cluster-held-out isotonic map fit on intact controls.",
+        "residual_depth_gain": {
+          "estimate": 0.4125545070151071,
+          "ci95": [
+            0.0023546715009243532,
+            1.1960310254370496
+          ],
+          "bootstrap_replicates": 10000,
+          "calibration_refit_within_each_bootstrap_draw": true
+        }
+      }
+    },
+    "ouro26_musique": {
+      "model": "Ouro-2.6B",
+      "dataset": "MuSiQue",
+      "shallow_K": 1,
+      "deep_K": 3,
+      "inputs": [
+        {
+          "path": "ouro26_musique.json",
+          "sha256": "769ebf4e3ca59d7e70d5a54407fb4633c9fbc2a88d2a0d959c0ed123df346575"
+        }
+      ],
+      "data": {
+        "rows_loaded": 4560,
+        "rows_used": 1520,
+        "pairs": 95,
+        "clusters": 30,
+        "counterbalanced_rows_per_pair_state_exit": [
+          4
+        ],
+        "first_divergence_position_counts_zero_based": {
+          "0": 4512,
+          "2": 48
+        },
+        "first_divergence_tie_counts_all_saved_states_and_exits": {
+          "bridge_swap__K3": 2,
+          "bridge_swap__K4": 3,
+          "original__K2": 1,
+          "original__K3": 1,
+          "original__K4": 1,
+          "topology_rescue__K1": 2,
+          "topology_rescue__K2": 1,
+          "topology_rescue__K4": 1
+        }
+      },
+      "bootstrap": {
+        "primary": "pair",
+        "replicates": 10000,
+        "seed_salt": "iclr2027-strong-accept:scale-invariant-path-control:v1",
+        "MuSiQue_sensitivity": "terminal_relation_then_pair"
+      },
+      "raw_margin": {
+        "original_shallow": {
+          "estimate": 0.017954991993151214,
+          "ci95": [
+            -0.031324703191456034,
+            0.0666812064773158
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "swap_shallow": {
+          "estimate": -0.0061455550946687395,
+          "ci95": [
+            -0.04710537759881271,
+            0.03279820580231514
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "original_deep": {
+          "estimate": 2.5176238097642596,
+          "ci95": [
+            2.2676376202231956,
+            2.7639525578837643
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "swap_deep": {
+          "estimate": -0.64765229852576,
+          "ci95": [
+            -0.953851588807608,
+            -0.332195956989339
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "D_shallow": {
+          "estimate": 0.024100547087819953,
+          "ci95": [
+            -0.0039015414212879365,
+            0.05309767183504606
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "D_deep": {
+          "estimate": 3.1652761082900196,
+          "ci95": [
+            2.8025028566937698,
+            3.5302613954167614
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "depth_gain": {
+          "estimate": 3.1411755612022,
+          "ci95": [
+            2.775798117800763,
+            3.508182684402717
+          ],
+          "bootstrap_replicates": 10000
+        }
+      },
+      "exact_first_divergence_token": {
+        "definition": "Reference-minus-other log probability at the first candidate token where token IDs diverge. The context is identical at that position, so the value is exactly the corresponding token-logit difference.",
+        "original_shallow": {
+          "estimate": 0.03154505773594505,
+          "ci95": [
+            0.018383054105859054,
+            0.04541935353686934
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "swap_shallow": {
+          "estimate": 0.02571932171520434,
+          "ci95": [
+            0.012850816132206667,
+            0.039617482855131746
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "original_deep": {
+          "estimate": 2.5108244343807824,
+          "ci95": [
+            2.2601327380067424,
+            2.757953723449456
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "swap_deep": {
+          "estimate": -0.6439761639425629,
+          "ci95": [
+            -0.9500349708156366,
+            -0.32945096879217184
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "D_shallow": {
+          "estimate": 0.00582573602074071,
+          "ci95": [
+            0.0009154880517407468,
+            0.010514877720883017
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "D_deep": {
+          "estimate": 3.1548005983233454,
+          "ci95": [
+            2.7901907231933194,
+            3.5183650620105236
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "continuous_depth_gain": {
+          "estimate": 3.1489748623026044,
+          "ci95": [
+            2.7848671094681086,
+            3.5126005241608147
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "graph_directed_state_accuracy_shallow": {
+          "estimate": 0.506578947368421,
+          "ci95": [
+            0.5,
+            0.5131578947368421
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "graph_directed_state_accuracy_deep": {
+          "estimate": 0.6835526315789474,
+          "ci95": [
+            0.6513157894736842,
+            0.7164473684210526
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "choice_control_shallow": {
+          "estimate": 0.013157894736842105,
+          "ci95": [
+            0.0,
+            0.02631578947368421
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "choice_control_deep": {
+          "estimate": 0.3671052631578947,
+          "ci95": [
+            0.3026315789473684,
+            0.4328947368421053
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "choice_control_gain": {
+          "estimate": 0.3539473684210526,
+          "ci95": [
+            0.2881578947368421,
+            0.41973684210526313
+          ],
+          "bootstrap_replicates": 10000
+        }
+      },
+      "scale_invariant_choice": {
+        "scope_note": "Sign of the saved complete-string pairwise margin. This is invariant to positive rescaling of that margin, but it is not an exact token-level temperature intervention when candidate token lengths differ.",
+        "graph_directed_state_accuracy_shallow": {
+          "estimate": 0.5039473684210526,
+          "ci95": [
+            0.49473684210526314,
+            0.5131578947368421
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "graph_directed_state_accuracy_deep": {
+          "estimate": 0.6855263157894737,
+          "ci95": [
+            0.6526315789473685,
+            0.718421052631579
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "state_accuracy_gain": {
+          "estimate": 0.18157894736842106,
+          "ci95": [
+            0.14868421052631578,
+            0.21578947368421053
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "choice_control_shallow": {
+          "estimate": 0.007894736842105263,
+          "ci95": [
+            -0.010526315789473684,
+            0.02631578947368421
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "choice_control_deep": {
+          "estimate": 0.37105263157894736,
+          "ci95": [
+            0.30526315789473685,
+            0.4368421052631579
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "choice_control_gain": {
+          "estimate": 0.3631578947368421,
+          "ci95": [
+            0.29736842105263156,
+            0.43157894736842106
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "joint_follow_rate_shallow": {
+          "estimate": 0.08421052631578947,
+          "ci95": [
+            0.031578947368421054,
+            0.14736842105263157
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "joint_follow_rate_deep": {
+          "estimate": 0.7578947368421053,
+          "ci95": [
+            0.6736842105263158,
+            0.8421052631578947
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "joint_follow_rate_gain": {
+          "estimate": 0.6736842105263158,
+          "ci95": [
+            0.5684210526315789,
+            0.7684210526315789
+          ],
+          "bootstrap_replicates": 10000
+        }
+      },
+      "scale_normalized_margin": {
+        "original_state_row_RMS_normalized_D_shallow": {
+          "estimate": 0.01188427040846761,
+          "ci95": [
+            -0.0020124800939557083,
+            0.026414982364286074
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "original_state_row_RMS_normalized_D_deep": {
+          "estimate": 0.7600850602395312,
+          "ci95": [
+            0.660869549943487,
+            0.8665285060716845
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "original_state_row_RMS_normalized_gain": {
+          "estimate": 0.7482007898310635,
+          "ci95": [
+            0.647815820416392,
+            0.8562245607204065
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "pooled_state_row_RMS_normalized_gain": {
+          "estimate": 0.7856631935853464,
+          "ci95": [
+            0.6726801161178136,
+            0.911716384283581
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "paired_standardized_D_shallow": {
+          "estimate": 0.17045892526219927,
+          "ci95": [
+            -0.028725308166153624,
+            0.3586873220707802
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "paired_standardized_D_deep": {
+          "estimate": 1.7714119588937463,
+          "ci95": [
+            1.558470311856344,
+            2.0538104368023293
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "paired_standardized_gain": {
+          "estimate": 1.600953033631547,
+          "ci95": [
+            1.3074077134525466,
+            1.9503237717879234
+          ],
+          "bootstrap_replicates": 10000
+        }
+      },
+      "crossfit_positive_scale_control": {
+        "interpretation": "Deep path contrast after mapping deep margins to the shallow scale with one nonnegative, zero-intercept scale fit only on held-out intact controls, minus the shallow path contrast.",
+        "residual_depth_gain": {
+          "estimate": -0.0008273468130648543,
+          "ci95": [
+            -0.028384418035915068,
+            0.05597772718199979
+          ],
+          "bootstrap_replicates": 10000,
+          "calibration_refit_within_each_bootstrap_draw": true
+        },
+        "point_estimate_fold_fits": [
+          {
+            "fold": 0.0,
+            "training_observations": 83.0,
+            "deep_to_shallow_positive_scale": 0.017618586386757545
+          },
+          {
+            "fold": 1.0,
+            "training_observations": 80.0,
+            "deep_to_shallow_positive_scale": 0.010428516321407932
+          },
+          {
+            "fold": 2.0,
+            "training_observations": 63.0,
+            "deep_to_shallow_positive_scale": 0.005869516656789391
+          },
+          {
+            "fold": 3.0,
+            "training_observations": 83.0,
+            "deep_to_shallow_positive_scale": 0.00831618972652163
+          },
+          {
+            "fold": 4.0,
+            "training_observations": 71.0,
+            "deep_to_shallow_positive_scale": 0.00293609740812262
+          }
+        ]
+      },
+      "crossfit_monotone_calibration_sensitivity": {
+        "interpretation": "Sensitivity only: deep margins are mapped to the shallow scale by a five-fold relation-cluster-held-out isotonic map fit on intact controls.",
+        "residual_depth_gain": {
+          "estimate": 0.11361192181951643,
+          "ci95": [
+            0.016085944382165724,
+            0.19290783443754925
+          ],
+          "bootstrap_replicates": 10000,
+          "calibration_refit_within_each_bootstrap_draw": true
+        }
+      },
+      "MuSiQue_terminal_relation_cluster_sensitivity": {
+        "choice_control_gain": {
+          "estimate": 0.3631578947368421,
+          "ci95": [
+            0.26861455870764384,
+            0.4596774193548387
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "first_divergence_choice_control_gain": {
+          "estimate": 0.3539473684210526,
+          "ci95": [
+            0.2597064040328603,
+            0.44680927488383465
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "original_state_row_RMS_normalized_gain": {
+          "estimate": 0.7482007898310635,
+          "ci95": [
+            0.5726780790082077,
+            0.9121140093987065
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "positive_scale_residual_depth_gain": {
+          "estimate": -0.0008273468130648543,
+          "ci95": [
+            -0.0380848298073632,
+            0.06429209816905732
+          ],
+          "bootstrap_replicates": 10000,
+          "calibration_refit_within_each_bootstrap_draw": true
+        }
+      }
+    },
+    "loopus_2wiki": {
+      "model": "LoopUS Qwen3-1.7B",
+      "dataset": "2Wiki",
+      "shallow_K": 1,
+      "deep_K": 8,
+      "inputs": [
+        {
+          "path": "loopus_2wiki.json",
+          "sha256": "179db3aab621e382f20aa755675e4ad345b10f48273a7fa9a5d80453ff0cf2e8"
+        }
+      ],
+      "data": {
+        "rows_loaded": 1860,
+        "rows_used": 1488,
+        "pairs": 93,
+        "clusters": 31,
+        "counterbalanced_rows_per_pair_state_exit": [
+          4
+        ],
+        "first_divergence_position_counts_zero_based": {
+          "0": 1840,
+          "5": 20
+        },
+        "first_divergence_tie_counts_all_saved_states_and_exits": {
+          "bridge_swap__K1": 7,
+          "bridge_swap__K8": 3,
+          "original__K1": 5,
+          "original__K8": 2,
+          "topology_rescue__K8": 8
+        }
+      },
+      "bootstrap": {
+        "primary": "cluster_then_pair",
+        "replicates": 10000,
+        "seed_salt": "iclr2027-strong-accept:scale-invariant-path-control:v1",
+        "MuSiQue_sensitivity": null
+      },
+      "raw_margin": {
+        "original_shallow": {
+          "estimate": 1.8651552466219992,
+          "ci95": [
+            1.4876981477101048,
+            2.275242712835453
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "swap_shallow": {
+          "estimate": -0.20110129700693233,
+          "ci95": [
+            -0.4300702516577877,
+            0.022691487575009866
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "original_deep": {
+          "estimate": 2.7915614854584456,
+          "ci95": [
+            2.391407203147568,
+            3.19230285140896
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "swap_deep": {
+          "estimate": -0.3823726607025951,
+          "ci95": [
+            -0.7118406126766356,
+            -0.05951744612025961
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "D_shallow": {
+          "estimate": 2.0662565436289317,
+          "ci95": [
+            1.6361117449788731,
+            2.5224280454546975
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "D_deep": {
+          "estimate": 3.173934146161041,
+          "ci95": [
+            2.66475359332918,
+            3.685881574572094
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "depth_gain": {
+          "estimate": 1.1076776025321093,
+          "ci95": [
+            0.8354275616618769,
+            1.389535023101733
+          ],
+          "bootstrap_replicates": 10000
+        }
+      },
+      "exact_first_divergence_token": {
+        "definition": "Reference-minus-other log probability at the first candidate token where token IDs diverge. The context is identical at that position, so the value is exactly the corresponding token-logit difference.",
+        "original_shallow": {
+          "estimate": 1.7390793074217816,
+          "ci95": [
+            1.3647429606719546,
+            2.1357526930927806
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "swap_shallow": {
+          "estimate": -0.15809811303712507,
+          "ci95": [
+            -0.379200254753232,
+            0.05578798372373574
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "original_deep": {
+          "estimate": 2.7184139724260055,
+          "ci95": [
+            2.3366809373401023,
+            3.102318552063818
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "swap_deep": {
+          "estimate": -0.36979167680105857,
+          "ci95": [
+            -0.6996261892459725,
+            -0.0482107009518372
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "D_shallow": {
+          "estimate": 1.8971774204589067,
+          "ci95": [
+            1.478158620625399,
+            2.3489793124438454
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "D_deep": {
+          "estimate": 3.088205649227064,
+          "ci95": [
+            2.6004620330217945,
+            3.5806535521386973
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "continuous_depth_gain": {
+          "estimate": 1.1910282287681575,
+          "ci95": [
+            0.9262391023633887,
+            1.465066368382121
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "graph_directed_state_accuracy_shallow": {
+          "estimate": 0.6102150537634409,
+          "ci95": [
+            0.5692204301075269,
+            0.6518817204301075
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "graph_directed_state_accuracy_deep": {
+          "estimate": 0.6807795698924731,
+          "ci95": [
+            0.644489247311828,
+            0.717741935483871
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "choice_control_shallow": {
+          "estimate": 0.22043010752688172,
+          "ci95": [
+            0.13844086021505375,
+            0.30376344086021506
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "choice_control_deep": {
+          "estimate": 0.36155913978494625,
+          "ci95": [
+            0.28897849462365593,
+            0.43548387096774194
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "choice_control_gain": {
+          "estimate": 0.14112903225806453,
+          "ci95": [
+            0.05779569892473118,
+            0.22849462365591397
+          ],
+          "bootstrap_replicates": 10000
+        }
+      },
+      "scale_invariant_choice": {
+        "scope_note": "Sign of the saved complete-string pairwise margin. This is invariant to positive rescaling of that margin, but it is not an exact token-level temperature intervention when candidate token lengths differ.",
+        "graph_directed_state_accuracy_shallow": {
+          "estimate": 0.6008064516129032,
+          "ci95": [
+            0.5658602150537635,
+            0.6384408602150538
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "graph_directed_state_accuracy_deep": {
+          "estimate": 0.678763440860215,
+          "ci95": [
+            0.6424731182795699,
+            0.7163978494623656
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "state_accuracy_gain": {
+          "estimate": 0.07795698924731183,
+          "ci95": [
+            0.03763440860215054,
+            0.1196236559139785
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "choice_control_shallow": {
+          "estimate": 0.20161290322580644,
+          "ci95": [
+            0.13172043010752688,
+            0.2768817204301075
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "choice_control_deep": {
+          "estimate": 0.3575268817204301,
+          "ci95": [
+            0.2849462365591398,
+            0.4327956989247312
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "choice_control_gain": {
+          "estimate": 0.15591397849462366,
+          "ci95": [
+            0.07526881720430108,
+            0.239247311827957
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "joint_follow_rate_shallow": {
+          "estimate": 0.6344086021505376,
+          "ci95": [
+            0.4946236559139785,
+            0.7634408602150538
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "joint_follow_rate_deep": {
+          "estimate": 0.6774193548387096,
+          "ci95": [
+            0.5376344086021505,
+            0.8064516129032258
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "joint_follow_rate_gain": {
+          "estimate": 0.043010752688172046,
+          "ci95": [
+            -0.053763440860215055,
+            0.13978494623655913
+          ],
+          "bootstrap_replicates": 10000
+        }
+      },
+      "scale_normalized_margin": {
+        "original_state_row_RMS_normalized_D_shallow": {
+          "estimate": 0.41003900936303495,
+          "ci95": [
+            0.3138041000376528,
+            0.5427812093372251
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "original_state_row_RMS_normalized_D_deep": {
+          "estimate": 0.7406605519383973,
+          "ci95": [
+            0.6341143569444287,
+            0.8480242391691606
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "original_state_row_RMS_normalized_gain": {
+          "estimate": 0.33062154257536236,
+          "ci95": [
+            0.20432304624390282,
+            0.4371629937850529
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "pooled_state_row_RMS_normalized_gain": {
+          "estimate": 0.41691157544130114,
+          "ci95": [
+            0.2721170040880163,
+            0.5340755881604337
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "paired_standardized_D_shallow": {
+          "estimate": 1.3401693811272628,
+          "ci95": [
+            1.1138524033584813,
+            1.6886932337311307
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "paired_standardized_D_deep": {
+          "estimate": 1.8837607066458848,
+          "ci95": [
+            1.601839191227104,
+            2.339703130839185
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "paired_standardized_gain": {
+          "estimate": 0.543591325518622,
+          "ci95": [
+            0.2815947141505648,
+            0.8604880649923113
+          ],
+          "bootstrap_replicates": 10000
+        }
+      },
+      "crossfit_positive_scale_control": {
+        "interpretation": "Deep path contrast after mapping deep margins to the shallow scale with one nonnegative, zero-intercept scale fit only on held-out intact controls, minus the shallow path contrast.",
+        "residual_depth_gain": {
+          "estimate": 0.1726805083047095,
+          "ci95": [
+            -0.00444461353106642,
+            0.31736866411927933
+          ],
+          "bootstrap_replicates": 10000,
+          "calibration_refit_within_each_bootstrap_draw": true
+        },
+        "point_estimate_fold_fits": [
+          {
+            "fold": 0.0,
+            "training_observations": 75.0,
+            "deep_to_shallow_positive_scale": 0.6964306527273402
+          },
+          {
+            "fold": 1.0,
+            "training_observations": 84.0,
+            "deep_to_shallow_positive_scale": 0.6814110451236588
+          },
+          {
+            "fold": 2.0,
+            "training_observations": 60.0,
+            "deep_to_shallow_positive_scale": 0.7336270737323588
+          },
+          {
+            "fold": 3.0,
+            "training_observations": 69.0,
+            "deep_to_shallow_positive_scale": 0.6919336775858336
+          },
+          {
+            "fold": 4.0,
+            "training_observations": 84.0,
+            "deep_to_shallow_positive_scale": 0.7032023217459962
+          }
+        ]
+      },
+      "crossfit_monotone_calibration_sensitivity": {
+        "interpretation": "Sensitivity only: deep margins are mapped to the shallow scale by a five-fold relation-cluster-held-out isotonic map fit on intact controls.",
+        "residual_depth_gain": {
+          "estimate": -0.49238124759231827,
+          "ci95": [
+            -0.8933609115889897,
+            -0.23999140375263558
+          ],
+          "bootstrap_replicates": 10000,
+          "calibration_refit_within_each_bootstrap_draw": true
+        }
+      }
+    },
+    "loopus_musique": {
+      "model": "LoopUS Qwen3-1.7B",
+      "dataset": "MuSiQue",
+      "shallow_K": 1,
+      "deep_K": 8,
+      "inputs": [
+        {
+          "path": "loopus_musique.json",
+          "sha256": "03811bdf862e80537e1c7c4d3c670b2b3ac3928ad3a697ec3d27ad70e791a935"
+        }
+      ],
+      "data": {
+        "rows_loaded": 1900,
+        "rows_used": 1520,
+        "pairs": 95,
+        "clusters": 30,
+        "counterbalanced_rows_per_pair_state_exit": [
+          4
+        ],
+        "first_divergence_position_counts_zero_based": {
+          "0": 1880,
+          "3": 20
+        },
+        "first_divergence_tie_counts_all_saved_states_and_exits": {
+          "bridge_swap__K1": 6,
+          "bridge_swap__K8": 6,
+          "original__K1": 4,
+          "original__K8": 3,
+          "topology_rescue__K8": 3
+        }
+      },
+      "bootstrap": {
+        "primary": "pair",
+        "replicates": 10000,
+        "seed_salt": "iclr2027-strong-accept:scale-invariant-path-control:v1",
+        "MuSiQue_sensitivity": "terminal_relation_then_pair"
+      },
+      "raw_margin": {
+        "original_shallow": {
+          "estimate": 1.9456869383048463,
+          "ci95": [
+            1.6442560257125451,
+            2.263252892516014
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "swap_shallow": {
+          "estimate": 0.04880337054400068,
+          "ci95": [
+            -0.22294492903704707,
+            0.34307132731976075
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "original_deep": {
+          "estimate": 2.526342595721546,
+          "ci95": [
+            2.236187797804412,
+            2.832532100838266
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "swap_deep": {
+          "estimate": -0.05704725369026786,
+          "ci95": [
+            -0.39331064542657446,
+            0.3025773995212818
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "D_shallow": {
+          "estimate": 1.8968835677608455,
+          "ci95": [
+            1.5695070418879684,
+            2.2440895009059214
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "D_deep": {
+          "estimate": 2.5833898494118137,
+          "ci95": [
+            2.215723421381492,
+            2.9829119995118756
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "depth_gain": {
+          "estimate": 0.6865062816509683,
+          "ci95": [
+            0.4829246270786481,
+            0.9146635238209887
+          ],
+          "bootstrap_replicates": 10000
+        }
+      },
+      "exact_first_divergence_token": {
+        "definition": "Reference-minus-other log probability at the first candidate token where token IDs diverge. The context is identical at that position, so the value is exactly the corresponding token-logit difference.",
+        "original_shallow": {
+          "estimate": 1.778125002823378,
+          "ci95": [
+            1.5024629892577956,
+            2.071570724820179
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "swap_shallow": {
+          "estimate": 0.0376644822768867,
+          "ci95": [
+            -0.21875409919204877,
+            0.31842106311422724
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "original_deep": {
+          "estimate": 2.403289474179282,
+          "ci95": [
+            2.1424301005172004,
+            2.6741796770103665
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "swap_deep": {
+          "estimate": -0.052467101203326726,
+          "ci95": [
+            -0.3774712174212082,
+            0.3009868407652002
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "D_shallow": {
+          "estimate": 1.7404605205464911,
+          "ci95": [
+            1.441776305724205,
+            2.051973674932838
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "D_deep": {
+          "estimate": 2.4557565753826087,
+          "ci95": [
+            2.1198149726265356,
+            2.806500797922674
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "continuous_depth_gain": {
+          "estimate": 0.7152960548361175,
+          "ci95": [
+            0.5128289545205189,
+            0.9428495119642282
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "graph_directed_state_accuracy_shallow": {
+          "estimate": 0.6065789473684211,
+          "ci95": [
+            0.5796052631578947,
+            0.6335526315789474
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "graph_directed_state_accuracy_deep": {
+          "estimate": 0.6493421052631579,
+          "ci95": [
+            0.618421052631579,
+            0.6802631578947368
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "choice_control_shallow": {
+          "estimate": 0.2131578947368421,
+          "ci95": [
+            0.15921052631578947,
+            0.26710526315789473
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "choice_control_deep": {
+          "estimate": 0.2986842105263158,
+          "ci95": [
+            0.23684210526315788,
+            0.3605263157894737
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "choice_control_gain": {
+          "estimate": 0.08552631578947369,
+          "ci95": [
+            0.014473684210526316,
+            0.16052631578947368
+          ],
+          "bootstrap_replicates": 10000
+        }
+      },
+      "scale_invariant_choice": {
+        "scope_note": "Sign of the saved complete-string pairwise margin. This is invariant to positive rescaling of that margin, but it is not an exact token-level temperature intervention when candidate token lengths differ.",
+        "graph_directed_state_accuracy_shallow": {
+          "estimate": 0.6092105263157894,
+          "ci95": [
+            0.5815789473684211,
+            0.6368421052631579
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "graph_directed_state_accuracy_deep": {
+          "estimate": 0.6447368421052632,
+          "ci95": [
+            0.6144736842105263,
+            0.675
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "state_accuracy_gain": {
+          "estimate": 0.035526315789473684,
+          "ci95": [
+            0.0013157894736842105,
+            0.07236842105263158
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "choice_control_shallow": {
+          "estimate": 0.21842105263157896,
+          "ci95": [
+            0.1631578947368421,
+            0.2736842105263158
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "choice_control_deep": {
+          "estimate": 0.2894736842105263,
+          "ci95": [
+            0.22894736842105262,
+            0.35
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "choice_control_gain": {
+          "estimate": 0.07105263157894737,
+          "ci95": [
+            0.002631578947368421,
+            0.14473684210526316
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "joint_follow_rate_shallow": {
+          "estimate": 0.47368421052631576,
+          "ci95": [
+            0.3684210526315789,
+            0.5684210526315789
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "joint_follow_rate_deep": {
+          "estimate": 0.5473684210526316,
+          "ci95": [
+            0.4421052631578947,
+            0.6421052631578947
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "joint_follow_rate_gain": {
+          "estimate": 0.07368421052631578,
+          "ci95": [
+            0.021052631578947368,
+            0.1368421052631579
+          ],
+          "bootstrap_replicates": 10000
+        }
+      },
+      "scale_normalized_margin": {
+        "original_state_row_RMS_normalized_D_shallow": {
+          "estimate": 0.43032428038414017,
+          "ci95": [
+            0.35663475257767246,
+            0.5140007480149242
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "original_state_row_RMS_normalized_D_deep": {
+          "estimate": 0.6393215593058791,
+          "ci95": [
+            0.5583973327030327,
+            0.7242543238945401
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "original_state_row_RMS_normalized_gain": {
+          "estimate": 0.20899727892173892,
+          "ci95": [
+            0.14973841804782298,
+            0.2693528617618359
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "pooled_state_row_RMS_normalized_gain": {
+          "estimate": 0.2500025980066954,
+          "ci95": [
+            0.18019904666199646,
+            0.32249753762127864
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "paired_standardized_D_shallow": {
+          "estimate": 1.136172631121381,
+          "ci95": [
+            0.9740684672982837,
+            1.3831948627222292
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "paired_standardized_D_deep": {
+          "estimate": 1.3772698362390599,
+          "ci95": [
+            1.1654204340453596,
+            1.715119266584057
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "paired_standardized_gain": {
+          "estimate": 0.24109720511767896,
+          "ci95": [
+            0.09832663200157479,
+            0.4293837144201781
+          ],
+          "bootstrap_replicates": 10000
+        }
+      },
+      "crossfit_positive_scale_control": {
+        "interpretation": "Deep path contrast after mapping deep margins to the shallow scale with one nonnegative, zero-intercept scale fit only on held-out intact controls, minus the shallow path contrast.",
+        "residual_depth_gain": {
+          "estimate": 0.19732148324918514,
+          "ci95": [
+            0.027088092136866124,
+            0.3786079107329351
+          ],
+          "bootstrap_replicates": 10000,
+          "calibration_refit_within_each_bootstrap_draw": true
+        },
+        "point_estimate_fold_fits": [
+          {
+            "fold": 0.0,
+            "training_observations": 83.0,
+            "deep_to_shallow_positive_scale": 0.7991198434564951
+          },
+          {
+            "fold": 1.0,
+            "training_observations": 80.0,
+            "deep_to_shallow_positive_scale": 0.7717082428586098
+          },
+          {
+            "fold": 2.0,
+            "training_observations": 63.0,
+            "deep_to_shallow_positive_scale": 0.8150927317473491
+          },
+          {
+            "fold": 3.0,
+            "training_observations": 83.0,
+            "deep_to_shallow_positive_scale": 0.7889990230232793
+          },
+          {
+            "fold": 4.0,
+            "training_observations": 71.0,
+            "deep_to_shallow_positive_scale": 0.8346813662646156
+          }
+        ]
+      },
+      "crossfit_monotone_calibration_sensitivity": {
+        "interpretation": "Sensitivity only: deep margins are mapped to the shallow scale by a five-fold relation-cluster-held-out isotonic map fit on intact controls.",
+        "residual_depth_gain": {
+          "estimate": -0.35931688343247475,
+          "ci95": [
+            -0.7350112910937359,
+            -0.19817698612678586
+          ],
+          "bootstrap_replicates": 10000,
+          "calibration_refit_within_each_bootstrap_draw": true
+        }
+      },
+      "MuSiQue_terminal_relation_cluster_sensitivity": {
+        "choice_control_gain": {
+          "estimate": 0.07105263157894737,
+          "ci95": [
+            -0.027777777777777776,
+            0.17217112159329137
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "first_divergence_choice_control_gain": {
+          "estimate": 0.08552631578947369,
+          "ci95": [
+            -0.005,
+            0.17445249326145548
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "original_state_row_RMS_normalized_gain": {
+          "estimate": 0.20899727892173892,
+          "ci95": [
+            0.12883257254893507,
+            0.27631195342211856
+          ],
+          "bootstrap_replicates": 10000
+        },
+        "positive_scale_residual_depth_gain": {
+          "estimate": 0.19732148324918514,
+          "ci95": [
+            -0.017179442274910965,
+            0.45766392424981217
+          ],
+          "bootstrap_replicates": 10000,
+          "calibration_refit_within_each_bootstrap_draw": true
+        }
+      }
+    }
+  }
+}

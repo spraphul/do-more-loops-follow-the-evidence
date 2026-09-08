@@ -1,0 +1,1003 @@
+{
+  "dependencies": {
+    "greedy_generation_runner": {
+      "path": "run_ouro26_2wiki_terminal_binding_generation.py",
+      "sha256": "df88f71fe9ae87648bb316f77504214dbbd341eed461a88225fe043d3df722e5"
+    },
+    "musique_answer_only_runner": {
+      "path": "run_ouro26_musique_answer_only_generation.py",
+      "sha256": "eb6a37b338e0a6bbbf5403cff4f31ba66743321561a3b008879bec6ce93593a9"
+    },
+    "ouro26_adapter": {
+      "path": "ouro26_likelihood_adapter.py",
+      "sha256": "b76b91dc2b29d04a5ad86e453753a3998c2a7027a5dcc7f84ce8101f24fa3264"
+    },
+    "terminal_crossover_runner": {
+      "path": "run_ouro26_2wiki_terminal_binding_crossover.py",
+      "sha256": "77af290515fe294f706e5de7a1e9a70107de223bdc1e57dc0770a392df784aec"
+    }
+  },
+  "design": {
+    "common": {
+      "claim_boundary": "same-item candidate-list dependence in frozen Ouro-2.6B full-answer likelihood; generation is a separately gated secondary endpoint",
+      "construction_audit": {
+        "XN_XV_prompt_token_count_and_multiset_parity_within_interface": true,
+        "all_pair_prompt_audits_sha256": "20c3add846dea74eddefde1e7f79007941cc98cd221ecc480aeaf5a4fa773c94",
+        "all_source_pairs_retained_without_filtering": true,
+        "common_neutral_prefix_suffix": true,
+        "matched_answer_token_counts_within_every_pair": true,
+        "pairs_checked": 124,
+        "paths_checked": 31,
+        "sole_interface_difference_candidate_block_insertion": true
+      },
+      "counts": {
+        "answer_sequence_scores": 5952,
+        "likelihood_rows": 2976,
+        "no_list_generations": 992,
+        "pair_units": 124,
+        "relation_path_clusters": 31,
+        "rows_per_shard": [
+          744,
+          744,
+          744,
+          744
+        ]
+      },
+      "decision_branches": {
+        "LIST_fail_NO_LIST_fail": "LIST_VALIDITY_FAILED_ABLATION_INCONCLUSIVE",
+        "LIST_pass_NO_LIST_fail": "CANDIDATE_FREE_CORE_NOT_CONFIRMED",
+        "NO_LIST_LIST_half_pass": "CONFIRM_SUBSTANTIAL_CANDIDATE_LIST_INDEPENDENCE",
+        "NO_LIST_LIST_pass_half_fail": "CANDIDATE_FREE_CORE_CONFIRMED_HALF_RETENTION_NOT_CONFIRMED",
+        "NO_LIST_pass_LIST_fail": "CONFIRM_CANDIDATE_FREE_CORE_LIST_VALIDITY_FAILED",
+        "generation_fail_likelihood_fail": "CANDIDATE_FREE_LIKELIHOOD_AND_GENERATION_NOT_CONFIRMED",
+        "generation_fail_likelihood_pass": "LIKELIHOOD_TO_GREEDY_DECODING_BOUNDARY",
+        "generation_pass": "CONFIRM_CANDIDATE_FREE_GREEDY_BEHAVIOR"
+      },
+      "decision_question": "Does recurrent-depth graph control survive removal of the explicit candidate list on the exact same 124 two-hop items?",
+      "estimands": {
+        "A3": "D_LIST,3-D_NO_LIST,3",
+        "A31": "G_LIST,31-G_NO_LIST,31",
+        "D_IK": "0.5*mean_arms,orders(z_XV-z_XN), pair first",
+        "G_I31": "D_I3-D_I1",
+        "H3": "D_NO_LIST,3-0.5*D_LIST,3",
+        "H31": "G_NO_LIST,31-0.5*G_LIST,31",
+        "generation": "same D/G formulas on NO_LIST complete-span identity; reference=+1, paired=-1, invalid=0",
+        "z": "full-answer logP(reference)-logP(paired); EOS excluded"
+      },
+      "factorial": {
+        "K_values": [
+          1,
+          3
+        ],
+        "LIST_candidate_orders": [
+          "original",
+          "reversed"
+        ],
+        "NO_LIST_candidate_order": null,
+        "generation_interfaces": [
+          "NO_LIST"
+        ],
+        "interfaces": [
+          "LIST",
+          "NO_LIST"
+        ],
+        "query_arms": [
+          "A",
+          "B"
+        ]
+      },
+      "gates": {
+        "LIST_validity": {
+          "D3": "estimate>=0.50 nat and lower95>0",
+          "G31": "estimate>=0.50 nat and lower95>0",
+          "arms": "D3 and G31 positive separately in A and B",
+          "candidate_orders": "D3 and G31 positive separately in original and reversed order",
+          "competence": "pooled K3 lower95>0.5 and each XN/XV point>0.5"
+        },
+        "NO_LIST_generation": {
+          "D3": "estimate>=0.15 and lower95>0",
+          "G31": "estimate>=0.10 and lower95>0",
+          "arms": "D3 and G31 positive separately in A and B",
+          "competence": "pooled K3 lower95>0.5 and each XN/XV point>0.5"
+        },
+        "NO_LIST_likelihood": {
+          "D3": "estimate>=0.50 nat and lower95>0",
+          "G31": "estimate>=0.50 nat and lower95>0",
+          "arms": "D3 and G31 positive separately in A and B",
+          "competence": "pooled K3 lower95>0.5 and each XN/XV point>0.5"
+        },
+        "half_retention": "lower95(H3)>0 and lower95(H31)>0"
+      },
+      "generation": {
+        "P0_primary": "complete-span normalized canonical-object identity",
+        "P1_P2_diagnostic_only": true,
+        "decode_mode": "manual deterministic greedy full-vocabulary argmax",
+        "interface": "NO_LIST",
+        "max_new_tokens": 24,
+        "stops": {
+          "chat_turn_end_is_distinct_from_configured_eos": true,
+          "chat_turn_end_token": "<|im_end|>",
+          "chat_turn_end_token_id": 2,
+          "configured_eos_token_ids": [
+            0
+          ],
+          "configured_eos_tokens": [
+            "<|endoftext|>"
+          ]
+        },
+        "use_cache": false
+      },
+      "inference": {
+        "all_metrics_share_draws": true,
+        "bootstrap": {
+          "draws_sha256": "58fd92ef2282d18219112aca04d33b85fccedf6b62b0e8427fd707d3064d9059",
+          "method": "10,000 shared hierarchical draws: resample 31 relation paths, then four whole pairs within each sampled path",
+          "pair_units_per_draw": 124,
+          "pairs_per_path_per_draw": 4,
+          "relation_path_clusters": 31,
+          "replicates": 10000,
+          "rng_seed": 3719725927401273107,
+          "shared_draws_for_all_metrics": true
+        },
+        "gates_are_conjunctive": true,
+        "interval_level": 0.95,
+        "unit": "pair after averaging arms and LIST orders"
+      },
+      "likelihood": {
+        "EOS_excluded": true,
+        "candidate_sequences_per_row": 2,
+        "complete_answer_sequence": true,
+        "length_normalization": false,
+        "matched_answer_token_counts_within_pair": true,
+        "prospective_both_interfaces": true
+      },
+      "no_model_outcome_observed_before_freeze": true,
+      "pair_sharding": {
+        "all_conditions_for_pair_on_one_shard": true,
+        "assignment": {
+          "validationpair-000018097a85d94e697fda79": 0,
+          "validationpair-0001c51f0e11de75f6204b95": 1,
+          "validationpair-00059b256f0f8987d0b6f7ff": 2,
+          "validationpair-000719f625022018955953dc": 2,
+          "validationpair-00098120094af3d764b4794a": 3,
+          "validationpair-0009aaac71c0754b82eda3d5": 2,
+          "validationpair-000a8222bf5144ca7eb0745a": 3,
+          "validationpair-000ad41337058a8541cd1ac7": 3,
+          "validationpair-000df6b319a284c72b7aa8c6": 0,
+          "validationpair-000e2dd71ec79947f5850535": 3,
+          "validationpair-001132c869995b344feebe1b": 2,
+          "validationpair-00113844e60fa233838cf74e": 0,
+          "validationpair-0013498bd5f4ab6e57159fe8": 1,
+          "validationpair-001617913f4101c561adea99": 2,
+          "validationpair-00166ec85011b773b35476f9": 0,
+          "validationpair-0016fbdec6bd8f1ccffb6dd0": 1,
+          "validationpair-0017937e77c1be3dcae75434": 3,
+          "validationpair-00180ec658dc0c0e50e85d40": 1,
+          "validationpair-002abc34f868c61232512528": 2,
+          "validationpair-002b76a69e4ae991c0f70042": 2,
+          "validationpair-002fb1f3a775a15015b9701c": 0,
+          "validationpair-00329ce87732ee5a2f611221": 0,
+          "validationpair-0036fafd524650f71fc2e7f1": 3,
+          "validationpair-003b8e5025f72ae25a373699": 3,
+          "validationpair-003e901771cd1287309232c7": 3,
+          "validationpair-0043ce9db521f43e7d3a3a35": 1,
+          "validationpair-0049b92ec1fa7cdcbd4ca98e": 1,
+          "validationpair-004d9190e29d6148c589151e": 2,
+          "validationpair-005cad7f71a7057c9fefbfd4": 2,
+          "validationpair-0061e52f767e8966676966c3": 0,
+          "validationpair-00643eb8161a6a739449ada7": 1,
+          "validationpair-0065e02227392ebcd582fc05": 1,
+          "validationpair-0066421540023838af006d7c": 1,
+          "validationpair-00686789913d7b402c5e0cef": 1,
+          "validationpair-0069184fd6ff919310d3e3fb": 0,
+          "validationpair-00792a051f07fe35d713ea17": 2,
+          "validationpair-007c5fc36b90b87240f13d1c": 3,
+          "validationpair-007e52b0d9ba06b249e31593": 0,
+          "validationpair-008a5701272a8743557961e4": 1,
+          "validationpair-009f46c7309fcb9490640f35": 3,
+          "validationpair-00bf31388a0b5ead4fb35ba6": 0,
+          "validationpair-00c2b2e72057a64034b5cbbc": 0,
+          "validationpair-00c9f6e99fed79d201f6fdfb": 0,
+          "validationpair-00d0ba26484c7f83842bb2c0": 0,
+          "validationpair-00fb520d69f6ab372d7b144d": 3,
+          "validationpair-012fa4e38845d7fc6c76e011": 2,
+          "validationpair-0144ad89d1e3e13cc6c4d0d4": 1,
+          "validationpair-0155d694746300b6707e2b7c": 0,
+          "validationpair-017a4ad7b81ca01703e22ffd": 1,
+          "validationpair-01bd794d12c27ea689098c49": 3,
+          "validationpair-01f918ebfc50160c2981301e": 2,
+          "validationpair-020be509862d8a5a948ab3a8": 2,
+          "validationpair-021b33284070eb666a14a60a": 3,
+          "validationpair-022bbcbacbf6944a212744a1": 2,
+          "validationpair-0235e43a220092ebc7dfb112": 3,
+          "validationpair-02af52ae457eb18f7c100718": 3,
+          "validationpair-030d8841c49790031264a926": 0,
+          "validationpair-033b638f10bb64939d239f3e": 0,
+          "validationpair-036c677a60e01001eb347205": 2,
+          "validationpair-0385e87b34c6526f554f0df5": 0,
+          "validationpair-038c64221e14a9b933d10d9f": 2,
+          "validationpair-039747123572017f7b02f4cd": 0,
+          "validationpair-0446f33d29a0547719f4dd5e": 3,
+          "validationpair-048146cad5c2203103de94ce": 1,
+          "validationpair-0482daa08b9117154cb688da": 3,
+          "validationpair-048ecd20c4f54a228bdd4d59": 1,
+          "validationpair-04a580d4742e61d6cf934c58": 0,
+          "validationpair-04b23a0125a03743a6d31111": 1,
+          "validationpair-04b2d1114dbbb7b7ee804cf8": 0,
+          "validationpair-04fc25d9ed9910c69798611a": 3,
+          "validationpair-0507d8790364442d80d7a7b1": 1,
+          "validationpair-05100efaa9e61dc0772d48b9": 1,
+          "validationpair-05a92cf53c95dfd0359da5a3": 2,
+          "validationpair-05e4ffe7e1a147afc154f38e": 1,
+          "validationpair-05fbe22992ba4565123ea503": 0,
+          "validationpair-062ee0e656b133913ec6a2ba": 0,
+          "validationpair-06352ef1c1ce6cfcad9c2ae8": 1,
+          "validationpair-063ac999808acccd36a6a8c4": 1,
+          "validationpair-06df81fe4873c43e181a8069": 1,
+          "validationpair-071c72ead16a34482a7d5348": 0,
+          "validationpair-071ca1d5eb11c1641f74bafc": 2,
+          "validationpair-079bf4c56c2494b52e8f3671": 1,
+          "validationpair-0b5cf1217165c2d506d96032": 3,
+          "validationpair-0b8728cf773f4cbb509f99c1": 2,
+          "validationpair-0bc33710b14faf18dfff0ed3": 2,
+          "validationpair-0ca578c2d68271794ce83e0d": 2,
+          "validationpair-0d0dbd767ef3c6a216ed39ec": 3,
+          "validationpair-0e0b131a3c483909198180f8": 1,
+          "validationpair-0f847793a223ea452273194b": 1,
+          "validationpair-0fc0304ae287612aa49dcedb": 2,
+          "validationpair-100c361204da086eee255207": 2,
+          "validationpair-1032e3f94ee3095e17ebcdff": 2,
+          "validationpair-115b80596759aec8c81812d6": 3,
+          "validationpair-1341d6d80e5c642580c874df": 2,
+          "validationpair-154f1e245bfb9502d73d1e20": 2,
+          "validationpair-16c4545b14e48fb76fff115d": 3,
+          "validationpair-18e9faadc8c0e390900da01c": 3,
+          "validationpair-1a53898daff7b767b896e119": 3,
+          "validationpair-1af8acdd97ccaa4e12b14e8d": 0,
+          "validationpair-1c0f369ff06d4d9e10cb4cc5": 3,
+          "validationpair-1c56666fe0a25e55c4fdefdc": 0,
+          "validationpair-1d8b69f5fa26189360fb1cdb": 0,
+          "validationpair-1e463d625146f682c9b4f338": 1,
+          "validationpair-1fc500e45d30996b4e6bca29": 3,
+          "validationpair-1fd51acd9f3777d5dea3c238": 3,
+          "validationpair-211792c8091200c2235c74d3": 0,
+          "validationpair-22264a689abe13454578154f": 1,
+          "validationpair-245578bf2f7bab946b2d2d36": 1,
+          "validationpair-25ce59649b48e5f7200e65bb": 0,
+          "validationpair-28915a75c4c747af0e39db88": 1,
+          "validationpair-295a0442e5aaaef0591d1977": 1,
+          "validationpair-2a62a9956f0bcca7cf715078": 2,
+          "validationpair-305f326b134b8fef4b4cd5de": 2,
+          "validationpair-351a49268a19bfdafec2c36e": 3,
+          "validationpair-3a7b3d37b8d13364af6b3aa3": 0,
+          "validationpair-3d98072e3628fa41de05b0d4": 3,
+          "validationpair-411410836a51d62a2c8a95d0": 2,
+          "validationpair-52ed5fa9f5eefe106a35f13e": 0,
+          "validationpair-81533af25e90bdca8e99c084": 2,
+          "validationpair-aedc941b93663e16c4409764": 3,
+          "validationpair-bb16869c0b84de1bcc8b55e4": 1,
+          "validationpair-ca8183d1ab1df60841783d1a": 3,
+          "validationpair-e96bc08347018396f77af2ed": 2,
+          "validationpair-f872abc374a47f69c0cc5f5c": 0
+        },
+        "assignment_sha256": "debe688f6d82142d3dbe14b8539f60ad8ddff7b02b6a2d05801d06fda34e9666",
+        "pairs_per_shard": 31,
+        "shards": 4
+      },
+      "panel_design_sha256": "c5d9cebff26557e74cd166f24868033bbf804368b464f978ebd7aa03b270d073",
+      "prompt": {
+        "candidate_block_template": "CANDIDATE ANSWERS\\n1. <answer>\\n2. <answer>",
+        "prefix": "Using only the evidence below, follow the two linked triples that begin from the entity in the question.\n\n",
+        "sole_difference": "LIST inserts the two-line candidate block; NO_LIST inserts nothing",
+        "suffix": "Return exactly the final OBJECT string reached by the path and nothing else.\nDo not number or explain the answer.\nANSWER ="
+      },
+      "prompt_fingerprint": "48ceabddd5e67738d85619d1431c3757268db600bc60a48fae67655211ed5d11",
+      "selection": {
+        "all_source_pairs_retained": true,
+        "outcome_based_filtering": false,
+        "pair_units": 124,
+        "pairs_per_path": 4,
+        "relation_path_clusters": 31,
+        "selection_fingerprint": "8f3f7bfcc1eae9cd9d61dddf76d9943f4120e7f7f36fe933d16d137efaca57dc"
+      },
+      "source_terminal_crossover_design": {
+        "panel_design_sha256": "37ac5808292a8eb308719a47ac85e41c49676f6aea3c93b26ea76b10c0fcfd5c",
+        "path": "design.json",
+        "runner_sha256": "77af290515fe294f706e5de7a1e9a70107de223bdc1e57dc0770a392df784aec",
+        "selection_fingerprint": "8f3f7bfcc1eae9cd9d61dddf76d9943f4120e7f7f36fe933d16d137efaca57dc",
+        "sha256": "78716e64a563665aeb712a40139862486f51df54584beca20362871ec531ce1c"
+      },
+      "target_model": {
+        "key": "ouro26",
+        "repository": "ByteDance/Ouro-2.6B",
+        "revision": "1ed04250da1a9936042725d302e81c8fa2ab5abd",
+        "snapshot_binding": {
+          "architecture": {
+            "architectures": [
+              "OuroForCausalLM"
+            ],
+            "hidden_size": 2048,
+            "model_type": "ouro",
+            "num_hidden_layers": 48,
+            "torch_dtype": "bfloat16",
+            "total_ut_steps": 4,
+            "vocab_size": 49152
+          },
+          "cache_repository_dir": "models--ByteDance--Ouro-2.6B",
+          "native_K_values": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "readout_selector": "exit_at_step=K-1",
+          "remote_model_code_byte_identical_to_ouro_1_4b": true,
+          "repository": "ByteDance/Ouro-2.6B",
+          "revision": "1ed04250da1a9936042725d302e81c8fa2ab5abd",
+          "runtime_truncation_readout_parity_required": true,
+          "snapshot_file_sha256": {
+            "config.json": "23b5c6942a9f0ca8619fb15acfaca93e02c169cdc4e03dbceb4d8a2df145697a",
+            "configuration_ouro.py": "950443e32929047aa08d02abad2e1888bc1914b3db988d3d675f70787f65dafb",
+            "merges.txt": "0b54e8aa4e53d5383e2e4bc635a56b43f9647f7b13832d5d9ecd8f82dac4f510",
+            "modeling_ouro.py": "c5c68fbb368ce2909c257ae2afc50719be8c91539333d3295e19312c4316f413",
+            "special_tokens_map.json": "55087bb8409060d9cb0f80495e34f4e0d8a84f68a799a6b0cab3132be0aae319",
+            "tokenizer.json": "fcb808fe5e7642f5299be28aea07fc7f6d4f4364c3ac5e408e15a772cbc8fa8d",
+            "tokenizer_config.json": "7e010da95d71b0fa1aa809552922c74cc1dd98d628f21ba39ca6c35aa18d5d91",
+            "vocab.json": "7b9de3f47796abf8d00ab96be299fea0dc9afdf1827f34e7e0b9fb44593efe5c"
+          },
+          "tokenizer_and_chat_template_byte_identical_to_ouro_1_4b": true,
+          "weight_blob_sha256": "2fdf9805a3510b7dc82959a2db4872ef767a5bdc55520c6a1b54fc3e463c1bba",
+          "weight_bytes": 5336011242
+        }
+      }
+    },
+    "design_artifact": {
+      "name": "design.json",
+      "sha256": "548db238ad9a296ee6744484ee256dd1f9d7c75f5094104062eb936c72044685"
+    },
+    "executed_shard_indices": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  "execution_mode": "merged_model_shards",
+  "model": {
+    "decode_mode": "manual_deterministic_greedy_argmax",
+    "dtype": "bfloat16",
+    "generation": true,
+    "key": "ouro26",
+    "likelihood": true,
+    "manual_first_step_parity": {
+      "K_values": [
+        1,
+        3
+      ],
+      "auxiliary_forward_calls": 4,
+      "comparison": "manual no-cache growing-sequence first-token forward versus the audited likelihood scorer readout",
+      "passes": true,
+      "per_K": {
+        "1": {
+          "exact_equal": true,
+          "exit_at_step": 0,
+          "full_vocabulary_max_abs_logit_difference": 0.0
+        },
+        "3": {
+          "exact_equal": true,
+          "exit_at_step": 2,
+          "full_vocabulary_max_abs_logit_difference": 0.0
+        }
+      }
+    },
+    "mock": false,
+    "model_loaded": true,
+    "native_readout_parity": {
+      "auxiliary_forward_calls": 8,
+      "checkpoint_repository": "ByteDance/Ouro-2.6B",
+      "checkpoint_revision": "1ed04250da1a9936042725d302e81c8fa2ab5abd",
+      "comparison": "four-step execution with exit_at_step=K-1 versus genuine K-step execution with no exit override",
+      "exact_zero_full_vocabulary_difference_all_K": true,
+      "native_K_values": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "passes": true,
+      "per_K": {
+        "1": {
+          "atol": 0.0005,
+          "candidate_max_abs_logit_difference": 0.0,
+          "exit_at_step": 0,
+          "full_vocabulary_max_abs_logit_difference": 0.0,
+          "rtol": 1e-05,
+          "torch_allclose": true
+        },
+        "2": {
+          "atol": 0.0005,
+          "candidate_max_abs_logit_difference": 0.0,
+          "exit_at_step": 1,
+          "full_vocabulary_max_abs_logit_difference": 0.0,
+          "rtol": 1e-05,
+          "torch_allclose": true
+        },
+        "3": {
+          "atol": 0.0005,
+          "candidate_max_abs_logit_difference": 0.0,
+          "exit_at_step": 2,
+          "full_vocabulary_max_abs_logit_difference": 0.0,
+          "rtol": 1e-05,
+          "torch_allclose": true
+        },
+        "4": {
+          "atol": 0.0005,
+          "candidate_max_abs_logit_difference": 0.0,
+          "exit_at_step": 3,
+          "full_vocabulary_max_abs_logit_difference": 0.0,
+          "rtol": 1e-05,
+          "torch_allclose": true
+        }
+      },
+      "readout_selector": "exit_at_step=K-1",
+      "scoring_unlocked": true
+    },
+    "repository": "ByteDance/Ouro-2.6B",
+    "revision": "1ed04250da1a9936042725d302e81c8fa2ab5abd",
+    "snapshot_binding": {
+      "architecture": {
+        "architectures": [
+          "OuroForCausalLM"
+        ],
+        "hidden_size": 2048,
+        "model_type": "ouro",
+        "num_hidden_layers": 48,
+        "torch_dtype": "bfloat16",
+        "total_ut_steps": 4,
+        "vocab_size": 49152
+      },
+      "cache_repository_dir": "models--ByteDance--Ouro-2.6B",
+      "native_K_values": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "readout_selector": "exit_at_step=K-1",
+      "remote_model_code_byte_identical_to_ouro_1_4b": true,
+      "repository": "ByteDance/Ouro-2.6B",
+      "revision": "1ed04250da1a9936042725d302e81c8fa2ab5abd",
+      "runtime_truncation_readout_parity_required": true,
+      "snapshot_file_sha256": {
+        "config.json": "23b5c6942a9f0ca8619fb15acfaca93e02c169cdc4e03dbceb4d8a2df145697a",
+        "configuration_ouro.py": "950443e32929047aa08d02abad2e1888bc1914b3db988d3d675f70787f65dafb",
+        "merges.txt": "0b54e8aa4e53d5383e2e4bc635a56b43f9647f7b13832d5d9ecd8f82dac4f510",
+        "modeling_ouro.py": "c5c68fbb368ce2909c257ae2afc50719be8c91539333d3295e19312c4316f413",
+        "special_tokens_map.json": "55087bb8409060d9cb0f80495e34f4e0d8a84f68a799a6b0cab3132be0aae319",
+        "tokenizer.json": "fcb808fe5e7642f5299be28aea07fc7f6d4f4364c3ac5e408e15a772cbc8fa8d",
+        "tokenizer_config.json": "7e010da95d71b0fa1aa809552922c74cc1dd98d628f21ba39ca6c35aa18d5d91",
+        "vocab.json": "7b9de3f47796abf8d00ab96be299fea0dc9afdf1827f34e7e0b9fb44593efe5c"
+      },
+      "tokenizer_and_chat_template_byte_identical_to_ouro_1_4b": true,
+      "weight_blob_sha256": "2fdf9805a3510b7dc82959a2db4872ef767a5bdc55520c6a1b54fc3e463c1bba",
+      "weight_bytes": 5336011242
+    }
+  },
+  "runner": {
+    "path": "run_ouro26_2wiki_candidate_list_ablation.py",
+    "sha256": "e1e361469a19b76a4eaaaf80e58a0077c2ed0adf4d803a992fd629ccd74054d2"
+  },
+  "schema": "ouro26-2wiki-candidate-list-ablation-v1",
+  "source_shards": [
+    {
+      "path": "model-shard-0.json",
+      "sha256": "ead168d7be691701086328f3538b5ca9d4dc5dd9e0fae6c2bf28d40746853ff6"
+    },
+    {
+      "path": "model-shard-1.json",
+      "sha256": "d846252af049be2f9a4e78d852289997599cc50ff8a798ffc384557ecdc0446f"
+    },
+    {
+      "path": "model-shard-2.json",
+      "sha256": "9d96ab2b4352451f4bfa377e2fedc9e1ce0c2f15bf2dbfd470d9b75c90ab8b5f"
+    },
+    {
+      "path": "model-shard-3.json",
+      "sha256": "0775025c6dc3c6960632c4d5df6acc49f4e3fe47295f7581a4f6d01834d71447"
+    }
+  ],
+  "summary": {
+    "actual_generation_forward_calls": 3069,
+    "answer_sequence_scores": 5952,
+    "bootstrap": {
+      "draws_sha256": "58fd92ef2282d18219112aca04d33b85fccedf6b62b0e8427fd707d3064d9059",
+      "method": "10,000 shared hierarchical draws: resample 31 relation paths, then four whole pairs within each sampled path",
+      "pair_units_per_draw": 124,
+      "pairs_per_path_per_draw": 4,
+      "relation_path_clusters": 31,
+      "replicates": 10000,
+      "rng_seed": 3719725927401273107,
+      "shared_draws_for_all_metrics": true
+    },
+    "decision": "CONFIRM_SUBSTANTIAL_CANDIDATE_LIST_INDEPENDENCE",
+    "generation_P0_primary": {
+      "K3_adherence": {
+        "XN": {
+          "bootstrap_replicates": 10000,
+          "estimate": 0.8870967741935484,
+          "pair_units": 124,
+          "percentile_95_CI": [
+            0.8145161290322581,
+            0.9475806451612904
+          ]
+        },
+        "XV": {
+          "bootstrap_replicates": 10000,
+          "estimate": 0.8790322580645161,
+          "pair_units": 124,
+          "percentile_95_CI": [
+            0.8104838709677419,
+            0.9395161290322581
+          ]
+        }
+      },
+      "K3_state_correct": {
+        "by_cell": {
+          "XN": {
+            "bootstrap_replicates": 10000,
+            "estimate": 0.5403225806451613,
+            "pair_units": 124,
+            "percentile_95_CI": [
+              0.4879032258064516,
+              0.5967741935483871
+            ]
+          },
+          "XV": {
+            "bootstrap_replicates": 10000,
+            "estimate": 0.5403225806451613,
+            "pair_units": 124,
+            "percentile_95_CI": [
+              0.4798387096774194,
+              0.6048387096774194
+            ]
+          }
+        },
+        "pooled": {
+          "bootstrap_replicates": 10000,
+          "estimate": 0.5403225806451613,
+          "pair_units": 124,
+          "percentile_95_CI": [
+            0.49193548387096775,
+            0.5907258064516129
+          ]
+        }
+      },
+      "arm_signs": {
+        "A": {
+          "D3": 0.25,
+          "G31": 0.25
+        },
+        "B": {
+          "D3": 0.14516129032258066,
+          "G31": 0.14516129032258066
+        }
+      },
+      "explicitly_non_gating": false,
+      "gates": {
+        "D3": true,
+        "G31": true,
+        "arm_signs": true,
+        "each_cell_K3_point": true,
+        "pooled_K3_state_accuracy": false
+      },
+      "metrics": {
+        "D3": {
+          "bootstrap_replicates": 10000,
+          "estimate": 0.1975806451612903,
+          "pair_units": 124,
+          "percentile_95_CI": [
+            0.11491935483870967,
+            0.28830645161290325
+          ]
+        },
+        "G31": {
+          "bootstrap_replicates": 10000,
+          "estimate": 0.1975806451612903,
+          "pair_units": 124,
+          "percentile_95_CI": [
+            0.11491935483870967,
+            0.28830645161290325
+          ]
+        }
+      },
+      "passes": false
+    },
+    "generation_P1_diagnostic": {
+      "K3_adherence": {
+        "XN": {
+          "bootstrap_replicates": 10000,
+          "estimate": 0.8870967741935484,
+          "pair_units": 124,
+          "percentile_95_CI": [
+            0.8145161290322581,
+            0.9475806451612904
+          ]
+        },
+        "XV": {
+          "bootstrap_replicates": 10000,
+          "estimate": 0.8790322580645161,
+          "pair_units": 124,
+          "percentile_95_CI": [
+            0.8104838709677419,
+            0.9395161290322581
+          ]
+        }
+      },
+      "K3_state_correct": {
+        "by_cell": {
+          "XN": {
+            "bootstrap_replicates": 10000,
+            "estimate": 0.5403225806451613,
+            "pair_units": 124,
+            "percentile_95_CI": [
+              0.4879032258064516,
+              0.5967741935483871
+            ]
+          },
+          "XV": {
+            "bootstrap_replicates": 10000,
+            "estimate": 0.5403225806451613,
+            "pair_units": 124,
+            "percentile_95_CI": [
+              0.4798387096774194,
+              0.6048387096774194
+            ]
+          }
+        },
+        "pooled": {
+          "bootstrap_replicates": 10000,
+          "estimate": 0.5403225806451613,
+          "pair_units": 124,
+          "percentile_95_CI": [
+            0.49193548387096775,
+            0.5907258064516129
+          ]
+        }
+      },
+      "arm_signs": {
+        "A": {
+          "D3": 0.25,
+          "G31": 0.25
+        },
+        "B": {
+          "D3": 0.14516129032258066,
+          "G31": 0.14516129032258066
+        }
+      },
+      "explicitly_non_gating": true,
+      "gates": {
+        "D3": false,
+        "G31": false,
+        "arm_signs": false,
+        "each_cell_K3_point": false,
+        "pooled_K3_state_accuracy": false
+      },
+      "metrics": {
+        "D3": {
+          "bootstrap_replicates": 10000,
+          "estimate": 0.1975806451612903,
+          "pair_units": 124,
+          "percentile_95_CI": [
+            0.11491935483870967,
+            0.28830645161290325
+          ]
+        },
+        "G31": {
+          "bootstrap_replicates": 10000,
+          "estimate": 0.1975806451612903,
+          "pair_units": 124,
+          "percentile_95_CI": [
+            0.11491935483870967,
+            0.28830645161290325
+          ]
+        }
+      },
+      "passes": false
+    },
+    "generation_P2_diagnostic": {
+      "K3_adherence": {
+        "XN": {
+          "bootstrap_replicates": 10000,
+          "estimate": 0.8870967741935484,
+          "pair_units": 124,
+          "percentile_95_CI": [
+            0.8145161290322581,
+            0.9475806451612904
+          ]
+        },
+        "XV": {
+          "bootstrap_replicates": 10000,
+          "estimate": 0.8790322580645161,
+          "pair_units": 124,
+          "percentile_95_CI": [
+            0.8104838709677419,
+            0.9395161290322581
+          ]
+        }
+      },
+      "K3_state_correct": {
+        "by_cell": {
+          "XN": {
+            "bootstrap_replicates": 10000,
+            "estimate": 0.5403225806451613,
+            "pair_units": 124,
+            "percentile_95_CI": [
+              0.4879032258064516,
+              0.5967741935483871
+            ]
+          },
+          "XV": {
+            "bootstrap_replicates": 10000,
+            "estimate": 0.5403225806451613,
+            "pair_units": 124,
+            "percentile_95_CI": [
+              0.4798387096774194,
+              0.6048387096774194
+            ]
+          }
+        },
+        "pooled": {
+          "bootstrap_replicates": 10000,
+          "estimate": 0.5403225806451613,
+          "pair_units": 124,
+          "percentile_95_CI": [
+            0.49193548387096775,
+            0.5907258064516129
+          ]
+        }
+      },
+      "arm_signs": {
+        "A": {
+          "D3": 0.25,
+          "G31": 0.25
+        },
+        "B": {
+          "D3": 0.14516129032258066,
+          "G31": 0.14516129032258066
+        }
+      },
+      "explicitly_non_gating": true,
+      "gates": {
+        "D3": false,
+        "G31": false,
+        "arm_signs": false,
+        "each_cell_K3_point": false,
+        "pooled_K3_state_accuracy": false
+      },
+      "metrics": {
+        "D3": {
+          "bootstrap_replicates": 10000,
+          "estimate": 0.1975806451612903,
+          "pair_units": 124,
+          "percentile_95_CI": [
+            0.11491935483870967,
+            0.28830645161290325
+          ]
+        },
+        "G31": {
+          "bootstrap_replicates": 10000,
+          "estimate": 0.1975806451612903,
+          "pair_units": 124,
+          "percentile_95_CI": [
+            0.11491935483870967,
+            0.28830645161290325
+          ]
+        }
+      },
+      "passes": false
+    },
+    "generation_decision": "LIKELIHOOD_TO_GREEDY_DECODING_BOUNDARY",
+    "half_retention": {
+      "H31_lower95_above_zero": true,
+      "H3_lower95_above_zero": true,
+      "passes": true
+    },
+    "interface_contrasts": {
+      "A31_LIST_minus_NO_LIST": {
+        "bootstrap_replicates": 10000,
+        "estimate": 0.06911111142366164,
+        "pair_units": 124,
+        "percentile_95_CI": [
+          -0.04073879132347722,
+          0.17125653988050835
+        ]
+      },
+      "A3_LIST_minus_NO_LIST": {
+        "bootstrap_replicates": 10000,
+        "estimate": 0.08084130166999755,
+        "pair_units": 124,
+        "percentile_95_CI": [
+          -0.0058491889447454416,
+          0.16556224601283187
+        ]
+      },
+      "H31_NO_LIST_minus_half_LIST": {
+        "bootstrap_replicates": 10000,
+        "estimate": 0.28142816032613477,
+        "pair_units": 124,
+        "percentile_95_CI": [
+          0.1558223582533819,
+          0.4140573935763489
+        ]
+      },
+      "H3_NO_LIST_minus_half_LIST": {
+        "bootstrap_replicates": 10000,
+        "estimate": 0.27044564113020897,
+        "pair_units": 124,
+        "percentile_95_CI": [
+          0.1600798229236276,
+          0.39141886116215774
+        ]
+      }
+    },
+    "likelihood": {
+      "LIST": {
+        "K3_state_correct": {
+          "by_cell": {
+            "XN": {
+              "bootstrap_replicates": 10000,
+              "estimate": 0.6209677419354839,
+              "pair_units": 124,
+              "percentile_95_CI": [
+                0.5735887096774194,
+                0.6713709677419355
+              ]
+            },
+            "XV": {
+              "bootstrap_replicates": 10000,
+              "estimate": 0.5987903225806451,
+              "pair_units": 124,
+              "percentile_95_CI": [
+                0.5584677419354839,
+                0.6431451612903226
+              ]
+            }
+          },
+          "pooled": {
+            "bootstrap_replicates": 10000,
+            "estimate": 0.6098790322580645,
+            "pair_units": 124,
+            "percentile_95_CI": [
+              0.5735887096774194,
+              0.6481854838709677
+            ]
+          }
+        },
+        "arm_signs": {
+          "A": {
+            "D3": 0.7435867353793113,
+            "G31": 0.7668895731049199
+          },
+          "B": {
+            "D3": 0.6615610358215147,
+            "G31": 0.6352675138942657
+          }
+        },
+        "candidate_order_signs": {
+          "original": {
+            "D3": 0.6990818015990719,
+            "G31": 0.6947374132371718
+          },
+          "reversed": {
+            "D3": 0.7060659696017543,
+            "G31": 0.7074196737620139
+          }
+        },
+        "gates": {
+          "D3": true,
+          "G31": true,
+          "arm_signs": true,
+          "candidate_order_signs": true,
+          "each_cell_K3_point": true,
+          "pooled_K3_state_accuracy": true
+        },
+        "metrics": {
+          "D3_nats": {
+            "bootstrap_replicates": 10000,
+            "estimate": 0.702573885600413,
+            "pair_units": 124,
+            "percentile_95_CI": [
+              0.5394737563786968,
+              0.872096582574229
+            ]
+          },
+          "G31_nats": {
+            "bootstrap_replicates": 10000,
+            "estimate": 0.7010785434995929,
+            "pair_units": 124,
+            "percentile_95_CI": [
+              0.5377601569218021,
+              0.874294406013383
+            ]
+          }
+        },
+        "passes": true
+      },
+      "NO_LIST": {
+        "K3_state_correct": {
+          "by_cell": {
+            "XN": {
+              "bootstrap_replicates": 10000,
+              "estimate": 0.6008064516129032,
+              "pair_units": 124,
+              "percentile_95_CI": [
+                0.5483870967741935,
+                0.657258064516129
+              ]
+            },
+            "XV": {
+              "bootstrap_replicates": 10000,
+              "estimate": 0.5483870967741935,
+              "pair_units": 124,
+              "percentile_95_CI": [
+                0.5080645161290323,
+                0.5967741935483871
+              ]
+            }
+          },
+          "pooled": {
+            "bootstrap_replicates": 10000,
+            "estimate": 0.5745967741935484,
+            "pair_units": 124,
+            "percentile_95_CI": [
+              0.5352822580645161,
+              0.6189516129032258
+            ]
+          }
+        },
+        "arm_signs": {
+          "A": {
+            "D3": 0.6478986893930743,
+            "G31": 0.6931450559246924
+          },
+          "B": {
+            "D3": 0.5955664784677567,
+            "G31": 0.5707898082271698
+          }
+        },
+        "candidate_order_signs": {},
+        "gates": {
+          "D3": true,
+          "G31": true,
+          "arm_signs": true,
+          "each_cell_K3_point": true,
+          "pooled_K3_state_accuracy": true
+        },
+        "metrics": {
+          "D3_nats": {
+            "bootstrap_replicates": 10000,
+            "estimate": 0.6217325839304155,
+            "pair_units": 124,
+            "percentile_95_CI": [
+              0.4486434055672538,
+              0.8134790588771142
+            ]
+          },
+          "G31_nats": {
+            "bootstrap_replicates": 10000,
+            "estimate": 0.6319674320759312,
+            "pair_units": 124,
+            "percentile_95_CI": [
+              0.44695722165126955,
+              0.8289012655375465
+            ]
+          }
+        },
+        "passes": true
+      }
+    },
+    "likelihood_rows": 2976,
+    "no_list_generations": 992,
+    "pair_units": 124
+  }
+}

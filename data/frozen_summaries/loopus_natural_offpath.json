@@ -1,0 +1,432 @@
+{
+  "analysis": {
+    "bootstrap_salt": "loopus-2wiki-offpath-specificity-v1:path-bootstrap",
+    "path": "analyze_loopus_2wiki_offpath_specificity.py",
+    "scoring_contract_sha256": "29206214042da70e6e3df517b73012fdf48c274d3bc1c78972650de2e38c47c2",
+    "sha256": "b3ee07ba8e838850b55821d5733f180e852cf2043679ec62e293c55be5e0f742"
+  },
+  "inputs": [
+    {
+      "path": "shard0.json",
+      "sha256": "3cc03930c6ceeca04fc893326b9c9e3c00ab8f518f850b5b01b57035408d6d3d"
+    },
+    {
+      "path": "shard1.json",
+      "sha256": "6bc68e591b5be19828813b61ff3eb920779f85529e02736147130e3aac35a6c7"
+    },
+    {
+      "path": "shard2.json",
+      "sha256": "9b1006e3491355a7d3c759e08e7d180c4d79055249b9e410b04365fdbc5ac1d9"
+    },
+    {
+      "path": "shard3.json",
+      "sha256": "578b935ae850dafa99c514f070a0a6c7b0cf2785e30498bb715fe4949991b978"
+    }
+  ],
+  "model": {
+    "adaptive_halting": false,
+    "architecture": {
+      "N": 20,
+      "base_model_name_or_path": "Qwen/Qwen3-1.7B",
+      "decoder_layer_indices": [
+        27
+      ],
+      "encoder_layer_indices": [
+        0,
+        1
+      ],
+      "model_type": "lds"
+    },
+    "config_sha256": "92f0fb14a55fdd9fe17b137d09680c04137957d08b950c5db14628576b1ab18d",
+    "dtype": "bfloat16",
+    "fixed_q_threshold": 2.0,
+    "repository": "Thrillcrazyer/Qwen3_1.7B_LoopUS_SFT",
+    "revision": "469f03291c3be06d7a428a4043809d818c304a25",
+    "weight_sha256": "2deb42ec0b2dd156a1ff930fbee41172bd9cae32836f4e90fbb6fd952d309cff"
+  },
+  "registration": {
+    "path": "design.json",
+    "sha256": "737420a53ef807007478f761c96de0edaf8caaefef9864656691ade95ebf5e11",
+    "status": "frozen_before_any_loopus_offpath_score"
+  },
+  "schema": "loopus-2wiki-offpath-specificity-analysis-v1",
+  "source_design": {
+    "construction": "62 fixed four-chain blocks across 31 exact relation paths; each physical bridge transposition is crossed once on path and once off path without moving strings or evidence slots",
+    "frozen_ouro_result_sha256": "909fe2dcbd3fd2b78f5545332e6b430f45bd9ed18167a01620369aca2b1faf7b",
+    "panel_design_sha256": "a5e4410675e497920235f43e91751a9e83e18e51e9e347b3a5a81efcc7fc89e5",
+    "path": "design.json",
+    "prompt_fingerprint": "8195f2785b798cc74464e7d84a9b4cb87a0ea5af4cb34361ad23dce91e761897",
+    "schema": "ouro26-2wiki-offpath-specificity-v2",
+    "sha256": "c2a3b83e97243608c47da1f28347e15e1cf8c211d68e28bc8433b88818cffd95"
+  },
+  "summary": {
+    "bootstrap": {
+      "draws_sha256": "5310921d09d6204eb84f8990dcca8b12dd05621333234469b96c3d5f17d053bc",
+      "replicates": 10000,
+      "resampling": "31 exact relation paths after averaging two disjoint physical blocks and all selected crossed within-block conditions",
+      "seed": 13577549118044411076,
+      "shared_draws_for_all_metrics": true
+    },
+    "candidate_sequence_forwards": 4960,
+    "claim_boundary": "A primary pass transfers relative answer-path specificity to the frozen LoopUS checkpoint on the already exposed 2Wiki-derived blocks. An A81 pass additionally shows that this specificity grows from K1 to K8. Neither outcome is an independent content replication, an off-path equivalence result, a fold-ratio claim, a hidden-state mechanism, or a statement about recurrent models generally.",
+    "decision": "CONFIRM_LOOPUS_DEEP_AND_DEPTH_ONPATH_SPECIFICITY",
+    "descriptive_no_additional_gates": {
+      "N8_off_path_effect_nats_no_equivalence_claim": {
+        "bootstrap_replicates": 10000,
+        "estimate": 0.08932000801207558,
+        "percentile_95_CI": [
+          0.03685970874803682,
+          0.1392183134993238
+        ],
+        "relation_path_units": 31
+      },
+      "factor_point_estimates": {
+        "candidate_order": {
+          "original": {
+            "A81": 0.8991809729336491,
+            "C1": 2.5878087705932558,
+            "C8": 3.486989743526905,
+            "N8": 0.09609441519264252,
+            "O8": 3.583084158719547
+          },
+          "reversed": {
+            "A81": 0.8949105888417351,
+            "C1": 2.6373368721763275,
+            "C8": 3.5322474610180623,
+            "N8": 0.08254560083150864,
+            "O8": 3.614793061849571
+          }
+        },
+        "focal_role": {
+          "0": {
+            "A81": 1.1957009820147388,
+            "C1": 3.067577317387106,
+            "C8": 4.263278299401844,
+            "N8": 0.05503666028380394,
+            "O8": 4.318314959685648
+          },
+          "1": {
+            "A81": 0.5983905797606455,
+            "C1": 2.157568325382477,
+            "C8": 2.7559589051431224,
+            "N8": 0.12360335574034721,
+            "O8": 2.87956226088347
+          }
+        },
+        "query_arm": {
+          "A": {
+            "A81": 0.8247298276832988,
+            "C1": 2.7428050396303014,
+            "C8": 3.5675348673136003,
+            "N8": 0.07724204695513172,
+            "O8": 3.644776914268732
+          },
+          "B": {
+            "A81": 0.9693617340920854,
+            "C1": 2.4823406031392814,
+            "C8": 3.451702337231367,
+            "N8": 0.10139796906901945,
+            "O8": 3.553100306300386
+          }
+        }
+      },
+      "per_relation_path": {
+        "composer -> country of citizenship": {
+          "A81": 0.8349704816937447,
+          "C1": 4.996933825314045,
+          "C8": 5.83190430700779,
+          "N8": -0.010652489960193634,
+          "O8": 5.821251817047596
+        },
+        "composer -> place of birth": {
+          "A81": 1.5344245536252856,
+          "C1": 3.372585798613727,
+          "C8": 4.907010352239013,
+          "N8": 0.02021276019513607,
+          "O8": 4.927223112434149
+        },
+        "composer -> place of death": {
+          "A81": 0.6267993086948991,
+          "C1": 2.5758376782760024,
+          "C8": 3.2026369869709015,
+          "N8": 0.10748401284217834,
+          "O8": 3.31012099981308
+        },
+        "director -> award received": {
+          "A81": 1.1384508199989796,
+          "C1": 2.1811816953122616,
+          "C8": 3.319632515311241,
+          "N8": -0.08724547922611237,
+          "O8": 3.232387036085129
+        },
+        "director -> child": {
+          "A81": 0.8302280344069004,
+          "C1": 1.787113007158041,
+          "C8": 2.6173410415649414,
+          "N8": 0.21705453842878342,
+          "O8": 2.834395579993725
+        },
+        "director -> country of citizenship": {
+          "A81": 0.9002033956348896,
+          "C1": 3.623879376798868,
+          "C8": 4.524082772433758,
+          "N8": -0.017086047679185867,
+          "O8": 4.506996724754572
+        },
+        "director -> educated at": {
+          "A81": 1.0958132836967707,
+          "C1": 3.716852208599448,
+          "C8": 4.812665492296219,
+          "N8": -0.021706603467464447,
+          "O8": 4.790958888828754
+        },
+        "director -> employer": {
+          "A81": 1.398130051791668,
+          "C1": 0.8925568833947182,
+          "C8": 2.290686935186386,
+          "N8": 0.15608621388673782,
+          "O8": 2.446773149073124
+        },
+        "director -> father": {
+          "A81": 0.47599783912301064,
+          "C1": 2.685603354126215,
+          "C8": 3.1616011932492256,
+          "N8": 0.22222211211919785,
+          "O8": 3.3838233053684235
+        },
+        "director -> place of birth": {
+          "A81": 0.9316759188659489,
+          "C1": 2.957896030973643,
+          "C8": 3.889571949839592,
+          "N8": -0.11848877370357513,
+          "O8": 3.771083176136017
+        },
+        "director -> place of death": {
+          "A81": 1.0136734694242477,
+          "C1": 2.657329425215721,
+          "C8": 3.671002894639969,
+          "N8": 0.15470419824123383,
+          "O8": 3.8257070928812027
+        },
+        "director -> spouse": {
+          "A81": 0.5736890435218811,
+          "C1": 2.4839678704738617,
+          "C8": 3.057656913995743,
+          "N8": -0.15548592805862427,
+          "O8": 2.9021709859371185
+        },
+        "father -> cause of death": {
+          "A81": 0.06969829648733139,
+          "C1": 1.993525043129921,
+          "C8": 2.0632233396172523,
+          "N8": -0.01611536741256714,
+          "O8": 2.047107972204685
+        },
+        "father -> country of citizenship": {
+          "A81": 0.38219501823186874,
+          "C1": 2.228558912873268,
+          "C8": 2.610753931105137,
+          "N8": 0.03522902727127075,
+          "O8": 2.6459829583764076
+        },
+        "father -> educated at": {
+          "A81": 0.7408189028501511,
+          "C1": 0.9596205987036228,
+          "C8": 1.7004395015537739,
+          "N8": 0.34839891269803047,
+          "O8": 2.0488384142518044
+        },
+        "father -> place of birth": {
+          "A81": 1.4821512009948492,
+          "C1": 0.8642177898436785,
+          "C8": 2.3463689908385277,
+          "N8": 0.22635790705680847,
+          "O8": 2.572726897895336
+        },
+        "father -> place of burial": {
+          "A81": 0.861009081825614,
+          "C1": 1.0798714403063059,
+          "C8": 1.9408805221319199,
+          "N8": 0.21320855617523193,
+          "O8": 2.154089078307152
+        },
+        "father -> place of death": {
+          "A81": 0.45694707753136754,
+          "C1": 1.3872172343544662,
+          "C8": 1.8441643118858337,
+          "N8": 0.10929962806403637,
+          "O8": 1.95346393994987
+        },
+        "founded by -> place of birth": {
+          "A81": -0.2656386625021696,
+          "C1": 4.742735484614968,
+          "C8": 4.477096822112799,
+          "N8": 0.040618810802698135,
+          "O8": 4.517715632915497
+        },
+        "mother -> country of citizenship": {
+          "A81": 0.09762900555506349,
+          "C1": 2.058759310748428,
+          "C8": 2.1563883163034916,
+          "N8": 0.22648044675588608,
+          "O8": 2.3828687630593777
+        },
+        "mother -> place of birth": {
+          "A81": 1.1995407212525606,
+          "C1": 1.7643062267452478,
+          "C8": 2.9638469479978085,
+          "N8": 0.012161189690232277,
+          "O8": 2.9760081376880407
+        },
+        "mother -> place of death": {
+          "A81": 1.907983846962452,
+          "C1": 1.9915420785546303,
+          "C8": 3.899525925517082,
+          "N8": -0.19145740568637848,
+          "O8": 3.7080685198307037
+        },
+        "performer -> award received": {
+          "A81": 1.6809359043836594,
+          "C1": 4.155663847923279,
+          "C8": 5.836599752306938,
+          "N8": 0.19236254692077637,
+          "O8": 6.0289622992277145
+        },
+        "performer -> country of citizenship": {
+          "A81": 0.4205088559538126,
+          "C1": 4.249864777550101,
+          "C8": 4.670373633503914,
+          "N8": 0.16097316145896912,
+          "O8": 4.831346794962883
+        },
+        "performer -> place of birth": {
+          "A81": 1.9206540659070015,
+          "C1": 4.874936759471893,
+          "C8": 6.795590825378895,
+          "N8": 0.16486864537000656,
+          "O8": 6.960459470748901
+        },
+        "performer -> place of death": {
+          "A81": 1.2427041562623344,
+          "C1": 3.7453366597765125,
+          "C8": 4.988040816038847,
+          "N8": 0.31963134929537773,
+          "O8": 5.307672165334225
+        },
+        "spouse -> country of citizenship": {
+          "A81": 0.2624003477394581,
+          "C1": 1.5843010358512402,
+          "C8": 1.8467013835906982,
+          "N8": 0.15887173265218735,
+          "O8": 2.0055731162428856
+        },
+        "spouse -> educated at": {
+          "A81": 0.9613982923328876,
+          "C1": 1.864716101437807,
+          "C8": 2.8261143937706947,
+          "N8": 0.23761362582445145,
+          "O8": 3.063728019595146
+        },
+        "spouse -> place of birth": {
+          "A81": 0.6677726320922375,
+          "C1": 2.941424433141947,
+          "C8": 3.6091970652341843,
+          "N8": -0.24355192855000496,
+          "O8": 3.3656451366841793
+        },
+        "spouse -> place of burial": {
+          "A81": 1.682534446939826,
+          "C1": 1.7579612378031015,
+          "C8": 3.4404956847429276,
+          "N8": 0.20526602864265442,
+          "O8": 3.645761713385582
+        },
+        "spouse -> place of death": {
+          "A81": 0.6831198162399232,
+          "C1": 2.8134613358415663,
+          "C8": 3.4965811520814896,
+          "N8": 0.10160486772656441,
+          "O8": 3.598186019808054
+        }
+      },
+      "positive_relation_path_counts": {
+        "A81": 30,
+        "C8": 31,
+        "N8": 22,
+        "O8": 31
+      },
+      "relation_path_denominator": 31
+    },
+    "intact_K8_competence": {
+      "bootstrap_replicates": 10000,
+      "estimate": 0.8729838709677419,
+      "passes_registered_gate": true,
+      "percentile_95_CI": [
+        0.842741935483871,
+        0.9032258064516129
+      ],
+      "relation_path_units": 31,
+      "slices": {
+        "candidate_order": {
+          "original": 0.875,
+          "reversed": 0.8709677419354839
+        },
+        "focal_role": {
+          "0": 0.907258064516129,
+          "1": 0.8387096774193549
+        },
+        "query_arm": {
+          "A": 0.8790322580645161,
+          "B": 0.8669354838709677
+        }
+      }
+    },
+    "key_secondary_depth_specificity": {
+      "A81_C8_minus_C1_nats": {
+        "bootstrap_replicates": 10000,
+        "estimate": 0.897045780887692,
+        "percentile_95_CI": [
+          0.7079729990444086,
+          1.091993683121062
+        ],
+        "relation_path_units": 31
+      },
+      "C1_on_path_excess_nats": {
+        "bootstrap_replicates": 10000,
+        "estimate": 2.6125728213847914,
+        "percentile_95_CI": [
+          2.2146967480488633,
+          3.0443040389124483
+        ],
+        "relation_path_units": 31
+      },
+      "candidate_order_A81_points_positive": true,
+      "passes_registered_gate": true
+    },
+    "physical_blocks": 62,
+    "primary_deep_specificity": {
+      "C8_on_path_excess_nats": {
+        "bootstrap_replicates": 10000,
+        "estimate": 3.5096186022724836,
+        "percentile_95_CI": [
+          3.0776546658166954,
+          3.9853756531111655
+        ],
+        "relation_path_units": 31
+      },
+      "O8_on_path_effect_nats": {
+        "bootstrap_replicates": 10000,
+        "estimate": 3.5989386102845593,
+        "percentile_95_CI": [
+          3.1766617519240223,
+          4.067552051476894
+        ],
+        "relation_path_units": 31
+      },
+      "candidate_order_C8_points_positive": true,
+      "passes_registered_gate": true
+    },
+    "relation_path_units": 31,
+    "scored_rows": 2480
+  }
+}

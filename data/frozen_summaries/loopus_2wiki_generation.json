@@ -1,0 +1,430 @@
+{
+  "analyzer": {
+    "path": "analyze_loopus_2wiki_greedy_generation.py",
+    "sha256": "a9191f39803e686a4900cf795205ad7ac47c84e458d9bc747b89910e92ce07a5"
+  },
+  "dependencies": {
+    "generation_runner_sha256": "1331e71fba40686ca97a8a4b227732d9a997b5c06bc016f3ad7bcfc7e2967f76",
+    "loopus_likelihood_runner_sha256": "74fddce9ea3b1b46948cabdbde55b94ec629554997e8501b3f7bdd16c172d485"
+  },
+  "inputs": [
+    {
+      "path": "shard1.json",
+      "sha256": "998935105efeb3d3aba126ca6f942d9ffd64789274a6a7e0e5e9442041214493"
+    },
+    {
+      "path": "shard2.json",
+      "sha256": "c03680bfdc7e329b122891d3a08e28fc5487371f473b0f3a3a9a035965d33abe"
+    },
+    {
+      "path": "shard3.json",
+      "sha256": "381d6917be50febd8d9d86fa621a9f79398a21a79fd3d00feac0b6320d8304d8"
+    }
+  ],
+  "model": {
+    "adaptive_halting_disabled_with_q_threshold": 2.0,
+    "architecture": {
+      "N": 20,
+      "base_model_name_or_path": "Qwen/Qwen3-1.7B",
+      "decoder_layer_indices": [
+        27
+      ],
+      "encoder_layer_indices": [
+        0,
+        1
+      ],
+      "model_type": "lds"
+    },
+    "config_sha256": "92f0fb14a55fdd9fe17b137d09680c04137957d08b950c5db14628576b1ab18d",
+    "dtype": "bfloat16",
+    "fixed_depths": [
+      1,
+      8
+    ],
+    "frozen": true,
+    "repository": "Thrillcrazyer/Qwen3_1.7B_LoopUS_SFT",
+    "revision": "469f03291c3be06d7a428a4043809d818c304a25",
+    "tokenizer_files_sha256": {
+      "chat_template.jinja": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8",
+      "tokenizer.json": "be75606093db2094d7cd20f3c2f385c212750648bd6ea4fb2bf507a6a4c55506",
+      "tokenizer_config.json": "d9bf1d78a80bad5eb65b83c2608910e3be00a9d3250c8153a5a393ad1257e1d6"
+    },
+    "torch_version": "2.13.0+cu130",
+    "transformers_version": "5.3.0",
+    "weight_bytes": 4064586530,
+    "weight_sha256": "2deb42ec0b2dd156a1ff930fbee41172bd9cae32836f4e90fbb6fd952d309cff"
+  },
+  "registration": {
+    "path": "design.json",
+    "sha256": "9559ee9f47edb0a2e2f05ffc36d80026a3d5b93df41c81f398a1cac3513e50f9"
+  },
+  "schema": "loopus-2wiki-greedy-generation-analysis-v1",
+  "source_design": {
+    "panel_design_sha256": "883d58bb90b3bd8df50500433287b642706d348b5862c44a7b2200724f8f148c",
+    "path": "design.json",
+    "schema": "ouro26-2wiki-bridge-validation-v1",
+    "sha256": "3ae81beb2936f759e8d924a963a1970eeb3adc2c526f4afdd1def529df8147f0"
+  },
+  "summary": {
+    "arm_and_candidate_order_robustness": {
+      "D8_arm_A": {
+        "bootstrap_replicates": 10000,
+        "estimate": 0.10752688172043011,
+        "hierarchical_percentile_95_CI": [
+          0.04838709677419355,
+          0.17204301075268819
+        ],
+        "pair_units": 93
+      },
+      "D8_arm_B": {
+        "bootstrap_replicates": 10000,
+        "estimate": 0.06451612903225806,
+        "hierarchical_percentile_95_CI": [
+          0.026881720430107527,
+          0.10752688172043011
+        ],
+        "pair_units": 93
+      },
+      "D8_order_original": {
+        "bootstrap_replicates": 10000,
+        "estimate": 0.0913978494623656,
+        "hierarchical_percentile_95_CI": [
+          0.051075268817204304,
+          0.13440860215053763
+        ],
+        "pair_units": 93
+      },
+      "D8_order_reversed": {
+        "bootstrap_replicates": 10000,
+        "estimate": 0.08064516129032258,
+        "hierarchical_percentile_95_CI": [
+          0.043010752688172046,
+          0.12096774193548387
+        ],
+        "pair_units": 93
+      },
+      "G8_minus_1_arm_A": {
+        "bootstrap_replicates": 10000,
+        "estimate": -0.07526881720430108,
+        "hierarchical_percentile_95_CI": [
+          -0.1639784946236559,
+          0.010752688172043012
+        ],
+        "pair_units": 93
+      },
+      "G8_minus_1_arm_B": {
+        "bootstrap_replicates": 10000,
+        "estimate": -0.09408602150537634,
+        "hierarchical_percentile_95_CI": [
+          -0.18010752688172044,
+          -0.013440860215053764
+        ],
+        "pair_units": 93
+      },
+      "G8_minus_1_order_original": {
+        "bootstrap_replicates": 10000,
+        "estimate": -0.051075268817204304,
+        "hierarchical_percentile_95_CI": [
+          -0.13440860215053763,
+          0.021505376344086023
+        ],
+        "pair_units": 93
+      },
+      "G8_minus_1_order_reversed": {
+        "bootstrap_replicates": 10000,
+        "estimate": -0.11827956989247312,
+        "hierarchical_percentile_95_CI": [
+          -0.19623655913978494,
+          -0.043010752688172046
+        ],
+        "pair_units": 93
+      }
+    },
+    "bootstrap": {
+      "conditions_coupled_within_whole_pair": true,
+      "draws_sha256": "7a307e9f4ad6207c4d5ce363a5f43dee7d063cd02f0ed7ed1e2199f721979483",
+      "method": "shared hierarchical resampling of 31 relation paths, then three whole pairs with replacement within each sampled path",
+      "replicates": 10000,
+      "salt": "loopus-2wiki-greedy-generation-v1:path-then-three-pair-bootstrap",
+      "seed": 13732809456532221295
+    },
+    "classification_counts": {
+      "literal": {
+        "bridge_swap:K1:invalid": 137,
+        "bridge_swap:K1:paired": 126,
+        "bridge_swap:K1:reference": 109,
+        "bridge_swap:K8:invalid": 322,
+        "bridge_swap:K8:paired": 27,
+        "bridge_swap:K8:reference": 23,
+        "original:K1:invalid": 148,
+        "original:K1:paired": 61,
+        "original:K1:reference": 163,
+        "original:K8:invalid": 299,
+        "original:K8:paired": 7,
+        "original:K8:reference": 66
+      },
+      "semantic": {
+        "bridge_swap:K1:invalid": 118,
+        "bridge_swap:K1:paired": 139,
+        "bridge_swap:K1:reference": 115,
+        "bridge_swap:K8:invalid": 318,
+        "bridge_swap:K8:paired": 29,
+        "bridge_swap:K8:reference": 25,
+        "original:K1:invalid": 131,
+        "original:K1:paired": 69,
+        "original:K1:reference": 172,
+        "original:K8:invalid": 298,
+        "original:K8:paired": 7,
+        "original:K8:reference": 67
+      }
+    },
+    "decision": "LOOPUS_GREEDY_GENERATION_TRANSFER_NOT_CONFIRMED",
+    "depths": [
+      1,
+      8
+    ],
+    "estimand": {
+      "Dgen_K": "0.5 * mean over arms and candidate orders of (signed_original - signed_bridge_swap), computed pair first",
+      "G8_minus_1": "Dgen_8 - Dgen_1",
+      "signed_reference_choice": "+1 reference, -1 paired, 0 invalid or ambiguous",
+      "state_correct": "original requires reference; bridge_swap requires paired; invalid is zero"
+    },
+    "literal_exact_output_diagnostics": {
+      "literal_adherence_bridge_swap_K1": {
+        "bootstrap_replicates": 10000,
+        "estimate": 0.6317204301075269,
+        "hierarchical_percentile_95_CI": [
+          0.5134408602150538,
+          0.7446236559139785
+        ],
+        "pair_units": 93
+      },
+      "literal_adherence_bridge_swap_K8": {
+        "bootstrap_replicates": 10000,
+        "estimate": 0.13440860215053763,
+        "hierarchical_percentile_95_CI": [
+          0.07526881720430108,
+          0.20161290322580644
+        ],
+        "pair_units": 93
+      },
+      "literal_adherence_original_K1": {
+        "bootstrap_replicates": 10000,
+        "estimate": 0.6021505376344086,
+        "hierarchical_percentile_95_CI": [
+          0.49193548387096775,
+          0.7043010752688172
+        ],
+        "pair_units": 93
+      },
+      "literal_adherence_original_K8": {
+        "bootstrap_replicates": 10000,
+        "estimate": 0.19623655913978494,
+        "hierarchical_percentile_95_CI": [
+          0.12903225806451613,
+          0.26881720430107525
+        ],
+        "pair_units": 93
+      },
+      "literal_state_correct_bridge_swap_K1": {
+        "bootstrap_replicates": 10000,
+        "estimate": 0.3387096774193548,
+        "hierarchical_percentile_95_CI": [
+          0.26881720430107525,
+          0.4112903225806452
+        ],
+        "pair_units": 93
+      },
+      "literal_state_correct_bridge_swap_K8": {
+        "bootstrap_replicates": 10000,
+        "estimate": 0.07258064516129033,
+        "hierarchical_percentile_95_CI": [
+          0.03494623655913978,
+          0.11559139784946236
+        ],
+        "pair_units": 93
+      },
+      "literal_state_correct_original_K1": {
+        "bootstrap_replicates": 10000,
+        "estimate": 0.4381720430107527,
+        "hierarchical_percentile_95_CI": [
+          0.3521505376344086,
+          0.5241935483870968
+        ],
+        "pair_units": 93
+      },
+      "literal_state_correct_original_K8": {
+        "bootstrap_replicates": 10000,
+        "estimate": 0.1774193548387097,
+        "hierarchical_percentile_95_CI": [
+          0.11559139784946236,
+          0.2446236559139785
+        ],
+        "pair_units": 93
+      }
+    },
+    "pairs": 93,
+    "passes_all_registered_gates": false,
+    "positive_relation_path_means_out_of_31": {
+      "D1": 24,
+      "D8": 19,
+      "G8_minus_1": 5
+    },
+    "primary_semantic_signed_choice": {
+      "D1": {
+        "bootstrap_replicates": 10000,
+        "estimate": 0.17069892473118278,
+        "hierarchical_percentile_95_CI": [
+          0.10618279569892473,
+          0.2446236559139785
+        ],
+        "pair_units": 93
+      },
+      "D8": {
+        "bootstrap_replicates": 10000,
+        "estimate": 0.08602150537634409,
+        "hierarchical_percentile_95_CI": [
+          0.051075268817204304,
+          0.12365591397849462
+        ],
+        "pair_units": 93
+      },
+      "G8_minus_1": {
+        "bootstrap_replicates": 10000,
+        "estimate": -0.0846774193548387,
+        "hierarchical_percentile_95_CI": [
+          -0.15188172043010753,
+          -0.024193548387096774
+        ],
+        "pair_units": 93
+      }
+    },
+    "registered_gates": {
+      "D8_and_G_positive_in_each_arm_and_candidate_order": false,
+      "D8_estimate_at_least_0.15_and_lower95_above_zero": false,
+      "G8_minus_1_estimate_at_least_0.10_and_lower95_above_zero": false,
+      "bridge_swap_K8_state_correct_point_above_0.50": false,
+      "literal_exact_output_adherence_is_not_a_gate": true,
+      "original_K8_state_correct_point_above_0.50": false,
+      "pooled_K8_state_correct_lower95_above_0.50": false,
+      "slice_signs": {
+        "D8_arm_A": true,
+        "D8_arm_B": true,
+        "D8_order_original": true,
+        "D8_order_reversed": true,
+        "G8_minus_1_arm_A": false,
+        "G8_minus_1_arm_B": false,
+        "G8_minus_1_order_original": false,
+        "G8_minus_1_order_reversed": false
+      }
+    },
+    "relation_paths": 31,
+    "semantic_parser_diagnostics": {
+      "semantic_adherence_bridge_swap_K1": {
+        "bootstrap_replicates": 10000,
+        "estimate": 0.6827956989247311,
+        "hierarchical_percentile_95_CI": [
+          0.5725806451612904,
+          0.7849462365591398
+        ],
+        "pair_units": 93
+      },
+      "semantic_adherence_bridge_swap_K8": {
+        "bootstrap_replicates": 10000,
+        "estimate": 0.14516129032258066,
+        "hierarchical_percentile_95_CI": [
+          0.08333333333333333,
+          0.21236559139784947
+        ],
+        "pair_units": 93
+      },
+      "semantic_adherence_original_K1": {
+        "bootstrap_replicates": 10000,
+        "estimate": 0.6478494623655914,
+        "hierarchical_percentile_95_CI": [
+          0.5456989247311828,
+          0.7419354838709677
+        ],
+        "pair_units": 93
+      },
+      "semantic_adherence_original_K8": {
+        "bootstrap_replicates": 10000,
+        "estimate": 0.1989247311827957,
+        "hierarchical_percentile_95_CI": [
+          0.12903225806451613,
+          0.27419354838709675
+        ],
+        "pair_units": 93
+      },
+      "semantic_state_correct_bridge_swap_K1": {
+        "bootstrap_replicates": 10000,
+        "estimate": 0.3736559139784946,
+        "hierarchical_percentile_95_CI": [
+          0.3064516129032258,
+          0.4435483870967742
+        ],
+        "pair_units": 93
+      },
+      "semantic_state_correct_bridge_swap_K8": {
+        "bootstrap_replicates": 10000,
+        "estimate": 0.07795698924731183,
+        "hierarchical_percentile_95_CI": [
+          0.04032258064516129,
+          0.12365591397849462
+        ],
+        "pair_units": 93
+      },
+      "semantic_state_correct_original_K1": {
+        "bootstrap_replicates": 10000,
+        "estimate": 0.46236559139784944,
+        "hierarchical_percentile_95_CI": [
+          0.3763440860215054,
+          0.5483870967741935
+        ],
+        "pair_units": 93
+      },
+      "semantic_state_correct_original_K8": {
+        "bootstrap_replicates": 10000,
+        "estimate": 0.18010752688172044,
+        "hierarchical_percentile_95_CI": [
+          0.11827956989247312,
+          0.2446236559139785
+        ],
+        "pair_units": 93
+      }
+    },
+    "semantic_state_correct_competence": {
+      "K8_state_correct_bridge_swap": {
+        "bootstrap_replicates": 10000,
+        "estimate": 0.07795698924731183,
+        "hierarchical_percentile_95_CI": [
+          0.04032258064516129,
+          0.12365591397849462
+        ],
+        "pair_units": 93
+      },
+      "K8_state_correct_original": {
+        "bootstrap_replicates": 10000,
+        "estimate": 0.18010752688172044,
+        "hierarchical_percentile_95_CI": [
+          0.11827956989247312,
+          0.2446236559139785
+        ],
+        "pair_units": 93
+      },
+      "K8_state_correct_pooled": {
+        "bootstrap_replicates": 10000,
+        "estimate": 0.12903225806451613,
+        "hierarchical_percentile_95_CI": [
+          0.0846774193548387,
+          0.17473118279569894
+        ],
+        "pair_units": 93
+      }
+    },
+    "stop_reason_counts": {
+      "max_new_tokens": 40,
+      "stop_token:<|im_end|>": 1448
+    }
+  }
+}

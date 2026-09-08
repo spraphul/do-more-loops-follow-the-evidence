@@ -1,0 +1,7 @@
+-r requirements.txt
+# Upstream recurrent-model repositories impose their own exact compatible
+# versions. Executed versions are retained in the released model metadata.
+huggingface-hub
+safetensors
+torch
+transformers

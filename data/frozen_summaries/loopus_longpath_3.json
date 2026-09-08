@@ -1,0 +1,2363 @@
+{
+  "backend_audit": {
+    "snapshot_and_source": {
+      "architecture": {
+        "N": 20,
+        "base_model_name_or_path": "Qwen/Qwen3-8B",
+        "decoder_layer_indices": [
+          35
+        ],
+        "encoder_layer_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "reasoning_layer_indices": [
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34
+        ]
+      },
+      "loader_compatibility": {
+        "lds_has_no_defaults_at_init": true,
+        "purpose": "avoid unrelated default Qwen3-0.6B config lookup"
+      },
+      "repository": "Thrillcrazyer/Qwen3-8B_LoopUS",
+      "revision": "4424cfd8e36c77fee337a04602e3ddf6faae533f",
+      "small_files_sha256": {
+        "chat_template.jinja": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8",
+        "config.json": "68177578d238877d3d40565e5620cd13f99528490f5b1a12c1b32cdb54ed1800",
+        "tokenizer.json": "be75606093db2094d7cd20f3c2f385c212750648bd6ea4fb2bf507a6a4c55506",
+        "tokenizer_config.json": "d9bf1d78a80bad5eb65b83c2608910e3be00a9d3250c8153a5a393ad1257e1d6"
+      },
+      "source_dir": "<local-path-removed>",
+      "source_revision": "dd655b77861d9edf8fb981e90763436b95b1f3ff",
+      "weight_blobs": [
+        "9398f3199f618b1c09b216307f46737612efddc16d1c219c4489725fca19ba66"
+      ],
+      "weights_bytes": 16385754482
+    },
+    "tokenization": {
+      "all_labels_exact_one_token_extensions": true,
+      "maximum_prompt_tokens": 494,
+      "minimum_prompt_tokens": 463,
+      "prompts_checked": 192,
+      "target_token_ids": {
+        "A": 32,
+        "B": 33
+      }
+    }
+  },
+  "depths": [
+    1,
+    8
+  ],
+  "mock": false,
+  "model_key": "loopus8",
+  "path_length": 3,
+  "result": {
+    "choice_control_C1": {
+      "ci95": [
+        -0.010416666666666666,
+        0.06770833333333333
+      ],
+      "estimate": 0.026041666666666668
+    },
+    "choice_control_C8": {
+      "ci95": [
+        -0.010416666666666666,
+        0.09375
+      ],
+      "estimate": 0.041666666666666664
+    },
+    "choice_gain_H81": {
+      "ci95": [
+        0.0,
+        0.046875
+      ],
+      "estimate": 0.015625
+    },
+    "original_accuracy_K1": {
+      "ci95": [
+        0.4739583333333333,
+        0.5572916666666666
+      ],
+      "estimate": 0.515625
+    },
+    "original_accuracy_K8": {
+      "ci95": [
+        0.4791666666666667,
+        0.5625
+      ],
+      "estimate": 0.5208333333333334
+    },
+    "path_effect_D1": {
+      "ci95": [
+        0.15755208333333334,
+        0.3125
+      ],
+      "estimate": 0.234375
+    },
+    "path_effect_D8": {
+      "ci95": [
+        0.1796875,
+        0.3346354166666667
+      ],
+      "estimate": 0.2565104166666667
+    },
+    "promotion_eligible": false,
+    "raw_gain_G81": {
+      "ci95": [
+        0.0026041666666666665,
+        0.040364583333333336
+      ],
+      "estimate": 0.022135416666666668
+    },
+    "worlds": 24
+  },
+  "runner": {
+    "path": "run_loopus8_long_path_development.py",
+    "sha256": "75803bbe14ab21ee5ddfc42b5d142c064da90965b01c889cd62925f05e941e52"
+  },
+  "schema": "iclr2027.loopus8_long_path_development.run.v1",
+  "status": "exploratory_development_only",
+  "worlds": [
+    {
+      "edge_order": [
+        [
+          2,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "focal_terminal_codes": [
+        "red",
+        "blue"
+      ],
+      "ordered_focal_code_pair_index": 0,
+      "path_length": 3,
+      "paths": [
+        [
+          "NODE_22141E93",
+          "NODE_492CFF9E",
+          "NODE_9320D8B8",
+          "red"
+        ],
+        [
+          "NODE_8B138A15",
+          "NODE_FC5DC3FC",
+          "NODE_49A5CED8",
+          "blue"
+        ],
+        [
+          "NODE_06A7403E",
+          "NODE_DDDCE884",
+          "NODE_A8F31BB6",
+          "green"
+        ],
+        [
+          "NODE_B657184D",
+          "NODE_7011C631",
+          "NODE_FE921E01",
+          "black"
+        ]
+      ],
+      "relation_family_index": 0,
+      "relations": [
+        "ROUTES_TO",
+        "PASSES_TO",
+        "ENDS_AT"
+      ],
+      "world_id": "LP3_001",
+      "world_index": 0
+    },
+    {
+      "edge_order": [
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "focal_terminal_codes": [
+        "red",
+        "green"
+      ],
+      "ordered_focal_code_pair_index": 1,
+      "path_length": 3,
+      "paths": [
+        [
+          "NODE_2AC947B1",
+          "NODE_475DE420",
+          "NODE_3B94D827",
+          "red"
+        ],
+        [
+          "NODE_B8F3793E",
+          "NODE_B2D9608B",
+          "NODE_CE225B26",
+          "green"
+        ],
+        [
+          "NODE_B2DA07EA",
+          "NODE_7069320F",
+          "NODE_7467F4E6",
+          "black"
+        ],
+        [
+          "NODE_50D211AE",
+          "NODE_111E3372",
+          "NODE_FA6B8148",
+          "blue"
+        ]
+      ],
+      "relation_family_index": 1,
+      "relations": [
+        "LINKS_TO",
+        "TRANSFERS_TO",
+        "RETURNS"
+      ],
+      "world_id": "LP3_002",
+      "world_index": 1
+    },
+    {
+      "edge_order": [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "focal_terminal_codes": [
+        "red",
+        "black"
+      ],
+      "ordered_focal_code_pair_index": 2,
+      "path_length": 3,
+      "paths": [
+        [
+          "NODE_A7C1814E",
+          "NODE_67FEEC29",
+          "NODE_3F78158C",
+          "red"
+        ],
+        [
+          "NODE_84EAF2AB",
+          "NODE_465BF59C",
+          "NODE_564E2356",
+          "black"
+        ],
+        [
+          "NODE_80A07801",
+          "NODE_51010FAF",
+          "NODE_801ACDE1",
+          "blue"
+        ],
+        [
+          "NODE_576D6F53",
+          "NODE_217FF8F7",
+          "NODE_C536E882",
+          "green"
+        ]
+      ],
+      "relation_family_index": 2,
+      "relations": [
+        "POINTS_TO",
+        "LEADS_TO",
+        "YIELDS"
+      ],
+      "world_id": "LP3_003",
+      "world_index": 2
+    },
+    {
+      "edge_order": [
+        [
+          2,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "focal_terminal_codes": [
+        "blue",
+        "red"
+      ],
+      "ordered_focal_code_pair_index": 3,
+      "path_length": 3,
+      "paths": [
+        [
+          "NODE_110F06EB",
+          "NODE_FF521BD9",
+          "NODE_52C999FE",
+          "blue"
+        ],
+        [
+          "NODE_7267AD95",
+          "NODE_2F3AF903",
+          "NODE_3A160F12",
+          "red"
+        ],
+        [
+          "NODE_A4E5B9B5",
+          "NODE_EC3964DE",
+          "NODE_206834DF",
+          "black"
+        ],
+        [
+          "NODE_C079CE5F",
+          "NODE_9C9063D5",
+          "NODE_06BEDEE8",
+          "green"
+        ]
+      ],
+      "relation_family_index": 3,
+      "relations": [
+        "CONNECTS_TO",
+        "CONTINUES_TO",
+        "RESOLVES_TO"
+      ],
+      "world_id": "LP3_004",
+      "world_index": 3
+    },
+    {
+      "edge_order": [
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "focal_terminal_codes": [
+        "blue",
+        "green"
+      ],
+      "ordered_focal_code_pair_index": 4,
+      "path_length": 3,
+      "paths": [
+        [
+          "NODE_1B4F234A",
+          "NODE_AE17B572",
+          "NODE_52B01090",
+          "blue"
+        ],
+        [
+          "NODE_5B9C9260",
+          "NODE_DB671D02",
+          "NODE_A696EDA9",
+          "green"
+        ],
+        [
+          "NODE_6D69FCF0",
+          "NODE_74647388",
+          "NODE_F2DDE1EE",
+          "red"
+        ],
+        [
+          "NODE_9F47890B",
+          "NODE_73ED8D89",
+          "NODE_7F2CD133",
+          "black"
+        ]
+      ],
+      "relation_family_index": 4,
+      "relations": [
+        "FIRST_HOP",
+        "SECOND_HOP",
+        "FINAL_HOP"
+      ],
+      "world_id": "LP3_005",
+      "world_index": 4
+    },
+    {
+      "edge_order": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "focal_terminal_codes": [
+        "blue",
+        "black"
+      ],
+      "ordered_focal_code_pair_index": 5,
+      "path_length": 3,
+      "paths": [
+        [
+          "NODE_48AB0A01",
+          "NODE_D09A98AE",
+          "NODE_DF12D4D6",
+          "blue"
+        ],
+        [
+          "NODE_6E2FC7C8",
+          "NODE_967EB035",
+          "NODE_F36B14FA",
+          "black"
+        ],
+        [
+          "NODE_6561319D",
+          "NODE_E691B12A",
+          "NODE_CC750335",
+          "green"
+        ],
+        [
+          "NODE_5E6EA20E",
+          "NODE_BE8341F4",
+          "NODE_4D9ED4DF",
+          "red"
+        ]
+      ],
+      "relation_family_index": 5,
+      "relations": [
+        "MAPS_TO",
+        "PROJECTS_TO",
+        "TERMINATES_AT"
+      ],
+      "world_id": "LP3_006",
+      "world_index": 5
+    },
+    {
+      "edge_order": [
+        [
+          2,
+          0
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "focal_terminal_codes": [
+        "green",
+        "red"
+      ],
+      "ordered_focal_code_pair_index": 6,
+      "path_length": 3,
+      "paths": [
+        [
+          "NODE_D47BB514",
+          "NODE_BD24D123",
+          "NODE_BC5EC227",
+          "green"
+        ],
+        [
+          "NODE_8259D42D",
+          "NODE_7DA58B3A",
+          "NODE_35C48AE3",
+          "red"
+        ],
+        [
+          "NODE_5739958F",
+          "NODE_111BF022",
+          "NODE_6B23A895",
+          "blue"
+        ],
+        [
+          "NODE_3648AF24",
+          "NODE_9071E364",
+          "NODE_FD26065B",
+          "black"
+        ]
+      ],
+      "relation_family_index": 0,
+      "relations": [
+        "ROUTES_TO",
+        "PASSES_TO",
+        "ENDS_AT"
+      ],
+      "world_id": "LP3_007",
+      "world_index": 6
+    },
+    {
+      "edge_order": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "focal_terminal_codes": [
+        "green",
+        "blue"
+      ],
+      "ordered_focal_code_pair_index": 7,
+      "path_length": 3,
+      "paths": [
+        [
+          "NODE_366494A1",
+          "NODE_E09BE986",
+          "NODE_CBD3208F",
+          "green"
+        ],
+        [
+          "NODE_A2E32439",
+          "NODE_96CA9A1C",
+          "NODE_117A8B0D",
+          "blue"
+        ],
+        [
+          "NODE_96752B91",
+          "NODE_9218B27C",
+          "NODE_16507081",
+          "black"
+        ],
+        [
+          "NODE_D2EE6803",
+          "NODE_737D95E0",
+          "NODE_D048E270",
+          "red"
+        ]
+      ],
+      "relation_family_index": 1,
+      "relations": [
+        "LINKS_TO",
+        "TRANSFERS_TO",
+        "RETURNS"
+      ],
+      "world_id": "LP3_008",
+      "world_index": 7
+    },
+    {
+      "edge_order": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "focal_terminal_codes": [
+        "green",
+        "black"
+      ],
+      "ordered_focal_code_pair_index": 8,
+      "path_length": 3,
+      "paths": [
+        [
+          "NODE_8FF2AEBB",
+          "NODE_9FC6C699",
+          "NODE_00AC2F62",
+          "green"
+        ],
+        [
+          "NODE_E1CE5E0B",
+          "NODE_EAF25ACE",
+          "NODE_FACE21F5",
+          "black"
+        ],
+        [
+          "NODE_E1AD0309",
+          "NODE_0235915F",
+          "NODE_73CFDF1B",
+          "red"
+        ],
+        [
+          "NODE_255F2340",
+          "NODE_EE9CFCA3",
+          "NODE_55783D09",
+          "blue"
+        ]
+      ],
+      "relation_family_index": 2,
+      "relations": [
+        "POINTS_TO",
+        "LEADS_TO",
+        "YIELDS"
+      ],
+      "world_id": "LP3_009",
+      "world_index": 8
+    },
+    {
+      "edge_order": [
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "focal_terminal_codes": [
+        "black",
+        "red"
+      ],
+      "ordered_focal_code_pair_index": 9,
+      "path_length": 3,
+      "paths": [
+        [
+          "NODE_96244895",
+          "NODE_E2ED4A33",
+          "NODE_3D9EDBE2",
+          "black"
+        ],
+        [
+          "NODE_3853789A",
+          "NODE_3DE2B4AA",
+          "NODE_709FF31D",
+          "red"
+        ],
+        [
+          "NODE_982ABCF8",
+          "NODE_DC0C7314",
+          "NODE_50193C37",
+          "green"
+        ],
+        [
+          "NODE_BDFE4FC7",
+          "NODE_2E695DFC",
+          "NODE_50421BE5",
+          "blue"
+        ]
+      ],
+      "relation_family_index": 3,
+      "relations": [
+        "CONNECTS_TO",
+        "CONTINUES_TO",
+        "RESOLVES_TO"
+      ],
+      "world_id": "LP3_010",
+      "world_index": 9
+    },
+    {
+      "edge_order": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "focal_terminal_codes": [
+        "black",
+        "blue"
+      ],
+      "ordered_focal_code_pair_index": 10,
+      "path_length": 3,
+      "paths": [
+        [
+          "NODE_A7247BEB",
+          "NODE_65B0BC41",
+          "NODE_81553237",
+          "black"
+        ],
+        [
+          "NODE_B44B5CF2",
+          "NODE_2536E657",
+          "NODE_45E379BC",
+          "blue"
+        ],
+        [
+          "NODE_F95BE947",
+          "NODE_06F92DC4",
+          "NODE_6B81593E",
+          "red"
+        ],
+        [
+          "NODE_BEDCAE5B",
+          "NODE_0A823360",
+          "NODE_58167070",
+          "green"
+        ]
+      ],
+      "relation_family_index": 4,
+      "relations": [
+        "FIRST_HOP",
+        "SECOND_HOP",
+        "FINAL_HOP"
+      ],
+      "world_id": "LP3_011",
+      "world_index": 10
+    },
+    {
+      "edge_order": [
+        [
+          0,
+          3
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "focal_terminal_codes": [
+        "black",
+        "green"
+      ],
+      "ordered_focal_code_pair_index": 11,
+      "path_length": 3,
+      "paths": [
+        [
+          "NODE_7B4BA889",
+          "NODE_AAB24CA0",
+          "NODE_2CAAFB13",
+          "black"
+        ],
+        [
+          "NODE_D0CC43D4",
+          "NODE_8E2564E1",
+          "NODE_91A95DA9",
+          "green"
+        ],
+        [
+          "NODE_28A2B197",
+          "NODE_4A4F9C12",
+          "NODE_EF75E3C2",
+          "blue"
+        ],
+        [
+          "NODE_332D8118",
+          "NODE_33F90424",
+          "NODE_FE17172B",
+          "red"
+        ]
+      ],
+      "relation_family_index": 5,
+      "relations": [
+        "MAPS_TO",
+        "PROJECTS_TO",
+        "TERMINATES_AT"
+      ],
+      "world_id": "LP3_012",
+      "world_index": 11
+    },
+    {
+      "edge_order": [
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "focal_terminal_codes": [
+        "red",
+        "blue"
+      ],
+      "ordered_focal_code_pair_index": 0,
+      "path_length": 3,
+      "paths": [
+        [
+          "NODE_2CD64EC2",
+          "NODE_C727FD0E",
+          "NODE_D51D25BA",
+          "red"
+        ],
+        [
+          "NODE_CC6AE26C",
+          "NODE_26469779",
+          "NODE_CB7352F7",
+          "blue"
+        ],
+        [
+          "NODE_8A0052B7",
+          "NODE_0964192A",
+          "NODE_2B0340A3",
+          "green"
+        ],
+        [
+          "NODE_1104C5E5",
+          "NODE_A6364DC7",
+          "NODE_A90CBABF",
+          "black"
+        ]
+      ],
+      "relation_family_index": 0,
+      "relations": [
+        "ROUTES_TO",
+        "PASSES_TO",
+        "ENDS_AT"
+      ],
+      "world_id": "LP3_013",
+      "world_index": 12
+    },
+    {
+      "edge_order": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "focal_terminal_codes": [
+        "red",
+        "green"
+      ],
+      "ordered_focal_code_pair_index": 1,
+      "path_length": 3,
+      "paths": [
+        [
+          "NODE_F2CE2557",
+          "NODE_786BC4A3",
+          "NODE_3334EAE5",
+          "red"
+        ],
+        [
+          "NODE_A20D4965",
+          "NODE_4C21044D",
+          "NODE_6CA2117C",
+          "green"
+        ],
+        [
+          "NODE_67A59F48",
+          "NODE_D805615E",
+          "NODE_0FEAD279",
+          "black"
+        ],
+        [
+          "NODE_87253F18",
+          "NODE_6C366626",
+          "NODE_F69AC131",
+          "blue"
+        ]
+      ],
+      "relation_family_index": 1,
+      "relations": [
+        "LINKS_TO",
+        "TRANSFERS_TO",
+        "RETURNS"
+      ],
+      "world_id": "LP3_014",
+      "world_index": 13
+    },
+    {
+      "edge_order": [
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "focal_terminal_codes": [
+        "red",
+        "black"
+      ],
+      "ordered_focal_code_pair_index": 2,
+      "path_length": 3,
+      "paths": [
+        [
+          "NODE_563307D5",
+          "NODE_8957E317",
+          "NODE_1A569554",
+          "red"
+        ],
+        [
+          "NODE_0BC091E5",
+          "NODE_216A8111",
+          "NODE_70DED72A",
+          "black"
+        ],
+        [
+          "NODE_D59CB07D",
+          "NODE_93DEAD50",
+          "NODE_173B0D5A",
+          "blue"
+        ],
+        [
+          "NODE_41C30E2B",
+          "NODE_32C0E0F0",
+          "NODE_70DF3123",
+          "green"
+        ]
+      ],
+      "relation_family_index": 2,
+      "relations": [
+        "POINTS_TO",
+        "LEADS_TO",
+        "YIELDS"
+      ],
+      "world_id": "LP3_015",
+      "world_index": 14
+    },
+    {
+      "edge_order": [
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "focal_terminal_codes": [
+        "blue",
+        "red"
+      ],
+      "ordered_focal_code_pair_index": 3,
+      "path_length": 3,
+      "paths": [
+        [
+          "NODE_4FED27B0",
+          "NODE_31FB267C",
+          "NODE_9BCEC28B",
+          "blue"
+        ],
+        [
+          "NODE_E44C57BF",
+          "NODE_8587FE23",
+          "NODE_3D4B1235",
+          "red"
+        ],
+        [
+          "NODE_9B6970CF",
+          "NODE_441EF9F4",
+          "NODE_FEC88575",
+          "black"
+        ],
+        [
+          "NODE_DBAA190D",
+          "NODE_D95E3D95",
+          "NODE_29A84145",
+          "green"
+        ]
+      ],
+      "relation_family_index": 3,
+      "relations": [
+        "CONNECTS_TO",
+        "CONTINUES_TO",
+        "RESOLVES_TO"
+      ],
+      "world_id": "LP3_016",
+      "world_index": 15
+    },
+    {
+      "edge_order": [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "focal_terminal_codes": [
+        "blue",
+        "green"
+      ],
+      "ordered_focal_code_pair_index": 4,
+      "path_length": 3,
+      "paths": [
+        [
+          "NODE_7541DB5A",
+          "NODE_4E3E0CC7",
+          "NODE_71E946FF",
+          "blue"
+        ],
+        [
+          "NODE_672BA2A6",
+          "NODE_78873719",
+          "NODE_DBB4C3F7",
+          "green"
+        ],
+        [
+          "NODE_A2CDB0BB",
+          "NODE_3FD53553",
+          "NODE_5CB4C4CA",
+          "red"
+        ],
+        [
+          "NODE_4DCAEB6B",
+          "NODE_C3A2E904",
+          "NODE_3488265C",
+          "black"
+        ]
+      ],
+      "relation_family_index": 4,
+      "relations": [
+        "FIRST_HOP",
+        "SECOND_HOP",
+        "FINAL_HOP"
+      ],
+      "world_id": "LP3_017",
+      "world_index": 16
+    },
+    {
+      "edge_order": [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "focal_terminal_codes": [
+        "blue",
+        "black"
+      ],
+      "ordered_focal_code_pair_index": 5,
+      "path_length": 3,
+      "paths": [
+        [
+          "NODE_90770C8E",
+          "NODE_9EE5E825",
+          "NODE_BFD1F068",
+          "blue"
+        ],
+        [
+          "NODE_0B59F4AE",
+          "NODE_3CACD76F",
+          "NODE_251A8B98",
+          "black"
+        ],
+        [
+          "NODE_7DA1F44F",
+          "NODE_1C3E8DD9",
+          "NODE_462EE8D8",
+          "green"
+        ],
+        [
+          "NODE_8A595355",
+          "NODE_CA985EA8",
+          "NODE_F1C501D1",
+          "red"
+        ]
+      ],
+      "relation_family_index": 5,
+      "relations": [
+        "MAPS_TO",
+        "PROJECTS_TO",
+        "TERMINATES_AT"
+      ],
+      "world_id": "LP3_018",
+      "world_index": 17
+    },
+    {
+      "edge_order": [
+        [
+          2,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "focal_terminal_codes": [
+        "green",
+        "red"
+      ],
+      "ordered_focal_code_pair_index": 6,
+      "path_length": 3,
+      "paths": [
+        [
+          "NODE_B94168C7",
+          "NODE_36AE5717",
+          "NODE_EA64C96A",
+          "green"
+        ],
+        [
+          "NODE_31202464",
+          "NODE_734D6246",
+          "NODE_82453A03",
+          "red"
+        ],
+        [
+          "NODE_C87B5D3F",
+          "NODE_13530496",
+          "NODE_E2B68107",
+          "blue"
+        ],
+        [
+          "NODE_5DD5574B",
+          "NODE_4B3FA5D2",
+          "NODE_DE2C5FC7",
+          "black"
+        ]
+      ],
+      "relation_family_index": 0,
+      "relations": [
+        "ROUTES_TO",
+        "PASSES_TO",
+        "ENDS_AT"
+      ],
+      "world_id": "LP3_019",
+      "world_index": 18
+    },
+    {
+      "edge_order": [
+        [
+          2,
+          2
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "focal_terminal_codes": [
+        "green",
+        "blue"
+      ],
+      "ordered_focal_code_pair_index": 7,
+      "path_length": 3,
+      "paths": [
+        [
+          "NODE_39B54585",
+          "NODE_BF6DF341",
+          "NODE_E81CFB9B",
+          "green"
+        ],
+        [
+          "NODE_3FD208DA",
+          "NODE_22203675",
+          "NODE_EFAEAECF",
+          "blue"
+        ],
+        [
+          "NODE_989E2CAD",
+          "NODE_C03FD7F3",
+          "NODE_1AF051FB",
+          "black"
+        ],
+        [
+          "NODE_5CDA671B",
+          "NODE_33B58DA4",
+          "NODE_99FCA8D0",
+          "red"
+        ]
+      ],
+      "relation_family_index": 1,
+      "relations": [
+        "LINKS_TO",
+        "TRANSFERS_TO",
+        "RETURNS"
+      ],
+      "world_id": "LP3_020",
+      "world_index": 19
+    },
+    {
+      "edge_order": [
+        [
+          2,
+          2
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "focal_terminal_codes": [
+        "green",
+        "black"
+      ],
+      "ordered_focal_code_pair_index": 8,
+      "path_length": 3,
+      "paths": [
+        [
+          "NODE_E6791817",
+          "NODE_979CBDFA",
+          "NODE_57B02224",
+          "green"
+        ],
+        [
+          "NODE_39C8C45F",
+          "NODE_37315D05",
+          "NODE_AF15F916",
+          "black"
+        ],
+        [
+          "NODE_81819EF1",
+          "NODE_56D7D8C6",
+          "NODE_3BD2E647",
+          "red"
+        ],
+        [
+          "NODE_570AB4CB",
+          "NODE_717EC1FF",
+          "NODE_A8691060",
+          "blue"
+        ]
+      ],
+      "relation_family_index": 2,
+      "relations": [
+        "POINTS_TO",
+        "LEADS_TO",
+        "YIELDS"
+      ],
+      "world_id": "LP3_021",
+      "world_index": 20
+    },
+    {
+      "edge_order": [
+        [
+          1,
+          3
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "focal_terminal_codes": [
+        "black",
+        "red"
+      ],
+      "ordered_focal_code_pair_index": 9,
+      "path_length": 3,
+      "paths": [
+        [
+          "NODE_5599FCD1",
+          "NODE_7EDD04D1",
+          "NODE_4929DB48",
+          "black"
+        ],
+        [
+          "NODE_2830B1F4",
+          "NODE_456C61EC",
+          "NODE_D2878F40",
+          "red"
+        ],
+        [
+          "NODE_3EA00739",
+          "NODE_AA00AC38",
+          "NODE_74595AE4",
+          "green"
+        ],
+        [
+          "NODE_26B5CCB6",
+          "NODE_584D3CA0",
+          "NODE_FAFA7952",
+          "blue"
+        ]
+      ],
+      "relation_family_index": 3,
+      "relations": [
+        "CONNECTS_TO",
+        "CONTINUES_TO",
+        "RESOLVES_TO"
+      ],
+      "world_id": "LP3_022",
+      "world_index": 21
+    },
+    {
+      "edge_order": [
+        [
+          2,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "focal_terminal_codes": [
+        "black",
+        "blue"
+      ],
+      "ordered_focal_code_pair_index": 10,
+      "path_length": 3,
+      "paths": [
+        [
+          "NODE_F589B9CA",
+          "NODE_EC775A27",
+          "NODE_AC364EE7",
+          "black"
+        ],
+        [
+          "NODE_6243BEDE",
+          "NODE_D44E35AC",
+          "NODE_63961B8B",
+          "blue"
+        ],
+        [
+          "NODE_09EF1257",
+          "NODE_45E64F91",
+          "NODE_5DF13807",
+          "red"
+        ],
+        [
+          "NODE_2DEACC59",
+          "NODE_5C374A2A",
+          "NODE_136A6EB9",
+          "green"
+        ]
+      ],
+      "relation_family_index": 4,
+      "relations": [
+        "FIRST_HOP",
+        "SECOND_HOP",
+        "FINAL_HOP"
+      ],
+      "world_id": "LP3_023",
+      "world_index": 22
+    },
+    {
+      "edge_order": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      "focal_terminal_codes": [
+        "black",
+        "green"
+      ],
+      "ordered_focal_code_pair_index": 11,
+      "path_length": 3,
+      "paths": [
+        [
+          "NODE_4416D9C7",
+          "NODE_78124E39",
+          "NODE_20B75B46",
+          "black"
+        ],
+        [
+          "NODE_138A5172",
+          "NODE_6CED2CD4",
+          "NODE_3E80E677",
+          "green"
+        ],
+        [
+          "NODE_8F7A5477",
+          "NODE_9EA5D434",
+          "NODE_FEF00BD5",
+          "blue"
+        ],
+        [
+          "NODE_C0545431",
+          "NODE_8A801E26",
+          "NODE_41D0B13F",
+          "red"
+        ]
+      ],
+      "relation_family_index": 5,
+      "relations": [
+        "MAPS_TO",
+        "PROJECTS_TO",
+        "TERMINATES_AT"
+      ],
+      "world_id": "LP3_024",
+      "world_index": 23
+    }
+  ]
+}

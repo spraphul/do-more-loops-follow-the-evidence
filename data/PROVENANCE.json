@@ -1,0 +1,576 @@
+{
+  "artifacts": [
+    {
+      "artifact_id": "nonce_path_control_panel",
+      "release_path": "data/generated/nonce_path_control_v1.panel.json",
+      "release_sha256": "f176ce9f06b841feeb33d819536a3bf68a47aaa3bb11a46a9a7e9724af201a16",
+      "source_sha256": "f176ce9f06b841feeb33d819536a3bf68a47aaa3bb11a46a9a7e9724af201a16",
+      "transformation": "none; fully generated fictional panel"
+    },
+    {
+      "artifact_id": "nonce_structural_falsifiers_panel",
+      "release_canonical_sha256": "2f82a391f842b6576cc5dffb274eaddab04784c8af52e6b98ef7e5f49bbcfc8f",
+      "release_path": "data/generated/nonce_structural_falsifiers_v1.panel.json",
+      "release_sha256": "1ec125a0231c774ea7f1ba3a7c8e9299e0f3aa69b9f21999a675730f3f7a4ae7",
+      "source_canonical_sha256": "eb5399bec2c7b4109dfc95fec02555a3189f11eec4fd92555ff32191c91eae46",
+      "source_sha256": "b35b28e140684394a18d4ca220eefd0dfdf9e9302ee49749d6f7d0d3025f3d15",
+      "transformation": "replaced one author-machine parent-panel path; scientific cells unchanged"
+    },
+    {
+      "artifact_id": "natural_ouro26_2wiki",
+      "release_path": "data/analysis_ready/natural/ouro26_2wiki.json",
+      "release_sha256": "593a8104419da38f0a93e03436185e94cfa7466618278e9da95a119bd9a4bb27",
+      "source_sha256": [
+        "04c2beadecdca18563224200c8bfef26d237f40c142efdc387536ba0a56353cd"
+      ],
+      "transformation": "licensed-text-free row-score projection with opaque pair and token IDs"
+    },
+    {
+      "artifact_id": "natural_ouro26_musique",
+      "release_path": "data/analysis_ready/natural/ouro26_musique.json",
+      "release_sha256": "769ebf4e3ca59d7e70d5a54407fb4633c9fbc2a88d2a0d959c0ed123df346575",
+      "source_sha256": [
+        "4f6c2e2d5f96f92ad4e604b23c71d1e6b17909f71465aa7e6e3733fd31723805"
+      ],
+      "transformation": "licensed-text-free row-score projection with opaque pair and token IDs"
+    },
+    {
+      "artifact_id": "natural_loopus_2wiki",
+      "release_path": "data/analysis_ready/natural/loopus_2wiki.json",
+      "release_sha256": "179db3aab621e382f20aa755675e4ad345b10f48273a7fa9a5d80453ff0cf2e8",
+      "source_sha256": [
+        "21f949c098e97c697bd9d2429d10ca9eb33bec1bec0c00e1d6d720b3ead5fee0",
+        "829b48fa63bd64e21e937ba386293dcba7a07dd1139c3f34947707d8e5af1b1e",
+        "58c09b298ae5f90a25d4743b5a7ad9aac095d5e1a236c5b2746505c0588046bc"
+      ],
+      "transformation": "licensed-text-free row-score projection with opaque pair and token IDs"
+    },
+    {
+      "artifact_id": "natural_loopus_musique",
+      "release_path": "data/analysis_ready/natural/loopus_musique.json",
+      "release_sha256": "03811bdf862e80537e1c7c4d3c670b2b3ac3928ad3a697ec3d27ad70e791a935",
+      "source_sha256": [
+        "3dcb9192e3287922697fe085c28b63097b842fdd5137fc1dd4241a6205237c65",
+        "d66a4f55c0927ca7ef03d034e033621be17c4ebbcf76ce1cc10c883b950f357f",
+        "bf8fe5d4d25c5d92c9d45b4a0fffbadf903046016f197a9661fe7090b915fa0a",
+        "27f91d1f8bd01fc1c4c5956a8325f21ffec9c68c3128c70363721cdcd09b286e"
+      ],
+      "transformation": "licensed-text-free row-score projection with opaque pair and token IDs"
+    },
+    {
+      "artifact_id": "natural_loopus_full_depth_2wiki",
+      "release_path": "data/analysis_ready/natural/loopus_full_depth_2wiki.json",
+      "release_sha256": "b936080f1540c3a51a28d1e47ea2716f4e239f892576a7ca0f554dcffb321660",
+      "source_sha256": [
+        "4670af1b2366fd9755131032252b773ddfa8eb5d8209964f04a5afb0e50c06f5",
+        "dc102ef0a981026f3cbf32e0b723773d9108f5e66cced73bd0b3c80b98760dfa",
+        "13149d780edb9a2ea959eb76ad19e0bfab881c1bd91eee9e813e3b8748783e78"
+      ],
+      "transformation": "licensed-text-free row-score projection with opaque pair and token IDs"
+    },
+    {
+      "artifact_id": "natural_loopus_full_depth_musique",
+      "release_path": "data/analysis_ready/natural/loopus_full_depth_musique.json",
+      "release_sha256": "4d0c59d8fe397c99b805dc447fa43650a14c4c89d3cd151810bd83825de5f357",
+      "source_sha256": [
+        "45df18bded4b8c850a02d2b6364bc61ff167e440e7ad1cac5262345a5b74737e",
+        "ac201aa043f309638366ccefa7252f572579ec9072e60fbf49c20aa0669d852c",
+        "6ea532f481ce95ddecfa96c047a421ecc1391801183571b5b24c8e2eb8fb7bd7",
+        "0c96fe2e28e00e0fce27fe0880f82f32d7997a2e5ad83137da56d88bf012392e"
+      ],
+      "transformation": "licensed-text-free row-score projection with opaque pair and token IDs"
+    },
+    {
+      "artifact_id": "fictional_ouro_competence",
+      "release_path": "data/analysis_ready/fictional_ouro/competence.json",
+      "release_sha256": "de6e97abb931a0ff368807e322ceb528ec90db40a629a9a2271f11a8d839a133",
+      "source_sha256": "a6900da8a4ee042293d9c2bf90121b50566a834e8496b91b60d17b3dffbca0f3",
+      "transformation": "score-only projection; prompts are recoverable from the released generated panel"
+    },
+    {
+      "artifact_id": "fictional_ouro_shard_0",
+      "release_path": "data/analysis_ready/fictional_ouro/shard_0.json",
+      "release_sha256": "3524ad0968164e4c50bf74f0fbd7375201e87bc933cd438b6d06f6447d850cfe",
+      "source_sha256": "2e00d3fdd9e578adb277c155e766339041be4dff08fc58b4c548662e29e85c52",
+      "transformation": "score-only projection; prompts are recoverable from the released generated panel"
+    },
+    {
+      "artifact_id": "fictional_ouro_shard_1",
+      "release_path": "data/analysis_ready/fictional_ouro/shard_1.json",
+      "release_sha256": "27aa9b02afa79b5fa85a5dae93f21698edae847aad06127c7f86dea521b07aff",
+      "source_sha256": "fcb18434d269d5198ce6f58676d1f666310f178ac11517c8a31cb777bed91431",
+      "transformation": "score-only projection; prompts are recoverable from the released generated panel"
+    },
+    {
+      "artifact_id": "fictional_ouro_shard_2",
+      "release_path": "data/analysis_ready/fictional_ouro/shard_2.json",
+      "release_sha256": "90a78f45f16be253be5b7f007d502f4f61addc7c1668cdb188826d107e678a82",
+      "source_sha256": "c97d2ec2d6ba7621d5682891a9f54a21287896c000278f80eee92892799bb125",
+      "transformation": "score-only projection; prompts are recoverable from the released generated panel"
+    },
+    {
+      "artifact_id": "fictional_ouro_shard_3",
+      "release_path": "data/analysis_ready/fictional_ouro/shard_3.json",
+      "release_sha256": "12c0f48e3bd943a1125abbc4171c9abaf4aeb921c11ec930a7da9b2fdb087a5f",
+      "source_sha256": "cba3e9a4757bead88c4fe02795461eb79f269f906a1e64522a416d17f22ffbd5",
+      "transformation": "score-only projection; prompts are recoverable from the released generated panel"
+    },
+    {
+      "artifact_id": "fictional_ouro_shard_4",
+      "release_path": "data/analysis_ready/fictional_ouro/shard_4.json",
+      "release_sha256": "0d518d055c849b9f3fd93134ef2c4a6fab8dfc20a9d73c84f48955375c5b2aec",
+      "source_sha256": "ce9d30b12f5b11b3a2186775b305c8dac5f64d88dbb80cd57357048b3f613b0b",
+      "transformation": "score-only projection; prompts are recoverable from the released generated panel"
+    },
+    {
+      "artifact_id": "fictional_ouro_shard_5",
+      "release_path": "data/analysis_ready/fictional_ouro/shard_5.json",
+      "release_sha256": "69b705a9bf6cb2b526291e8cf5ded7281991faf47a218bf4f5d1b6e8f4b7bf0f",
+      "source_sha256": "7bd7049906b7083faa99b8dcc95a7f296628cb65b3c3d2053969a7e704f67d12",
+      "transformation": "score-only projection; prompts are recoverable from the released generated panel"
+    },
+    {
+      "artifact_id": "fictional_ouro_shard_6",
+      "release_path": "data/analysis_ready/fictional_ouro/shard_6.json",
+      "release_sha256": "809111d049be48dfd87a411d97fe9eb6727fb8f5bdcee2c7c71470b1e37cdb93",
+      "source_sha256": "1c180219a45daa2fc328302c2146f7ab99d6d377378b6812ee472bae404fd414",
+      "transformation": "score-only projection; prompts are recoverable from the released generated panel"
+    },
+    {
+      "artifact_id": "fictional_ouro_shard_7",
+      "release_path": "data/analysis_ready/fictional_ouro/shard_7.json",
+      "release_sha256": "b2c7643dbd133ca67c808288b89b7819edd17b324b6d76ee69cb77a1af5453b6",
+      "source_sha256": "622ccd8ddc4153c18003cef2e9ec35e9c67df742c33f85f4ea3ee08481732257",
+      "transformation": "score-only projection; prompts are recoverable from the released generated panel"
+    },
+    {
+      "artifact_id": "fictional_loopus8_competence",
+      "release_path": "data/analysis_ready/fictional_loopus8/competence.json",
+      "release_sha256": "cfe451ff9ce0ecab581c00e565df6944a255f41a83a4a259c4116169185cb880",
+      "source_sha256": "743ace22f96840c9ce36acb7f52c86933759bd1e47207c476bf615691ba27578",
+      "transformation": "score-only projection; prompts are recoverable from the released generated panel"
+    },
+    {
+      "artifact_id": "fictional_loopus8_shard_0",
+      "release_path": "data/analysis_ready/fictional_loopus8/shard_0.json",
+      "release_sha256": "1cd7b649b2336423b84668d10cdeff6b46e48a17f4709a00e7aea2e942d43406",
+      "source_sha256": "af744139f0bd1a92e611deca65877fb8d6d7d323700d4f3b852cfa9bc780da5f",
+      "transformation": "score-only projection; prompts are recoverable from the released generated panel"
+    },
+    {
+      "artifact_id": "fictional_loopus8_shard_1",
+      "release_path": "data/analysis_ready/fictional_loopus8/shard_1.json",
+      "release_sha256": "7d8e12105094d30c4ecccfc660ef3ea722df234cb86364f87c1d4639e834d431",
+      "source_sha256": "ed56328559e6f1faaef68fce6c3630951f8635e7bfd66b6f35f7d1125d79ff9a",
+      "transformation": "score-only projection; prompts are recoverable from the released generated panel"
+    },
+    {
+      "artifact_id": "fictional_loopus8_shard_2",
+      "release_path": "data/analysis_ready/fictional_loopus8/shard_2.json",
+      "release_sha256": "db2d897519f2a6c2066752054eb7552fc5a947503afe169311d22f66d54f88b8",
+      "source_sha256": "2d8b3c732f9ae0dabb2769b7b47cd1a299dae33a0728ad9ec10b25a88d63cc7f",
+      "transformation": "score-only projection; prompts are recoverable from the released generated panel"
+    },
+    {
+      "artifact_id": "fictional_loopus8_shard_3",
+      "release_path": "data/analysis_ready/fictional_loopus8/shard_3.json",
+      "release_sha256": "27e77eb98eb9d79df69b8e1879a8d953df71840280336922fcf75fd4d6273a76",
+      "source_sha256": "03ed96df1dc1fa01bb2194cae1a45cdebf3bc7bc126dd1d3ca14c6ce83cc5f3c",
+      "transformation": "score-only projection; prompts are recoverable from the released generated panel"
+    },
+    {
+      "artifact_id": "structural_shard_0",
+      "release_path": "data/analysis_ready/structural/shard_0.json",
+      "release_sha256": "8654a63cd028164e3ef57fc2b8c1f6d067d48c4a7492671652ae794d666efc8f",
+      "source_sha256": "9a8532130e640d9d30c3e4093e98d3615c2ac5f7112ae5c666631b8a74ccbd23",
+      "transformation": "score-only projection; prompts are recoverable from the released generated panel"
+    },
+    {
+      "artifact_id": "structural_shard_1",
+      "release_path": "data/analysis_ready/structural/shard_1.json",
+      "release_sha256": "d56aa988562b9a45e58a1d00050f78bd28f7df9911c1a8d6824bac67da5191bf",
+      "source_sha256": "54f124920fcba4e5b7db6d035ba12fe43d5c309a40921a429fe9a2c15f362d1d",
+      "transformation": "score-only projection; prompts are recoverable from the released generated panel"
+    },
+    {
+      "artifact_id": "structural_shard_2",
+      "release_path": "data/analysis_ready/structural/shard_2.json",
+      "release_sha256": "dbdef542a3851c17e74f93647b3767f06ab8966e4d3a2e9c5b64b51ab98ceffd",
+      "source_sha256": "9ef4e427cf348c33de75992188733184e1ad29610bf882f78e8a0a5b583e11ec",
+      "transformation": "score-only projection; prompts are recoverable from the released generated panel"
+    },
+    {
+      "artifact_id": "structural_shard_3",
+      "release_path": "data/analysis_ready/structural/shard_3.json",
+      "release_sha256": "3ae844b41b75d781b78521b7166be024f5a174d32aa9b4111ec04dccce327553",
+      "source_sha256": "4b8bb6ce84bbdb9387f9297b5ae85ad3ca7f1b66110da398ad37ac8757bf0acd",
+      "transformation": "score-only projection; prompts are recoverable from the released generated panel"
+    },
+    {
+      "artifact_id": "factorial_seed101_tied_multi",
+      "release_path": "data/analysis_ready/factorial/runs/seed101_tied_multi.json",
+      "release_sha256": "a41c21a31ca503c3c2cd94d0a076726df40165f1f90978e5d16fc8f6463058c8",
+      "source_sha256": "df02d3daddac86690fef99deabc45703a48e8f8670be884e71d928ee4a6eddf9",
+      "transformation": "removed runtime metadata; numeric training and evaluation records unchanged"
+    },
+    {
+      "artifact_id": "factorial_seed101_tied_single",
+      "release_path": "data/analysis_ready/factorial/runs/seed101_tied_single.json",
+      "release_sha256": "993210081a30fa1deacac6f7f8769dd1f03cf0f79b450b1992516d929df8b8ad",
+      "source_sha256": "8725edfe2a23e22731a6e07965480c163bdb85da34c95fb0c8402133450f68a0",
+      "transformation": "removed runtime metadata; numeric training and evaluation records unchanged"
+    },
+    {
+      "artifact_id": "factorial_seed101_untied_multi",
+      "release_path": "data/analysis_ready/factorial/runs/seed101_untied_multi.json",
+      "release_sha256": "7aa932334730aaad7f1e6dde860b70fdc6c4c0560a6db9367818fe786a94286e",
+      "source_sha256": "8a6a8fc54e11975a4efc03e30804531c88a7a754035fd5ee66243cd74481668c",
+      "transformation": "removed runtime metadata; numeric training and evaluation records unchanged"
+    },
+    {
+      "artifact_id": "factorial_seed101_untied_single",
+      "release_path": "data/analysis_ready/factorial/runs/seed101_untied_single.json",
+      "release_sha256": "e215e97be3e33cf55ba5e6adacffe41718061e8815f9e624966ba5a48798ecba",
+      "source_sha256": "915355d1758863346fe54a6aba9a1978d2cb0780fa8cdbc6dc7b53b4b4c25348",
+      "transformation": "removed runtime metadata; numeric training and evaluation records unchanged"
+    },
+    {
+      "artifact_id": "factorial_seed211_tied_multi",
+      "release_path": "data/analysis_ready/factorial/runs/seed211_tied_multi.json",
+      "release_sha256": "90bd4735e8048aff64efe9f58d041a3dcc008263758512ec2c5eac7ae00e2559",
+      "source_sha256": "5fa3cc14b94019a0c52cebd77c7a19101e624456fabd06b019dd069221e966b2",
+      "transformation": "removed runtime metadata; numeric training and evaluation records unchanged"
+    },
+    {
+      "artifact_id": "factorial_seed211_tied_single",
+      "release_path": "data/analysis_ready/factorial/runs/seed211_tied_single.json",
+      "release_sha256": "9e53273959fd1434b450f03a7e098899a6c1c0ba9640293edea90b35d128f992",
+      "source_sha256": "d2003e5353837d0599d049a70cec0633ea40f734c27c6fb0b7ee09b59907adc6",
+      "transformation": "removed runtime metadata; numeric training and evaluation records unchanged"
+    },
+    {
+      "artifact_id": "factorial_seed211_untied_multi",
+      "release_path": "data/analysis_ready/factorial/runs/seed211_untied_multi.json",
+      "release_sha256": "84dce6ea54813d3e25a7d9dfb1243b70fa1bd4363cc71aab3e221c3f0c25d8e7",
+      "source_sha256": "d72431bcd1b69c54978c29216fea4a1d652da486ab12afa98180efbac39560f1",
+      "transformation": "removed runtime metadata; numeric training and evaluation records unchanged"
+    },
+    {
+      "artifact_id": "factorial_seed211_untied_single",
+      "release_path": "data/analysis_ready/factorial/runs/seed211_untied_single.json",
+      "release_sha256": "e96fbc11a85b9a09590cdf844fe200623c896d2e4f69ec55b6884fa3650b298a",
+      "source_sha256": "90ba9d7278206a60975611575587416fe6d3cc95e31025442275d9293a5d331b",
+      "transformation": "removed runtime metadata; numeric training and evaluation records unchanged"
+    },
+    {
+      "artifact_id": "factorial_seed307_tied_multi",
+      "release_path": "data/analysis_ready/factorial/runs/seed307_tied_multi.json",
+      "release_sha256": "06e5b56588f534cc209723cf44e773ac476129f3793e66172f633959f1422b6b",
+      "source_sha256": "8be3bcb2afa8e1571c0cabb6c91792fa6c001b498a1dcbd22ad5e80ade884213",
+      "transformation": "removed runtime metadata; numeric training and evaluation records unchanged"
+    },
+    {
+      "artifact_id": "factorial_seed307_tied_single",
+      "release_path": "data/analysis_ready/factorial/runs/seed307_tied_single.json",
+      "release_sha256": "5911616a613b9d11e8ba188de35f69381251cbd6af01d1733232f2689b677863",
+      "source_sha256": "e34b7fbd1b7bdbd01ffed9bdef7ccfec9cea5026d6ce8b611d0bbc6d6e603875",
+      "transformation": "removed runtime metadata; numeric training and evaluation records unchanged"
+    },
+    {
+      "artifact_id": "factorial_seed307_untied_multi",
+      "release_path": "data/analysis_ready/factorial/runs/seed307_untied_multi.json",
+      "release_sha256": "bb5e2a9d4e75eb2c08cd1142bb68b16c9ca4ab4b1b9a5540f038199ed238be68",
+      "source_sha256": "9a34a2791c069e26ba26a9cda5506118b01925dc2b5b0b40e62aba8297d0c01a",
+      "transformation": "removed runtime metadata; numeric training and evaluation records unchanged"
+    },
+    {
+      "artifact_id": "factorial_seed307_untied_single",
+      "release_path": "data/analysis_ready/factorial/runs/seed307_untied_single.json",
+      "release_sha256": "11232cb1b4adeb8f44d6ff8582c15bedb81d40235bcd701413faebf19deebc13",
+      "source_sha256": "3319d28d385931bff091ef68e622630b36f1901a85778df8787010476fb58d2a",
+      "transformation": "removed runtime metadata; numeric training and evaluation records unchanged"
+    },
+    {
+      "artifact_id": "factorial_seed401_tied_multi",
+      "release_path": "data/analysis_ready/factorial/runs/seed401_tied_multi.json",
+      "release_sha256": "9324c85ec6f9ceebbef39680832da5569e67737ab668880fb13c724219c390d8",
+      "source_sha256": "d4de633d6bec28b5a26727bd3659f687886a2bbd73175204848d1de9019f9f82",
+      "transformation": "removed runtime metadata; numeric training and evaluation records unchanged"
+    },
+    {
+      "artifact_id": "factorial_seed401_tied_single",
+      "release_path": "data/analysis_ready/factorial/runs/seed401_tied_single.json",
+      "release_sha256": "738ec1f024cc7c3d5f3a63efbf35b443f494339c207a35b71a3b5ded9155f41a",
+      "source_sha256": "7190733fa220486ab18f9fe33caa2b7320fa40176ee003c11f1513e403e7287c",
+      "transformation": "removed runtime metadata; numeric training and evaluation records unchanged"
+    },
+    {
+      "artifact_id": "factorial_seed401_untied_multi",
+      "release_path": "data/analysis_ready/factorial/runs/seed401_untied_multi.json",
+      "release_sha256": "ccb49807fd2441fba46fa6a34b2b0e4e323981bb57b48cbcbc6f480054fe3287",
+      "source_sha256": "8910cf64b49f9b02ae8a5d26a6d6b88105f87d5010c301a9c115ffcc9e10dee9",
+      "transformation": "removed runtime metadata; numeric training and evaluation records unchanged"
+    },
+    {
+      "artifact_id": "factorial_seed401_untied_single",
+      "release_path": "data/analysis_ready/factorial/runs/seed401_untied_single.json",
+      "release_sha256": "f1ad4daa2d6d30f29193e1bc4d498e0dd4ed2df3edaa263e8b13640605bd572c",
+      "source_sha256": "f37030e05c0c832079513cafc97e2ae2b4a234f1f0b152e2e6433032ea9060e7",
+      "transformation": "removed runtime metadata; numeric training and evaluation records unchanged"
+    },
+    {
+      "artifact_id": "factorial_seed503_tied_multi",
+      "release_path": "data/analysis_ready/factorial/runs/seed503_tied_multi.json",
+      "release_sha256": "7001c238e49f73edd577a1024f4122cc0accf70d25369e197917c3493d1a9a01",
+      "source_sha256": "ad7da8d98b0e9f147ec12b5c23f116f04638ff5b33fc6ef097aba4dca4ae52fd",
+      "transformation": "removed runtime metadata; numeric training and evaluation records unchanged"
+    },
+    {
+      "artifact_id": "factorial_seed503_tied_single",
+      "release_path": "data/analysis_ready/factorial/runs/seed503_tied_single.json",
+      "release_sha256": "def5aae1ca00b705f75e13cce0149e57941985147c2287fea248da512cb449d3",
+      "source_sha256": "a13fc70ff5d30bd1fcc9d4c25b2187f4c23f16e16413c78cdf5881ad9b25feda",
+      "transformation": "removed runtime metadata; numeric training and evaluation records unchanged"
+    },
+    {
+      "artifact_id": "factorial_seed503_untied_multi",
+      "release_path": "data/analysis_ready/factorial/runs/seed503_untied_multi.json",
+      "release_sha256": "7c8a659cfed73fbdc651358bd93af09830caddc31d07ce5fb1a19b80f93e6031",
+      "source_sha256": "bf3cd3c751aae6e5f76436233394fe5ebd3926202ad9044ece82a30b04f39f72",
+      "transformation": "removed runtime metadata; numeric training and evaluation records unchanged"
+    },
+    {
+      "artifact_id": "factorial_seed503_untied_single",
+      "release_path": "data/analysis_ready/factorial/runs/seed503_untied_single.json",
+      "release_sha256": "b9a6e1f7104e0eb83377f020510dcf0319d79f0be2b1cf9d46243c09f9aa431c",
+      "source_sha256": "4edc72d904b9007ab860add891afcb6a0bd4f716b2d5eb8401a3721da1e9784c",
+      "transformation": "removed runtime metadata; numeric training and evaluation records unchanged"
+    },
+    {
+      "artifact_id": "factorial_seed601_tied_multi",
+      "release_path": "data/analysis_ready/factorial/runs/seed601_tied_multi.json",
+      "release_sha256": "da381d029b29eb87f18af5444d1e9c0f5230da4fe964eeed9102a75dde8851b1",
+      "source_sha256": "83be37dc4f0066dc7566c840b5843ece92157720755393f5e33e0b545528bfbf",
+      "transformation": "removed runtime metadata; numeric training and evaluation records unchanged"
+    },
+    {
+      "artifact_id": "factorial_seed601_tied_single",
+      "release_path": "data/analysis_ready/factorial/runs/seed601_tied_single.json",
+      "release_sha256": "3357ddda2a1239521b6e5a528173a179c7b1b7a774ee7792234d529b0e0ce6f8",
+      "source_sha256": "72e2c04d796c666a855886e2a8ca808f3c0ba6b4a35eb72445dcc21cdbcfd834",
+      "transformation": "removed runtime metadata; numeric training and evaluation records unchanged"
+    },
+    {
+      "artifact_id": "factorial_seed601_untied_multi",
+      "release_path": "data/analysis_ready/factorial/runs/seed601_untied_multi.json",
+      "release_sha256": "c4a993d8a799f5e2e1f8aec454a263735b082b4b261510b08f48818c924a0943",
+      "source_sha256": "9b9b2c503e01e257c7e5801f17aafa070fe70d3577484242aeafc41a935a725a",
+      "transformation": "removed runtime metadata; numeric training and evaluation records unchanged"
+    },
+    {
+      "artifact_id": "factorial_seed601_untied_single",
+      "release_path": "data/analysis_ready/factorial/runs/seed601_untied_single.json",
+      "release_sha256": "e1c4e1e6dc133508c0c0561e1193a1fd4d5fcc383ba78554a55d237dd2fb78d2",
+      "source_sha256": "5509ed34277ea093025ded0b47df0e8b5e75ce93d11e146794ea9007fced96ad",
+      "transformation": "removed runtime metadata; numeric training and evaluation records unchanged"
+    },
+    {
+      "artifact_id": "factorial_seed701_tied_multi",
+      "release_path": "data/analysis_ready/factorial/runs/seed701_tied_multi.json",
+      "release_sha256": "5052d936370847455ccea9de4f2cc4cb1eb370e9fdc7020d5027ccd52fb71c95",
+      "source_sha256": "bf6fad2740d3ab9a1d8d8fd7d95189695d5d93aae34683d4bcc2ecfc8b5d9f64",
+      "transformation": "removed runtime metadata; numeric training and evaluation records unchanged"
+    },
+    {
+      "artifact_id": "factorial_seed701_tied_single",
+      "release_path": "data/analysis_ready/factorial/runs/seed701_tied_single.json",
+      "release_sha256": "195bae6800b2c04c551975b5395d738df6e463b35a639800281ec3086000db6b",
+      "source_sha256": "682e5f129fd545030fbe2cf29e1849a634ebef7ef2511fdef1756428225bf1e7",
+      "transformation": "removed runtime metadata; numeric training and evaluation records unchanged"
+    },
+    {
+      "artifact_id": "factorial_seed701_untied_multi",
+      "release_path": "data/analysis_ready/factorial/runs/seed701_untied_multi.json",
+      "release_sha256": "483312e2e2e4462df2a6a17609d7d723b2a4c1c3766c303b3619f1183c3b34df",
+      "source_sha256": "f323b4d40a04927f83dfb9779f24a0e3f6ccd53a64e3a158d83b916a75cf1791",
+      "transformation": "removed runtime metadata; numeric training and evaluation records unchanged"
+    },
+    {
+      "artifact_id": "factorial_seed701_untied_single",
+      "release_path": "data/analysis_ready/factorial/runs/seed701_untied_single.json",
+      "release_sha256": "6364948913e75cb1117f2400c8e0b8277d64f62bbd98c09291091f6a5dddf8f4",
+      "source_sha256": "823f7f7968ac549a17a1ed948d2ad3f23097835a093ab0978b0bd72731045e50",
+      "transformation": "removed runtime metadata; numeric training and evaluation records unchanged"
+    },
+    {
+      "artifact_id": "factorial_seed809_tied_multi",
+      "release_path": "data/analysis_ready/factorial/runs/seed809_tied_multi.json",
+      "release_sha256": "fe3187691017ef7a0ff0618850d4cbd591f6102454b4a6213f125d2656d09fcd",
+      "source_sha256": "6df08bbc19578d92127ab4b5299eb4ee25ddf237d8232360491eb8f494e51e3e",
+      "transformation": "removed runtime metadata; numeric training and evaluation records unchanged"
+    },
+    {
+      "artifact_id": "factorial_seed809_tied_single",
+      "release_path": "data/analysis_ready/factorial/runs/seed809_tied_single.json",
+      "release_sha256": "64393fc863483faae125dd600194fd37a0a01d439fba5a6b8b4d73b64ea030e8",
+      "source_sha256": "a9ee127326c2b435f932afdab5ae5a1f16aae66ab4b31692c97a26a639d54ea5",
+      "transformation": "removed runtime metadata; numeric training and evaluation records unchanged"
+    },
+    {
+      "artifact_id": "factorial_seed809_untied_multi",
+      "release_path": "data/analysis_ready/factorial/runs/seed809_untied_multi.json",
+      "release_sha256": "528d6aa5ac85e8a1591266af5e0f101ef0baa7efa93130a295c1ab1e6be7d9bc",
+      "source_sha256": "00364adac0fe348eb28a6e5c29d9ae89964f1d241e59e64aa55eaadc483022ac",
+      "transformation": "removed runtime metadata; numeric training and evaluation records unchanged"
+    },
+    {
+      "artifact_id": "factorial_seed809_untied_single",
+      "release_path": "data/analysis_ready/factorial/runs/seed809_untied_single.json",
+      "release_sha256": "dcd4c608276b07b91ed90876808bfbdbbf0ffdceff7e87c7007ae66f4efee96b",
+      "source_sha256": "19d124926d41cbdd6d3fa9a0010c25bb712630cc981b3bb78f16d18d3122abf9",
+      "transformation": "removed runtime metadata; numeric training and evaluation records unchanged"
+    },
+    {
+      "artifact_id": "ouro_candidate_list_ablation",
+      "release_path": "data/frozen_summaries/ouro_candidate_list_ablation.json",
+      "release_sha256": "d43ad3180c0558f678f0bbe641ff9b646c5a5779d6e3d1800a44da85123bc792",
+      "source_sha256": "41b21e5c777522b4f413ddf7af1e70f1821deda29ab884118c8ac208632ef796",
+      "transformation": "curated frozen summary; row-level text-bearing payload excluded"
+    },
+    {
+      "artifact_id": "ouro_candidate_state_transplant",
+      "release_path": "data/frozen_summaries/ouro_candidate_state_transplant.json",
+      "release_sha256": "748eb96c5ad5581973a2ce81fe1f4a735a880c6b205e9b7369977b9ffe00af80",
+      "source_sha256": "e1d9b5eab0bdd8308a738f3bc4cefe8515f049314e660763d5941cf1f25a0357",
+      "transformation": "curated frozen summary; row-level text-bearing payload excluded"
+    },
+    {
+      "artifact_id": "ouro_musique_generation",
+      "release_path": "data/frozen_summaries/ouro_musique_generation.json",
+      "release_sha256": "1068d9360f9809ab66095cced54b9be8722c7ef1062e5ca4db16fc71589ba7c6",
+      "source_sha256": "cdcf20369fdcdaa52fff3bc042e20ad988e2ccd6bd0d630074cca038a3edd8db",
+      "transformation": "curated frozen summary; row-level text-bearing payload excluded"
+    },
+    {
+      "artifact_id": "loopus_2wiki_generation",
+      "release_path": "data/frozen_summaries/loopus_2wiki_generation.json",
+      "release_sha256": "bdf213da7e81fc7185a53e18ab355c00de7bdc4cecf2daa4e3c145e00fca0248",
+      "source_sha256": "1f2dfb0158deeba2c99610aebd686c82387f42d9df7364a44ef96a9c315812a2",
+      "transformation": "curated frozen summary; row-level text-bearing payload excluded"
+    },
+    {
+      "artifact_id": "ouro_terminal_compatibility",
+      "release_path": "data/frozen_summaries/ouro_terminal_compatibility.json",
+      "release_sha256": "d4a59dbb8d5bc715f35ac794f675c0acede7f669570cd13150271e0a28e58a67",
+      "source_sha256": "fa04368d6a6719f1b46335f6d89bbcb1ea4b38134a86248db25f4bf17bb2fe90",
+      "transformation": "curated frozen summary; row-level text-bearing payload excluded"
+    },
+    {
+      "artifact_id": "ouro_instruction_intervention",
+      "release_path": "data/frozen_summaries/ouro_instruction_intervention.json",
+      "release_sha256": "a9656153961528c6a5e2317c3eb155d41bcfbe7484aea69694194b9581aad0be",
+      "source_sha256": "3a9fa5de5bb0ec9bc54b09e3256e74c04dafb43a451db357dc2f5f2bf904ec19",
+      "transformation": "curated frozen summary; row-level text-bearing payload excluded"
+    },
+    {
+      "artifact_id": "ouro_natural_offpath",
+      "release_path": "data/frozen_summaries/ouro_natural_offpath.json",
+      "release_sha256": "15e2a2801687cb02904aaecd8a7ad25438bcd03ea445f10c36ecc2efe43b8f42",
+      "source_sha256": "909fe2dcbd3fd2b78f5545332e6b430f45bd9ed18167a01620369aca2b1faf7b",
+      "transformation": "curated frozen summary; row-level text-bearing payload excluded"
+    },
+    {
+      "artifact_id": "loopus_natural_offpath",
+      "release_path": "data/frozen_summaries/loopus_natural_offpath.json",
+      "release_sha256": "3d1c63ce970abe5822a7163a924ac337152d81aec093b2bc87e65a449b655fa3",
+      "source_sha256": "faee92a918fc5c779397514093d6c739353fa48fc534d52f8160e36562f7819d",
+      "transformation": "curated frozen summary; row-level text-bearing payload excluded"
+    },
+    {
+      "artifact_id": "ouro_natural_locality",
+      "release_path": "data/frozen_summaries/ouro_natural_locality.json",
+      "release_sha256": "4badf9ff85fdd0d4cea3dfc6832da1ee78a92b533ab3262425586fdaf8fa7f31",
+      "source_sha256": "fd38c329614f46cda78e839b2a17cb944092001eec3fe4d1f42e1c4df8af07fc",
+      "transformation": "curated frozen summary; row-level text-bearing payload excluded"
+    },
+    {
+      "artifact_id": "ouro14_competence",
+      "release_path": "data/frozen_summaries/ouro14_competence.json",
+      "release_sha256": "d8598dab04f61ef952c2f1756cc4396b25a1ce2428d00037b74ff42c9d0f3671",
+      "source_sha256": "f3645f6590dd31c7d34638286655fddd9bfa34e27e94855c556a9679a32e4b2a",
+      "transformation": "curated frozen summary; row-level text-bearing payload excluded"
+    },
+    {
+      "artifact_id": "ouro14_postscreen",
+      "release_path": "data/frozen_summaries/ouro14_postscreen.json",
+      "release_sha256": "3440c4066eb5f9435a6f2917edff54bb28c56c2717679f93eb1379ffaca58f30",
+      "source_sha256": "830ca79969ba00a7445786da666141382fd1269da801277d17c694ed507855fa",
+      "transformation": "curated frozen summary; row-level text-bearing payload excluded"
+    },
+    {
+      "artifact_id": "huginn_competence",
+      "release_path": "data/frozen_summaries/huginn_competence.json",
+      "release_sha256": "28f59037647e1ebab57fe08d5c4168253fb6fbd88c3d2db4a6c9162b5eead38c",
+      "source_sha256": "7020bbc52fe3ecd4bc650c0b9ed11d1b7764ec775c9f86b93b4e9125519713b9",
+      "transformation": "curated frozen summary; row-level text-bearing payload excluded"
+    },
+    {
+      "artifact_id": "loopus_early_choice",
+      "release_path": "data/frozen_summaries/loopus_early_choice.json",
+      "release_sha256": "30a87d843d8eb7f2476fa2569a714715e0caaccb8ac006a7c997116208a74723",
+      "source_sha256": "074cba739e765ece013d7318f1624be60685a387255f4d36c2e91e0b7e910ccc",
+      "transformation": "curated frozen summary; row-level text-bearing payload excluded"
+    },
+    {
+      "artifact_id": "ouro_k3_headroom",
+      "release_path": "data/frozen_summaries/ouro_k3_headroom.json",
+      "release_sha256": "04e455d40880d444585d912bace098186953c50d20de139f1b5e3f94e3a928d6",
+      "source_sha256": "b54f2c09b76a5cad571916344ff62425e91c0fe5960dffa4f12f8846c63a114d",
+      "transformation": "curated frozen summary; row-level text-bearing payload excluded"
+    },
+    {
+      "artifact_id": "ouro_k3_k4_change",
+      "release_path": "data/frozen_summaries/ouro_k3_k4_change.json",
+      "release_sha256": "f26497d968497ca4230db480922564c7dfd7543e714a1c74da4ac12febf83ee7",
+      "source_sha256": "d29b03261431d786f263e0046927ee49b3aa033a164775620faaddc69d86d3a3",
+      "transformation": "curated frozen summary; row-level text-bearing payload excluded"
+    },
+    {
+      "artifact_id": "tfqwen_fictional",
+      "release_path": "data/frozen_summaries/tfqwen_fictional.json",
+      "release_sha256": "902463a64b664f87dc4bbfb05b04a8cca97a8368d6988a306e0c9c0734a4b4ca",
+      "source_sha256": "9dce8c60d863655e70bfe6df07ca90874b34d4567c9d204b89101e16f2a7e6aa",
+      "transformation": "curated frozen summary; row-level text-bearing payload excluded"
+    },
+    {
+      "artifact_id": "ouro_threehop_development",
+      "release_path": "data/frozen_summaries/ouro_threehop_development.json",
+      "release_sha256": "7db471d7b597522ef3f26ebacd2a670cb242761b8ec3d8d023ff4bdaf378debd",
+      "source_sha256": "73f55151805ce6230f466bea4364c17abab44b5436618889a9e59665f391de46",
+      "transformation": "curated frozen summary; row-level text-bearing payload excluded"
+    },
+    {
+      "artifact_id": "loopus_longpath_3",
+      "release_path": "data/frozen_summaries/loopus_longpath_3.json",
+      "release_sha256": "fd53dde18117b6a622d09d4a28370dcd20d239460d3d8e996beadd09785f41f6",
+      "source_sha256": "77597d9fba79373d08082237fca3dd582f69bc23b277517a6a78fe03dd7546ed",
+      "transformation": "curated frozen summary; row-level text-bearing payload excluded"
+    },
+    {
+      "artifact_id": "loopus_longpath_4",
+      "release_path": "data/frozen_summaries/loopus_longpath_4.json",
+      "release_sha256": "50a08827da8ba4d92dfb6baa05730223bcd718084c3b16af0fb433d5474fe863",
+      "source_sha256": "41aa52ef13337cc069ee925a1716d047672f4c76dbf17c093d8c06a2a5df77d6",
+      "transformation": "curated frozen summary; row-level text-bearing payload excluded"
+    },
+    {
+      "artifact_id": "loopus_longpath_5",
+      "release_path": "data/frozen_summaries/loopus_longpath_5.json",
+      "release_sha256": "b0bec4e60516c5fe737b1d7aae7a39a9b5d1b81f45dc6b92dd40297cd74dd211",
+      "source_sha256": "7537d540ed3b80a17cb9eb7d30da441bc9629f6efbfdf1d1aff1897cd39efb84",
+      "transformation": "curated frozen summary; row-level text-bearing payload excluded"
+    }
+  ],
+  "release_boundary": "Original source hashes are retained without private source paths. Release hashes bind the anonymous projections distributed here.",
+  "schema": "evidence-loops.anonymous-release.v1"
+}

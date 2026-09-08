@@ -1,0 +1,236 @@
+{
+  "results": {
+    "ouro26_2wiki_k3_k4": {
+      "K3_exact_choice_accuracy": {
+        "bootstrap_replicates": 10000,
+        "ci95": [
+          0.6532258064516129,
+          0.7358870967741935
+        ],
+        "estimate": 0.6940524193548387,
+        "finite_replicates": 10000
+      },
+      "K4_exact_choice_accuracy": {
+        "bootstrap_replicates": 10000,
+        "ci95": [
+          0.6678427419354839,
+          0.765625
+        ],
+        "estimate": 0.7162298387096774,
+        "finite_replicates": 10000
+      },
+      "K4_minus_K3_choice_gain": {
+        "bootstrap_replicates": 10000,
+        "ci95": [
+          -0.007056451612903226,
+          0.09778225806451613
+        ],
+        "estimate": 0.04435483870967742,
+        "finite_replicates": 10000
+      },
+      "crossfit_K3_error_predicting_K4_choice_gain_spearman": {
+        "bootstrap_replicates": 10000,
+        "ci95": [
+          -0.2697693517871456,
+          0.10584333747300037
+        ],
+        "estimate": -0.08308175675082667,
+        "finite_replicates": 10000
+      },
+      "crossfit_nonperfect_minus_perfect_K3_choice_gain": {
+        "bootstrap_replicates": 10000,
+        "ci95": [
+          -0.14622779850173467,
+          0.13060506836887584
+        ],
+        "estimate": -0.005174223924223925,
+        "finite_replicates": 10000
+      },
+      "dataset": "2Wiki",
+      "descriptive_full_cell_K3_strata": [
+        {
+          "K3_exact_choice_accuracy": 0.5,
+          "mean_K4_minus_K3_choice_gain": 0.05128205128205128,
+          "pairs": 39
+        },
+        {
+          "K3_exact_choice_accuracy": 0.5625,
+          "mean_K4_minus_K3_choice_gain": 0.125,
+          "pairs": 2
+        },
+        {
+          "K3_exact_choice_accuracy": 0.625,
+          "mean_K4_minus_K3_choice_gain": 0.09027777777777778,
+          "pairs": 18
+        },
+        {
+          "K3_exact_choice_accuracy": 0.6875,
+          "mean_K4_minus_K3_choice_gain": -0.125,
+          "pairs": 2
+        },
+        {
+          "K3_exact_choice_accuracy": 0.75,
+          "mean_K4_minus_K3_choice_gain": 0.08064516129032258,
+          "pairs": 31
+        },
+        {
+          "K3_exact_choice_accuracy": 0.8125,
+          "mean_K4_minus_K3_choice_gain": 0.375,
+          "pairs": 1
+        },
+        {
+          "K3_exact_choice_accuracy": 0.875,
+          "mean_K4_minus_K3_choice_gain": 0.020833333333333332,
+          "pairs": 18
+        },
+        {
+          "K3_exact_choice_accuracy": 1.0,
+          "mean_K4_minus_K3_choice_gain": -0.10576923076923077,
+          "pairs": 13
+        }
+      ],
+      "model": "Ouro-2.6B",
+      "pairs": 124,
+      "split_contract": {
+        "left": [
+          [
+            "A",
+            "original"
+          ],
+          [
+            "B",
+            "reversed"
+          ]
+        ],
+        "outcome": "twice the K4-minus-K3 exact-choice accuracy change",
+        "right": [
+          [
+            "A",
+            "reversed"
+          ],
+          [
+            "B",
+            "original"
+          ]
+        ]
+      }
+    },
+    "ouro26_musique_k3_k4": {
+      "K3_exact_choice_accuracy": {
+        "bootstrap_replicates": 10000,
+        "ci95": [
+          0.6513157894736842,
+          0.7157894736842105
+        ],
+        "estimate": 0.6835526315789474,
+        "finite_replicates": 10000
+      },
+      "K4_exact_choice_accuracy": {
+        "bootstrap_replicates": 10000,
+        "ci95": [
+          0.6835526315789474,
+          0.7585526315789474
+        ],
+        "estimate": 0.7210526315789474,
+        "finite_replicates": 10000
+      },
+      "K4_minus_K3_choice_gain": {
+        "bootstrap_replicates": 10000,
+        "ci95": [
+          0.034210526315789476,
+          0.11710526315789474
+        ],
+        "estimate": 0.075,
+        "finite_replicates": 10000
+      },
+      "crossfit_K3_error_predicting_K4_choice_gain_spearman": {
+        "bootstrap_replicates": 10000,
+        "ci95": [
+          -0.28874395748308185,
+          -0.008248235567418771
+        ],
+        "estimate": -0.15082840823894536,
+        "finite_replicates": 10000
+      },
+      "crossfit_nonperfect_minus_perfect_K3_choice_gain": {
+        "bootstrap_replicates": 10000,
+        "ci95": [
+          -0.17612905112905114,
+          0.019012489537433643
+        ],
+        "estimate": -0.07194200779727096,
+        "finite_replicates": 10000
+      },
+      "dataset": "MuSiQue",
+      "descriptive_full_cell_K3_strata": [
+        {
+          "K3_exact_choice_accuracy": 0.5,
+          "mean_K4_minus_K3_choice_gain": 0.1,
+          "pairs": 30
+        },
+        {
+          "K3_exact_choice_accuracy": 0.5625,
+          "mean_K4_minus_K3_choice_gain": -0.125,
+          "pairs": 1
+        },
+        {
+          "K3_exact_choice_accuracy": 0.625,
+          "mean_K4_minus_K3_choice_gain": 0.027777777777777776,
+          "pairs": 18
+        },
+        {
+          "K3_exact_choice_accuracy": 0.75,
+          "mean_K4_minus_K3_choice_gain": 0.11,
+          "pairs": 25
+        },
+        {
+          "K3_exact_choice_accuracy": 0.8125,
+          "mean_K4_minus_K3_choice_gain": -0.125,
+          "pairs": 1
+        },
+        {
+          "K3_exact_choice_accuracy": 0.875,
+          "mean_K4_minus_K3_choice_gain": 0.09090909090909091,
+          "pairs": 11
+        },
+        {
+          "K3_exact_choice_accuracy": 0.9375,
+          "mean_K4_minus_K3_choice_gain": 0.125,
+          "pairs": 1
+        },
+        {
+          "K3_exact_choice_accuracy": 1.0,
+          "mean_K4_minus_K3_choice_gain": 0.0,
+          "pairs": 8
+        }
+      ],
+      "model": "Ouro-2.6B",
+      "pairs": 95,
+      "split_contract": {
+        "left": [
+          [
+            "A",
+            "original"
+          ],
+          [
+            "B",
+            "reversed"
+          ]
+        ],
+        "outcome": "twice the K4-minus-K3 exact-choice accuracy change",
+        "right": [
+          [
+            "A",
+            "reversed"
+          ],
+          [
+            "B",
+            "original"
+          ]
+        ]
+      }
+    }
+  },
+  "schema": "iclr2027.ouro_k3_headroom.v1",
+  "status": "reviewer_driven_post_hoc_existing_outputs"
+}

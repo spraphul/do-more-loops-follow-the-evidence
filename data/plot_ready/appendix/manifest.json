@@ -1,0 +1,15 @@
+{
+  "schema": "evidence-loops.appendix-plot-data.v1",
+  "files": [
+    {"path": "appendix_c1_backbone_heterogeneity.csv", "rows": 122, "sha256": "81cf2c10718b1e915352a241e5addf7e3f8aea86ca6c3fa5ccb06942e5469db3"},
+    {"path": "appendix_c1_specificity_heterogeneity.csv", "rows": 124, "sha256": "4671a8593606beab5f2c6528dc84ff9120d56db3e789e4040a7880391b8a0fc0"},
+    {"path": "appendix_e1_residual_depth.csv", "rows": 8, "sha256": "c43ebf0234ab49ac9799a8afb80ca928b05eb1a4c3dac4c58906e8e0b9a30c59"},
+    {"path": "appendix_e2_stage1_pairs.csv", "rows": 219, "sha256": "8657b2a2c8f4e3c3c76a1afe7e29f5b77a5c4d550c4e1973686e663631b10ff1"},
+    {"path": "appendix_e2_stage2_effects.csv", "rows": 3, "sha256": "14fadded92f9e6bbe6cc87f694556298018eb70ae73ab4418ee9993b3839879c"},
+    {"path": "appendix_f1_list_retention.csv", "rows": 4, "sha256": "c2f169c889dbd6573e793807da3f4ced80a0d60262a6d035ea6e7b58a49d0ee8"},
+    {"path": "appendix_g1_emitted_choice.csv", "rows": 6, "sha256": "aaf252d4f90f813f14ce05808f0eb422b67492c4ea4566ab3155707c7975e799"},
+    {"path": "appendix_g1_state_accuracy.csv", "rows": 3, "sha256": "a60284b5df8296d758d10a4c2fa1c03a94a1703752c1b5cc8f1b46d1155fd4a0"},
+    {"path": "appendix_h1_causal_access.csv", "rows": 8, "sha256": "d583d66f5056f295da02ee4750701786c454423e8c9aa334bf3437f313f96911"}
+  ],
+  "note": "These frozen plot-ready views support appendix diagnostics. Central claim plots are regenerated from row-level score artifacts."
+}

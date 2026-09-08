@@ -1,0 +1,11 @@
+{
+  "decision": "CONFIRMATION_SHARD_COMPLETE_REQUIRES_HIERARCHICAL_MERGE",
+  "depths": [
+    1,
+    8
+  ],
+  "mode": "confirm",
+  "pair_units": 31,
+  "relation_paths": 31,
+  "scored_rows": 620
+}

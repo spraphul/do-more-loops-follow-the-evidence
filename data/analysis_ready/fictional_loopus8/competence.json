@@ -1,0 +1,6960 @@
+{
+  "mock": false,
+  "mode": "competence",
+  "model_key": "loopus8",
+  "model_repository": "Thrillcrazyer/Qwen3-8B_LoopUS",
+  "model_revision": "4424cfd8e36c77fee337a04602e3ddf6faae533f",
+  "panel": {
+    "canonical_sha256": "7880c02c64af541629b9c23dce15bf4a6df98c4f99a8aed45b4a310df2e543e5",
+    "path": "nonce_path_control_v1.panel.json"
+  },
+  "rows": [
+    {
+      "K": 8,
+      "candidate_order": "original",
+      "evidence_state": "original",
+      "expected_candidate_identity": 0,
+      "expected_label": "A",
+      "focal_terminal_codes": [
+        "red",
+        "blue"
+      ],
+      "query_arm": "A",
+      "reference_candidate_identity": 0,
+      "reference_label": "A",
+      "relation_family_index": 0,
+      "relations": [
+        "ROUTES_TO",
+        "ENDS_AT"
+      ],
+      "row_id": "NPC0001__qA__original__candidates_original__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "A",
+        "other_label": "B",
+        "raw_logits": {
+          "A": 24.625,
+          "B": 20.25
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "A",
+        "reference_logit_margin": 4.375,
+        "reference_pair_probability": 0.9875683491468141,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0001"
+    },
+    {
+      "K": 8,
+      "candidate_order": "reversed",
+      "evidence_state": "original",
+      "expected_candidate_identity": 0,
+      "expected_label": "B",
+      "focal_terminal_codes": [
+        "red",
+        "blue"
+      ],
+      "query_arm": "A",
+      "reference_candidate_identity": 0,
+      "reference_label": "B",
+      "relation_family_index": 0,
+      "relations": [
+        "ROUTES_TO",
+        "ENDS_AT"
+      ],
+      "row_id": "NPC0001__qA__original__candidates_reversed__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "B",
+        "other_label": "A",
+        "raw_logits": {
+          "A": 22.625,
+          "B": 23.375
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "B",
+        "reference_logit_margin": 0.75,
+        "reference_pair_probability": 0.679178699175393,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0001"
+    },
+    {
+      "K": 8,
+      "candidate_order": "original",
+      "evidence_state": "original",
+      "expected_candidate_identity": 1,
+      "expected_label": "B",
+      "focal_terminal_codes": [
+        "red",
+        "blue"
+      ],
+      "query_arm": "B",
+      "reference_candidate_identity": 1,
+      "reference_label": "B",
+      "relation_family_index": 0,
+      "relations": [
+        "ROUTES_TO",
+        "ENDS_AT"
+      ],
+      "row_id": "NPC0001__qB__original__candidates_original__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "B",
+        "other_label": "A",
+        "raw_logits": {
+          "A": 20.0,
+          "B": 23.625
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "B",
+        "reference_logit_margin": 3.625,
+        "reference_pair_probability": 0.9740426428022031,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0001"
+    },
+    {
+      "K": 8,
+      "candidate_order": "reversed",
+      "evidence_state": "original",
+      "expected_candidate_identity": 1,
+      "expected_label": "A",
+      "focal_terminal_codes": [
+        "red",
+        "blue"
+      ],
+      "query_arm": "B",
+      "reference_candidate_identity": 1,
+      "reference_label": "A",
+      "relation_family_index": 0,
+      "relations": [
+        "ROUTES_TO",
+        "ENDS_AT"
+      ],
+      "row_id": "NPC0001__qB__original__candidates_reversed__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "A",
+        "other_label": "B",
+        "raw_logits": {
+          "A": 22.75,
+          "B": 22.625
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "A",
+        "reference_logit_margin": 0.125,
+        "reference_pair_probability": 0.5312093733737563,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0001"
+    },
+    {
+      "K": 8,
+      "candidate_order": "original",
+      "evidence_state": "original",
+      "expected_candidate_identity": 0,
+      "expected_label": "A",
+      "focal_terminal_codes": [
+        "blue",
+        "red"
+      ],
+      "query_arm": "A",
+      "reference_candidate_identity": 0,
+      "reference_label": "A",
+      "relation_family_index": 0,
+      "relations": [
+        "ROUTES_TO",
+        "ENDS_AT"
+      ],
+      "row_id": "NPC0013__qA__original__candidates_original__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "A",
+        "other_label": "B",
+        "raw_logits": {
+          "A": 22.125,
+          "B": 22.0
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "A",
+        "reference_logit_margin": 0.125,
+        "reference_pair_probability": 0.5312093733737563,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0013"
+    },
+    {
+      "K": 8,
+      "candidate_order": "reversed",
+      "evidence_state": "original",
+      "expected_candidate_identity": 0,
+      "expected_label": "B",
+      "focal_terminal_codes": [
+        "blue",
+        "red"
+      ],
+      "query_arm": "A",
+      "reference_candidate_identity": 0,
+      "reference_label": "B",
+      "relation_family_index": 0,
+      "relations": [
+        "ROUTES_TO",
+        "ENDS_AT"
+      ],
+      "row_id": "NPC0013__qA__original__candidates_reversed__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "B",
+        "other_label": "A",
+        "raw_logits": {
+          "A": 19.125,
+          "B": 23.5
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "B",
+        "reference_logit_margin": 4.375,
+        "reference_pair_probability": 0.9875683491468141,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0013"
+    },
+    {
+      "K": 8,
+      "candidate_order": "original",
+      "evidence_state": "original",
+      "expected_candidate_identity": 1,
+      "expected_label": "B",
+      "focal_terminal_codes": [
+        "blue",
+        "red"
+      ],
+      "query_arm": "B",
+      "reference_candidate_identity": 1,
+      "reference_label": "B",
+      "relation_family_index": 0,
+      "relations": [
+        "ROUTES_TO",
+        "ENDS_AT"
+      ],
+      "row_id": "NPC0013__qB__original__candidates_original__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "B",
+        "other_label": "A",
+        "raw_logits": {
+          "A": 21.875,
+          "B": 22.125
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "B",
+        "reference_logit_margin": 0.25,
+        "reference_pair_probability": 0.5621765008857981,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0013"
+    },
+    {
+      "K": 8,
+      "candidate_order": "reversed",
+      "evidence_state": "original",
+      "expected_candidate_identity": 1,
+      "expected_label": "A",
+      "focal_terminal_codes": [
+        "blue",
+        "red"
+      ],
+      "query_arm": "B",
+      "reference_candidate_identity": 1,
+      "reference_label": "A",
+      "relation_family_index": 0,
+      "relations": [
+        "ROUTES_TO",
+        "ENDS_AT"
+      ],
+      "row_id": "NPC0013__qB__original__candidates_reversed__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "A",
+        "other_label": "B",
+        "raw_logits": {
+          "A": 20.5,
+          "B": 21.875
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 0.0,
+        "reference_label": "A",
+        "reference_logit_margin": -1.375,
+        "reference_pair_probability": 0.20181322226037882,
+        "state_correct_argmax_credit": 0.0
+      },
+      "world_id": "NPC0013"
+    },
+    {
+      "K": 8,
+      "candidate_order": "original",
+      "evidence_state": "original",
+      "expected_candidate_identity": 0,
+      "expected_label": "A",
+      "focal_terminal_codes": [
+        "blue",
+        "red"
+      ],
+      "query_arm": "A",
+      "reference_candidate_identity": 0,
+      "reference_label": "A",
+      "relation_family_index": 0,
+      "relations": [
+        "ROUTES_TO",
+        "ENDS_AT"
+      ],
+      "row_id": "NPC0016__qA__original__candidates_original__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "A",
+        "other_label": "B",
+        "raw_logits": {
+          "A": 21.75,
+          "B": 20.375
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "A",
+        "reference_logit_margin": 1.375,
+        "reference_pair_probability": 0.7981867777396212,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0016"
+    },
+    {
+      "K": 8,
+      "candidate_order": "reversed",
+      "evidence_state": "original",
+      "expected_candidate_identity": 0,
+      "expected_label": "B",
+      "focal_terminal_codes": [
+        "blue",
+        "red"
+      ],
+      "query_arm": "A",
+      "reference_candidate_identity": 0,
+      "reference_label": "B",
+      "relation_family_index": 0,
+      "relations": [
+        "ROUTES_TO",
+        "ENDS_AT"
+      ],
+      "row_id": "NPC0016__qA__original__candidates_reversed__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "B",
+        "other_label": "A",
+        "raw_logits": {
+          "A": 20.625,
+          "B": 21.875
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "B",
+        "reference_logit_margin": 1.25,
+        "reference_pair_probability": 0.7772998611746911,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0016"
+    },
+    {
+      "K": 8,
+      "candidate_order": "original",
+      "evidence_state": "original",
+      "expected_candidate_identity": 1,
+      "expected_label": "B",
+      "focal_terminal_codes": [
+        "blue",
+        "red"
+      ],
+      "query_arm": "B",
+      "reference_candidate_identity": 1,
+      "reference_label": "B",
+      "relation_family_index": 0,
+      "relations": [
+        "ROUTES_TO",
+        "ENDS_AT"
+      ],
+      "row_id": "NPC0016__qB__original__candidates_original__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "B",
+        "other_label": "A",
+        "raw_logits": {
+          "A": 21.5,
+          "B": 23.25
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "B",
+        "reference_logit_margin": 1.75,
+        "reference_pair_probability": 0.8519528019683106,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0016"
+    },
+    {
+      "K": 8,
+      "candidate_order": "reversed",
+      "evidence_state": "original",
+      "expected_candidate_identity": 1,
+      "expected_label": "A",
+      "focal_terminal_codes": [
+        "blue",
+        "red"
+      ],
+      "query_arm": "B",
+      "reference_candidate_identity": 1,
+      "reference_label": "A",
+      "relation_family_index": 0,
+      "relations": [
+        "ROUTES_TO",
+        "ENDS_AT"
+      ],
+      "row_id": "NPC0016__qB__original__candidates_reversed__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "A",
+        "other_label": "B",
+        "raw_logits": {
+          "A": 23.875,
+          "B": 21.875
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "A",
+        "reference_logit_margin": 2.0,
+        "reference_pair_probability": 0.8807970779778823,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0016"
+    },
+    {
+      "K": 8,
+      "candidate_order": "original",
+      "evidence_state": "original",
+      "expected_candidate_identity": 0,
+      "expected_label": "A",
+      "focal_terminal_codes": [
+        "blue",
+        "green"
+      ],
+      "query_arm": "A",
+      "reference_candidate_identity": 0,
+      "reference_label": "A",
+      "relation_family_index": 0,
+      "relations": [
+        "ROUTES_TO",
+        "ENDS_AT"
+      ],
+      "row_id": "NPC0017__qA__original__candidates_original__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "A",
+        "other_label": "B",
+        "raw_logits": {
+          "A": 23.625,
+          "B": 20.75
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "A",
+        "reference_logit_margin": 2.875,
+        "reference_pair_probability": 0.9465966702001757,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0017"
+    },
+    {
+      "K": 8,
+      "candidate_order": "reversed",
+      "evidence_state": "original",
+      "expected_candidate_identity": 0,
+      "expected_label": "B",
+      "focal_terminal_codes": [
+        "blue",
+        "green"
+      ],
+      "query_arm": "A",
+      "reference_candidate_identity": 0,
+      "reference_label": "B",
+      "relation_family_index": 0,
+      "relations": [
+        "ROUTES_TO",
+        "ENDS_AT"
+      ],
+      "row_id": "NPC0017__qA__original__candidates_reversed__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "B",
+        "other_label": "A",
+        "raw_logits": {
+          "A": 21.875,
+          "B": 23.0
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "B",
+        "reference_logit_margin": 1.125,
+        "reference_pair_probability": 0.7549149868676283,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0017"
+    },
+    {
+      "K": 8,
+      "candidate_order": "original",
+      "evidence_state": "original",
+      "expected_candidate_identity": 1,
+      "expected_label": "B",
+      "focal_terminal_codes": [
+        "blue",
+        "green"
+      ],
+      "query_arm": "B",
+      "reference_candidate_identity": 1,
+      "reference_label": "B",
+      "relation_family_index": 0,
+      "relations": [
+        "ROUTES_TO",
+        "ENDS_AT"
+      ],
+      "row_id": "NPC0017__qB__original__candidates_original__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "B",
+        "other_label": "A",
+        "raw_logits": {
+          "A": 20.875,
+          "B": 23.25
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "B",
+        "reference_logit_margin": 2.375,
+        "reference_pair_probability": 0.9149009549929797,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0017"
+    },
+    {
+      "K": 8,
+      "candidate_order": "reversed",
+      "evidence_state": "original",
+      "expected_candidate_identity": 1,
+      "expected_label": "A",
+      "focal_terminal_codes": [
+        "blue",
+        "green"
+      ],
+      "query_arm": "B",
+      "reference_candidate_identity": 1,
+      "reference_label": "A",
+      "relation_family_index": 0,
+      "relations": [
+        "ROUTES_TO",
+        "ENDS_AT"
+      ],
+      "row_id": "NPC0017__qB__original__candidates_reversed__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "A",
+        "other_label": "B",
+        "raw_logits": {
+          "A": 24.25,
+          "B": 22.25
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "A",
+        "reference_logit_margin": 2.0,
+        "reference_pair_probability": 0.8807970779778823,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0017"
+    },
+    {
+      "K": 8,
+      "candidate_order": "original",
+      "evidence_state": "original",
+      "expected_candidate_identity": 0,
+      "expected_label": "A",
+      "focal_terminal_codes": [
+        "blue",
+        "green"
+      ],
+      "query_arm": "A",
+      "reference_candidate_identity": 0,
+      "reference_label": "A",
+      "relation_family_index": 0,
+      "relations": [
+        "ROUTES_TO",
+        "ENDS_AT"
+      ],
+      "row_id": "NPC0018__qA__original__candidates_original__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "A",
+        "other_label": "B",
+        "raw_logits": {
+          "A": 21.75,
+          "B": 23.5
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 0.0,
+        "reference_label": "A",
+        "reference_logit_margin": -1.75,
+        "reference_pair_probability": 0.1480471980316895,
+        "state_correct_argmax_credit": 0.0
+      },
+      "world_id": "NPC0018"
+    },
+    {
+      "K": 8,
+      "candidate_order": "reversed",
+      "evidence_state": "original",
+      "expected_candidate_identity": 0,
+      "expected_label": "B",
+      "focal_terminal_codes": [
+        "blue",
+        "green"
+      ],
+      "query_arm": "A",
+      "reference_candidate_identity": 0,
+      "reference_label": "B",
+      "relation_family_index": 0,
+      "relations": [
+        "ROUTES_TO",
+        "ENDS_AT"
+      ],
+      "row_id": "NPC0018__qA__original__candidates_reversed__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "B",
+        "other_label": "A",
+        "raw_logits": {
+          "A": 21.625,
+          "B": 23.375
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "B",
+        "reference_logit_margin": 1.75,
+        "reference_pair_probability": 0.8519528019683106,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0018"
+    },
+    {
+      "K": 8,
+      "candidate_order": "original",
+      "evidence_state": "original",
+      "expected_candidate_identity": 1,
+      "expected_label": "B",
+      "focal_terminal_codes": [
+        "blue",
+        "green"
+      ],
+      "query_arm": "B",
+      "reference_candidate_identity": 1,
+      "reference_label": "B",
+      "relation_family_index": 0,
+      "relations": [
+        "ROUTES_TO",
+        "ENDS_AT"
+      ],
+      "row_id": "NPC0018__qB__original__candidates_original__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "B",
+        "other_label": "A",
+        "raw_logits": {
+          "A": 22.0,
+          "B": 23.875
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "B",
+        "reference_logit_margin": 1.875,
+        "reference_pair_probability": 0.8670357598021706,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0018"
+    },
+    {
+      "K": 8,
+      "candidate_order": "reversed",
+      "evidence_state": "original",
+      "expected_candidate_identity": 1,
+      "expected_label": "A",
+      "focal_terminal_codes": [
+        "blue",
+        "green"
+      ],
+      "query_arm": "B",
+      "reference_candidate_identity": 1,
+      "reference_label": "A",
+      "relation_family_index": 0,
+      "relations": [
+        "ROUTES_TO",
+        "ENDS_AT"
+      ],
+      "row_id": "NPC0018__qB__original__candidates_reversed__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "A",
+        "other_label": "B",
+        "raw_logits": {
+          "A": 25.0,
+          "B": 20.875
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "A",
+        "reference_logit_margin": 4.125,
+        "reference_pair_probability": 0.9840936082881853,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0018"
+    },
+    {
+      "K": 8,
+      "candidate_order": "original",
+      "evidence_state": "original",
+      "expected_candidate_identity": 0,
+      "expected_label": "A",
+      "focal_terminal_codes": [
+        "green",
+        "blue"
+      ],
+      "query_arm": "A",
+      "reference_candidate_identity": 0,
+      "reference_label": "A",
+      "relation_family_index": 0,
+      "relations": [
+        "ROUTES_TO",
+        "ENDS_AT"
+      ],
+      "row_id": "NPC0032__qA__original__candidates_original__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "A",
+        "other_label": "B",
+        "raw_logits": {
+          "A": 21.75,
+          "B": 20.0
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "A",
+        "reference_logit_margin": 1.75,
+        "reference_pair_probability": 0.8519528019683106,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0032"
+    },
+    {
+      "K": 8,
+      "candidate_order": "reversed",
+      "evidence_state": "original",
+      "expected_candidate_identity": 0,
+      "expected_label": "B",
+      "focal_terminal_codes": [
+        "green",
+        "blue"
+      ],
+      "query_arm": "A",
+      "reference_candidate_identity": 0,
+      "reference_label": "B",
+      "relation_family_index": 0,
+      "relations": [
+        "ROUTES_TO",
+        "ENDS_AT"
+      ],
+      "row_id": "NPC0032__qA__original__candidates_reversed__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "B",
+        "other_label": "A",
+        "raw_logits": {
+          "A": 20.875,
+          "B": 21.625
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "B",
+        "reference_logit_margin": 0.75,
+        "reference_pair_probability": 0.679178699175393,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0032"
+    },
+    {
+      "K": 8,
+      "candidate_order": "original",
+      "evidence_state": "original",
+      "expected_candidate_identity": 1,
+      "expected_label": "B",
+      "focal_terminal_codes": [
+        "green",
+        "blue"
+      ],
+      "query_arm": "B",
+      "reference_candidate_identity": 1,
+      "reference_label": "B",
+      "relation_family_index": 0,
+      "relations": [
+        "ROUTES_TO",
+        "ENDS_AT"
+      ],
+      "row_id": "NPC0032__qB__original__candidates_original__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "B",
+        "other_label": "A",
+        "raw_logits": {
+          "A": 20.5,
+          "B": 24.375
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "B",
+        "reference_logit_margin": 3.875,
+        "reference_pair_probability": 0.9796676466573412,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0032"
+    },
+    {
+      "K": 8,
+      "candidate_order": "reversed",
+      "evidence_state": "original",
+      "expected_candidate_identity": 1,
+      "expected_label": "A",
+      "focal_terminal_codes": [
+        "green",
+        "blue"
+      ],
+      "query_arm": "B",
+      "reference_candidate_identity": 1,
+      "reference_label": "A",
+      "relation_family_index": 0,
+      "relations": [
+        "ROUTES_TO",
+        "ENDS_AT"
+      ],
+      "row_id": "NPC0032__qB__original__candidates_reversed__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "A",
+        "other_label": "B",
+        "raw_logits": {
+          "A": 23.375,
+          "B": 23.25
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "A",
+        "reference_logit_margin": 0.125,
+        "reference_pair_probability": 0.5312093733737563,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0032"
+    },
+    {
+      "K": 8,
+      "candidate_order": "original",
+      "evidence_state": "original",
+      "expected_candidate_identity": 0,
+      "expected_label": "A",
+      "focal_terminal_codes": [
+        "black",
+        "red"
+      ],
+      "query_arm": "A",
+      "reference_candidate_identity": 0,
+      "reference_label": "A",
+      "relation_family_index": 0,
+      "relations": [
+        "ROUTES_TO",
+        "ENDS_AT"
+      ],
+      "row_id": "NPC0039__qA__original__candidates_original__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "A",
+        "other_label": "B",
+        "raw_logits": {
+          "A": 24.375,
+          "B": 22.625
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "A",
+        "reference_logit_margin": 1.75,
+        "reference_pair_probability": 0.8519528019683106,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0039"
+    },
+    {
+      "K": 8,
+      "candidate_order": "reversed",
+      "evidence_state": "original",
+      "expected_candidate_identity": 0,
+      "expected_label": "B",
+      "focal_terminal_codes": [
+        "black",
+        "red"
+      ],
+      "query_arm": "A",
+      "reference_candidate_identity": 0,
+      "reference_label": "B",
+      "relation_family_index": 0,
+      "relations": [
+        "ROUTES_TO",
+        "ENDS_AT"
+      ],
+      "row_id": "NPC0039__qA__original__candidates_reversed__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "B",
+        "other_label": "A",
+        "raw_logits": {
+          "A": 23.125,
+          "B": 24.625
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "B",
+        "reference_logit_margin": 1.5,
+        "reference_pair_probability": 0.8175744761936437,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0039"
+    },
+    {
+      "K": 8,
+      "candidate_order": "original",
+      "evidence_state": "original",
+      "expected_candidate_identity": 1,
+      "expected_label": "B",
+      "focal_terminal_codes": [
+        "black",
+        "red"
+      ],
+      "query_arm": "B",
+      "reference_candidate_identity": 1,
+      "reference_label": "B",
+      "relation_family_index": 0,
+      "relations": [
+        "ROUTES_TO",
+        "ENDS_AT"
+      ],
+      "row_id": "NPC0039__qB__original__candidates_original__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "B",
+        "other_label": "A",
+        "raw_logits": {
+          "A": 22.625,
+          "B": 25.125
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "B",
+        "reference_logit_margin": 2.5,
+        "reference_pair_probability": 0.9241418199787566,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0039"
+    },
+    {
+      "K": 8,
+      "candidate_order": "reversed",
+      "evidence_state": "original",
+      "expected_candidate_identity": 1,
+      "expected_label": "A",
+      "focal_terminal_codes": [
+        "black",
+        "red"
+      ],
+      "query_arm": "B",
+      "reference_candidate_identity": 1,
+      "reference_label": "A",
+      "relation_family_index": 0,
+      "relations": [
+        "ROUTES_TO",
+        "ENDS_AT"
+      ],
+      "row_id": "NPC0039__qB__original__candidates_reversed__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "A",
+        "other_label": "B",
+        "raw_logits": {
+          "A": 25.125,
+          "B": 22.875
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "A",
+        "reference_logit_margin": 2.25,
+        "reference_pair_probability": 0.9046505351008906,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0039"
+    },
+    {
+      "K": 8,
+      "candidate_order": "original",
+      "evidence_state": "original",
+      "expected_candidate_identity": 0,
+      "expected_label": "A",
+      "focal_terminal_codes": [
+        "black",
+        "blue"
+      ],
+      "query_arm": "A",
+      "reference_candidate_identity": 0,
+      "reference_label": "A",
+      "relation_family_index": 0,
+      "relations": [
+        "ROUTES_TO",
+        "ENDS_AT"
+      ],
+      "row_id": "NPC0042__qA__original__candidates_original__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "A",
+        "other_label": "B",
+        "raw_logits": {
+          "A": 23.875,
+          "B": 22.75
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "A",
+        "reference_logit_margin": 1.125,
+        "reference_pair_probability": 0.7549149868676283,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0042"
+    },
+    {
+      "K": 8,
+      "candidate_order": "reversed",
+      "evidence_state": "original",
+      "expected_candidate_identity": 0,
+      "expected_label": "B",
+      "focal_terminal_codes": [
+        "black",
+        "blue"
+      ],
+      "query_arm": "A",
+      "reference_candidate_identity": 0,
+      "reference_label": "B",
+      "relation_family_index": 0,
+      "relations": [
+        "ROUTES_TO",
+        "ENDS_AT"
+      ],
+      "row_id": "NPC0042__qA__original__candidates_reversed__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "B",
+        "other_label": "A",
+        "raw_logits": {
+          "A": 20.5,
+          "B": 24.375
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "B",
+        "reference_logit_margin": 3.875,
+        "reference_pair_probability": 0.9796676466573412,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0042"
+    },
+    {
+      "K": 8,
+      "candidate_order": "original",
+      "evidence_state": "original",
+      "expected_candidate_identity": 1,
+      "expected_label": "B",
+      "focal_terminal_codes": [
+        "black",
+        "blue"
+      ],
+      "query_arm": "B",
+      "reference_candidate_identity": 1,
+      "reference_label": "B",
+      "relation_family_index": 0,
+      "relations": [
+        "ROUTES_TO",
+        "ENDS_AT"
+      ],
+      "row_id": "NPC0042__qB__original__candidates_original__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "B",
+        "other_label": "A",
+        "raw_logits": {
+          "A": 21.5,
+          "B": 24.25
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "B",
+        "reference_logit_margin": 2.75,
+        "reference_pair_probability": 0.9399133498259924,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0042"
+    },
+    {
+      "K": 8,
+      "candidate_order": "reversed",
+      "evidence_state": "original",
+      "expected_candidate_identity": 1,
+      "expected_label": "A",
+      "focal_terminal_codes": [
+        "black",
+        "blue"
+      ],
+      "query_arm": "B",
+      "reference_candidate_identity": 1,
+      "reference_label": "A",
+      "relation_family_index": 0,
+      "relations": [
+        "ROUTES_TO",
+        "ENDS_AT"
+      ],
+      "row_id": "NPC0042__qB__original__candidates_reversed__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "A",
+        "other_label": "B",
+        "raw_logits": {
+          "A": 24.25,
+          "B": 22.25
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "A",
+        "reference_logit_margin": 2.0,
+        "reference_pair_probability": 0.8807970779778823,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0042"
+    },
+    {
+      "K": 8,
+      "candidate_order": "original",
+      "evidence_state": "original",
+      "expected_candidate_identity": 0,
+      "expected_label": "A",
+      "focal_terminal_codes": [
+        "red",
+        "black"
+      ],
+      "query_arm": "A",
+      "reference_candidate_identity": 0,
+      "reference_label": "A",
+      "relation_family_index": 1,
+      "relations": [
+        "LINKS_TO",
+        "RETURNS"
+      ],
+      "row_id": "NPC0058__qA__original__candidates_original__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "A",
+        "other_label": "B",
+        "raw_logits": {
+          "A": 24.5,
+          "B": 21.5
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "A",
+        "reference_logit_margin": 3.0,
+        "reference_pair_probability": 0.9525741268224334,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0058"
+    },
+    {
+      "K": 8,
+      "candidate_order": "reversed",
+      "evidence_state": "original",
+      "expected_candidate_identity": 0,
+      "expected_label": "B",
+      "focal_terminal_codes": [
+        "red",
+        "black"
+      ],
+      "query_arm": "A",
+      "reference_candidate_identity": 0,
+      "reference_label": "B",
+      "relation_family_index": 1,
+      "relations": [
+        "LINKS_TO",
+        "RETURNS"
+      ],
+      "row_id": "NPC0058__qA__original__candidates_reversed__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "B",
+        "other_label": "A",
+        "raw_logits": {
+          "A": 20.0,
+          "B": 24.25
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "B",
+        "reference_logit_margin": 4.25,
+        "reference_pair_probability": 0.9859363729567544,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0058"
+    },
+    {
+      "K": 8,
+      "candidate_order": "original",
+      "evidence_state": "original",
+      "expected_candidate_identity": 1,
+      "expected_label": "B",
+      "focal_terminal_codes": [
+        "red",
+        "black"
+      ],
+      "query_arm": "B",
+      "reference_candidate_identity": 1,
+      "reference_label": "B",
+      "relation_family_index": 1,
+      "relations": [
+        "LINKS_TO",
+        "RETURNS"
+      ],
+      "row_id": "NPC0058__qB__original__candidates_original__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "B",
+        "other_label": "A",
+        "raw_logits": {
+          "A": 21.875,
+          "B": 24.125
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "B",
+        "reference_logit_margin": 2.25,
+        "reference_pair_probability": 0.9046505351008906,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0058"
+    },
+    {
+      "K": 8,
+      "candidate_order": "reversed",
+      "evidence_state": "original",
+      "expected_candidate_identity": 1,
+      "expected_label": "A",
+      "focal_terminal_codes": [
+        "red",
+        "black"
+      ],
+      "query_arm": "B",
+      "reference_candidate_identity": 1,
+      "reference_label": "A",
+      "relation_family_index": 1,
+      "relations": [
+        "LINKS_TO",
+        "RETURNS"
+      ],
+      "row_id": "NPC0058__qB__original__candidates_reversed__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "A",
+        "other_label": "B",
+        "raw_logits": {
+          "A": 24.875,
+          "B": 22.0
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "A",
+        "reference_logit_margin": 2.875,
+        "reference_pair_probability": 0.9465966702001757,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0058"
+    },
+    {
+      "K": 8,
+      "candidate_order": "original",
+      "evidence_state": "original",
+      "expected_candidate_identity": 0,
+      "expected_label": "A",
+      "focal_terminal_codes": [
+        "blue",
+        "green"
+      ],
+      "query_arm": "A",
+      "reference_candidate_identity": 0,
+      "reference_label": "A",
+      "relation_family_index": 1,
+      "relations": [
+        "LINKS_TO",
+        "RETURNS"
+      ],
+      "row_id": "NPC0065__qA__original__candidates_original__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "A",
+        "other_label": "B",
+        "raw_logits": {
+          "A": 24.25,
+          "B": 21.125
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "A",
+        "reference_logit_margin": 3.125,
+        "reference_pair_probability": 0.9579122720843811,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0065"
+    },
+    {
+      "K": 8,
+      "candidate_order": "reversed",
+      "evidence_state": "original",
+      "expected_candidate_identity": 0,
+      "expected_label": "B",
+      "focal_terminal_codes": [
+        "blue",
+        "green"
+      ],
+      "query_arm": "A",
+      "reference_candidate_identity": 0,
+      "reference_label": "B",
+      "relation_family_index": 1,
+      "relations": [
+        "LINKS_TO",
+        "RETURNS"
+      ],
+      "row_id": "NPC0065__qA__original__candidates_reversed__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "B",
+        "other_label": "A",
+        "raw_logits": {
+          "A": 21.5,
+          "B": 23.375
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "B",
+        "reference_logit_margin": 1.875,
+        "reference_pair_probability": 0.8670357598021706,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0065"
+    },
+    {
+      "K": 8,
+      "candidate_order": "original",
+      "evidence_state": "original",
+      "expected_candidate_identity": 1,
+      "expected_label": "B",
+      "focal_terminal_codes": [
+        "blue",
+        "green"
+      ],
+      "query_arm": "B",
+      "reference_candidate_identity": 1,
+      "reference_label": "B",
+      "relation_family_index": 1,
+      "relations": [
+        "LINKS_TO",
+        "RETURNS"
+      ],
+      "row_id": "NPC0065__qB__original__candidates_original__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "B",
+        "other_label": "A",
+        "raw_logits": {
+          "A": 21.0,
+          "B": 23.75
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "B",
+        "reference_logit_margin": 2.75,
+        "reference_pair_probability": 0.9399133498259924,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0065"
+    },
+    {
+      "K": 8,
+      "candidate_order": "reversed",
+      "evidence_state": "original",
+      "expected_candidate_identity": 1,
+      "expected_label": "A",
+      "focal_terminal_codes": [
+        "blue",
+        "green"
+      ],
+      "query_arm": "B",
+      "reference_candidate_identity": 1,
+      "reference_label": "A",
+      "relation_family_index": 1,
+      "relations": [
+        "LINKS_TO",
+        "RETURNS"
+      ],
+      "row_id": "NPC0065__qB__original__candidates_reversed__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "A",
+        "other_label": "B",
+        "raw_logits": {
+          "A": 23.875,
+          "B": 22.625
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "A",
+        "reference_logit_margin": 1.25,
+        "reference_pair_probability": 0.7772998611746911,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0065"
+    },
+    {
+      "K": 8,
+      "candidate_order": "original",
+      "evidence_state": "original",
+      "expected_candidate_identity": 0,
+      "expected_label": "A",
+      "focal_terminal_codes": [
+        "green",
+        "black"
+      ],
+      "query_arm": "A",
+      "reference_candidate_identity": 0,
+      "reference_label": "A",
+      "relation_family_index": 1,
+      "relations": [
+        "LINKS_TO",
+        "RETURNS"
+      ],
+      "row_id": "NPC0081__qA__original__candidates_original__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "A",
+        "other_label": "B",
+        "raw_logits": {
+          "A": 25.125,
+          "B": 19.75
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "A",
+        "reference_logit_margin": 5.375,
+        "reference_pair_probability": 0.9953904278206259,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0081"
+    },
+    {
+      "K": 8,
+      "candidate_order": "reversed",
+      "evidence_state": "original",
+      "expected_candidate_identity": 0,
+      "expected_label": "B",
+      "focal_terminal_codes": [
+        "green",
+        "black"
+      ],
+      "query_arm": "A",
+      "reference_candidate_identity": 0,
+      "reference_label": "B",
+      "relation_family_index": 1,
+      "relations": [
+        "LINKS_TO",
+        "RETURNS"
+      ],
+      "row_id": "NPC0081__qA__original__candidates_reversed__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "B",
+        "other_label": "A",
+        "raw_logits": {
+          "A": 22.25,
+          "B": 22.75
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "B",
+        "reference_logit_margin": 0.5,
+        "reference_pair_probability": 0.6224593312018546,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0081"
+    },
+    {
+      "K": 8,
+      "candidate_order": "original",
+      "evidence_state": "original",
+      "expected_candidate_identity": 1,
+      "expected_label": "B",
+      "focal_terminal_codes": [
+        "green",
+        "black"
+      ],
+      "query_arm": "B",
+      "reference_candidate_identity": 1,
+      "reference_label": "B",
+      "relation_family_index": 1,
+      "relations": [
+        "LINKS_TO",
+        "RETURNS"
+      ],
+      "row_id": "NPC0081__qB__original__candidates_original__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "B",
+        "other_label": "A",
+        "raw_logits": {
+          "A": 22.0,
+          "B": 25.0
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "B",
+        "reference_logit_margin": 3.0,
+        "reference_pair_probability": 0.9525741268224334,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0081"
+    },
+    {
+      "K": 8,
+      "candidate_order": "reversed",
+      "evidence_state": "original",
+      "expected_candidate_identity": 1,
+      "expected_label": "A",
+      "focal_terminal_codes": [
+        "green",
+        "black"
+      ],
+      "query_arm": "B",
+      "reference_candidate_identity": 1,
+      "reference_label": "A",
+      "relation_family_index": 1,
+      "relations": [
+        "LINKS_TO",
+        "RETURNS"
+      ],
+      "row_id": "NPC0081__qB__original__candidates_reversed__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "A",
+        "other_label": "B",
+        "raw_logits": {
+          "A": 25.0,
+          "B": 23.125
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "A",
+        "reference_logit_margin": 1.875,
+        "reference_pair_probability": 0.8670357598021706,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0081"
+    },
+    {
+      "K": 8,
+      "candidate_order": "original",
+      "evidence_state": "original",
+      "expected_candidate_identity": 0,
+      "expected_label": "A",
+      "focal_terminal_codes": [
+        "black",
+        "red"
+      ],
+      "query_arm": "A",
+      "reference_candidate_identity": 0,
+      "reference_label": "A",
+      "relation_family_index": 1,
+      "relations": [
+        "LINKS_TO",
+        "RETURNS"
+      ],
+      "row_id": "NPC0085__qA__original__candidates_original__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "A",
+        "other_label": "B",
+        "raw_logits": {
+          "A": 22.625,
+          "B": 22.375
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "A",
+        "reference_logit_margin": 0.25,
+        "reference_pair_probability": 0.5621765008857981,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0085"
+    },
+    {
+      "K": 8,
+      "candidate_order": "reversed",
+      "evidence_state": "original",
+      "expected_candidate_identity": 0,
+      "expected_label": "B",
+      "focal_terminal_codes": [
+        "black",
+        "red"
+      ],
+      "query_arm": "A",
+      "reference_candidate_identity": 0,
+      "reference_label": "B",
+      "relation_family_index": 1,
+      "relations": [
+        "LINKS_TO",
+        "RETURNS"
+      ],
+      "row_id": "NPC0085__qA__original__candidates_reversed__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "B",
+        "other_label": "A",
+        "raw_logits": {
+          "A": 19.25,
+          "B": 23.875
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "B",
+        "reference_logit_margin": 4.625,
+        "reference_pair_probability": 0.9902915235185259,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0085"
+    },
+    {
+      "K": 8,
+      "candidate_order": "original",
+      "evidence_state": "original",
+      "expected_candidate_identity": 1,
+      "expected_label": "B",
+      "focal_terminal_codes": [
+        "black",
+        "red"
+      ],
+      "query_arm": "B",
+      "reference_candidate_identity": 1,
+      "reference_label": "B",
+      "relation_family_index": 1,
+      "relations": [
+        "LINKS_TO",
+        "RETURNS"
+      ],
+      "row_id": "NPC0085__qB__original__candidates_original__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "B",
+        "other_label": "A",
+        "raw_logits": {
+          "A": 20.5,
+          "B": 23.5
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "B",
+        "reference_logit_margin": 3.0,
+        "reference_pair_probability": 0.9525741268224334,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0085"
+    },
+    {
+      "K": 8,
+      "candidate_order": "reversed",
+      "evidence_state": "original",
+      "expected_candidate_identity": 1,
+      "expected_label": "A",
+      "focal_terminal_codes": [
+        "black",
+        "red"
+      ],
+      "query_arm": "B",
+      "reference_candidate_identity": 1,
+      "reference_label": "A",
+      "relation_family_index": 1,
+      "relations": [
+        "LINKS_TO",
+        "RETURNS"
+      ],
+      "row_id": "NPC0085__qB__original__candidates_reversed__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "A",
+        "other_label": "B",
+        "raw_logits": {
+          "A": 24.125,
+          "B": 21.25
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "A",
+        "reference_logit_margin": 2.875,
+        "reference_pair_probability": 0.9465966702001757,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0085"
+    },
+    {
+      "K": 8,
+      "candidate_order": "original",
+      "evidence_state": "original",
+      "expected_candidate_identity": 0,
+      "expected_label": "A",
+      "focal_terminal_codes": [
+        "black",
+        "red"
+      ],
+      "query_arm": "A",
+      "reference_candidate_identity": 0,
+      "reference_label": "A",
+      "relation_family_index": 1,
+      "relations": [
+        "LINKS_TO",
+        "RETURNS"
+      ],
+      "row_id": "NPC0087__qA__original__candidates_original__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "A",
+        "other_label": "B",
+        "raw_logits": {
+          "A": 24.625,
+          "B": 21.25
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "A",
+        "reference_logit_margin": 3.375,
+        "reference_pair_probability": 0.9669140216112958,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0087"
+    },
+    {
+      "K": 8,
+      "candidate_order": "reversed",
+      "evidence_state": "original",
+      "expected_candidate_identity": 0,
+      "expected_label": "B",
+      "focal_terminal_codes": [
+        "black",
+        "red"
+      ],
+      "query_arm": "A",
+      "reference_candidate_identity": 0,
+      "reference_label": "B",
+      "relation_family_index": 1,
+      "relations": [
+        "LINKS_TO",
+        "RETURNS"
+      ],
+      "row_id": "NPC0087__qA__original__candidates_reversed__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "B",
+        "other_label": "A",
+        "raw_logits": {
+          "A": 22.0,
+          "B": 23.375
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "B",
+        "reference_logit_margin": 1.375,
+        "reference_pair_probability": 0.7981867777396212,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0087"
+    },
+    {
+      "K": 8,
+      "candidate_order": "original",
+      "evidence_state": "original",
+      "expected_candidate_identity": 1,
+      "expected_label": "B",
+      "focal_terminal_codes": [
+        "black",
+        "red"
+      ],
+      "query_arm": "B",
+      "reference_candidate_identity": 1,
+      "reference_label": "B",
+      "relation_family_index": 1,
+      "relations": [
+        "LINKS_TO",
+        "RETURNS"
+      ],
+      "row_id": "NPC0087__qB__original__candidates_original__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "B",
+        "other_label": "A",
+        "raw_logits": {
+          "A": 22.125,
+          "B": 24.5
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "B",
+        "reference_logit_margin": 2.375,
+        "reference_pair_probability": 0.9149009549929797,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0087"
+    },
+    {
+      "K": 8,
+      "candidate_order": "reversed",
+      "evidence_state": "original",
+      "expected_candidate_identity": 1,
+      "expected_label": "A",
+      "focal_terminal_codes": [
+        "black",
+        "red"
+      ],
+      "query_arm": "B",
+      "reference_candidate_identity": 1,
+      "reference_label": "A",
+      "relation_family_index": 1,
+      "relations": [
+        "LINKS_TO",
+        "RETURNS"
+      ],
+      "row_id": "NPC0087__qB__original__candidates_reversed__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "A",
+        "other_label": "B",
+        "raw_logits": {
+          "A": 25.25,
+          "B": 21.25
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "A",
+        "reference_logit_margin": 4.0,
+        "reference_pair_probability": 0.9820137900379085,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0087"
+    },
+    {
+      "K": 8,
+      "candidate_order": "original",
+      "evidence_state": "original",
+      "expected_candidate_identity": 0,
+      "expected_label": "A",
+      "focal_terminal_codes": [
+        "black",
+        "blue"
+      ],
+      "query_arm": "A",
+      "reference_candidate_identity": 0,
+      "reference_label": "A",
+      "relation_family_index": 1,
+      "relations": [
+        "LINKS_TO",
+        "RETURNS"
+      ],
+      "row_id": "NPC0090__qA__original__candidates_original__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "A",
+        "other_label": "B",
+        "raw_logits": {
+          "A": 23.875,
+          "B": 21.125
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "A",
+        "reference_logit_margin": 2.75,
+        "reference_pair_probability": 0.9399133498259924,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0090"
+    },
+    {
+      "K": 8,
+      "candidate_order": "reversed",
+      "evidence_state": "original",
+      "expected_candidate_identity": 0,
+      "expected_label": "B",
+      "focal_terminal_codes": [
+        "black",
+        "blue"
+      ],
+      "query_arm": "A",
+      "reference_candidate_identity": 0,
+      "reference_label": "B",
+      "relation_family_index": 1,
+      "relations": [
+        "LINKS_TO",
+        "RETURNS"
+      ],
+      "row_id": "NPC0090__qA__original__candidates_reversed__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "B",
+        "other_label": "A",
+        "raw_logits": {
+          "A": 20.25,
+          "B": 23.5
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "B",
+        "reference_logit_margin": 3.25,
+        "reference_pair_probability": 0.9626731126558706,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0090"
+    },
+    {
+      "K": 8,
+      "candidate_order": "original",
+      "evidence_state": "original",
+      "expected_candidate_identity": 1,
+      "expected_label": "B",
+      "focal_terminal_codes": [
+        "black",
+        "blue"
+      ],
+      "query_arm": "B",
+      "reference_candidate_identity": 1,
+      "reference_label": "B",
+      "relation_family_index": 1,
+      "relations": [
+        "LINKS_TO",
+        "RETURNS"
+      ],
+      "row_id": "NPC0090__qB__original__candidates_original__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "B",
+        "other_label": "A",
+        "raw_logits": {
+          "A": 22.0,
+          "B": 24.5
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "B",
+        "reference_logit_margin": 2.5,
+        "reference_pair_probability": 0.9241418199787566,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0090"
+    },
+    {
+      "K": 8,
+      "candidate_order": "reversed",
+      "evidence_state": "original",
+      "expected_candidate_identity": 1,
+      "expected_label": "A",
+      "focal_terminal_codes": [
+        "black",
+        "blue"
+      ],
+      "query_arm": "B",
+      "reference_candidate_identity": 1,
+      "reference_label": "A",
+      "relation_family_index": 1,
+      "relations": [
+        "LINKS_TO",
+        "RETURNS"
+      ],
+      "row_id": "NPC0090__qB__original__candidates_reversed__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "A",
+        "other_label": "B",
+        "raw_logits": {
+          "A": 25.375,
+          "B": 22.25
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "A",
+        "reference_logit_margin": 3.125,
+        "reference_pair_probability": 0.9579122720843811,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0090"
+    },
+    {
+      "K": 8,
+      "candidate_order": "original",
+      "evidence_state": "original",
+      "expected_candidate_identity": 0,
+      "expected_label": "A",
+      "focal_terminal_codes": [
+        "black",
+        "green"
+      ],
+      "query_arm": "A",
+      "reference_candidate_identity": 0,
+      "reference_label": "A",
+      "relation_family_index": 1,
+      "relations": [
+        "LINKS_TO",
+        "RETURNS"
+      ],
+      "row_id": "NPC0093__qA__original__candidates_original__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "A",
+        "other_label": "B",
+        "raw_logits": {
+          "A": 22.375,
+          "B": 21.875
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "A",
+        "reference_logit_margin": 0.5,
+        "reference_pair_probability": 0.6224593312018546,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0093"
+    },
+    {
+      "K": 8,
+      "candidate_order": "reversed",
+      "evidence_state": "original",
+      "expected_candidate_identity": 0,
+      "expected_label": "B",
+      "focal_terminal_codes": [
+        "black",
+        "green"
+      ],
+      "query_arm": "A",
+      "reference_candidate_identity": 0,
+      "reference_label": "B",
+      "relation_family_index": 1,
+      "relations": [
+        "LINKS_TO",
+        "RETURNS"
+      ],
+      "row_id": "NPC0093__qA__original__candidates_reversed__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "B",
+        "other_label": "A",
+        "raw_logits": {
+          "A": 20.375,
+          "B": 22.875
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "B",
+        "reference_logit_margin": 2.5,
+        "reference_pair_probability": 0.9241418199787566,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0093"
+    },
+    {
+      "K": 8,
+      "candidate_order": "original",
+      "evidence_state": "original",
+      "expected_candidate_identity": 1,
+      "expected_label": "B",
+      "focal_terminal_codes": [
+        "black",
+        "green"
+      ],
+      "query_arm": "B",
+      "reference_candidate_identity": 1,
+      "reference_label": "B",
+      "relation_family_index": 1,
+      "relations": [
+        "LINKS_TO",
+        "RETURNS"
+      ],
+      "row_id": "NPC0093__qB__original__candidates_original__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "B",
+        "other_label": "A",
+        "raw_logits": {
+          "A": 21.25,
+          "B": 21.625
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "B",
+        "reference_logit_margin": 0.375,
+        "reference_pair_probability": 0.5926665999540697,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0093"
+    },
+    {
+      "K": 8,
+      "candidate_order": "reversed",
+      "evidence_state": "original",
+      "expected_candidate_identity": 1,
+      "expected_label": "A",
+      "focal_terminal_codes": [
+        "black",
+        "green"
+      ],
+      "query_arm": "B",
+      "reference_candidate_identity": 1,
+      "reference_label": "A",
+      "relation_family_index": 1,
+      "relations": [
+        "LINKS_TO",
+        "RETURNS"
+      ],
+      "row_id": "NPC0093__qB__original__candidates_reversed__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "A",
+        "other_label": "B",
+        "raw_logits": {
+          "A": 21.25,
+          "B": 22.25
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 0.0,
+        "reference_label": "A",
+        "reference_logit_margin": -1.0,
+        "reference_pair_probability": 0.2689414213699951,
+        "state_correct_argmax_credit": 0.0
+      },
+      "world_id": "NPC0093"
+    },
+    {
+      "K": 8,
+      "candidate_order": "original",
+      "evidence_state": "original",
+      "expected_candidate_identity": 0,
+      "expected_label": "A",
+      "focal_terminal_codes": [
+        "black",
+        "green"
+      ],
+      "query_arm": "A",
+      "reference_candidate_identity": 0,
+      "reference_label": "A",
+      "relation_family_index": 1,
+      "relations": [
+        "LINKS_TO",
+        "RETURNS"
+      ],
+      "row_id": "NPC0096__qA__original__candidates_original__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "A",
+        "other_label": "B",
+        "raw_logits": {
+          "A": 22.875,
+          "B": 21.5
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "A",
+        "reference_logit_margin": 1.375,
+        "reference_pair_probability": 0.7981867777396212,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0096"
+    },
+    {
+      "K": 8,
+      "candidate_order": "reversed",
+      "evidence_state": "original",
+      "expected_candidate_identity": 0,
+      "expected_label": "B",
+      "focal_terminal_codes": [
+        "black",
+        "green"
+      ],
+      "query_arm": "A",
+      "reference_candidate_identity": 0,
+      "reference_label": "B",
+      "relation_family_index": 1,
+      "relations": [
+        "LINKS_TO",
+        "RETURNS"
+      ],
+      "row_id": "NPC0096__qA__original__candidates_reversed__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "B",
+        "other_label": "A",
+        "raw_logits": {
+          "A": 21.75,
+          "B": 22.25
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "B",
+        "reference_logit_margin": 0.5,
+        "reference_pair_probability": 0.6224593312018546,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0096"
+    },
+    {
+      "K": 8,
+      "candidate_order": "original",
+      "evidence_state": "original",
+      "expected_candidate_identity": 1,
+      "expected_label": "B",
+      "focal_terminal_codes": [
+        "black",
+        "green"
+      ],
+      "query_arm": "B",
+      "reference_candidate_identity": 1,
+      "reference_label": "B",
+      "relation_family_index": 1,
+      "relations": [
+        "LINKS_TO",
+        "RETURNS"
+      ],
+      "row_id": "NPC0096__qB__original__candidates_original__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "B",
+        "other_label": "A",
+        "raw_logits": {
+          "A": 21.375,
+          "B": 23.875
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "B",
+        "reference_logit_margin": 2.5,
+        "reference_pair_probability": 0.9241418199787566,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0096"
+    },
+    {
+      "K": 8,
+      "candidate_order": "reversed",
+      "evidence_state": "original",
+      "expected_candidate_identity": 1,
+      "expected_label": "A",
+      "focal_terminal_codes": [
+        "black",
+        "green"
+      ],
+      "query_arm": "B",
+      "reference_candidate_identity": 1,
+      "reference_label": "A",
+      "relation_family_index": 1,
+      "relations": [
+        "LINKS_TO",
+        "RETURNS"
+      ],
+      "row_id": "NPC0096__qB__original__candidates_reversed__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "A",
+        "other_label": "B",
+        "raw_logits": {
+          "A": 24.25,
+          "B": 22.75
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "A",
+        "reference_logit_margin": 1.5,
+        "reference_pair_probability": 0.8175744761936437,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0096"
+    },
+    {
+      "K": 8,
+      "candidate_order": "original",
+      "evidence_state": "original",
+      "expected_candidate_identity": 0,
+      "expected_label": "A",
+      "focal_terminal_codes": [
+        "red",
+        "green"
+      ],
+      "query_arm": "A",
+      "reference_candidate_identity": 0,
+      "reference_label": "A",
+      "relation_family_index": 2,
+      "relations": [
+        "POINTS_TO",
+        "YIELDS"
+      ],
+      "row_id": "NPC0101__qA__original__candidates_original__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "A",
+        "other_label": "B",
+        "raw_logits": {
+          "A": 22.875,
+          "B": 22.0
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "A",
+        "reference_logit_margin": 0.875,
+        "reference_pair_probability": 0.7057850278370112,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0101"
+    },
+    {
+      "K": 8,
+      "candidate_order": "reversed",
+      "evidence_state": "original",
+      "expected_candidate_identity": 0,
+      "expected_label": "B",
+      "focal_terminal_codes": [
+        "red",
+        "green"
+      ],
+      "query_arm": "A",
+      "reference_candidate_identity": 0,
+      "reference_label": "B",
+      "relation_family_index": 2,
+      "relations": [
+        "POINTS_TO",
+        "YIELDS"
+      ],
+      "row_id": "NPC0101__qA__original__candidates_reversed__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "B",
+        "other_label": "A",
+        "raw_logits": {
+          "A": 21.375,
+          "B": 22.75
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "B",
+        "reference_logit_margin": 1.375,
+        "reference_pair_probability": 0.7981867777396212,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0101"
+    },
+    {
+      "K": 8,
+      "candidate_order": "original",
+      "evidence_state": "original",
+      "expected_candidate_identity": 1,
+      "expected_label": "B",
+      "focal_terminal_codes": [
+        "red",
+        "green"
+      ],
+      "query_arm": "B",
+      "reference_candidate_identity": 1,
+      "reference_label": "B",
+      "relation_family_index": 2,
+      "relations": [
+        "POINTS_TO",
+        "YIELDS"
+      ],
+      "row_id": "NPC0101__qB__original__candidates_original__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "B",
+        "other_label": "A",
+        "raw_logits": {
+          "A": 19.75,
+          "B": 22.5
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "B",
+        "reference_logit_margin": 2.75,
+        "reference_pair_probability": 0.9399133498259924,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0101"
+    },
+    {
+      "K": 8,
+      "candidate_order": "reversed",
+      "evidence_state": "original",
+      "expected_candidate_identity": 1,
+      "expected_label": "A",
+      "focal_terminal_codes": [
+        "red",
+        "green"
+      ],
+      "query_arm": "B",
+      "reference_candidate_identity": 1,
+      "reference_label": "A",
+      "relation_family_index": 2,
+      "relations": [
+        "POINTS_TO",
+        "YIELDS"
+      ],
+      "row_id": "NPC0101__qB__original__candidates_reversed__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "A",
+        "other_label": "B",
+        "raw_logits": {
+          "A": 22.0,
+          "B": 22.0
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 0.5,
+        "reference_label": "A",
+        "reference_logit_margin": 0.0,
+        "reference_pair_probability": 0.5,
+        "state_correct_argmax_credit": 0.5
+      },
+      "world_id": "NPC0101"
+    },
+    {
+      "K": 8,
+      "candidate_order": "original",
+      "evidence_state": "original",
+      "expected_candidate_identity": 0,
+      "expected_label": "A",
+      "focal_terminal_codes": [
+        "red",
+        "green"
+      ],
+      "query_arm": "A",
+      "reference_candidate_identity": 0,
+      "reference_label": "A",
+      "relation_family_index": 2,
+      "relations": [
+        "POINTS_TO",
+        "YIELDS"
+      ],
+      "row_id": "NPC0103__qA__original__candidates_original__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "A",
+        "other_label": "B",
+        "raw_logits": {
+          "A": 23.75,
+          "B": 22.375
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "A",
+        "reference_logit_margin": 1.375,
+        "reference_pair_probability": 0.7981867777396212,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0103"
+    },
+    {
+      "K": 8,
+      "candidate_order": "reversed",
+      "evidence_state": "original",
+      "expected_candidate_identity": 0,
+      "expected_label": "B",
+      "focal_terminal_codes": [
+        "red",
+        "green"
+      ],
+      "query_arm": "A",
+      "reference_candidate_identity": 0,
+      "reference_label": "B",
+      "relation_family_index": 2,
+      "relations": [
+        "POINTS_TO",
+        "YIELDS"
+      ],
+      "row_id": "NPC0103__qA__original__candidates_reversed__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "B",
+        "other_label": "A",
+        "raw_logits": {
+          "A": 22.5,
+          "B": 23.25
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "B",
+        "reference_logit_margin": 0.75,
+        "reference_pair_probability": 0.679178699175393,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0103"
+    },
+    {
+      "K": 8,
+      "candidate_order": "original",
+      "evidence_state": "original",
+      "expected_candidate_identity": 1,
+      "expected_label": "B",
+      "focal_terminal_codes": [
+        "red",
+        "green"
+      ],
+      "query_arm": "B",
+      "reference_candidate_identity": 1,
+      "reference_label": "B",
+      "relation_family_index": 2,
+      "relations": [
+        "POINTS_TO",
+        "YIELDS"
+      ],
+      "row_id": "NPC0103__qB__original__candidates_original__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "B",
+        "other_label": "A",
+        "raw_logits": {
+          "A": 22.25,
+          "B": 24.25
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "B",
+        "reference_logit_margin": 2.0,
+        "reference_pair_probability": 0.8807970779778823,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0103"
+    },
+    {
+      "K": 8,
+      "candidate_order": "reversed",
+      "evidence_state": "original",
+      "expected_candidate_identity": 1,
+      "expected_label": "A",
+      "focal_terminal_codes": [
+        "red",
+        "green"
+      ],
+      "query_arm": "B",
+      "reference_candidate_identity": 1,
+      "reference_label": "A",
+      "relation_family_index": 2,
+      "relations": [
+        "POINTS_TO",
+        "YIELDS"
+      ],
+      "row_id": "NPC0103__qB__original__candidates_reversed__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "A",
+        "other_label": "B",
+        "raw_logits": {
+          "A": 25.0,
+          "B": 22.375
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "A",
+        "reference_logit_margin": 2.625,
+        "reference_pair_probability": 0.9324533088603709,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0103"
+    },
+    {
+      "K": 8,
+      "candidate_order": "original",
+      "evidence_state": "original",
+      "expected_candidate_identity": 0,
+      "expected_label": "A",
+      "focal_terminal_codes": [
+        "blue",
+        "red"
+      ],
+      "query_arm": "A",
+      "reference_candidate_identity": 0,
+      "reference_label": "A",
+      "relation_family_index": 2,
+      "relations": [
+        "POINTS_TO",
+        "YIELDS"
+      ],
+      "row_id": "NPC0111__qA__original__candidates_original__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "A",
+        "other_label": "B",
+        "raw_logits": {
+          "A": 22.875,
+          "B": 21.875
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "A",
+        "reference_logit_margin": 1.0,
+        "reference_pair_probability": 0.7310585786300049,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0111"
+    },
+    {
+      "K": 8,
+      "candidate_order": "reversed",
+      "evidence_state": "original",
+      "expected_candidate_identity": 0,
+      "expected_label": "B",
+      "focal_terminal_codes": [
+        "blue",
+        "red"
+      ],
+      "query_arm": "A",
+      "reference_candidate_identity": 0,
+      "reference_label": "B",
+      "relation_family_index": 2,
+      "relations": [
+        "POINTS_TO",
+        "YIELDS"
+      ],
+      "row_id": "NPC0111__qA__original__candidates_reversed__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "B",
+        "other_label": "A",
+        "raw_logits": {
+          "A": 20.875,
+          "B": 23.375
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "B",
+        "reference_logit_margin": 2.5,
+        "reference_pair_probability": 0.9241418199787566,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0111"
+    },
+    {
+      "K": 8,
+      "candidate_order": "original",
+      "evidence_state": "original",
+      "expected_candidate_identity": 1,
+      "expected_label": "B",
+      "focal_terminal_codes": [
+        "blue",
+        "red"
+      ],
+      "query_arm": "B",
+      "reference_candidate_identity": 1,
+      "reference_label": "B",
+      "relation_family_index": 2,
+      "relations": [
+        "POINTS_TO",
+        "YIELDS"
+      ],
+      "row_id": "NPC0111__qB__original__candidates_original__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "B",
+        "other_label": "A",
+        "raw_logits": {
+          "A": 23.25,
+          "B": 23.0
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 0.0,
+        "reference_label": "B",
+        "reference_logit_margin": -0.25,
+        "reference_pair_probability": 0.4378234991142019,
+        "state_correct_argmax_credit": 0.0
+      },
+      "world_id": "NPC0111"
+    },
+    {
+      "K": 8,
+      "candidate_order": "reversed",
+      "evidence_state": "original",
+      "expected_candidate_identity": 1,
+      "expected_label": "A",
+      "focal_terminal_codes": [
+        "blue",
+        "red"
+      ],
+      "query_arm": "B",
+      "reference_candidate_identity": 1,
+      "reference_label": "A",
+      "relation_family_index": 2,
+      "relations": [
+        "POINTS_TO",
+        "YIELDS"
+      ],
+      "row_id": "NPC0111__qB__original__candidates_reversed__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "A",
+        "other_label": "B",
+        "raw_logits": {
+          "A": 24.625,
+          "B": 20.0
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "A",
+        "reference_logit_margin": 4.625,
+        "reference_pair_probability": 0.9902915235185259,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0111"
+    },
+    {
+      "K": 8,
+      "candidate_order": "original",
+      "evidence_state": "original",
+      "expected_candidate_identity": 0,
+      "expected_label": "A",
+      "focal_terminal_codes": [
+        "blue",
+        "red"
+      ],
+      "query_arm": "A",
+      "reference_candidate_identity": 0,
+      "reference_label": "A",
+      "relation_family_index": 2,
+      "relations": [
+        "POINTS_TO",
+        "YIELDS"
+      ],
+      "row_id": "NPC0112__qA__original__candidates_original__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "A",
+        "other_label": "B",
+        "raw_logits": {
+          "A": 21.625,
+          "B": 20.125
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "A",
+        "reference_logit_margin": 1.5,
+        "reference_pair_probability": 0.8175744761936437,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0112"
+    },
+    {
+      "K": 8,
+      "candidate_order": "reversed",
+      "evidence_state": "original",
+      "expected_candidate_identity": 0,
+      "expected_label": "B",
+      "focal_terminal_codes": [
+        "blue",
+        "red"
+      ],
+      "query_arm": "A",
+      "reference_candidate_identity": 0,
+      "reference_label": "B",
+      "relation_family_index": 2,
+      "relations": [
+        "POINTS_TO",
+        "YIELDS"
+      ],
+      "row_id": "NPC0112__qA__original__candidates_reversed__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "B",
+        "other_label": "A",
+        "raw_logits": {
+          "A": 20.25,
+          "B": 22.25
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "B",
+        "reference_logit_margin": 2.0,
+        "reference_pair_probability": 0.8807970779778823,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0112"
+    },
+    {
+      "K": 8,
+      "candidate_order": "original",
+      "evidence_state": "original",
+      "expected_candidate_identity": 1,
+      "expected_label": "B",
+      "focal_terminal_codes": [
+        "blue",
+        "red"
+      ],
+      "query_arm": "B",
+      "reference_candidate_identity": 1,
+      "reference_label": "B",
+      "relation_family_index": 2,
+      "relations": [
+        "POINTS_TO",
+        "YIELDS"
+      ],
+      "row_id": "NPC0112__qB__original__candidates_original__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "B",
+        "other_label": "A",
+        "raw_logits": {
+          "A": 21.75,
+          "B": 23.875
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "B",
+        "reference_logit_margin": 2.125,
+        "reference_pair_probability": 0.8933094060543487,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0112"
+    },
+    {
+      "K": 8,
+      "candidate_order": "reversed",
+      "evidence_state": "original",
+      "expected_candidate_identity": 1,
+      "expected_label": "A",
+      "focal_terminal_codes": [
+        "blue",
+        "red"
+      ],
+      "query_arm": "B",
+      "reference_candidate_identity": 1,
+      "reference_label": "A",
+      "relation_family_index": 2,
+      "relations": [
+        "POINTS_TO",
+        "YIELDS"
+      ],
+      "row_id": "NPC0112__qB__original__candidates_reversed__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "A",
+        "other_label": "B",
+        "raw_logits": {
+          "A": 24.375,
+          "B": 22.75
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "A",
+        "reference_logit_margin": 1.625,
+        "reference_pair_probability": 0.8354835371034369,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0112"
+    },
+    {
+      "K": 8,
+      "candidate_order": "original",
+      "evidence_state": "original",
+      "expected_candidate_identity": 0,
+      "expected_label": "A",
+      "focal_terminal_codes": [
+        "blue",
+        "black"
+      ],
+      "query_arm": "A",
+      "reference_candidate_identity": 0,
+      "reference_label": "A",
+      "relation_family_index": 2,
+      "relations": [
+        "POINTS_TO",
+        "YIELDS"
+      ],
+      "row_id": "NPC0119__qA__original__candidates_original__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "A",
+        "other_label": "B",
+        "raw_logits": {
+          "A": 23.25,
+          "B": 22.125
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "A",
+        "reference_logit_margin": 1.125,
+        "reference_pair_probability": 0.7549149868676283,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0119"
+    },
+    {
+      "K": 8,
+      "candidate_order": "reversed",
+      "evidence_state": "original",
+      "expected_candidate_identity": 0,
+      "expected_label": "B",
+      "focal_terminal_codes": [
+        "blue",
+        "black"
+      ],
+      "query_arm": "A",
+      "reference_candidate_identity": 0,
+      "reference_label": "B",
+      "relation_family_index": 2,
+      "relations": [
+        "POINTS_TO",
+        "YIELDS"
+      ],
+      "row_id": "NPC0119__qA__original__candidates_reversed__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "B",
+        "other_label": "A",
+        "raw_logits": {
+          "A": 21.25,
+          "B": 23.0
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "B",
+        "reference_logit_margin": 1.75,
+        "reference_pair_probability": 0.8519528019683106,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0119"
+    },
+    {
+      "K": 8,
+      "candidate_order": "original",
+      "evidence_state": "original",
+      "expected_candidate_identity": 1,
+      "expected_label": "B",
+      "focal_terminal_codes": [
+        "blue",
+        "black"
+      ],
+      "query_arm": "B",
+      "reference_candidate_identity": 1,
+      "reference_label": "B",
+      "relation_family_index": 2,
+      "relations": [
+        "POINTS_TO",
+        "YIELDS"
+      ],
+      "row_id": "NPC0119__qB__original__candidates_original__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "B",
+        "other_label": "A",
+        "raw_logits": {
+          "A": 22.5,
+          "B": 24.0
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "B",
+        "reference_logit_margin": 1.5,
+        "reference_pair_probability": 0.8175744761936437,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0119"
+    },
+    {
+      "K": 8,
+      "candidate_order": "reversed",
+      "evidence_state": "original",
+      "expected_candidate_identity": 1,
+      "expected_label": "A",
+      "focal_terminal_codes": [
+        "blue",
+        "black"
+      ],
+      "query_arm": "B",
+      "reference_candidate_identity": 1,
+      "reference_label": "A",
+      "relation_family_index": 2,
+      "relations": [
+        "POINTS_TO",
+        "YIELDS"
+      ],
+      "row_id": "NPC0119__qB__original__candidates_reversed__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "A",
+        "other_label": "B",
+        "raw_logits": {
+          "A": 24.125,
+          "B": 21.5
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "A",
+        "reference_logit_margin": 2.625,
+        "reference_pair_probability": 0.9324533088603709,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0119"
+    },
+    {
+      "K": 8,
+      "candidate_order": "original",
+      "evidence_state": "original",
+      "expected_candidate_identity": 0,
+      "expected_label": "A",
+      "focal_terminal_codes": [
+        "green",
+        "red"
+      ],
+      "query_arm": "A",
+      "reference_candidate_identity": 0,
+      "reference_label": "A",
+      "relation_family_index": 2,
+      "relations": [
+        "POINTS_TO",
+        "YIELDS"
+      ],
+      "row_id": "NPC0123__qA__original__candidates_original__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "A",
+        "other_label": "B",
+        "raw_logits": {
+          "A": 22.5,
+          "B": 21.25
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "A",
+        "reference_logit_margin": 1.25,
+        "reference_pair_probability": 0.7772998611746911,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0123"
+    },
+    {
+      "K": 8,
+      "candidate_order": "reversed",
+      "evidence_state": "original",
+      "expected_candidate_identity": 0,
+      "expected_label": "B",
+      "focal_terminal_codes": [
+        "green",
+        "red"
+      ],
+      "query_arm": "A",
+      "reference_candidate_identity": 0,
+      "reference_label": "B",
+      "relation_family_index": 2,
+      "relations": [
+        "POINTS_TO",
+        "YIELDS"
+      ],
+      "row_id": "NPC0123__qA__original__candidates_reversed__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "B",
+        "other_label": "A",
+        "raw_logits": {
+          "A": 19.0,
+          "B": 22.375
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "B",
+        "reference_logit_margin": 3.375,
+        "reference_pair_probability": 0.9669140216112958,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0123"
+    },
+    {
+      "K": 8,
+      "candidate_order": "original",
+      "evidence_state": "original",
+      "expected_candidate_identity": 1,
+      "expected_label": "B",
+      "focal_terminal_codes": [
+        "green",
+        "red"
+      ],
+      "query_arm": "B",
+      "reference_candidate_identity": 1,
+      "reference_label": "B",
+      "relation_family_index": 2,
+      "relations": [
+        "POINTS_TO",
+        "YIELDS"
+      ],
+      "row_id": "NPC0123__qB__original__candidates_original__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "B",
+        "other_label": "A",
+        "raw_logits": {
+          "A": 19.375,
+          "B": 23.75
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "B",
+        "reference_logit_margin": 4.375,
+        "reference_pair_probability": 0.9875683491468141,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0123"
+    },
+    {
+      "K": 8,
+      "candidate_order": "reversed",
+      "evidence_state": "original",
+      "expected_candidate_identity": 1,
+      "expected_label": "A",
+      "focal_terminal_codes": [
+        "green",
+        "red"
+      ],
+      "query_arm": "B",
+      "reference_candidate_identity": 1,
+      "reference_label": "A",
+      "relation_family_index": 2,
+      "relations": [
+        "POINTS_TO",
+        "YIELDS"
+      ],
+      "row_id": "NPC0123__qB__original__candidates_reversed__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "A",
+        "other_label": "B",
+        "raw_logits": {
+          "A": 23.125,
+          "B": 21.75
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "A",
+        "reference_logit_margin": 1.375,
+        "reference_pair_probability": 0.7981867777396212,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0123"
+    },
+    {
+      "K": 8,
+      "candidate_order": "original",
+      "evidence_state": "original",
+      "expected_candidate_identity": 0,
+      "expected_label": "A",
+      "focal_terminal_codes": [
+        "green",
+        "blue"
+      ],
+      "query_arm": "A",
+      "reference_candidate_identity": 0,
+      "reference_label": "A",
+      "relation_family_index": 2,
+      "relations": [
+        "POINTS_TO",
+        "YIELDS"
+      ],
+      "row_id": "NPC0125__qA__original__candidates_original__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "A",
+        "other_label": "B",
+        "raw_logits": {
+          "A": 22.375,
+          "B": 21.375
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "A",
+        "reference_logit_margin": 1.0,
+        "reference_pair_probability": 0.7310585786300049,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0125"
+    },
+    {
+      "K": 8,
+      "candidate_order": "reversed",
+      "evidence_state": "original",
+      "expected_candidate_identity": 0,
+      "expected_label": "B",
+      "focal_terminal_codes": [
+        "green",
+        "blue"
+      ],
+      "query_arm": "A",
+      "reference_candidate_identity": 0,
+      "reference_label": "B",
+      "relation_family_index": 2,
+      "relations": [
+        "POINTS_TO",
+        "YIELDS"
+      ],
+      "row_id": "NPC0125__qA__original__candidates_reversed__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "B",
+        "other_label": "A",
+        "raw_logits": {
+          "A": 18.875,
+          "B": 22.875
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "B",
+        "reference_logit_margin": 4.0,
+        "reference_pair_probability": 0.9820137900379085,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0125"
+    },
+    {
+      "K": 8,
+      "candidate_order": "original",
+      "evidence_state": "original",
+      "expected_candidate_identity": 1,
+      "expected_label": "B",
+      "focal_terminal_codes": [
+        "green",
+        "blue"
+      ],
+      "query_arm": "B",
+      "reference_candidate_identity": 1,
+      "reference_label": "B",
+      "relation_family_index": 2,
+      "relations": [
+        "POINTS_TO",
+        "YIELDS"
+      ],
+      "row_id": "NPC0125__qB__original__candidates_original__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "B",
+        "other_label": "A",
+        "raw_logits": {
+          "A": 20.875,
+          "B": 20.75
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 0.0,
+        "reference_label": "B",
+        "reference_logit_margin": -0.125,
+        "reference_pair_probability": 0.46879062662624377,
+        "state_correct_argmax_credit": 0.0
+      },
+      "world_id": "NPC0125"
+    },
+    {
+      "K": 8,
+      "candidate_order": "reversed",
+      "evidence_state": "original",
+      "expected_candidate_identity": 1,
+      "expected_label": "A",
+      "focal_terminal_codes": [
+        "green",
+        "blue"
+      ],
+      "query_arm": "B",
+      "reference_candidate_identity": 1,
+      "reference_label": "A",
+      "relation_family_index": 2,
+      "relations": [
+        "POINTS_TO",
+        "YIELDS"
+      ],
+      "row_id": "NPC0125__qB__original__candidates_reversed__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "A",
+        "other_label": "B",
+        "raw_logits": {
+          "A": 20.75,
+          "B": 20.875
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 0.0,
+        "reference_label": "A",
+        "reference_logit_margin": -0.125,
+        "reference_pair_probability": 0.46879062662624377,
+        "state_correct_argmax_credit": 0.0
+      },
+      "world_id": "NPC0125"
+    },
+    {
+      "K": 8,
+      "candidate_order": "original",
+      "evidence_state": "original",
+      "expected_candidate_identity": 0,
+      "expected_label": "A",
+      "focal_terminal_codes": [
+        "green",
+        "black"
+      ],
+      "query_arm": "A",
+      "reference_candidate_identity": 0,
+      "reference_label": "A",
+      "relation_family_index": 2,
+      "relations": [
+        "POINTS_TO",
+        "YIELDS"
+      ],
+      "row_id": "NPC0131__qA__original__candidates_original__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "A",
+        "other_label": "B",
+        "raw_logits": {
+          "A": 23.25,
+          "B": 20.5
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "A",
+        "reference_logit_margin": 2.75,
+        "reference_pair_probability": 0.9399133498259924,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0131"
+    },
+    {
+      "K": 8,
+      "candidate_order": "reversed",
+      "evidence_state": "original",
+      "expected_candidate_identity": 0,
+      "expected_label": "B",
+      "focal_terminal_codes": [
+        "green",
+        "black"
+      ],
+      "query_arm": "A",
+      "reference_candidate_identity": 0,
+      "reference_label": "B",
+      "relation_family_index": 2,
+      "relations": [
+        "POINTS_TO",
+        "YIELDS"
+      ],
+      "row_id": "NPC0131__qA__original__candidates_reversed__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "B",
+        "other_label": "A",
+        "raw_logits": {
+          "A": 21.0,
+          "B": 21.75
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "B",
+        "reference_logit_margin": 0.75,
+        "reference_pair_probability": 0.679178699175393,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0131"
+    },
+    {
+      "K": 8,
+      "candidate_order": "original",
+      "evidence_state": "original",
+      "expected_candidate_identity": 1,
+      "expected_label": "B",
+      "focal_terminal_codes": [
+        "green",
+        "black"
+      ],
+      "query_arm": "B",
+      "reference_candidate_identity": 1,
+      "reference_label": "B",
+      "relation_family_index": 2,
+      "relations": [
+        "POINTS_TO",
+        "YIELDS"
+      ],
+      "row_id": "NPC0131__qB__original__candidates_original__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "B",
+        "other_label": "A",
+        "raw_logits": {
+          "A": 19.625,
+          "B": 23.5
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "B",
+        "reference_logit_margin": 3.875,
+        "reference_pair_probability": 0.9796676466573412,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0131"
+    },
+    {
+      "K": 8,
+      "candidate_order": "reversed",
+      "evidence_state": "original",
+      "expected_candidate_identity": 1,
+      "expected_label": "A",
+      "focal_terminal_codes": [
+        "green",
+        "black"
+      ],
+      "query_arm": "B",
+      "reference_candidate_identity": 1,
+      "reference_label": "A",
+      "relation_family_index": 2,
+      "relations": [
+        "POINTS_TO",
+        "YIELDS"
+      ],
+      "row_id": "NPC0131__qB__original__candidates_reversed__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "A",
+        "other_label": "B",
+        "raw_logits": {
+          "A": 22.375,
+          "B": 22.375
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 0.5,
+        "reference_label": "A",
+        "reference_logit_margin": 0.0,
+        "reference_pair_probability": 0.5,
+        "state_correct_argmax_credit": 0.5
+      },
+      "world_id": "NPC0131"
+    },
+    {
+      "K": 8,
+      "candidate_order": "original",
+      "evidence_state": "original",
+      "expected_candidate_identity": 0,
+      "expected_label": "A",
+      "focal_terminal_codes": [
+        "blue",
+        "red"
+      ],
+      "query_arm": "A",
+      "reference_candidate_identity": 0,
+      "reference_label": "A",
+      "relation_family_index": 3,
+      "relations": [
+        "CONNECTS_TO",
+        "RESOLVES_TO"
+      ],
+      "row_id": "NPC0157__qA__original__candidates_original__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "A",
+        "other_label": "B",
+        "raw_logits": {
+          "A": 22.75,
+          "B": 22.875
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 0.0,
+        "reference_label": "A",
+        "reference_logit_margin": -0.125,
+        "reference_pair_probability": 0.46879062662624377,
+        "state_correct_argmax_credit": 0.0
+      },
+      "world_id": "NPC0157"
+    },
+    {
+      "K": 8,
+      "candidate_order": "reversed",
+      "evidence_state": "original",
+      "expected_candidate_identity": 0,
+      "expected_label": "B",
+      "focal_terminal_codes": [
+        "blue",
+        "red"
+      ],
+      "query_arm": "A",
+      "reference_candidate_identity": 0,
+      "reference_label": "B",
+      "relation_family_index": 3,
+      "relations": [
+        "CONNECTS_TO",
+        "RESOLVES_TO"
+      ],
+      "row_id": "NPC0157__qA__original__candidates_reversed__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "B",
+        "other_label": "A",
+        "raw_logits": {
+          "A": 18.75,
+          "B": 24.125
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "B",
+        "reference_logit_margin": 5.375,
+        "reference_pair_probability": 0.9953904278206259,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0157"
+    },
+    {
+      "K": 8,
+      "candidate_order": "original",
+      "evidence_state": "original",
+      "expected_candidate_identity": 1,
+      "expected_label": "B",
+      "focal_terminal_codes": [
+        "blue",
+        "red"
+      ],
+      "query_arm": "B",
+      "reference_candidate_identity": 1,
+      "reference_label": "B",
+      "relation_family_index": 3,
+      "relations": [
+        "CONNECTS_TO",
+        "RESOLVES_TO"
+      ],
+      "row_id": "NPC0157__qB__original__candidates_original__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "B",
+        "other_label": "A",
+        "raw_logits": {
+          "A": 22.0,
+          "B": 22.375
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "B",
+        "reference_logit_margin": 0.375,
+        "reference_pair_probability": 0.5926665999540697,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0157"
+    },
+    {
+      "K": 8,
+      "candidate_order": "reversed",
+      "evidence_state": "original",
+      "expected_candidate_identity": 1,
+      "expected_label": "A",
+      "focal_terminal_codes": [
+        "blue",
+        "red"
+      ],
+      "query_arm": "B",
+      "reference_candidate_identity": 1,
+      "reference_label": "A",
+      "relation_family_index": 3,
+      "relations": [
+        "CONNECTS_TO",
+        "RESOLVES_TO"
+      ],
+      "row_id": "NPC0157__qB__original__candidates_reversed__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "A",
+        "other_label": "B",
+        "raw_logits": {
+          "A": 22.5,
+          "B": 21.875
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "A",
+        "reference_logit_margin": 0.625,
+        "reference_pair_probability": 0.6513548646660542,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0157"
+    },
+    {
+      "K": 8,
+      "candidate_order": "original",
+      "evidence_state": "original",
+      "expected_candidate_identity": 0,
+      "expected_label": "A",
+      "focal_terminal_codes": [
+        "blue",
+        "red"
+      ],
+      "query_arm": "A",
+      "reference_candidate_identity": 0,
+      "reference_label": "A",
+      "relation_family_index": 3,
+      "relations": [
+        "CONNECTS_TO",
+        "RESOLVES_TO"
+      ],
+      "row_id": "NPC0159__qA__original__candidates_original__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "A",
+        "other_label": "B",
+        "raw_logits": {
+          "A": 23.25,
+          "B": 23.0
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "A",
+        "reference_logit_margin": 0.25,
+        "reference_pair_probability": 0.5621765008857981,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0159"
+    },
+    {
+      "K": 8,
+      "candidate_order": "reversed",
+      "evidence_state": "original",
+      "expected_candidate_identity": 0,
+      "expected_label": "B",
+      "focal_terminal_codes": [
+        "blue",
+        "red"
+      ],
+      "query_arm": "A",
+      "reference_candidate_identity": 0,
+      "reference_label": "B",
+      "relation_family_index": 3,
+      "relations": [
+        "CONNECTS_TO",
+        "RESOLVES_TO"
+      ],
+      "row_id": "NPC0159__qA__original__candidates_reversed__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "B",
+        "other_label": "A",
+        "raw_logits": {
+          "A": 20.5,
+          "B": 24.0
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "B",
+        "reference_logit_margin": 3.5,
+        "reference_pair_probability": 0.9706877692486436,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0159"
+    },
+    {
+      "K": 8,
+      "candidate_order": "original",
+      "evidence_state": "original",
+      "expected_candidate_identity": 1,
+      "expected_label": "B",
+      "focal_terminal_codes": [
+        "blue",
+        "red"
+      ],
+      "query_arm": "B",
+      "reference_candidate_identity": 1,
+      "reference_label": "B",
+      "relation_family_index": 3,
+      "relations": [
+        "CONNECTS_TO",
+        "RESOLVES_TO"
+      ],
+      "row_id": "NPC0159__qB__original__candidates_original__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "B",
+        "other_label": "A",
+        "raw_logits": {
+          "A": 22.875,
+          "B": 23.375
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "B",
+        "reference_logit_margin": 0.5,
+        "reference_pair_probability": 0.6224593312018546,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0159"
+    },
+    {
+      "K": 8,
+      "candidate_order": "reversed",
+      "evidence_state": "original",
+      "expected_candidate_identity": 1,
+      "expected_label": "A",
+      "focal_terminal_codes": [
+        "blue",
+        "red"
+      ],
+      "query_arm": "B",
+      "reference_candidate_identity": 1,
+      "reference_label": "A",
+      "relation_family_index": 3,
+      "relations": [
+        "CONNECTS_TO",
+        "RESOLVES_TO"
+      ],
+      "row_id": "NPC0159__qB__original__candidates_reversed__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "A",
+        "other_label": "B",
+        "raw_logits": {
+          "A": 25.25,
+          "B": 20.0
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "A",
+        "reference_logit_margin": 5.25,
+        "reference_pair_probability": 0.9947798743064417,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0159"
+    },
+    {
+      "K": 8,
+      "candidate_order": "original",
+      "evidence_state": "original",
+      "expected_candidate_identity": 0,
+      "expected_label": "A",
+      "focal_terminal_codes": [
+        "green",
+        "red"
+      ],
+      "query_arm": "A",
+      "reference_candidate_identity": 0,
+      "reference_label": "A",
+      "relation_family_index": 3,
+      "relations": [
+        "CONNECTS_TO",
+        "RESOLVES_TO"
+      ],
+      "row_id": "NPC0169__qA__original__candidates_original__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "A",
+        "other_label": "B",
+        "raw_logits": {
+          "A": 24.75,
+          "B": 20.875
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "A",
+        "reference_logit_margin": 3.875,
+        "reference_pair_probability": 0.9796676466573412,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0169"
+    },
+    {
+      "K": 8,
+      "candidate_order": "reversed",
+      "evidence_state": "original",
+      "expected_candidate_identity": 0,
+      "expected_label": "B",
+      "focal_terminal_codes": [
+        "green",
+        "red"
+      ],
+      "query_arm": "A",
+      "reference_candidate_identity": 0,
+      "reference_label": "B",
+      "relation_family_index": 3,
+      "relations": [
+        "CONNECTS_TO",
+        "RESOLVES_TO"
+      ],
+      "row_id": "NPC0169__qA__original__candidates_reversed__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "B",
+        "other_label": "A",
+        "raw_logits": {
+          "A": 21.375,
+          "B": 23.125
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "B",
+        "reference_logit_margin": 1.75,
+        "reference_pair_probability": 0.8519528019683106,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0169"
+    },
+    {
+      "K": 8,
+      "candidate_order": "original",
+      "evidence_state": "original",
+      "expected_candidate_identity": 1,
+      "expected_label": "B",
+      "focal_terminal_codes": [
+        "green",
+        "red"
+      ],
+      "query_arm": "B",
+      "reference_candidate_identity": 1,
+      "reference_label": "B",
+      "relation_family_index": 3,
+      "relations": [
+        "CONNECTS_TO",
+        "RESOLVES_TO"
+      ],
+      "row_id": "NPC0169__qB__original__candidates_original__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "B",
+        "other_label": "A",
+        "raw_logits": {
+          "A": 21.75,
+          "B": 23.125
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "B",
+        "reference_logit_margin": 1.375,
+        "reference_pair_probability": 0.7981867777396212,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0169"
+    },
+    {
+      "K": 8,
+      "candidate_order": "reversed",
+      "evidence_state": "original",
+      "expected_candidate_identity": 1,
+      "expected_label": "A",
+      "focal_terminal_codes": [
+        "green",
+        "red"
+      ],
+      "query_arm": "B",
+      "reference_candidate_identity": 1,
+      "reference_label": "A",
+      "relation_family_index": 3,
+      "relations": [
+        "CONNECTS_TO",
+        "RESOLVES_TO"
+      ],
+      "row_id": "NPC0169__qB__original__candidates_reversed__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "A",
+        "other_label": "B",
+        "raw_logits": {
+          "A": 24.0,
+          "B": 21.375
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "A",
+        "reference_logit_margin": 2.625,
+        "reference_pair_probability": 0.9324533088603709,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0169"
+    },
+    {
+      "K": 8,
+      "candidate_order": "original",
+      "evidence_state": "original",
+      "expected_candidate_identity": 0,
+      "expected_label": "A",
+      "focal_terminal_codes": [
+        "green",
+        "red"
+      ],
+      "query_arm": "A",
+      "reference_candidate_identity": 0,
+      "reference_label": "A",
+      "relation_family_index": 3,
+      "relations": [
+        "CONNECTS_TO",
+        "RESOLVES_TO"
+      ],
+      "row_id": "NPC0171__qA__original__candidates_original__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "A",
+        "other_label": "B",
+        "raw_logits": {
+          "A": 24.375,
+          "B": 21.375
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "A",
+        "reference_logit_margin": 3.0,
+        "reference_pair_probability": 0.9525741268224334,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0171"
+    },
+    {
+      "K": 8,
+      "candidate_order": "reversed",
+      "evidence_state": "original",
+      "expected_candidate_identity": 0,
+      "expected_label": "B",
+      "focal_terminal_codes": [
+        "green",
+        "red"
+      ],
+      "query_arm": "A",
+      "reference_candidate_identity": 0,
+      "reference_label": "B",
+      "relation_family_index": 3,
+      "relations": [
+        "CONNECTS_TO",
+        "RESOLVES_TO"
+      ],
+      "row_id": "NPC0171__qA__original__candidates_reversed__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "B",
+        "other_label": "A",
+        "raw_logits": {
+          "A": 19.125,
+          "B": 23.125
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "B",
+        "reference_logit_margin": 4.0,
+        "reference_pair_probability": 0.9820137900379085,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0171"
+    },
+    {
+      "K": 8,
+      "candidate_order": "original",
+      "evidence_state": "original",
+      "expected_candidate_identity": 1,
+      "expected_label": "B",
+      "focal_terminal_codes": [
+        "green",
+        "red"
+      ],
+      "query_arm": "B",
+      "reference_candidate_identity": 1,
+      "reference_label": "B",
+      "relation_family_index": 3,
+      "relations": [
+        "CONNECTS_TO",
+        "RESOLVES_TO"
+      ],
+      "row_id": "NPC0171__qB__original__candidates_original__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "B",
+        "other_label": "A",
+        "raw_logits": {
+          "A": 20.25,
+          "B": 24.0
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "B",
+        "reference_logit_margin": 3.75,
+        "reference_pair_probability": 0.9770226300899744,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0171"
+    },
+    {
+      "K": 8,
+      "candidate_order": "reversed",
+      "evidence_state": "original",
+      "expected_candidate_identity": 1,
+      "expected_label": "A",
+      "focal_terminal_codes": [
+        "green",
+        "red"
+      ],
+      "query_arm": "B",
+      "reference_candidate_identity": 1,
+      "reference_label": "A",
+      "relation_family_index": 3,
+      "relations": [
+        "CONNECTS_TO",
+        "RESOLVES_TO"
+      ],
+      "row_id": "NPC0171__qB__original__candidates_reversed__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "A",
+        "other_label": "B",
+        "raw_logits": {
+          "A": 24.375,
+          "B": 21.25
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "A",
+        "reference_logit_margin": 3.125,
+        "reference_pair_probability": 0.9579122720843811,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0171"
+    },
+    {
+      "K": 8,
+      "candidate_order": "original",
+      "evidence_state": "original",
+      "expected_candidate_identity": 0,
+      "expected_label": "A",
+      "focal_terminal_codes": [
+        "green",
+        "black"
+      ],
+      "query_arm": "A",
+      "reference_candidate_identity": 0,
+      "reference_label": "A",
+      "relation_family_index": 3,
+      "relations": [
+        "CONNECTS_TO",
+        "RESOLVES_TO"
+      ],
+      "row_id": "NPC0178__qA__original__candidates_original__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "A",
+        "other_label": "B",
+        "raw_logits": {
+          "A": 24.625,
+          "B": 21.25
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "A",
+        "reference_logit_margin": 3.375,
+        "reference_pair_probability": 0.9669140216112958,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0178"
+    },
+    {
+      "K": 8,
+      "candidate_order": "reversed",
+      "evidence_state": "original",
+      "expected_candidate_identity": 0,
+      "expected_label": "B",
+      "focal_terminal_codes": [
+        "green",
+        "black"
+      ],
+      "query_arm": "A",
+      "reference_candidate_identity": 0,
+      "reference_label": "B",
+      "relation_family_index": 3,
+      "relations": [
+        "CONNECTS_TO",
+        "RESOLVES_TO"
+      ],
+      "row_id": "NPC0178__qA__original__candidates_reversed__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "B",
+        "other_label": "A",
+        "raw_logits": {
+          "A": 18.625,
+          "B": 23.25
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "B",
+        "reference_logit_margin": 4.625,
+        "reference_pair_probability": 0.9902915235185259,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0178"
+    },
+    {
+      "K": 8,
+      "candidate_order": "original",
+      "evidence_state": "original",
+      "expected_candidate_identity": 1,
+      "expected_label": "B",
+      "focal_terminal_codes": [
+        "green",
+        "black"
+      ],
+      "query_arm": "B",
+      "reference_candidate_identity": 1,
+      "reference_label": "B",
+      "relation_family_index": 3,
+      "relations": [
+        "CONNECTS_TO",
+        "RESOLVES_TO"
+      ],
+      "row_id": "NPC0178__qB__original__candidates_original__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "B",
+        "other_label": "A",
+        "raw_logits": {
+          "A": 21.875,
+          "B": 22.875
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "B",
+        "reference_logit_margin": 1.0,
+        "reference_pair_probability": 0.7310585786300049,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0178"
+    },
+    {
+      "K": 8,
+      "candidate_order": "reversed",
+      "evidence_state": "original",
+      "expected_candidate_identity": 1,
+      "expected_label": "A",
+      "focal_terminal_codes": [
+        "green",
+        "black"
+      ],
+      "query_arm": "B",
+      "reference_candidate_identity": 1,
+      "reference_label": "A",
+      "relation_family_index": 3,
+      "relations": [
+        "CONNECTS_TO",
+        "RESOLVES_TO"
+      ],
+      "row_id": "NPC0178__qB__original__candidates_reversed__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "A",
+        "other_label": "B",
+        "raw_logits": {
+          "A": 24.375,
+          "B": 20.625
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "A",
+        "reference_logit_margin": 3.75,
+        "reference_pair_probability": 0.9770226300899744,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0178"
+    },
+    {
+      "K": 8,
+      "candidate_order": "original",
+      "evidence_state": "original",
+      "expected_candidate_identity": 0,
+      "expected_label": "A",
+      "focal_terminal_codes": [
+        "black",
+        "red"
+      ],
+      "query_arm": "A",
+      "reference_candidate_identity": 0,
+      "reference_label": "A",
+      "relation_family_index": 3,
+      "relations": [
+        "CONNECTS_TO",
+        "RESOLVES_TO"
+      ],
+      "row_id": "NPC0181__qA__original__candidates_original__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "A",
+        "other_label": "B",
+        "raw_logits": {
+          "A": 23.5,
+          "B": 21.75
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "A",
+        "reference_logit_margin": 1.75,
+        "reference_pair_probability": 0.8519528019683106,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0181"
+    },
+    {
+      "K": 8,
+      "candidate_order": "reversed",
+      "evidence_state": "original",
+      "expected_candidate_identity": 0,
+      "expected_label": "B",
+      "focal_terminal_codes": [
+        "black",
+        "red"
+      ],
+      "query_arm": "A",
+      "reference_candidate_identity": 0,
+      "reference_label": "B",
+      "relation_family_index": 3,
+      "relations": [
+        "CONNECTS_TO",
+        "RESOLVES_TO"
+      ],
+      "row_id": "NPC0181__qA__original__candidates_reversed__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "B",
+        "other_label": "A",
+        "raw_logits": {
+          "A": 19.75,
+          "B": 23.25
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "B",
+        "reference_logit_margin": 3.5,
+        "reference_pair_probability": 0.9706877692486436,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0181"
+    },
+    {
+      "K": 8,
+      "candidate_order": "original",
+      "evidence_state": "original",
+      "expected_candidate_identity": 1,
+      "expected_label": "B",
+      "focal_terminal_codes": [
+        "black",
+        "red"
+      ],
+      "query_arm": "B",
+      "reference_candidate_identity": 1,
+      "reference_label": "B",
+      "relation_family_index": 3,
+      "relations": [
+        "CONNECTS_TO",
+        "RESOLVES_TO"
+      ],
+      "row_id": "NPC0181__qB__original__candidates_original__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "B",
+        "other_label": "A",
+        "raw_logits": {
+          "A": 20.0,
+          "B": 23.0
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "B",
+        "reference_logit_margin": 3.0,
+        "reference_pair_probability": 0.9525741268224334,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0181"
+    },
+    {
+      "K": 8,
+      "candidate_order": "reversed",
+      "evidence_state": "original",
+      "expected_candidate_identity": 1,
+      "expected_label": "A",
+      "focal_terminal_codes": [
+        "black",
+        "red"
+      ],
+      "query_arm": "B",
+      "reference_candidate_identity": 1,
+      "reference_label": "A",
+      "relation_family_index": 3,
+      "relations": [
+        "CONNECTS_TO",
+        "RESOLVES_TO"
+      ],
+      "row_id": "NPC0181__qB__original__candidates_reversed__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "A",
+        "other_label": "B",
+        "raw_logits": {
+          "A": 23.375,
+          "B": 21.375
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "A",
+        "reference_logit_margin": 2.0,
+        "reference_pair_probability": 0.8807970779778823,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0181"
+    },
+    {
+      "K": 8,
+      "candidate_order": "original",
+      "evidence_state": "original",
+      "expected_candidate_identity": 0,
+      "expected_label": "A",
+      "focal_terminal_codes": [
+        "black",
+        "red"
+      ],
+      "query_arm": "A",
+      "reference_candidate_identity": 0,
+      "reference_label": "A",
+      "relation_family_index": 3,
+      "relations": [
+        "CONNECTS_TO",
+        "RESOLVES_TO"
+      ],
+      "row_id": "NPC0182__qA__original__candidates_original__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "A",
+        "other_label": "B",
+        "raw_logits": {
+          "A": 25.25,
+          "B": 22.125
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "A",
+        "reference_logit_margin": 3.125,
+        "reference_pair_probability": 0.9579122720843811,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0182"
+    },
+    {
+      "K": 8,
+      "candidate_order": "reversed",
+      "evidence_state": "original",
+      "expected_candidate_identity": 0,
+      "expected_label": "B",
+      "focal_terminal_codes": [
+        "black",
+        "red"
+      ],
+      "query_arm": "A",
+      "reference_candidate_identity": 0,
+      "reference_label": "B",
+      "relation_family_index": 3,
+      "relations": [
+        "CONNECTS_TO",
+        "RESOLVES_TO"
+      ],
+      "row_id": "NPC0182__qA__original__candidates_reversed__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "B",
+        "other_label": "A",
+        "raw_logits": {
+          "A": 21.75,
+          "B": 24.5
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "B",
+        "reference_logit_margin": 2.75,
+        "reference_pair_probability": 0.9399133498259924,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0182"
+    },
+    {
+      "K": 8,
+      "candidate_order": "original",
+      "evidence_state": "original",
+      "expected_candidate_identity": 1,
+      "expected_label": "B",
+      "focal_terminal_codes": [
+        "black",
+        "red"
+      ],
+      "query_arm": "B",
+      "reference_candidate_identity": 1,
+      "reference_label": "B",
+      "relation_family_index": 3,
+      "relations": [
+        "CONNECTS_TO",
+        "RESOLVES_TO"
+      ],
+      "row_id": "NPC0182__qB__original__candidates_original__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "B",
+        "other_label": "A",
+        "raw_logits": {
+          "A": 20.25,
+          "B": 24.0
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "B",
+        "reference_logit_margin": 3.75,
+        "reference_pair_probability": 0.9770226300899744,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0182"
+    },
+    {
+      "K": 8,
+      "candidate_order": "reversed",
+      "evidence_state": "original",
+      "expected_candidate_identity": 1,
+      "expected_label": "A",
+      "focal_terminal_codes": [
+        "black",
+        "red"
+      ],
+      "query_arm": "B",
+      "reference_candidate_identity": 1,
+      "reference_label": "A",
+      "relation_family_index": 3,
+      "relations": [
+        "CONNECTS_TO",
+        "RESOLVES_TO"
+      ],
+      "row_id": "NPC0182__qB__original__candidates_reversed__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "A",
+        "other_label": "B",
+        "raw_logits": {
+          "A": 24.5,
+          "B": 21.25
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "A",
+        "reference_logit_margin": 3.25,
+        "reference_pair_probability": 0.9626731126558706,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0182"
+    },
+    {
+      "K": 8,
+      "candidate_order": "original",
+      "evidence_state": "original",
+      "expected_candidate_identity": 0,
+      "expected_label": "A",
+      "focal_terminal_codes": [
+        "black",
+        "blue"
+      ],
+      "query_arm": "A",
+      "reference_candidate_identity": 0,
+      "reference_label": "A",
+      "relation_family_index": 3,
+      "relations": [
+        "CONNECTS_TO",
+        "RESOLVES_TO"
+      ],
+      "row_id": "NPC0185__qA__original__candidates_original__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "A",
+        "other_label": "B",
+        "raw_logits": {
+          "A": 24.25,
+          "B": 21.0
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "A",
+        "reference_logit_margin": 3.25,
+        "reference_pair_probability": 0.9626731126558706,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0185"
+    },
+    {
+      "K": 8,
+      "candidate_order": "reversed",
+      "evidence_state": "original",
+      "expected_candidate_identity": 0,
+      "expected_label": "B",
+      "focal_terminal_codes": [
+        "black",
+        "blue"
+      ],
+      "query_arm": "A",
+      "reference_candidate_identity": 0,
+      "reference_label": "B",
+      "relation_family_index": 3,
+      "relations": [
+        "CONNECTS_TO",
+        "RESOLVES_TO"
+      ],
+      "row_id": "NPC0185__qA__original__candidates_reversed__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "B",
+        "other_label": "A",
+        "raw_logits": {
+          "A": 21.125,
+          "B": 23.375
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "B",
+        "reference_logit_margin": 2.25,
+        "reference_pair_probability": 0.9046505351008906,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0185"
+    },
+    {
+      "K": 8,
+      "candidate_order": "original",
+      "evidence_state": "original",
+      "expected_candidate_identity": 1,
+      "expected_label": "B",
+      "focal_terminal_codes": [
+        "black",
+        "blue"
+      ],
+      "query_arm": "B",
+      "reference_candidate_identity": 1,
+      "reference_label": "B",
+      "relation_family_index": 3,
+      "relations": [
+        "CONNECTS_TO",
+        "RESOLVES_TO"
+      ],
+      "row_id": "NPC0185__qB__original__candidates_original__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "B",
+        "other_label": "A",
+        "raw_logits": {
+          "A": 21.0,
+          "B": 22.875
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "B",
+        "reference_logit_margin": 1.875,
+        "reference_pair_probability": 0.8670357598021706,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0185"
+    },
+    {
+      "K": 8,
+      "candidate_order": "reversed",
+      "evidence_state": "original",
+      "expected_candidate_identity": 1,
+      "expected_label": "A",
+      "focal_terminal_codes": [
+        "black",
+        "blue"
+      ],
+      "query_arm": "B",
+      "reference_candidate_identity": 1,
+      "reference_label": "A",
+      "relation_family_index": 3,
+      "relations": [
+        "CONNECTS_TO",
+        "RESOLVES_TO"
+      ],
+      "row_id": "NPC0185__qB__original__candidates_reversed__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "A",
+        "other_label": "B",
+        "raw_logits": {
+          "A": 23.5,
+          "B": 21.25
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "A",
+        "reference_logit_margin": 2.25,
+        "reference_pair_probability": 0.9046505351008906,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0185"
+    },
+    {
+      "K": 8,
+      "candidate_order": "original",
+      "evidence_state": "original",
+      "expected_candidate_identity": 0,
+      "expected_label": "A",
+      "focal_terminal_codes": [
+        "red",
+        "black"
+      ],
+      "query_arm": "A",
+      "reference_candidate_identity": 0,
+      "reference_label": "A",
+      "relation_family_index": 4,
+      "relations": [
+        "FIRST_HOP",
+        "SECOND_HOP"
+      ],
+      "row_id": "NPC0204__qA__original__candidates_original__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "A",
+        "other_label": "B",
+        "raw_logits": {
+          "A": 24.5,
+          "B": 22.125
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "A",
+        "reference_logit_margin": 2.375,
+        "reference_pair_probability": 0.9149009549929797,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0204"
+    },
+    {
+      "K": 8,
+      "candidate_order": "reversed",
+      "evidence_state": "original",
+      "expected_candidate_identity": 0,
+      "expected_label": "B",
+      "focal_terminal_codes": [
+        "red",
+        "black"
+      ],
+      "query_arm": "A",
+      "reference_candidate_identity": 0,
+      "reference_label": "B",
+      "relation_family_index": 4,
+      "relations": [
+        "FIRST_HOP",
+        "SECOND_HOP"
+      ],
+      "row_id": "NPC0204__qA__original__candidates_reversed__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "B",
+        "other_label": "A",
+        "raw_logits": {
+          "A": 22.5,
+          "B": 23.5
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "B",
+        "reference_logit_margin": 1.0,
+        "reference_pair_probability": 0.7310585786300049,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0204"
+    },
+    {
+      "K": 8,
+      "candidate_order": "original",
+      "evidence_state": "original",
+      "expected_candidate_identity": 1,
+      "expected_label": "B",
+      "focal_terminal_codes": [
+        "red",
+        "black"
+      ],
+      "query_arm": "B",
+      "reference_candidate_identity": 1,
+      "reference_label": "B",
+      "relation_family_index": 4,
+      "relations": [
+        "FIRST_HOP",
+        "SECOND_HOP"
+      ],
+      "row_id": "NPC0204__qB__original__candidates_original__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "B",
+        "other_label": "A",
+        "raw_logits": {
+          "A": 20.0,
+          "B": 22.75
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "B",
+        "reference_logit_margin": 2.75,
+        "reference_pair_probability": 0.9399133498259924,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0204"
+    },
+    {
+      "K": 8,
+      "candidate_order": "reversed",
+      "evidence_state": "original",
+      "expected_candidate_identity": 1,
+      "expected_label": "A",
+      "focal_terminal_codes": [
+        "red",
+        "black"
+      ],
+      "query_arm": "B",
+      "reference_candidate_identity": 1,
+      "reference_label": "A",
+      "relation_family_index": 4,
+      "relations": [
+        "FIRST_HOP",
+        "SECOND_HOP"
+      ],
+      "row_id": "NPC0204__qB__original__candidates_reversed__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "A",
+        "other_label": "B",
+        "raw_logits": {
+          "A": 23.25,
+          "B": 20.375
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "A",
+        "reference_logit_margin": 2.875,
+        "reference_pair_probability": 0.9465966702001757,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0204"
+    },
+    {
+      "K": 8,
+      "candidate_order": "original",
+      "evidence_state": "original",
+      "expected_candidate_identity": 0,
+      "expected_label": "A",
+      "focal_terminal_codes": [
+        "blue",
+        "red"
+      ],
+      "query_arm": "A",
+      "reference_candidate_identity": 0,
+      "reference_label": "A",
+      "relation_family_index": 4,
+      "relations": [
+        "FIRST_HOP",
+        "SECOND_HOP"
+      ],
+      "row_id": "NPC0206__qA__original__candidates_original__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "A",
+        "other_label": "B",
+        "raw_logits": {
+          "A": 23.75,
+          "B": 19.5
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "A",
+        "reference_logit_margin": 4.25,
+        "reference_pair_probability": 0.9859363729567544,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0206"
+    },
+    {
+      "K": 8,
+      "candidate_order": "reversed",
+      "evidence_state": "original",
+      "expected_candidate_identity": 0,
+      "expected_label": "B",
+      "focal_terminal_codes": [
+        "blue",
+        "red"
+      ],
+      "query_arm": "A",
+      "reference_candidate_identity": 0,
+      "reference_label": "B",
+      "relation_family_index": 4,
+      "relations": [
+        "FIRST_HOP",
+        "SECOND_HOP"
+      ],
+      "row_id": "NPC0206__qA__original__candidates_reversed__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "B",
+        "other_label": "A",
+        "raw_logits": {
+          "A": 20.75,
+          "B": 22.625
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "B",
+        "reference_logit_margin": 1.875,
+        "reference_pair_probability": 0.8670357598021706,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0206"
+    },
+    {
+      "K": 8,
+      "candidate_order": "original",
+      "evidence_state": "original",
+      "expected_candidate_identity": 1,
+      "expected_label": "B",
+      "focal_terminal_codes": [
+        "blue",
+        "red"
+      ],
+      "query_arm": "B",
+      "reference_candidate_identity": 1,
+      "reference_label": "B",
+      "relation_family_index": 4,
+      "relations": [
+        "FIRST_HOP",
+        "SECOND_HOP"
+      ],
+      "row_id": "NPC0206__qB__original__candidates_original__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "B",
+        "other_label": "A",
+        "raw_logits": {
+          "A": 21.0,
+          "B": 21.5
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "B",
+        "reference_logit_margin": 0.5,
+        "reference_pair_probability": 0.6224593312018546,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0206"
+    },
+    {
+      "K": 8,
+      "candidate_order": "reversed",
+      "evidence_state": "original",
+      "expected_candidate_identity": 1,
+      "expected_label": "A",
+      "focal_terminal_codes": [
+        "blue",
+        "red"
+      ],
+      "query_arm": "B",
+      "reference_candidate_identity": 1,
+      "reference_label": "A",
+      "relation_family_index": 4,
+      "relations": [
+        "FIRST_HOP",
+        "SECOND_HOP"
+      ],
+      "row_id": "NPC0206__qB__original__candidates_reversed__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "A",
+        "other_label": "B",
+        "raw_logits": {
+          "A": 20.0,
+          "B": 22.25
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 0.0,
+        "reference_label": "A",
+        "reference_logit_margin": -2.25,
+        "reference_pair_probability": 0.0953494648991095,
+        "state_correct_argmax_credit": 0.0
+      },
+      "world_id": "NPC0206"
+    },
+    {
+      "K": 8,
+      "candidate_order": "original",
+      "evidence_state": "original",
+      "expected_candidate_identity": 0,
+      "expected_label": "A",
+      "focal_terminal_codes": [
+        "blue",
+        "green"
+      ],
+      "query_arm": "A",
+      "reference_candidate_identity": 0,
+      "reference_label": "A",
+      "relation_family_index": 4,
+      "relations": [
+        "FIRST_HOP",
+        "SECOND_HOP"
+      ],
+      "row_id": "NPC0211__qA__original__candidates_original__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "A",
+        "other_label": "B",
+        "raw_logits": {
+          "A": 23.0,
+          "B": 20.0
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "A",
+        "reference_logit_margin": 3.0,
+        "reference_pair_probability": 0.9525741268224334,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0211"
+    },
+    {
+      "K": 8,
+      "candidate_order": "reversed",
+      "evidence_state": "original",
+      "expected_candidate_identity": 0,
+      "expected_label": "B",
+      "focal_terminal_codes": [
+        "blue",
+        "green"
+      ],
+      "query_arm": "A",
+      "reference_candidate_identity": 0,
+      "reference_label": "B",
+      "relation_family_index": 4,
+      "relations": [
+        "FIRST_HOP",
+        "SECOND_HOP"
+      ],
+      "row_id": "NPC0211__qA__original__candidates_reversed__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "B",
+        "other_label": "A",
+        "raw_logits": {
+          "A": 21.0,
+          "B": 22.625
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "B",
+        "reference_logit_margin": 1.625,
+        "reference_pair_probability": 0.8354835371034369,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0211"
+    },
+    {
+      "K": 8,
+      "candidate_order": "original",
+      "evidence_state": "original",
+      "expected_candidate_identity": 1,
+      "expected_label": "B",
+      "focal_terminal_codes": [
+        "blue",
+        "green"
+      ],
+      "query_arm": "B",
+      "reference_candidate_identity": 1,
+      "reference_label": "B",
+      "relation_family_index": 4,
+      "relations": [
+        "FIRST_HOP",
+        "SECOND_HOP"
+      ],
+      "row_id": "NPC0211__qB__original__candidates_original__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "B",
+        "other_label": "A",
+        "raw_logits": {
+          "A": 22.0,
+          "B": 22.25
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "B",
+        "reference_logit_margin": 0.25,
+        "reference_pair_probability": 0.5621765008857981,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0211"
+    },
+    {
+      "K": 8,
+      "candidate_order": "reversed",
+      "evidence_state": "original",
+      "expected_candidate_identity": 1,
+      "expected_label": "A",
+      "focal_terminal_codes": [
+        "blue",
+        "green"
+      ],
+      "query_arm": "B",
+      "reference_candidate_identity": 1,
+      "reference_label": "A",
+      "relation_family_index": 4,
+      "relations": [
+        "FIRST_HOP",
+        "SECOND_HOP"
+      ],
+      "row_id": "NPC0211__qB__original__candidates_reversed__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "A",
+        "other_label": "B",
+        "raw_logits": {
+          "A": 23.375,
+          "B": 21.625
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "A",
+        "reference_logit_margin": 1.75,
+        "reference_pair_probability": 0.8519528019683106,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0211"
+    },
+    {
+      "K": 8,
+      "candidate_order": "original",
+      "evidence_state": "original",
+      "expected_candidate_identity": 0,
+      "expected_label": "A",
+      "focal_terminal_codes": [
+        "blue",
+        "green"
+      ],
+      "query_arm": "A",
+      "reference_candidate_identity": 0,
+      "reference_label": "A",
+      "relation_family_index": 4,
+      "relations": [
+        "FIRST_HOP",
+        "SECOND_HOP"
+      ],
+      "row_id": "NPC0212__qA__original__candidates_original__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "A",
+        "other_label": "B",
+        "raw_logits": {
+          "A": 23.625,
+          "B": 22.625
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "A",
+        "reference_logit_margin": 1.0,
+        "reference_pair_probability": 0.7310585786300049,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0212"
+    },
+    {
+      "K": 8,
+      "candidate_order": "reversed",
+      "evidence_state": "original",
+      "expected_candidate_identity": 0,
+      "expected_label": "B",
+      "focal_terminal_codes": [
+        "blue",
+        "green"
+      ],
+      "query_arm": "A",
+      "reference_candidate_identity": 0,
+      "reference_label": "B",
+      "relation_family_index": 4,
+      "relations": [
+        "FIRST_HOP",
+        "SECOND_HOP"
+      ],
+      "row_id": "NPC0212__qA__original__candidates_reversed__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "B",
+        "other_label": "A",
+        "raw_logits": {
+          "A": 20.625,
+          "B": 23.875
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "B",
+        "reference_logit_margin": 3.25,
+        "reference_pair_probability": 0.9626731126558706,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0212"
+    },
+    {
+      "K": 8,
+      "candidate_order": "original",
+      "evidence_state": "original",
+      "expected_candidate_identity": 1,
+      "expected_label": "B",
+      "focal_terminal_codes": [
+        "blue",
+        "green"
+      ],
+      "query_arm": "B",
+      "reference_candidate_identity": 1,
+      "reference_label": "B",
+      "relation_family_index": 4,
+      "relations": [
+        "FIRST_HOP",
+        "SECOND_HOP"
+      ],
+      "row_id": "NPC0212__qB__original__candidates_original__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "B",
+        "other_label": "A",
+        "raw_logits": {
+          "A": 21.0,
+          "B": 21.625
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "B",
+        "reference_logit_margin": 0.625,
+        "reference_pair_probability": 0.6513548646660542,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0212"
+    },
+    {
+      "K": 8,
+      "candidate_order": "reversed",
+      "evidence_state": "original",
+      "expected_candidate_identity": 1,
+      "expected_label": "A",
+      "focal_terminal_codes": [
+        "blue",
+        "green"
+      ],
+      "query_arm": "B",
+      "reference_candidate_identity": 1,
+      "reference_label": "A",
+      "relation_family_index": 4,
+      "relations": [
+        "FIRST_HOP",
+        "SECOND_HOP"
+      ],
+      "row_id": "NPC0212__qB__original__candidates_reversed__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "A",
+        "other_label": "B",
+        "raw_logits": {
+          "A": 21.5,
+          "B": 20.75
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "A",
+        "reference_logit_margin": 0.75,
+        "reference_pair_probability": 0.679178699175393,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0212"
+    },
+    {
+      "K": 8,
+      "candidate_order": "original",
+      "evidence_state": "original",
+      "expected_candidate_identity": 0,
+      "expected_label": "A",
+      "focal_terminal_codes": [
+        "blue",
+        "black"
+      ],
+      "query_arm": "A",
+      "reference_candidate_identity": 0,
+      "reference_label": "A",
+      "relation_family_index": 4,
+      "relations": [
+        "FIRST_HOP",
+        "SECOND_HOP"
+      ],
+      "row_id": "NPC0215__qA__original__candidates_original__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "A",
+        "other_label": "B",
+        "raw_logits": {
+          "A": 25.125,
+          "B": 22.0
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "A",
+        "reference_logit_margin": 3.125,
+        "reference_pair_probability": 0.9579122720843811,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0215"
+    },
+    {
+      "K": 8,
+      "candidate_order": "reversed",
+      "evidence_state": "original",
+      "expected_candidate_identity": 0,
+      "expected_label": "B",
+      "focal_terminal_codes": [
+        "blue",
+        "black"
+      ],
+      "query_arm": "A",
+      "reference_candidate_identity": 0,
+      "reference_label": "B",
+      "relation_family_index": 4,
+      "relations": [
+        "FIRST_HOP",
+        "SECOND_HOP"
+      ],
+      "row_id": "NPC0215__qA__original__candidates_reversed__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "B",
+        "other_label": "A",
+        "raw_logits": {
+          "A": 22.625,
+          "B": 23.625
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "B",
+        "reference_logit_margin": 1.0,
+        "reference_pair_probability": 0.7310585786300049,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0215"
+    },
+    {
+      "K": 8,
+      "candidate_order": "original",
+      "evidence_state": "original",
+      "expected_candidate_identity": 1,
+      "expected_label": "B",
+      "focal_terminal_codes": [
+        "blue",
+        "black"
+      ],
+      "query_arm": "B",
+      "reference_candidate_identity": 1,
+      "reference_label": "B",
+      "relation_family_index": 4,
+      "relations": [
+        "FIRST_HOP",
+        "SECOND_HOP"
+      ],
+      "row_id": "NPC0215__qB__original__candidates_original__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "B",
+        "other_label": "A",
+        "raw_logits": {
+          "A": 23.375,
+          "B": 23.75
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "B",
+        "reference_logit_margin": 0.375,
+        "reference_pair_probability": 0.5926665999540697,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0215"
+    },
+    {
+      "K": 8,
+      "candidate_order": "reversed",
+      "evidence_state": "original",
+      "expected_candidate_identity": 1,
+      "expected_label": "A",
+      "focal_terminal_codes": [
+        "blue",
+        "black"
+      ],
+      "query_arm": "B",
+      "reference_candidate_identity": 1,
+      "reference_label": "A",
+      "relation_family_index": 4,
+      "relations": [
+        "FIRST_HOP",
+        "SECOND_HOP"
+      ],
+      "row_id": "NPC0215__qB__original__candidates_reversed__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "A",
+        "other_label": "B",
+        "raw_logits": {
+          "A": 24.75,
+          "B": 21.5
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "A",
+        "reference_logit_margin": 3.25,
+        "reference_pair_probability": 0.9626731126558706,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0215"
+    },
+    {
+      "K": 8,
+      "candidate_order": "original",
+      "evidence_state": "original",
+      "expected_candidate_identity": 0,
+      "expected_label": "A",
+      "focal_terminal_codes": [
+        "black",
+        "green"
+      ],
+      "query_arm": "A",
+      "reference_candidate_identity": 0,
+      "reference_label": "A",
+      "relation_family_index": 4,
+      "relations": [
+        "FIRST_HOP",
+        "SECOND_HOP"
+      ],
+      "row_id": "NPC0238__qA__original__candidates_original__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "A",
+        "other_label": "B",
+        "raw_logits": {
+          "A": 24.875,
+          "B": 20.25
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "A",
+        "reference_logit_margin": 4.625,
+        "reference_pair_probability": 0.9902915235185259,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0238"
+    },
+    {
+      "K": 8,
+      "candidate_order": "reversed",
+      "evidence_state": "original",
+      "expected_candidate_identity": 0,
+      "expected_label": "B",
+      "focal_terminal_codes": [
+        "black",
+        "green"
+      ],
+      "query_arm": "A",
+      "reference_candidate_identity": 0,
+      "reference_label": "B",
+      "relation_family_index": 4,
+      "relations": [
+        "FIRST_HOP",
+        "SECOND_HOP"
+      ],
+      "row_id": "NPC0238__qA__original__candidates_reversed__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "B",
+        "other_label": "A",
+        "raw_logits": {
+          "A": 22.75,
+          "B": 23.25
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "B",
+        "reference_logit_margin": 0.5,
+        "reference_pair_probability": 0.6224593312018546,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0238"
+    },
+    {
+      "K": 8,
+      "candidate_order": "original",
+      "evidence_state": "original",
+      "expected_candidate_identity": 1,
+      "expected_label": "B",
+      "focal_terminal_codes": [
+        "black",
+        "green"
+      ],
+      "query_arm": "B",
+      "reference_candidate_identity": 1,
+      "reference_label": "B",
+      "relation_family_index": 4,
+      "relations": [
+        "FIRST_HOP",
+        "SECOND_HOP"
+      ],
+      "row_id": "NPC0238__qB__original__candidates_original__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "B",
+        "other_label": "A",
+        "raw_logits": {
+          "A": 19.0,
+          "B": 22.625
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "B",
+        "reference_logit_margin": 3.625,
+        "reference_pair_probability": 0.9740426428022031,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0238"
+    },
+    {
+      "K": 8,
+      "candidate_order": "reversed",
+      "evidence_state": "original",
+      "expected_candidate_identity": 1,
+      "expected_label": "A",
+      "focal_terminal_codes": [
+        "black",
+        "green"
+      ],
+      "query_arm": "B",
+      "reference_candidate_identity": 1,
+      "reference_label": "A",
+      "relation_family_index": 4,
+      "relations": [
+        "FIRST_HOP",
+        "SECOND_HOP"
+      ],
+      "row_id": "NPC0238__qB__original__candidates_reversed__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "A",
+        "other_label": "B",
+        "raw_logits": {
+          "A": 23.125,
+          "B": 21.75
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "A",
+        "reference_logit_margin": 1.375,
+        "reference_pair_probability": 0.7981867777396212,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0238"
+    },
+    {
+      "K": 8,
+      "candidate_order": "original",
+      "evidence_state": "original",
+      "expected_candidate_identity": 0,
+      "expected_label": "A",
+      "focal_terminal_codes": [
+        "black",
+        "green"
+      ],
+      "query_arm": "A",
+      "reference_candidate_identity": 0,
+      "reference_label": "A",
+      "relation_family_index": 4,
+      "relations": [
+        "FIRST_HOP",
+        "SECOND_HOP"
+      ],
+      "row_id": "NPC0239__qA__original__candidates_original__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "A",
+        "other_label": "B",
+        "raw_logits": {
+          "A": 24.125,
+          "B": 22.375
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "A",
+        "reference_logit_margin": 1.75,
+        "reference_pair_probability": 0.8519528019683106,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0239"
+    },
+    {
+      "K": 8,
+      "candidate_order": "reversed",
+      "evidence_state": "original",
+      "expected_candidate_identity": 0,
+      "expected_label": "B",
+      "focal_terminal_codes": [
+        "black",
+        "green"
+      ],
+      "query_arm": "A",
+      "reference_candidate_identity": 0,
+      "reference_label": "B",
+      "relation_family_index": 4,
+      "relations": [
+        "FIRST_HOP",
+        "SECOND_HOP"
+      ],
+      "row_id": "NPC0239__qA__original__candidates_reversed__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "B",
+        "other_label": "A",
+        "raw_logits": {
+          "A": 21.625,
+          "B": 24.125
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "B",
+        "reference_logit_margin": 2.5,
+        "reference_pair_probability": 0.9241418199787566,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0239"
+    },
+    {
+      "K": 8,
+      "candidate_order": "original",
+      "evidence_state": "original",
+      "expected_candidate_identity": 1,
+      "expected_label": "B",
+      "focal_terminal_codes": [
+        "black",
+        "green"
+      ],
+      "query_arm": "B",
+      "reference_candidate_identity": 1,
+      "reference_label": "B",
+      "relation_family_index": 4,
+      "relations": [
+        "FIRST_HOP",
+        "SECOND_HOP"
+      ],
+      "row_id": "NPC0239__qB__original__candidates_original__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "B",
+        "other_label": "A",
+        "raw_logits": {
+          "A": 22.25,
+          "B": 22.625
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "B",
+        "reference_logit_margin": 0.375,
+        "reference_pair_probability": 0.5926665999540697,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0239"
+    },
+    {
+      "K": 8,
+      "candidate_order": "reversed",
+      "evidence_state": "original",
+      "expected_candidate_identity": 1,
+      "expected_label": "A",
+      "focal_terminal_codes": [
+        "black",
+        "green"
+      ],
+      "query_arm": "B",
+      "reference_candidate_identity": 1,
+      "reference_label": "A",
+      "relation_family_index": 4,
+      "relations": [
+        "FIRST_HOP",
+        "SECOND_HOP"
+      ],
+      "row_id": "NPC0239__qB__original__candidates_reversed__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "A",
+        "other_label": "B",
+        "raw_logits": {
+          "A": 24.875,
+          "B": 20.0
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "A",
+        "reference_logit_margin": 4.875,
+        "reference_pair_probability": 0.9924227587321393,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0239"
+    },
+    {
+      "K": 8,
+      "candidate_order": "original",
+      "evidence_state": "original",
+      "expected_candidate_identity": 0,
+      "expected_label": "A",
+      "focal_terminal_codes": [
+        "black",
+        "green"
+      ],
+      "query_arm": "A",
+      "reference_candidate_identity": 0,
+      "reference_label": "A",
+      "relation_family_index": 4,
+      "relations": [
+        "FIRST_HOP",
+        "SECOND_HOP"
+      ],
+      "row_id": "NPC0240__qA__original__candidates_original__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "A",
+        "other_label": "B",
+        "raw_logits": {
+          "A": 22.75,
+          "B": 20.25
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "A",
+        "reference_logit_margin": 2.5,
+        "reference_pair_probability": 0.9241418199787566,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0240"
+    },
+    {
+      "K": 8,
+      "candidate_order": "reversed",
+      "evidence_state": "original",
+      "expected_candidate_identity": 0,
+      "expected_label": "B",
+      "focal_terminal_codes": [
+        "black",
+        "green"
+      ],
+      "query_arm": "A",
+      "reference_candidate_identity": 0,
+      "reference_label": "B",
+      "relation_family_index": 4,
+      "relations": [
+        "FIRST_HOP",
+        "SECOND_HOP"
+      ],
+      "row_id": "NPC0240__qA__original__candidates_reversed__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "B",
+        "other_label": "A",
+        "raw_logits": {
+          "A": 21.5,
+          "B": 21.875
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "B",
+        "reference_logit_margin": 0.375,
+        "reference_pair_probability": 0.5926665999540697,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0240"
+    },
+    {
+      "K": 8,
+      "candidate_order": "original",
+      "evidence_state": "original",
+      "expected_candidate_identity": 1,
+      "expected_label": "B",
+      "focal_terminal_codes": [
+        "black",
+        "green"
+      ],
+      "query_arm": "B",
+      "reference_candidate_identity": 1,
+      "reference_label": "B",
+      "relation_family_index": 4,
+      "relations": [
+        "FIRST_HOP",
+        "SECOND_HOP"
+      ],
+      "row_id": "NPC0240__qB__original__candidates_original__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "B",
+        "other_label": "A",
+        "raw_logits": {
+          "A": 20.375,
+          "B": 23.25
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "B",
+        "reference_logit_margin": 2.875,
+        "reference_pair_probability": 0.9465966702001757,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0240"
+    },
+    {
+      "K": 8,
+      "candidate_order": "reversed",
+      "evidence_state": "original",
+      "expected_candidate_identity": 1,
+      "expected_label": "A",
+      "focal_terminal_codes": [
+        "black",
+        "green"
+      ],
+      "query_arm": "B",
+      "reference_candidate_identity": 1,
+      "reference_label": "A",
+      "relation_family_index": 4,
+      "relations": [
+        "FIRST_HOP",
+        "SECOND_HOP"
+      ],
+      "row_id": "NPC0240__qB__original__candidates_reversed__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "A",
+        "other_label": "B",
+        "raw_logits": {
+          "A": 23.5,
+          "B": 22.25
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "A",
+        "reference_logit_margin": 1.25,
+        "reference_pair_probability": 0.7772998611746911,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0240"
+    },
+    {
+      "K": 8,
+      "candidate_order": "original",
+      "evidence_state": "original",
+      "expected_candidate_identity": 0,
+      "expected_label": "A",
+      "focal_terminal_codes": [
+        "red",
+        "blue"
+      ],
+      "query_arm": "A",
+      "reference_candidate_identity": 0,
+      "reference_label": "A",
+      "relation_family_index": 5,
+      "relations": [
+        "MAPS_TO",
+        "TERMINATES_AT"
+      ],
+      "row_id": "NPC0242__qA__original__candidates_original__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "A",
+        "other_label": "B",
+        "raw_logits": {
+          "A": 22.125,
+          "B": 22.0
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "A",
+        "reference_logit_margin": 0.125,
+        "reference_pair_probability": 0.5312093733737563,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0242"
+    },
+    {
+      "K": 8,
+      "candidate_order": "reversed",
+      "evidence_state": "original",
+      "expected_candidate_identity": 0,
+      "expected_label": "B",
+      "focal_terminal_codes": [
+        "red",
+        "blue"
+      ],
+      "query_arm": "A",
+      "reference_candidate_identity": 0,
+      "reference_label": "B",
+      "relation_family_index": 5,
+      "relations": [
+        "MAPS_TO",
+        "TERMINATES_AT"
+      ],
+      "row_id": "NPC0242__qA__original__candidates_reversed__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "B",
+        "other_label": "A",
+        "raw_logits": {
+          "A": 20.125,
+          "B": 23.625
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "B",
+        "reference_logit_margin": 3.5,
+        "reference_pair_probability": 0.9706877692486436,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0242"
+    },
+    {
+      "K": 8,
+      "candidate_order": "original",
+      "evidence_state": "original",
+      "expected_candidate_identity": 1,
+      "expected_label": "B",
+      "focal_terminal_codes": [
+        "red",
+        "blue"
+      ],
+      "query_arm": "B",
+      "reference_candidate_identity": 1,
+      "reference_label": "B",
+      "relation_family_index": 5,
+      "relations": [
+        "MAPS_TO",
+        "TERMINATES_AT"
+      ],
+      "row_id": "NPC0242__qB__original__candidates_original__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "B",
+        "other_label": "A",
+        "raw_logits": {
+          "A": 20.875,
+          "B": 24.125
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "B",
+        "reference_logit_margin": 3.25,
+        "reference_pair_probability": 0.9626731126558706,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0242"
+    },
+    {
+      "K": 8,
+      "candidate_order": "reversed",
+      "evidence_state": "original",
+      "expected_candidate_identity": 1,
+      "expected_label": "A",
+      "focal_terminal_codes": [
+        "red",
+        "blue"
+      ],
+      "query_arm": "B",
+      "reference_candidate_identity": 1,
+      "reference_label": "A",
+      "relation_family_index": 5,
+      "relations": [
+        "MAPS_TO",
+        "TERMINATES_AT"
+      ],
+      "row_id": "NPC0242__qB__original__candidates_reversed__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "A",
+        "other_label": "B",
+        "raw_logits": {
+          "A": 24.375,
+          "B": 22.0
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "A",
+        "reference_logit_margin": 2.375,
+        "reference_pair_probability": 0.9149009549929797,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0242"
+    },
+    {
+      "K": 8,
+      "candidate_order": "original",
+      "evidence_state": "original",
+      "expected_candidate_identity": 0,
+      "expected_label": "A",
+      "focal_terminal_codes": [
+        "blue",
+        "red"
+      ],
+      "query_arm": "A",
+      "reference_candidate_identity": 0,
+      "reference_label": "A",
+      "relation_family_index": 5,
+      "relations": [
+        "MAPS_TO",
+        "TERMINATES_AT"
+      ],
+      "row_id": "NPC0253__qA__original__candidates_original__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "A",
+        "other_label": "B",
+        "raw_logits": {
+          "A": 22.75,
+          "B": 22.375
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "A",
+        "reference_logit_margin": 0.375,
+        "reference_pair_probability": 0.5926665999540697,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0253"
+    },
+    {
+      "K": 8,
+      "candidate_order": "reversed",
+      "evidence_state": "original",
+      "expected_candidate_identity": 0,
+      "expected_label": "B",
+      "focal_terminal_codes": [
+        "blue",
+        "red"
+      ],
+      "query_arm": "A",
+      "reference_candidate_identity": 0,
+      "reference_label": "B",
+      "relation_family_index": 5,
+      "relations": [
+        "MAPS_TO",
+        "TERMINATES_AT"
+      ],
+      "row_id": "NPC0253__qA__original__candidates_reversed__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "B",
+        "other_label": "A",
+        "raw_logits": {
+          "A": 18.25,
+          "B": 24.125
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "B",
+        "reference_logit_margin": 5.875,
+        "reference_pair_probability": 0.9971990730328789,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0253"
+    },
+    {
+      "K": 8,
+      "candidate_order": "original",
+      "evidence_state": "original",
+      "expected_candidate_identity": 1,
+      "expected_label": "B",
+      "focal_terminal_codes": [
+        "blue",
+        "red"
+      ],
+      "query_arm": "B",
+      "reference_candidate_identity": 1,
+      "reference_label": "B",
+      "relation_family_index": 5,
+      "relations": [
+        "MAPS_TO",
+        "TERMINATES_AT"
+      ],
+      "row_id": "NPC0253__qB__original__candidates_original__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "B",
+        "other_label": "A",
+        "raw_logits": {
+          "A": 20.5,
+          "B": 21.625
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "B",
+        "reference_logit_margin": 1.125,
+        "reference_pair_probability": 0.7549149868676283,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0253"
+    },
+    {
+      "K": 8,
+      "candidate_order": "reversed",
+      "evidence_state": "original",
+      "expected_candidate_identity": 1,
+      "expected_label": "A",
+      "focal_terminal_codes": [
+        "blue",
+        "red"
+      ],
+      "query_arm": "B",
+      "reference_candidate_identity": 1,
+      "reference_label": "A",
+      "relation_family_index": 5,
+      "relations": [
+        "MAPS_TO",
+        "TERMINATES_AT"
+      ],
+      "row_id": "NPC0253__qB__original__candidates_reversed__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "A",
+        "other_label": "B",
+        "raw_logits": {
+          "A": 20.875,
+          "B": 20.375
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "A",
+        "reference_logit_margin": 0.5,
+        "reference_pair_probability": 0.6224593312018546,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0253"
+    },
+    {
+      "K": 8,
+      "candidate_order": "original",
+      "evidence_state": "original",
+      "expected_candidate_identity": 0,
+      "expected_label": "A",
+      "focal_terminal_codes": [
+        "blue",
+        "green"
+      ],
+      "query_arm": "A",
+      "reference_candidate_identity": 0,
+      "reference_label": "A",
+      "relation_family_index": 5,
+      "relations": [
+        "MAPS_TO",
+        "TERMINATES_AT"
+      ],
+      "row_id": "NPC0257__qA__original__candidates_original__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "A",
+        "other_label": "B",
+        "raw_logits": {
+          "A": 24.875,
+          "B": 20.875
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "A",
+        "reference_logit_margin": 4.0,
+        "reference_pair_probability": 0.9820137900379085,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0257"
+    },
+    {
+      "K": 8,
+      "candidate_order": "reversed",
+      "evidence_state": "original",
+      "expected_candidate_identity": 0,
+      "expected_label": "B",
+      "focal_terminal_codes": [
+        "blue",
+        "green"
+      ],
+      "query_arm": "A",
+      "reference_candidate_identity": 0,
+      "reference_label": "B",
+      "relation_family_index": 5,
+      "relations": [
+        "MAPS_TO",
+        "TERMINATES_AT"
+      ],
+      "row_id": "NPC0257__qA__original__candidates_reversed__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "B",
+        "other_label": "A",
+        "raw_logits": {
+          "A": 22.75,
+          "B": 23.625
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "B",
+        "reference_logit_margin": 0.875,
+        "reference_pair_probability": 0.7057850278370112,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0257"
+    },
+    {
+      "K": 8,
+      "candidate_order": "original",
+      "evidence_state": "original",
+      "expected_candidate_identity": 1,
+      "expected_label": "B",
+      "focal_terminal_codes": [
+        "blue",
+        "green"
+      ],
+      "query_arm": "B",
+      "reference_candidate_identity": 1,
+      "reference_label": "B",
+      "relation_family_index": 5,
+      "relations": [
+        "MAPS_TO",
+        "TERMINATES_AT"
+      ],
+      "row_id": "NPC0257__qB__original__candidates_original__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "B",
+        "other_label": "A",
+        "raw_logits": {
+          "A": 21.375,
+          "B": 24.5
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "B",
+        "reference_logit_margin": 3.125,
+        "reference_pair_probability": 0.9579122720843811,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0257"
+    },
+    {
+      "K": 8,
+      "candidate_order": "reversed",
+      "evidence_state": "original",
+      "expected_candidate_identity": 1,
+      "expected_label": "A",
+      "focal_terminal_codes": [
+        "blue",
+        "green"
+      ],
+      "query_arm": "B",
+      "reference_candidate_identity": 1,
+      "reference_label": "A",
+      "relation_family_index": 5,
+      "relations": [
+        "MAPS_TO",
+        "TERMINATES_AT"
+      ],
+      "row_id": "NPC0257__qB__original__candidates_reversed__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "A",
+        "other_label": "B",
+        "raw_logits": {
+          "A": 24.75,
+          "B": 23.125
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "A",
+        "reference_logit_margin": 1.625,
+        "reference_pair_probability": 0.8354835371034369,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0257"
+    },
+    {
+      "K": 8,
+      "candidate_order": "original",
+      "evidence_state": "original",
+      "expected_candidate_identity": 0,
+      "expected_label": "A",
+      "focal_terminal_codes": [
+        "blue",
+        "black"
+      ],
+      "query_arm": "A",
+      "reference_candidate_identity": 0,
+      "reference_label": "A",
+      "relation_family_index": 5,
+      "relations": [
+        "MAPS_TO",
+        "TERMINATES_AT"
+      ],
+      "row_id": "NPC0264__qA__original__candidates_original__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "A",
+        "other_label": "B",
+        "raw_logits": {
+          "A": 21.125,
+          "B": 21.625
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 0.0,
+        "reference_label": "A",
+        "reference_logit_margin": -0.5,
+        "reference_pair_probability": 0.37754066879814546,
+        "state_correct_argmax_credit": 0.0
+      },
+      "world_id": "NPC0264"
+    },
+    {
+      "K": 8,
+      "candidate_order": "reversed",
+      "evidence_state": "original",
+      "expected_candidate_identity": 0,
+      "expected_label": "B",
+      "focal_terminal_codes": [
+        "blue",
+        "black"
+      ],
+      "query_arm": "A",
+      "reference_candidate_identity": 0,
+      "reference_label": "B",
+      "relation_family_index": 5,
+      "relations": [
+        "MAPS_TO",
+        "TERMINATES_AT"
+      ],
+      "row_id": "NPC0264__qA__original__candidates_reversed__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "B",
+        "other_label": "A",
+        "raw_logits": {
+          "A": 17.5,
+          "B": 22.875
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "B",
+        "reference_logit_margin": 5.375,
+        "reference_pair_probability": 0.9953904278206259,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0264"
+    },
+    {
+      "K": 8,
+      "candidate_order": "original",
+      "evidence_state": "original",
+      "expected_candidate_identity": 1,
+      "expected_label": "B",
+      "focal_terminal_codes": [
+        "blue",
+        "black"
+      ],
+      "query_arm": "B",
+      "reference_candidate_identity": 1,
+      "reference_label": "B",
+      "relation_family_index": 5,
+      "relations": [
+        "MAPS_TO",
+        "TERMINATES_AT"
+      ],
+      "row_id": "NPC0264__qB__original__candidates_original__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "B",
+        "other_label": "A",
+        "raw_logits": {
+          "A": 22.625,
+          "B": 22.875
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "B",
+        "reference_logit_margin": 0.25,
+        "reference_pair_probability": 0.5621765008857981,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0264"
+    },
+    {
+      "K": 8,
+      "candidate_order": "reversed",
+      "evidence_state": "original",
+      "expected_candidate_identity": 1,
+      "expected_label": "A",
+      "focal_terminal_codes": [
+        "blue",
+        "black"
+      ],
+      "query_arm": "B",
+      "reference_candidate_identity": 1,
+      "reference_label": "A",
+      "relation_family_index": 5,
+      "relations": [
+        "MAPS_TO",
+        "TERMINATES_AT"
+      ],
+      "row_id": "NPC0264__qB__original__candidates_reversed__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "A",
+        "other_label": "B",
+        "raw_logits": {
+          "A": 24.0,
+          "B": 22.5
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "A",
+        "reference_logit_margin": 1.5,
+        "reference_pair_probability": 0.8175744761936437,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0264"
+    },
+    {
+      "K": 8,
+      "candidate_order": "original",
+      "evidence_state": "original",
+      "expected_candidate_identity": 0,
+      "expected_label": "A",
+      "focal_terminal_codes": [
+        "green",
+        "red"
+      ],
+      "query_arm": "A",
+      "reference_candidate_identity": 0,
+      "reference_label": "A",
+      "relation_family_index": 5,
+      "relations": [
+        "MAPS_TO",
+        "TERMINATES_AT"
+      ],
+      "row_id": "NPC0267__qA__original__candidates_original__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "A",
+        "other_label": "B",
+        "raw_logits": {
+          "A": 21.875,
+          "B": 21.25
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "A",
+        "reference_logit_margin": 0.625,
+        "reference_pair_probability": 0.6513548646660542,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0267"
+    },
+    {
+      "K": 8,
+      "candidate_order": "reversed",
+      "evidence_state": "original",
+      "expected_candidate_identity": 0,
+      "expected_label": "B",
+      "focal_terminal_codes": [
+        "green",
+        "red"
+      ],
+      "query_arm": "A",
+      "reference_candidate_identity": 0,
+      "reference_label": "B",
+      "relation_family_index": 5,
+      "relations": [
+        "MAPS_TO",
+        "TERMINATES_AT"
+      ],
+      "row_id": "NPC0267__qA__original__candidates_reversed__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "B",
+        "other_label": "A",
+        "raw_logits": {
+          "A": 19.25,
+          "B": 22.25
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "B",
+        "reference_logit_margin": 3.0,
+        "reference_pair_probability": 0.9525741268224334,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0267"
+    },
+    {
+      "K": 8,
+      "candidate_order": "original",
+      "evidence_state": "original",
+      "expected_candidate_identity": 1,
+      "expected_label": "B",
+      "focal_terminal_codes": [
+        "green",
+        "red"
+      ],
+      "query_arm": "B",
+      "reference_candidate_identity": 1,
+      "reference_label": "B",
+      "relation_family_index": 5,
+      "relations": [
+        "MAPS_TO",
+        "TERMINATES_AT"
+      ],
+      "row_id": "NPC0267__qB__original__candidates_original__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "B",
+        "other_label": "A",
+        "raw_logits": {
+          "A": 19.5,
+          "B": 23.5
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "B",
+        "reference_logit_margin": 4.0,
+        "reference_pair_probability": 0.9820137900379085,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0267"
+    },
+    {
+      "K": 8,
+      "candidate_order": "reversed",
+      "evidence_state": "original",
+      "expected_candidate_identity": 1,
+      "expected_label": "A",
+      "focal_terminal_codes": [
+        "green",
+        "red"
+      ],
+      "query_arm": "B",
+      "reference_candidate_identity": 1,
+      "reference_label": "A",
+      "relation_family_index": 5,
+      "relations": [
+        "MAPS_TO",
+        "TERMINATES_AT"
+      ],
+      "row_id": "NPC0267__qB__original__candidates_reversed__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "A",
+        "other_label": "B",
+        "raw_logits": {
+          "A": 22.5,
+          "B": 22.25
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "A",
+        "reference_logit_margin": 0.25,
+        "reference_pair_probability": 0.5621765008857981,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0267"
+    },
+    {
+      "K": 8,
+      "candidate_order": "original",
+      "evidence_state": "original",
+      "expected_candidate_identity": 0,
+      "expected_label": "A",
+      "focal_terminal_codes": [
+        "green",
+        "blue"
+      ],
+      "query_arm": "A",
+      "reference_candidate_identity": 0,
+      "reference_label": "A",
+      "relation_family_index": 5,
+      "relations": [
+        "MAPS_TO",
+        "TERMINATES_AT"
+      ],
+      "row_id": "NPC0270__qA__original__candidates_original__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "A",
+        "other_label": "B",
+        "raw_logits": {
+          "A": 25.0,
+          "B": 20.75
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "A",
+        "reference_logit_margin": 4.25,
+        "reference_pair_probability": 0.9859363729567544,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0270"
+    },
+    {
+      "K": 8,
+      "candidate_order": "reversed",
+      "evidence_state": "original",
+      "expected_candidate_identity": 0,
+      "expected_label": "B",
+      "focal_terminal_codes": [
+        "green",
+        "blue"
+      ],
+      "query_arm": "A",
+      "reference_candidate_identity": 0,
+      "reference_label": "B",
+      "relation_family_index": 5,
+      "relations": [
+        "MAPS_TO",
+        "TERMINATES_AT"
+      ],
+      "row_id": "NPC0270__qA__original__candidates_reversed__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "B",
+        "other_label": "A",
+        "raw_logits": {
+          "A": 22.375,
+          "B": 23.625
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "B",
+        "reference_logit_margin": 1.25,
+        "reference_pair_probability": 0.7772998611746911,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0270"
+    },
+    {
+      "K": 8,
+      "candidate_order": "original",
+      "evidence_state": "original",
+      "expected_candidate_identity": 1,
+      "expected_label": "B",
+      "focal_terminal_codes": [
+        "green",
+        "blue"
+      ],
+      "query_arm": "B",
+      "reference_candidate_identity": 1,
+      "reference_label": "B",
+      "relation_family_index": 5,
+      "relations": [
+        "MAPS_TO",
+        "TERMINATES_AT"
+      ],
+      "row_id": "NPC0270__qB__original__candidates_original__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "B",
+        "other_label": "A",
+        "raw_logits": {
+          "A": 19.875,
+          "B": 23.375
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "B",
+        "reference_logit_margin": 3.5,
+        "reference_pair_probability": 0.9706877692486436,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0270"
+    },
+    {
+      "K": 8,
+      "candidate_order": "reversed",
+      "evidence_state": "original",
+      "expected_candidate_identity": 1,
+      "expected_label": "A",
+      "focal_terminal_codes": [
+        "green",
+        "blue"
+      ],
+      "query_arm": "B",
+      "reference_candidate_identity": 1,
+      "reference_label": "A",
+      "relation_family_index": 5,
+      "relations": [
+        "MAPS_TO",
+        "TERMINATES_AT"
+      ],
+      "row_id": "NPC0270__qB__original__candidates_reversed__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "A",
+        "other_label": "B",
+        "raw_logits": {
+          "A": 21.625,
+          "B": 22.75
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 0.0,
+        "reference_label": "A",
+        "reference_logit_margin": -1.125,
+        "reference_pair_probability": 0.24508501313237172,
+        "state_correct_argmax_credit": 0.0
+      },
+      "world_id": "NPC0270"
+    },
+    {
+      "K": 8,
+      "candidate_order": "original",
+      "evidence_state": "original",
+      "expected_candidate_identity": 0,
+      "expected_label": "A",
+      "focal_terminal_codes": [
+        "green",
+        "black"
+      ],
+      "query_arm": "A",
+      "reference_candidate_identity": 0,
+      "reference_label": "A",
+      "relation_family_index": 5,
+      "relations": [
+        "MAPS_TO",
+        "TERMINATES_AT"
+      ],
+      "row_id": "NPC0274__qA__original__candidates_original__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "A",
+        "other_label": "B",
+        "raw_logits": {
+          "A": 22.5,
+          "B": 21.875
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "A",
+        "reference_logit_margin": 0.625,
+        "reference_pair_probability": 0.6513548646660542,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0274"
+    },
+    {
+      "K": 8,
+      "candidate_order": "reversed",
+      "evidence_state": "original",
+      "expected_candidate_identity": 0,
+      "expected_label": "B",
+      "focal_terminal_codes": [
+        "green",
+        "black"
+      ],
+      "query_arm": "A",
+      "reference_candidate_identity": 0,
+      "reference_label": "B",
+      "relation_family_index": 5,
+      "relations": [
+        "MAPS_TO",
+        "TERMINATES_AT"
+      ],
+      "row_id": "NPC0274__qA__original__candidates_reversed__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "B",
+        "other_label": "A",
+        "raw_logits": {
+          "A": 20.75,
+          "B": 23.0
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "B",
+        "reference_logit_margin": 2.25,
+        "reference_pair_probability": 0.9046505351008906,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0274"
+    },
+    {
+      "K": 8,
+      "candidate_order": "original",
+      "evidence_state": "original",
+      "expected_candidate_identity": 1,
+      "expected_label": "B",
+      "focal_terminal_codes": [
+        "green",
+        "black"
+      ],
+      "query_arm": "B",
+      "reference_candidate_identity": 1,
+      "reference_label": "B",
+      "relation_family_index": 5,
+      "relations": [
+        "MAPS_TO",
+        "TERMINATES_AT"
+      ],
+      "row_id": "NPC0274__qB__original__candidates_original__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "B",
+        "other_label": "A",
+        "raw_logits": {
+          "A": 21.875,
+          "B": 23.75
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "B",
+        "reference_logit_margin": 1.875,
+        "reference_pair_probability": 0.8670357598021706,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0274"
+    },
+    {
+      "K": 8,
+      "candidate_order": "reversed",
+      "evidence_state": "original",
+      "expected_candidate_identity": 1,
+      "expected_label": "A",
+      "focal_terminal_codes": [
+        "green",
+        "black"
+      ],
+      "query_arm": "B",
+      "reference_candidate_identity": 1,
+      "reference_label": "A",
+      "relation_family_index": 5,
+      "relations": [
+        "MAPS_TO",
+        "TERMINATES_AT"
+      ],
+      "row_id": "NPC0274__qB__original__candidates_reversed__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "A",
+        "other_label": "B",
+        "raw_logits": {
+          "A": 24.625,
+          "B": 21.0
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "A",
+        "reference_logit_margin": 3.625,
+        "reference_pair_probability": 0.9740426428022031,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0274"
+    },
+    {
+      "K": 8,
+      "candidate_order": "original",
+      "evidence_state": "original",
+      "expected_candidate_identity": 0,
+      "expected_label": "A",
+      "focal_terminal_codes": [
+        "black",
+        "green"
+      ],
+      "query_arm": "A",
+      "reference_candidate_identity": 0,
+      "reference_label": "A",
+      "relation_family_index": 5,
+      "relations": [
+        "MAPS_TO",
+        "TERMINATES_AT"
+      ],
+      "row_id": "NPC0288__qA__original__candidates_original__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "A",
+        "other_label": "B",
+        "raw_logits": {
+          "A": 22.125,
+          "B": 20.625
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "A",
+        "reference_logit_margin": 1.5,
+        "reference_pair_probability": 0.8175744761936437,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0288"
+    },
+    {
+      "K": 8,
+      "candidate_order": "reversed",
+      "evidence_state": "original",
+      "expected_candidate_identity": 0,
+      "expected_label": "B",
+      "focal_terminal_codes": [
+        "black",
+        "green"
+      ],
+      "query_arm": "A",
+      "reference_candidate_identity": 0,
+      "reference_label": "B",
+      "relation_family_index": 5,
+      "relations": [
+        "MAPS_TO",
+        "TERMINATES_AT"
+      ],
+      "row_id": "NPC0288__qA__original__candidates_reversed__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "B",
+        "other_label": "A",
+        "raw_logits": {
+          "A": 20.625,
+          "B": 22.0
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "B",
+        "reference_logit_margin": 1.375,
+        "reference_pair_probability": 0.7981867777396212,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0288"
+    },
+    {
+      "K": 8,
+      "candidate_order": "original",
+      "evidence_state": "original",
+      "expected_candidate_identity": 1,
+      "expected_label": "B",
+      "focal_terminal_codes": [
+        "black",
+        "green"
+      ],
+      "query_arm": "B",
+      "reference_candidate_identity": 1,
+      "reference_label": "B",
+      "relation_family_index": 5,
+      "relations": [
+        "MAPS_TO",
+        "TERMINATES_AT"
+      ],
+      "row_id": "NPC0288__qB__original__candidates_original__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "B",
+        "other_label": "A",
+        "raw_logits": {
+          "A": 20.375,
+          "B": 23.25
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "B",
+        "reference_logit_margin": 2.875,
+        "reference_pair_probability": 0.9465966702001757,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0288"
+    },
+    {
+      "K": 8,
+      "candidate_order": "reversed",
+      "evidence_state": "original",
+      "expected_candidate_identity": 1,
+      "expected_label": "A",
+      "focal_terminal_codes": [
+        "black",
+        "green"
+      ],
+      "query_arm": "B",
+      "reference_candidate_identity": 1,
+      "reference_label": "A",
+      "relation_family_index": 5,
+      "relations": [
+        "MAPS_TO",
+        "TERMINATES_AT"
+      ],
+      "row_id": "NPC0288__qB__original__candidates_reversed__K8",
+      "score": {
+        "executed_recurrent_steps": 8.0,
+        "expected_label": "A",
+        "other_label": "B",
+        "raw_logits": {
+          "A": 23.75,
+          "B": 22.5
+        },
+        "readout_exit_K": 8,
+        "reference_argmax_credit": 1.0,
+        "reference_label": "A",
+        "reference_logit_margin": 1.25,
+        "reference_pair_probability": 0.7772998611746911,
+        "state_correct_argmax_credit": 1.0
+      },
+      "world_id": "NPC0288"
+    }
+  ],
+  "runner": {
+    "path": "run_loopus8_nonce_competence.py",
+    "sha256": "ee347cac6b26bcfc5984b7993054a4bddf0f3201290da629865abe6518acccde"
+  },
+  "schema": "iclr2027.loopus8_nonce_competence.run.v1",
+  "summary": {
+    "candidate_order_accuracy": {
+      "original": 0.9479166666666666,
+      "reversed": 0.9375
+    },
+    "decision": "PROMOTE_TO_TREATMENT",
+    "gate_depth": 8,
+    "graph_correct_accuracy": {
+      "bootstrap_replicates": 10000,
+      "ci95": [
+        0.9088541666666666,
+        0.9713541666666666
+      ],
+      "estimate": 0.9427083333333334,
+      "resampling": "48 worlds stratified within six relation families"
+    },
+    "passes_competence_gate": true,
+    "query_arm_accuracy": {
+      "A": 0.96875,
+      "B": 0.9166666666666666
+    },
+    "requirements": {
+      "each_candidate_order_point_at_least": 0.55,
+      "each_query_arm_point_at_least": 0.55,
+      "lower95_strictly_above": 0.5,
+      "point_at_least": 0.65
+    },
+    "rows": 192,
+    "worlds": 48
+  }
+}

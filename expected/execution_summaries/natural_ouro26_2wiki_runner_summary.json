@@ -1,0 +1,625 @@
+{
+  "bootstrap": {
+    "draws_sha256": "a73fb7dd541dc8b03b4cf5ed1d50d2ee347bf537608b35dd7b8fed893ca26282",
+    "method": "hierarchical nonparametric bootstrap: sample exact relation paths with replacement, then sample four whole pair units with replacement within each sampled path",
+    "pair_units_per_draw": 124,
+    "pairs_per_path_per_draw": 4,
+    "relation_path_clusters": 31,
+    "replicates": 10000,
+    "rng_seed": 987535634705159947,
+    "shared_draws_for_all_metrics": true
+  },
+  "candidate_sequence_forwards": 11904,
+  "claim_boundary": "a primary pass confirms held-out candidate-likelihood bridge sensitivity, its K3-vs-K1 increase, and graph-topology-specific K3 recovery in Ouro-2.6B; the competence interval is diagnostic and cannot rescue a failed primary gate",
+  "decision": "CONFIRM_HELDOUT_BRIDGE_DEPTH_AND_TOPOLOGY_RESCUE",
+  "descriptive": {
+    "D3_G31_F3_factor_breakdowns_no_additional_gates": {
+      "by_candidate_order": {
+        "original": {
+          "D3": {
+            "bootstrap_replicates": 10000,
+            "estimate": 3.1538607708869444,
+            "pair_units": 124,
+            "percentile_95_CI": [
+              2.7507256453796742,
+              3.579853862091418
+            ]
+          },
+          "F3_ratio_of_means": {
+            "component_means_nats": {
+              "denominator": 3.1538607708869444,
+              "numerator": 2.253189786787956
+            },
+            "denominator_guard": {
+              "all_bootstrap_draws_pass": true,
+              "epsilon_nats": 1e-08,
+              "invalid_bootstrap_denominators": 0,
+              "minimum_bootstrap_denominator": 2.334804459925621,
+              "point_denominator_passes": true,
+              "valid_bootstrap_ratios": 10000
+            },
+            "estimate": 0.7144227188425641,
+            "percentile_95_CI": [
+              0.624607564029916,
+              0.7901303277541912
+            ]
+          },
+          "G31": {
+            "bootstrap_replicates": 10000,
+            "estimate": 3.1404498296399272,
+            "pair_units": 124,
+            "percentile_95_CI": [
+              2.7329731622770908,
+              3.570224486820159
+            ]
+          }
+        },
+        "reversed": {
+          "D3": {
+            "bootstrap_replicates": 10000,
+            "estimate": 3.0740654141672197,
+            "pair_units": 124,
+            "percentile_95_CI": [
+              2.686198885642713,
+              3.474064859603682
+            ]
+          },
+          "F3_ratio_of_means": {
+            "component_means_nats": {
+              "denominator": 3.0740654141672197,
+              "numerator": 2.175903426062676
+            },
+            "denominator_guard": {
+              "all_bootstrap_draws_pass": true,
+              "epsilon_nats": 1e-08,
+              "invalid_bootstrap_denominators": 0,
+              "minimum_bootstrap_denominator": 2.371573967318381,
+              "point_denominator_passes": true,
+              "valid_bootstrap_ratios": 10000
+            },
+            "estimate": 0.7078260000697284,
+            "percentile_95_CI": [
+              0.619917147996191,
+              0.7811994337852664
+            ]
+          },
+          "G31": {
+            "bootstrap_replicates": 10000,
+            "estimate": 3.0902527513042575,
+            "pair_units": 124,
+            "percentile_95_CI": [
+              2.7131808119435465,
+              3.481490190615577
+            ]
+          }
+        }
+      },
+      "by_query_arm": {
+        "A": {
+          "D3": {
+            "bootstrap_replicates": 10000,
+            "estimate": 3.1837842810538506,
+            "pair_units": 124,
+            "percentile_95_CI": [
+              2.665898904084198,
+              3.6929868446482765
+            ]
+          },
+          "F3_ratio_of_means": {
+            "component_means_nats": {
+              "denominator": 3.1837842810538506,
+              "numerator": 2.2747656722222604
+            },
+            "denominator_guard": {
+              "all_bootstrap_draws_pass": true,
+              "epsilon_nats": 1e-08,
+              "invalid_bootstrap_denominators": 0,
+              "minimum_bootstrap_denominator": 2.0812251683204406,
+              "point_denominator_passes": true,
+              "valid_bootstrap_ratios": 10000
+            },
+            "estimate": 0.7144848618541769,
+            "percentile_95_CI": [
+              0.5850537132765085,
+              0.8174284368620747
+            ]
+          },
+          "G31": {
+            "bootstrap_replicates": 10000,
+            "estimate": 3.210879944985913,
+            "pair_units": 124,
+            "percentile_95_CI": [
+              2.710305888253835,
+              3.7155430277028394
+            ]
+          }
+        },
+        "B": {
+          "D3": {
+            "bootstrap_replicates": 10000,
+            "estimate": 3.044141904000313,
+            "pair_units": 124,
+            "percentile_95_CI": [
+              2.574425905942917,
+              3.5215171708695348
+            ]
+          },
+          "F3_ratio_of_means": {
+            "component_means_nats": {
+              "denominator": 3.044141904000313,
+              "numerator": 2.1543275406283717
+            },
+            "denominator_guard": {
+              "all_bootstrap_draws_pass": true,
+              "epsilon_nats": 1e-08,
+              "invalid_bootstrap_denominators": 0,
+              "minimum_bootstrap_denominator": 2.156259767470821,
+              "point_denominator_passes": true,
+              "valid_bootstrap_ratios": 10000
+            },
+            "estimate": 0.7076961615348369,
+            "percentile_95_CI": [
+              0.5537967494610839,
+              0.8396814395322876
+            ]
+          },
+          "G31": {
+            "bootstrap_replicates": 10000,
+            "estimate": 3.019822635958272,
+            "pair_units": 124,
+            "percentile_95_CI": [
+              2.546727186874036,
+              3.502007920030625
+            ]
+          }
+        }
+      }
+    },
+    "D3_G31_F3_per_relation_path_no_additional_gates": {
+      "composer -> country of citizenship": {
+        "D3": 4.616490036249161,
+        "F3": 0.6608907039606498,
+        "F3_denominator_valid": true,
+        "G31": 4.607836693525314,
+        "pair_units": 4
+      },
+      "composer -> place of birth": {
+        "D3": 4.506424531340599,
+        "F3": 0.8179981603197432,
+        "F3_denominator_valid": true,
+        "G31": 4.501798614859581,
+        "pair_units": 4
+      },
+      "composer -> place of death": {
+        "D3": 3.7011463046073914,
+        "F3": 0.8076547826424028,
+        "F3_denominator_valid": true,
+        "G31": 3.6769922971725464,
+        "pair_units": 4
+      },
+      "director -> award received": {
+        "D3": 3.588804930448532,
+        "F3": 0.9504487162468797,
+        "F3_denominator_valid": true,
+        "G31": 3.6022654473781586,
+        "pair_units": 4
+      },
+      "director -> child": {
+        "D3": 2.408722460269928,
+        "F3": 0.5650465409027895,
+        "F3_denominator_valid": true,
+        "G31": 2.35089373588562,
+        "pair_units": 4
+      },
+      "director -> country of citizenship": {
+        "D3": 4.744140625,
+        "F3": 0.6710580422977402,
+        "F3_denominator_valid": true,
+        "G31": 4.727546691894531,
+        "pair_units": 4
+      },
+      "director -> educated at": {
+        "D3": 3.74700728058815,
+        "F3": 0.8878631379481126,
+        "F3_denominator_valid": true,
+        "G31": 3.743655651807785,
+        "pair_units": 4
+      },
+      "director -> employer": {
+        "D3": 4.052704304456711,
+        "F3": 0.7861561546348482,
+        "F3_denominator_valid": true,
+        "G31": 4.044538825750351,
+        "pair_units": 4
+      },
+      "director -> father": {
+        "D3": 1.6764315068721771,
+        "F3": 0.32970928331117133,
+        "F3_denominator_valid": true,
+        "G31": 1.6943819224834442,
+        "pair_units": 4
+      },
+      "director -> place of birth": {
+        "D3": 3.6107368767261505,
+        "F3": 0.8913281137638615,
+        "F3_denominator_valid": true,
+        "G31": 3.605226010084152,
+        "pair_units": 4
+      },
+      "director -> place of death": {
+        "D3": 3.9383751451969147,
+        "F3": 0.8417851734038988,
+        "F3_denominator_valid": true,
+        "G31": 3.9381734430789948,
+        "pair_units": 4
+      },
+      "director -> spouse": {
+        "D3": 2.4396390318870544,
+        "F3": 0.8088210384513927,
+        "F3_denominator_valid": true,
+        "G31": 2.37951397895813,
+        "pair_units": 4
+      },
+      "father -> cause of death": {
+        "D3": 2.0745617747306824,
+        "F3": 0.6318977177401729,
+        "F3_denominator_valid": true,
+        "G31": 2.074996769428253,
+        "pair_units": 4
+      },
+      "father -> country of citizenship": {
+        "D3": 2.2177772521972656,
+        "F3": 0.3215395706013482,
+        "F3_denominator_valid": true,
+        "G31": 2.2260375022888184,
+        "pair_units": 4
+      },
+      "father -> educated at": {
+        "D3": 1.853432685136795,
+        "F3": 0.4628343824233653,
+        "F3_denominator_valid": true,
+        "G31": 1.8950490057468414,
+        "pair_units": 4
+      },
+      "father -> place of birth": {
+        "D3": 2.3278645873069763,
+        "F3": 0.40083067796008237,
+        "F3_denominator_valid": true,
+        "G31": 2.31956285238266,
+        "pair_units": 4
+      },
+      "father -> place of burial": {
+        "D3": 2.044716477394104,
+        "F3": 0.4386164703618897,
+        "F3_denominator_valid": true,
+        "G31": 2.0425499081611633,
+        "pair_units": 4
+      },
+      "father -> place of death": {
+        "D3": 1.9491031020879745,
+        "F3": 0.5853978867846115,
+        "F3_denominator_valid": true,
+        "G31": 1.93740014731884,
+        "pair_units": 4
+      },
+      "founded by -> place of birth": {
+        "D3": 3.712886929512024,
+        "F3": 0.8921656932443197,
+        "F3_denominator_valid": true,
+        "G31": 3.707422137260437,
+        "pair_units": 4
+      },
+      "mother -> country of citizenship": {
+        "D3": 2.614379793405533,
+        "F3": 0.8271000183997477,
+        "F3_denominator_valid": true,
+        "G31": 2.6049651205539703,
+        "pair_units": 4
+      },
+      "mother -> place of birth": {
+        "D3": 1.8733865022659302,
+        "F3": 0.7493119358731615,
+        "F3_denominator_valid": true,
+        "G31": 1.861568570137024,
+        "pair_units": 4
+      },
+      "mother -> place of death": {
+        "D3": 1.9003612101078033,
+        "F3": 0.9558424980664714,
+        "F3_denominator_valid": true,
+        "G31": 1.9314895570278168,
+        "pair_units": 4
+      },
+      "performer -> award received": {
+        "D3": 3.6629310250282288,
+        "F3": 0.8373534518663089,
+        "F3_denominator_valid": true,
+        "G31": 3.6041815280914307,
+        "pair_units": 4
+      },
+      "performer -> country of citizenship": {
+        "D3": 5.273437589406967,
+        "F3": 0.7594444485228738,
+        "F3_denominator_valid": true,
+        "G31": 5.271728605031967,
+        "pair_units": 4
+      },
+      "performer -> place of birth": {
+        "D3": 4.220496416091919,
+        "F3": 0.9351015094583705,
+        "F3_denominator_valid": true,
+        "G31": 4.21222198009491,
+        "pair_units": 4
+      },
+      "performer -> place of death": {
+        "D3": 4.789890736341476,
+        "F3": 0.9147865218728557,
+        "F3_denominator_valid": true,
+        "G31": 4.808916479349136,
+        "pair_units": 4
+      },
+      "spouse -> country of citizenship": {
+        "D3": 2.896567791700363,
+        "F3": 0.5005299627121123,
+        "F3_denominator_valid": true,
+        "G31": 2.8907794654369354,
+        "pair_units": 4
+      },
+      "spouse -> educated at": {
+        "D3": 2.844891458749771,
+        "F3": 0.6675862509235275,
+        "F3_denominator_valid": true,
+        "G31": 2.8477815091609955,
+        "pair_units": 4
+      },
+      "spouse -> place of birth": {
+        "D3": 2.31857830286026,
+        "F3": 0.5729969254707972,
+        "F3_denominator_valid": true,
+        "G31": 2.3922723531723022,
+        "pair_units": 4
+      },
+      "spouse -> place of burial": {
+        "D3": 2.589908480644226,
+        "F3": 0.43558155729380194,
+        "F3_denominator_valid": true,
+        "G31": 2.6792510747909546,
+        "pair_units": 4
+      },
+      "spouse -> place of death": {
+        "D3": 2.33706071972847,
+        "F3": -0.15297652366153017,
+        "F3_denominator_valid": true,
+        "G31": 2.3948921263217926,
+        "pair_units": 4
+      }
+    },
+    "D_K_original_minus_bridge_swap": {
+      "1": {
+        "bootstrap_replicates": 10000,
+        "estimate": -0.0013881979450102776,
+        "pair_units": 124,
+        "percentile_95_CI": [
+          -0.01946764463378537,
+          0.01399850725166259
+        ]
+      },
+      "2": {
+        "bootstrap_replicates": 10000,
+        "estimate": 1.761040067961139,
+        "pair_units": 124,
+        "percentile_95_CI": [
+          1.4940854414576483,
+          2.0482850400911223
+        ]
+      },
+      "3": {
+        "bootstrap_replicates": 10000,
+        "estimate": 3.113963092527082,
+        "pair_units": 124,
+        "percentile_95_CI": [
+          2.733795112383462,
+          3.5097325245579403
+        ]
+      },
+      "4": {
+        "bootstrap_replicates": 10000,
+        "estimate": 3.580451195278475,
+        "pair_units": 124,
+        "percentile_95_CI": [
+          3.1376289334989367,
+          4.026555069079322
+        ]
+      }
+    },
+    "F_K_topology_rescue_fraction_where_denominator_valid": {
+      "1": {
+        "component_means_nats": {
+          "denominator": -0.0013881979450102776,
+          "numerator": 0.0021502087193150674
+        },
+        "denominator_guard": {
+          "all_bootstrap_draws_pass": false,
+          "epsilon_nats": 1e-08,
+          "invalid_bootstrap_denominators": 5569,
+          "minimum_bootstrap_denominator": -0.039426701684151924,
+          "point_denominator_passes": false,
+          "valid_bootstrap_ratios": 4431
+        },
+        "estimate": null,
+        "percentile_95_CI": [
+          -11.95869229195484,
+          18.347027467413792
+        ]
+      },
+      "2": {
+        "component_means_nats": {
+          "denominator": 1.761040067961139,
+          "numerator": 1.1588396059889947
+        },
+        "denominator_guard": {
+          "all_bootstrap_draws_pass": true,
+          "epsilon_nats": 1e-08,
+          "invalid_bootstrap_denominators": 0,
+          "minimum_bootstrap_denominator": 1.2712754405313922,
+          "point_denominator_passes": true,
+          "valid_bootstrap_ratios": 10000
+        },
+        "estimate": 0.6580427254733916,
+        "percentile_95_CI": [
+          0.5197783325958085,
+          0.7745279935470278
+        ]
+      },
+      "3": {
+        "component_means_nats": {
+          "denominator": 3.113963092527082,
+          "numerator": 2.214546606425316
+        },
+        "denominator_guard": {
+          "all_bootstrap_draws_pass": true,
+          "epsilon_nats": 1e-08,
+          "invalid_bootstrap_denominators": 0,
+          "minimum_bootstrap_denominator": 2.3839563852356327,
+          "point_denominator_passes": true,
+          "valid_bootstrap_ratios": 10000
+        },
+        "estimate": 0.7111666197135752,
+        "percentile_95_CI": [
+          0.6234409447218597,
+          0.7840646352129501
+        ]
+      },
+      "4": {
+        "component_means_nats": {
+          "denominator": 3.580451195278475,
+          "numerator": 2.6397582105090542
+        },
+        "denominator_guard": {
+          "all_bootstrap_draws_pass": true,
+          "epsilon_nats": 1e-08,
+          "invalid_bootstrap_denominators": 0,
+          "minimum_bootstrap_denominator": 2.735510878985928,
+          "point_denominator_passes": true,
+          "valid_bootstrap_ratios": 10000
+        },
+        "estimate": 0.737269708909897,
+        "percentile_95_CI": [
+          0.6548030387657662,
+          0.8060557579322438
+        ]
+      }
+    },
+    "K3_topology_rescue_minus_original": {
+      "bootstrap_replicates": 10000,
+      "estimate": -0.8994164861017658,
+      "pair_units": 124,
+      "percentile_95_CI": [
+        -1.1298916343118877,
+        -0.6881002854555847
+      ]
+    },
+    "positive_pair_counts": {
+      "D3": 124,
+      "G31": 124,
+      "denominator": 124
+    },
+    "state_reference_margin_nats_by_K": {
+      "bridge_swap": {
+        "1": -0.00825831582469325,
+        "2": -0.4293521484059672,
+        "3": -0.8821477385297898,
+        "4": -1.2084001778594908
+      },
+      "original": {
+        "1": -0.009646513769703527,
+        "2": 1.3316879195551719,
+        "3": 2.231815353997292,
+        "4": 2.3720510174189844
+      },
+      "topology_rescue": {
+        "1": -0.006108107105378182,
+        "2": 0.7294874575830275,
+        "3": 1.3323988678955263,
+        "4": 1.4313580326495632
+      }
+    }
+  },
+  "pair_units": 124,
+  "primary": {
+    "co_primary_depth_gate": {
+      "D3": {
+        "bootstrap_replicates": 10000,
+        "estimate": 3.113963092527082,
+        "pair_units": 124,
+        "passes_lower_95_gt_0": true,
+        "percentile_95_CI": [
+          2.733795112383462,
+          3.5097325245579403
+        ]
+      },
+      "G31": {
+        "bootstrap_replicates": 10000,
+        "estimate": 3.115351290472092,
+        "pair_units": 124,
+        "passes_lower_95_gt_0": true,
+        "percentile_95_CI": [
+          2.7370814073109817,
+          3.5108061166780615
+        ]
+      },
+      "passes": true
+    },
+    "co_primary_topology_gate": {
+      "F3_ratio_of_means": {
+        "component_means_nats": {
+          "denominator": 3.113963092527082,
+          "numerator": 2.214546606425316
+        },
+        "definition": "mean(z_topology_rescue-z_bridge_swap) / mean(z_original-z_bridge_swap), K=3",
+        "denominator_guard": {
+          "all_bootstrap_draws_pass": true,
+          "epsilon_nats": 1e-08,
+          "invalid_bootstrap_denominators": 0,
+          "minimum_bootstrap_denominator": 2.3839563852356327,
+          "point_denominator_passes": true,
+          "valid_bootstrap_ratios": 10000
+        },
+        "estimate": 0.7111666197135752,
+        "passes_lower_95_gt_0_5": true,
+        "percentile_95_CI": [
+          0.6234409447218597,
+          0.7840646352129501
+        ]
+      },
+      "component_means_nats": {
+        "mean_original_minus_bridge_swap": 3.113963092527082,
+        "mean_topology_rescue_minus_bridge_swap": 2.214546606425316
+      },
+      "denominator_guard": {
+        "all_bootstrap_draws_pass": true,
+        "epsilon_nats": 1e-08,
+        "invalid_bootstrap_denominators": 0,
+        "minimum_bootstrap_denominator": 2.3839563852356327,
+        "point_denominator_passes": true,
+        "valid_bootstrap_ratios": 10000
+      },
+      "passes": true
+    },
+    "conjunctive_primary_success": true
+  },
+  "relation_path_clusters": 31,
+  "sanity_only_not_a_primary_gate": {
+    "pooled_K3_state_correct_pair_argmax_accuracy": {
+      "bootstrap_replicates": 10000,
+      "estimate": 0.6895161290322581,
+      "pair_units": 124,
+      "passes_lower_95_gt_0_5": true,
+      "percentile_95_CI": [
+        0.6508736559139785,
+        0.728494623655914
+      ]
+    }
+  },
+  "scored_rows": 5952
+}

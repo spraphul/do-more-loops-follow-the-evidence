@@ -1,0 +1,251 @@
+{
+  "data_manifest": {
+    "path": "data/plot_ready/appendix/manifest.json",
+    "sha256": "4b9d17d9a749e3b4f65027e426d463bfaa64626a14f87a4031caeb08adcedad1"
+  },
+  "figures": [
+    {
+      "height_inches": 3.45,
+      "inputs": [
+        "appendix_c1_backbone_heterogeneity.csv"
+      ],
+      "name": "appendix_c1_backbone_heterogeneity",
+      "outputs": [
+        {
+          "bytes": 44393,
+          "path": "reproduced/figures/appendix/appendix_c1_backbone_heterogeneity.svg",
+          "sha256": "1c5a7c7d61fbbb52172df8e3e112d19e36634b9647100118d35abe55136d6b29"
+        },
+        {
+          "bytes": 23790,
+          "path": "reproduced/figures/appendix/appendix_c1_backbone_heterogeneity.pdf",
+          "sha256": "9d2b86a8ec7345cdbf3d59fb24a3b97c11bbaf7efc24bd4a07924ac1636a7840"
+        },
+        {
+          "bytes": 138159,
+          "path": "reproduced/figures/appendix/appendix_c1_backbone_heterogeneity.png",
+          "sha256": "a23a16d86eeb9eba6b2465d0f5382c98295580017e6465a5b0540a8270565996"
+        }
+      ],
+      "width_inches": 7.2
+    },
+    {
+      "height_inches": 2.7,
+      "inputs": [
+        "appendix_c1_specificity_heterogeneity.csv"
+      ],
+      "name": "appendix_c1_specificity_heterogeneity",
+      "outputs": [
+        {
+          "bytes": 39206,
+          "path": "reproduced/figures/appendix/appendix_c1_specificity_heterogeneity.svg",
+          "sha256": "2c74a2fbb0e6d4cf9f390db3fa6a7c23d9e46b63f704d969a286c85eed8db8f3"
+        },
+        {
+          "bytes": 25544,
+          "path": "reproduced/figures/appendix/appendix_c1_specificity_heterogeneity.pdf",
+          "sha256": "923598ce8a2088f2abe07fa19bc2fffd80035f587bb730a55a6d840a10cd44f1"
+        },
+        {
+          "bytes": 112792,
+          "path": "reproduced/figures/appendix/appendix_c1_specificity_heterogeneity.png",
+          "sha256": "d43d806ee5fdc0d569fa1320f53eb15dd59e8cda0d27634bb2a9e9df488a8a54"
+        }
+      ],
+      "width_inches": 7.2
+    },
+    {
+      "height_inches": 2.18,
+      "inputs": [
+        "appendix_e1_residual_depth.csv"
+      ],
+      "name": "appendix_e1_residual_depth",
+      "outputs": [
+        {
+          "bytes": 17277,
+          "path": "reproduced/figures/appendix/appendix_e1_residual_depth.svg",
+          "sha256": "2a052198572e277f1d632f83c0d740e04dd360db3d5ffa1f66852a1ab09d4328"
+        },
+        {
+          "bytes": 18753,
+          "path": "reproduced/figures/appendix/appendix_e1_residual_depth.pdf",
+          "sha256": "79de2aa3ed0fcfac4e9aac1c6431a042ae46ad0a15e2cee4d1cd1fe6b42e804a"
+        },
+        {
+          "bytes": 57295,
+          "path": "reproduced/figures/appendix/appendix_e1_residual_depth.png",
+          "sha256": "5b38f12245972587d0704b48fa0ca951b79614a9a40db1dad6ea3c183e0700bc"
+        }
+      ],
+      "width_inches": 5.35
+    },
+    {
+      "height_inches": 2.65,
+      "inputs": [
+        "appendix_e2_stage1_pairs.csv"
+      ],
+      "name": "appendix_e2_stage1_compatibility",
+      "outputs": [
+        {
+          "bytes": 56522,
+          "path": "reproduced/figures/appendix/appendix_e2_stage1_compatibility.svg",
+          "sha256": "4101b130bbea1a26f2fadbca64a6e772c679a3dcdd083983b47c4c118fa1c557"
+        },
+        {
+          "bytes": 25111,
+          "path": "reproduced/figures/appendix/appendix_e2_stage1_compatibility.pdf",
+          "sha256": "f5ce6ff2df015b086c0e1e2f1b55cb22b5963f10990326d7f5918b30a2a19db6"
+        },
+        {
+          "bytes": 136902,
+          "path": "reproduced/figures/appendix/appendix_e2_stage1_compatibility.png",
+          "sha256": "140551377a15f5de79f4882f59f458dab2ea938a019b180c4ae6e5a0d7bca3e8"
+        }
+      ],
+      "width_inches": 7.2
+    },
+    {
+      "height_inches": 1.95,
+      "inputs": [
+        "appendix_e2_stage2_effects.csv"
+      ],
+      "name": "appendix_e2_stage2_intervention",
+      "outputs": [
+        {
+          "bytes": 9316,
+          "path": "reproduced/figures/appendix/appendix_e2_stage2_intervention.svg",
+          "sha256": "9853e805aacd4b11e149024cf594994355f7b9917bd810541af6ca6e60e1525c"
+        },
+        {
+          "bytes": 20016,
+          "path": "reproduced/figures/appendix/appendix_e2_stage2_intervention.pdf",
+          "sha256": "87e2e0c205b7ecc5302b7647437e2034c956f40f61ab892b444c2a2a7a218483"
+        },
+        {
+          "bytes": 46990,
+          "path": "reproduced/figures/appendix/appendix_e2_stage2_intervention.png",
+          "sha256": "ede2b1f81a1dba43461ce07cfac4eb60197e33416399225761880ce6198ff355"
+        }
+      ],
+      "width_inches": 3.75
+    },
+    {
+      "height_inches": 2.35,
+      "inputs": [
+        "appendix_f1_list_retention.csv"
+      ],
+      "name": "appendix_f1_list_retention",
+      "outputs": [
+        {
+          "bytes": 13946,
+          "path": "reproduced/figures/appendix/appendix_f1_list_retention.svg",
+          "sha256": "30f66e1e97f7472d52bd08322b66285bbb7ed61da588d006448bb6dc77043799"
+        },
+        {
+          "bytes": 22144,
+          "path": "reproduced/figures/appendix/appendix_f1_list_retention.pdf",
+          "sha256": "464371c7e22ae91a696f2f522f22e7ac4de572b6881a6f31ef1badf5a9d2a8e9"
+        },
+        {
+          "bytes": 55428,
+          "path": "reproduced/figures/appendix/appendix_f1_list_retention.png",
+          "sha256": "69da2e3a574b1a2aa80fdf8c6921589a6db49fd3b3e320d2eda2226fdfe229dc"
+        }
+      ],
+      "width_inches": 4.25
+    },
+    {
+      "height_inches": 2.52,
+      "inputs": [
+        "appendix_g1_emitted_choice.csv"
+      ],
+      "name": "appendix_g1_emitted_choice",
+      "outputs": [
+        {
+          "bytes": 13224,
+          "path": "reproduced/figures/appendix/appendix_g1_emitted_choice.svg",
+          "sha256": "239556dbce5ac696f8f262a9b038534904d8ac11f4b841d27a8b21827e5f07c0"
+        },
+        {
+          "bytes": 22155,
+          "path": "reproduced/figures/appendix/appendix_g1_emitted_choice.pdf",
+          "sha256": "b73fd8aa8cca2129f5897d4870d280064cf25eeb9aa84a0b2be2933a952430a5"
+        },
+        {
+          "bytes": 67865,
+          "path": "reproduced/figures/appendix/appendix_g1_emitted_choice.png",
+          "sha256": "bd2f34ce35bbb275feee1f5561bcf00f8348e8cb3fab1295b1a91f881bf1eda6"
+        }
+      ],
+      "width_inches": 5.25
+    },
+    {
+      "height_inches": 2.35,
+      "inputs": [
+        "appendix_g1_state_accuracy.csv"
+      ],
+      "name": "appendix_g1_state_accuracy",
+      "outputs": [
+        {
+          "bytes": 8853,
+          "path": "reproduced/figures/appendix/appendix_g1_state_accuracy.svg",
+          "sha256": "39554c84d6f5933dcc851aa5a96ad813db3dcfc4fb4ddf41e673b974b8eb97ca"
+        },
+        {
+          "bytes": 19589,
+          "path": "reproduced/figures/appendix/appendix_g1_state_accuracy.pdf",
+          "sha256": "3535172ec58c5d37067f5e5e0a9862d38670234a6d02dc4685cc733c3a23a0c1"
+        },
+        {
+          "bytes": 75966,
+          "path": "reproduced/figures/appendix/appendix_g1_state_accuracy.png",
+          "sha256": "09a64b1931377ac293f5ca6610a1afb5f8998799ffd0741d4a7bd7b972dc3bd1"
+        }
+      ],
+      "width_inches": 5.25
+    },
+    {
+      "height_inches": 3.05,
+      "inputs": [
+        "appendix_h1_causal_access.csv"
+      ],
+      "name": "appendix_h1_causal_access",
+      "outputs": [
+        {
+          "bytes": 20099,
+          "path": "reproduced/figures/appendix/appendix_h1_causal_access.svg",
+          "sha256": "3b162d146939c1df3415e6d911607cf686ef95e89dd7e1f247a5a9a982018797"
+        },
+        {
+          "bytes": 24865,
+          "path": "reproduced/figures/appendix/appendix_h1_causal_access.pdf",
+          "sha256": "682b937023b8803b47b32f1b2ccbbe7bff89dee827ec461c069f85ce09bd8f30"
+        },
+        {
+          "bytes": 108718,
+          "path": "reproduced/figures/appendix/appendix_h1_causal_access.png",
+          "sha256": "27f2a6d42509ba883e13ad0db0d7ca45ca76c8d34622381901f185c4f446aaa0"
+        }
+      ],
+      "width_inches": 5.35
+    }
+  ],
+  "generator": {
+    "path": "figures/plot_appendix_diagnostics.py",
+    "sha256": "9a24561ef5d32b26ebe1f477b186c5e34026cf8dce524052c9c2d5dbe1122c1a"
+  },
+  "schema": "iclr2027-rebuilt-appendix-statistical-v1",
+  "style": {
+    "embedded_captions": false,
+    "embedded_figure_numbers": false,
+    "embedded_numeric_ci_labels": false,
+    "font": "Avenir Next with Helvetica Neue and Arial fallbacks",
+    "minimum_font_points": 9,
+    "png_dpi": 300
+  },
+  "versions": {
+    "matplotlib": "3.11.1",
+    "pandas": "3.0.5",
+    "seaborn": "0.13.2"
+  }
+}
