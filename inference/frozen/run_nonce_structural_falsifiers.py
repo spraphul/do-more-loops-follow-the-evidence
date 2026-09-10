@@ -8,7 +8,7 @@ import hashlib
 import json
 import math
 import sys
-from datetime import UTC, datetime
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
@@ -206,7 +206,7 @@ def main() -> None:
         raise RuntimeError("duplicate scored row IDs")
     artifact = {
         "schema": SCHEMA,
-        "created_at": datetime.now(UTC).isoformat(),
+        "created_at": datetime.now(timezone.utc).isoformat(),
         "mode": args.mode,
         "model_key": "ouro26",
         "mock": args.mock,

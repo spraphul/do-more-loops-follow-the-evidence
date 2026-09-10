@@ -8,7 +8,14 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-EXCLUDED_PARTS = {".git", ".venv", ".pytest_cache", "__pycache__", "reproduced"}
+EXCLUDED_PARTS = {
+    ".git",
+    ".venv",
+    ".venv-inference",
+    ".pytest_cache",
+    "__pycache__",
+    "reproduced",
+}
 EXCLUDED_FILES = {"MANIFEST.sha256", ".DS_Store"}
 
 
@@ -38,4 +45,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

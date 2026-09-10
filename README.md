@@ -1,14 +1,14 @@
 # Do More Loops Follow the Evidence?
 
-## Causal Tests of Relational Evidence Control in Recurrent Language Models
-
 This anonymous artifact accompanies an ICLR submission. It contains the
 generated experimental panels, text-free natural-question score rows, complete
 fictional-world score rows, controlled-training records, analysis code,
 expected outputs, and plotting code needed to audit the paper's central causal
-claims.
+claims. It includes the HRM linear and branching confirmations, the fresh
+four-format Ouro confirmation, and a text-free version of the post-outcome
+answer-boundary audit.
 
-The fastest reviewer path is:
+The central audit runs with:
 
 ```bash
 python3.11 -m venv .venv
@@ -35,16 +35,17 @@ make figures
 
 ## What is included
 
-- `data/generated/`: all 288 fictional worlds, frozen prompt cells, splits,
-  balance audits, and exact symbolic validations.
+- `data/generated/`: generated worlds, prompt cells, splits, balance audits,
+  and symbolic validations.
 - `data/analysis_ready/`: row-level scores for the central natural,
-  fictional, structural-control, and training-factorial analyses.
+  fictional, HRM, prompt-format, structural-control, answer-boundary, and
+  training-factorial analyses.
 - `data/frozen_summaries/`: compact machine-readable records for secondary
   diagnostics and stopped branches.
 - `analysis/`: estimands, competence checks, registered resampling schemes,
   and sensitivity analyses.
-- `inference/`: frozen model-facing runners and an executable mock mode for
-  validating schedules without model weights.
+- `inference/`: released model-facing runners and a mock mode for checking
+  schedules without model weights.
 - `expected/`: frozen analysis outputs and publication-ready statistical
   figures against which a fresh run is checked.
 - `tools/`: one-command orchestration, integrity checking, anonymity auditing,
@@ -57,25 +58,25 @@ make figures
 The natural-question files retain the complete paired score grid and the
 independent inference units, but not licensed question text, prompts, entity
 strings, source item identifiers, raw tokenizer identifiers, or answer
-continuations. This is sufficient to reproduce every released natural-panel
-estimand and interval without redistributing benchmark content. The fictional
-worlds are generated for this study and are released in full, including their
-exact prompts.
+continuations. The answer-boundary projection additionally removes generated
+strings, decoded first-token text, and tokenizer IDs while retaining the
+categories, ranks, candidate identities, margins, and paired clusters needed
+for the reported diagnostic. These fields reproduce every
+released natural-panel estimand and interval without redistributing benchmark
+content. The fictional worlds are generated for this study and are released in
+full, including their exact prompts.
 
 Model checkpoints and upstream benchmark files are not bundled. They must be
 obtained from their original providers under the applicable terms. Frozen
 score rows make the statistical reproduction independent of gated-model
 access.
 
-## Reviewer map
+## File map
 
-Start with [CLAIM_INDEX.md](CLAIM_INDEX.md) for the shortest route from each
-paper claim to its inputs, command, and expected output. See
-[REPRODUCIBILITY.md](REPRODUCIBILITY.md) for environment and execution details,
-and [docs/RESULT_STATUS.md](docs/RESULT_STATUS.md) for the distinction between
-prospective confirmation, registered transfer, diagnostic analysis, and a
-failed competence gate.
+[CLAIM_INDEX.md](CLAIM_INDEX.md) links each central claim to its inputs,
+command, and expected output. [REPRODUCIBILITY.md](REPRODUCIBILITY.md)
+documents the environment and execution steps. [docs/RESULT_STATUS.md](docs/RESULT_STATUS.md)
+records the status assigned to each analysis.
 
 No authors, affiliations, private repository history, tokens, host names, or
 local machine paths are included in this release.
-

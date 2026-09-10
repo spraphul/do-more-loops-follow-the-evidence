@@ -30,6 +30,40 @@ state, query arm, answer order, K, reference and expected A/B labels, raw A/B
 logits, oriented margin, pair probability, and exact-choice credit. The source
 prompt is joined by `row_id` to the complete generated panel.
 
+## Prompt-format score rows
+
+The surface-orbit files use the fictional row schema and additionally retain
+`surface_world_id`, `serialization`, `morphology_index`, `wording_index`,
+`order_index`, and `design_block`. Four surface realizations share each
+`world_id`; all states, arms, orders, surfaces, and exits remain coupled at the
+world level. The separate competence file contains only the 24 gate worlds.
+Eight treatment shards jointly contain the 48 disjoint inference worlds.
+
+## HRM score rows
+
+The HRM files retain the generated world and row identifiers, relation family,
+graph state, query or requested-relation arm, answer order, H readout, A/B
+labels, and raw A/B logits. The analysis recomputes margins, choices, and
+state-oriented accuracy from those logits.
+
+The linear release contains 384 H1/H2 gate rows and 4,800 treatment rows from
+240 different worlds. The gate uses only the 192 H2 rows. The branching
+release contains 384 H2 gate rows and 6,912 confirmation rows from 144
+different worlds. Its source arms, requested relations, graph states, answer
+orders, and H1/H2 readouts remain paired within world. Scrubbed execution
+metadata retains the checkpoint, prompt-adapter, full-vocabulary H2 parity,
+runner, and gate bindings without machine paths or timestamps.
+
+## Answer-boundary rows
+
+Each boundary row retains a pseudonymous pair identifier, an optional
+pseudonymous 2Wiki relation-path stratum, K, query arm, graph cell, expected and
+reference candidate identities, three score margins, the corresponding
+candidate predictions, generation-adherence indicators, first-token category,
+candidate-prefix ranks, and replay-parity status. Exact benchmark text,
+candidate strings, generated continuations, decoded token strings, tokenizer
+IDs, source identifiers, and machine paths are absent by construction.
+
 ## Factorial runs
 
 Each file is one training seed and one of four cells:
@@ -49,4 +83,3 @@ These files deliberately omit row-level prompts and text-bearing payloads.
 They preserve the source result's summary, decision, model binding, and
 analysis status where available. They support appendix auditing but are not
 substitutes for the central row-level evidence.
-

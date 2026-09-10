@@ -1,0 +1,1005 @@
+{
+  "schema": "evidence-loops.hrm-branching-analysis.v1",
+  "status": "fresh_confirmation",
+  "model_key": "hrm_text_1b",
+  "model_repository": "sapientinc/HRM-Text-1B",
+  "model_revision": "1f82ac2b71222f0c100a224a33f24b44a3000b6d",
+  "worlds": 144,
+  "scored_rows": 6912,
+  "panel_sha256": "e76bf583223dba4f6b46e970b592009b6b7f29bd9db0e30cd8b97c3217314f31",
+  "execution": {
+    "shard_count": 12,
+    "inputs": [
+      {
+        "path": "shard_0.json",
+        "sha256": "82764ab13dc287b9f2dada4616e5e1924974169b7ff6afcff52f9f17b03862e2"
+      },
+      {
+        "path": "shard_1.json",
+        "sha256": "e04d7f35affe587636667575b36e694d62a6c6857486d54c9baaf60a985db529"
+      },
+      {
+        "path": "shard_10.json",
+        "sha256": "e559f4d1a7b7e00307a37ab67f850c5852103d2f24dbd41714b30642eacac03e"
+      },
+      {
+        "path": "shard_11.json",
+        "sha256": "039f1132fdd0131c9df8fbcd3aeb9ee57a1a9837e8b9afb6ceb79e4625d8ed8b"
+      },
+      {
+        "path": "shard_2.json",
+        "sha256": "98866fcc8ac934b69a59ae447abfc3b3b7e57331f0cdc74d051619b09d287391"
+      },
+      {
+        "path": "shard_3.json",
+        "sha256": "08995942dbad25c4255e47d43e28f0d0b2d67ee8bc825e8b1729fb546de3b34e"
+      },
+      {
+        "path": "shard_4.json",
+        "sha256": "97070de52c2b83c1d3ddf82acb747c6fe11e9bd4456f76882eb8adb238ba6dbc"
+      },
+      {
+        "path": "shard_5.json",
+        "sha256": "282a776581ef465d7300a873bb2af194b0c4aa9c9c2ecd550109d589b5354b38"
+      },
+      {
+        "path": "shard_6.json",
+        "sha256": "fb1f6d197451da362b6466134780d09738a80f561c5b05e21f49dd78dc4956cb"
+      },
+      {
+        "path": "shard_7.json",
+        "sha256": "0df36e7d1f19e3d16265c512b51393c8c9e8c8a6951f972bb4a6de5718a32c20"
+      },
+      {
+        "path": "shard_8.json",
+        "sha256": "e5dcf5edaeb16c81b9162476a6fe4be2ccd8a8780f824ab226756a5631e1c2d4"
+      },
+      {
+        "path": "shard_9.json",
+        "sha256": "1838ec430447030d7e8595d008900b7de2b0aea975db03f2b9c5e2bc00801bfc"
+      }
+    ]
+  },
+  "gate": {
+    "decision": "PROMOTE_TO_CONFIRMATION",
+    "passes_competence_gate": true,
+    "authorizes_real_confirmation": true,
+    "mock": false,
+    "worlds": 48,
+    "prompt_cells": 384,
+    "scored_rows": 384,
+    "gate_exit": "H2",
+    "deep_original_accuracy": {
+      "estimate": 0.77734375,
+      "ci95": [
+        0.7395833333333334,
+        0.8151041666666666
+      ],
+      "bootstrap_replicates": 10000,
+      "resampling": "8 whole worlds within each of six relation families"
+    },
+    "second_relation_arm_accuracy_H2": {
+      "X": 0.7994791666666666,
+      "Y": 0.7552083333333334
+    },
+    "source_arm_accuracy_H2": {
+      "0": 0.8072916666666666,
+      "1": 0.7473958333333334
+    },
+    "candidate_order_accuracy_H2": {
+      "original": 0.7942708333333334,
+      "reversed": 0.7604166666666666
+    },
+    "relation_family_accuracy_H2": {
+      "0": 0.9140625,
+      "1": 0.6953125,
+      "2": 0.7578125,
+      "3": 0.78125,
+      "4": 0.703125,
+      "5": 0.8125
+    },
+    "requirements": {
+      "H2_point_at_least": 0.65,
+      "H2_lower95_strictly_above": 0.5,
+      "each_second_relation_arm_H2_at_least": 0.55,
+      "each_source_arm_H2_at_least": 0.55,
+      "each_candidate_order_H2_at_least": 0.55,
+      "each_relation_family_H2_at_least": 0.5
+    },
+    "seal": "only original-state H2 outcomes from 48 gate worlds were decoded; confirmation worlds remained untouched"
+  },
+  "inference": {
+    "bootstrap_replicates": 10000,
+    "shared_draws_across_all_metrics": true,
+    "resampling_unit": "whole world",
+    "stratification": "six relation families, 24 worlds per family",
+    "source_and_candidate_order_aggregation": "within world before resampling",
+    "raw_score_contract": "margins and exact-choice credits recomputed from A/B logits"
+  },
+  "results": {
+    "supporting_bridge_effect_raw_X_H1": {
+      "estimate": 0.0002712673611111111,
+      "ci95": [
+        -0.0010579427083333333,
+        0.0016276041666666667
+      ],
+      "bootstrap_replicates": 10000,
+      "resampling_unit": "whole world"
+    },
+    "supporting_bridge_effect_choice_X_H1": {
+      "estimate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "bootstrap_replicates": 10000,
+      "resampling_unit": "whole world"
+    },
+    "primary_repair_effect_raw_X_H1": {
+      "estimate": 0.0005425347222222222,
+      "ci95": [
+        -0.0007866753472222222,
+        0.0018181694878472124
+      ],
+      "bootstrap_replicates": 10000,
+      "resampling_unit": "whole world"
+    },
+    "primary_repair_effect_choice_X_H1": {
+      "estimate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "bootstrap_replicates": 10000,
+      "resampling_unit": "whole world"
+    },
+    "supporting_bridge_effect_raw_Y_H1": {
+      "estimate": -8.138020833333333e-05,
+      "ci95": [
+        -0.001247829861111111,
+        0.0011121961805555555
+      ],
+      "bootstrap_replicates": 10000,
+      "resampling_unit": "whole world"
+    },
+    "supporting_bridge_effect_choice_Y_H1": {
+      "estimate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "bootstrap_replicates": 10000,
+      "resampling_unit": "whole world"
+    },
+    "primary_repair_effect_raw_Y_H1": {
+      "estimate": 0.000732421875,
+      "ci95": [
+        -0.00048828125,
+        0.001953125
+      ],
+      "bootstrap_replicates": 10000,
+      "resampling_unit": "whole world"
+    },
+    "primary_repair_effect_choice_Y_H1": {
+      "estimate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "bootstrap_replicates": 10000,
+      "resampling_unit": "whole world"
+    },
+    "supporting_bridge_xor_raw_H1": {
+      "estimate": 4.7471788194444445e-05,
+      "ci95": [
+        -0.00042724609375,
+        0.0005154079861111111
+      ],
+      "bootstrap_replicates": 10000,
+      "resampling_unit": "whole world"
+    },
+    "supporting_bridge_xor_choice_H1": {
+      "estimate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "bootstrap_replicates": 10000,
+      "resampling_unit": "whole world"
+    },
+    "primary_repair_xor_raw_H1": {
+      "estimate": 0.00031873914930555556,
+      "ci95": [
+        -0.00010172526041666667,
+        0.0007188585069444445
+      ],
+      "bootstrap_replicates": 10000,
+      "resampling_unit": "whole world"
+    },
+    "primary_repair_xor_choice_H1": {
+      "estimate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "bootstrap_replicates": 10000,
+      "resampling_unit": "whole world"
+    },
+    "primary_nearest_matched_repair_choice_H1": {
+      "estimate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "bootstrap_replicates": 10000,
+      "resampling_unit": "whole world"
+    },
+    "primary_nearest_crossed_repair_choice_H1": {
+      "estimate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "bootstrap_replicates": 10000,
+      "resampling_unit": "whole world"
+    },
+    "state_accuracy_original_H1": {
+      "estimate": 0.5,
+      "ci95": [
+        0.5,
+        0.5
+      ],
+      "bootstrap_replicates": 10000,
+      "resampling_unit": "whole world"
+    },
+    "state_accuracy_bridge_swap_H1": {
+      "estimate": 0.5,
+      "ci95": [
+        0.5,
+        0.5
+      ],
+      "bootstrap_replicates": 10000,
+      "resampling_unit": "whole world"
+    },
+    "state_accuracy_topology_repair_H1": {
+      "estimate": 0.5,
+      "ci95": [
+        0.5,
+        0.5
+      ],
+      "bootstrap_replicates": 10000,
+      "resampling_unit": "whole world"
+    },
+    "supporting_bridge_effect_raw_X_H2": {
+      "estimate": 1.7358940972222223,
+      "ci95": [
+        1.5935329861111112,
+        1.8769585503472221
+      ],
+      "bootstrap_replicates": 10000,
+      "resampling_unit": "whole world"
+    },
+    "supporting_bridge_effect_choice_X_H2": {
+      "estimate": 0.5546875,
+      "ci95": [
+        0.4956597222222222,
+        0.6119791666666666
+      ],
+      "bootstrap_replicates": 10000,
+      "resampling_unit": "whole world"
+    },
+    "primary_repair_effect_raw_X_H2": {
+      "estimate": 1.6512586805555556,
+      "ci95": [
+        1.4869791666666667,
+        1.8205295138888888
+      ],
+      "bootstrap_replicates": 10000,
+      "resampling_unit": "whole world"
+    },
+    "primary_repair_effect_choice_X_H2": {
+      "estimate": 0.5347222222222222,
+      "ci95": [
+        0.4765625,
+        0.5920138888888888
+      ],
+      "bootstrap_replicates": 10000,
+      "resampling_unit": "whole world"
+    },
+    "supporting_bridge_effect_raw_Y_H2": {
+      "estimate": 1.8257378472222223,
+      "ci95": [
+        1.6675238715277778,
+        1.9863335503472221
+      ],
+      "bootstrap_replicates": 10000,
+      "resampling_unit": "whole world"
+    },
+    "supporting_bridge_effect_choice_Y_H2": {
+      "estimate": 0.5590277777777778,
+      "ci95": [
+        0.5086805555555556,
+        0.609375
+      ],
+      "bootstrap_replicates": 10000,
+      "resampling_unit": "whole world"
+    },
+    "primary_repair_effect_raw_Y_H2": {
+      "estimate": 1.8179253472222223,
+      "ci95": [
+        1.6397515190972223,
+        1.996316189236111
+      ],
+      "bootstrap_replicates": 10000,
+      "resampling_unit": "whole world"
+    },
+    "primary_repair_effect_choice_Y_H2": {
+      "estimate": 0.5894097222222222,
+      "ci95": [
+        0.53125,
+        0.6467013888888888
+      ],
+      "bootstrap_replicates": 10000,
+      "resampling_unit": "whole world"
+    },
+    "supporting_bridge_xor_raw_H2": {
+      "estimate": 0.8904079861111112,
+      "ci95": [
+        0.8423380533854167,
+        0.9378268771701389
+      ],
+      "bootstrap_replicates": 10000,
+      "resampling_unit": "whole world"
+    },
+    "supporting_bridge_xor_choice_H2": {
+      "estimate": 0.5568576388888888,
+      "ci95": [
+        0.5247395833333334,
+        0.5881076388888888
+      ],
+      "bootstrap_replicates": 10000,
+      "resampling_unit": "whole world"
+    },
+    "primary_repair_xor_raw_H2": {
+      "estimate": 0.8672960069444444,
+      "ci95": [
+        0.8167860243055556,
+        0.9173177083333334
+      ],
+      "bootstrap_replicates": 10000,
+      "resampling_unit": "whole world"
+    },
+    "primary_repair_xor_choice_H2": {
+      "estimate": 0.5620659722222222,
+      "ci95": [
+        0.5260416666666666,
+        0.5963541666666666
+      ],
+      "bootstrap_replicates": 10000,
+      "resampling_unit": "whole world"
+    },
+    "primary_nearest_matched_repair_choice_H2": {
+      "estimate": 0.4756944444444444,
+      "ci95": [
+        0.4227430555555556,
+        0.5269097222222222
+      ],
+      "bootstrap_replicates": 10000,
+      "resampling_unit": "whole world"
+    },
+    "primary_nearest_crossed_repair_choice_H2": {
+      "estimate": 0.6484375,
+      "ci95": [
+        0.5894097222222222,
+        0.7048611111111112
+      ],
+      "bootstrap_replicates": 10000,
+      "resampling_unit": "whole world"
+    },
+    "state_accuracy_original_H2": {
+      "estimate": 0.7821180555555556,
+      "ci95": [
+        0.7625868055555556,
+        0.8012152777777778
+      ],
+      "bootstrap_replicates": 10000,
+      "resampling_unit": "whole world"
+    },
+    "state_accuracy_bridge_swap_H2": {
+      "estimate": 0.7747395833333334,
+      "ci95": [
+        0.7534722222222222,
+        0.7955729166666666
+      ],
+      "bootstrap_replicates": 10000,
+      "resampling_unit": "whole world"
+    },
+    "state_accuracy_topology_repair_H2": {
+      "estimate": 0.7873263888888888,
+      "ci95": [
+        0.7673611111111112,
+        0.8068576388888888
+      ],
+      "bootstrap_replicates": 10000,
+      "resampling_unit": "whole world"
+    },
+    "primary_repair_xor_raw_H2_minus_H1": {
+      "estimate": 0.8669772677951388,
+      "ci95": [
+        0.8164669460720486,
+        0.9170605129665799
+      ],
+      "bootstrap_replicates": 10000,
+      "resampling_unit": "whole world"
+    },
+    "supporting_bridge_xor_raw_H2_minus_H1": {
+      "estimate": 0.8903605143229166,
+      "ci95": [
+        0.8422298855251736,
+        0.9379343668619792
+      ],
+      "bootstrap_replicates": 10000,
+      "resampling_unit": "whole world"
+    },
+    "primary_repair_xor_choice_H2_minus_H1": {
+      "estimate": 0.5620659722222222,
+      "ci95": [
+        0.5260416666666666,
+        0.5963541666666666
+      ],
+      "bootstrap_replicates": 10000,
+      "resampling_unit": "whole world"
+    },
+    "supporting_bridge_xor_choice_H2_minus_H1": {
+      "estimate": 0.5568576388888888,
+      "ci95": [
+        0.5247395833333334,
+        0.5881076388888888
+      ],
+      "bootstrap_replicates": 10000,
+      "resampling_unit": "whole world"
+    },
+    "repair_fraction_choice_H2": {
+      "estimate": 1.009353078721746,
+      "ci95": [
+        0.9662830632876332,
+        1.0522514792437607
+      ],
+      "bootstrap_replicates": 10000,
+      "resampling_unit": "whole world",
+      "defined": true
+    }
+  },
+  "descriptive_diagnostics": {
+    "status": "descriptive_only_not_additional_confirmatory_tests",
+    "relation_family": {
+      "0": {
+        "worlds": 24,
+        "metrics": {
+          "primary_repair_xor_choice_H2": 0.6692708333333334,
+          "primary_repair_xor_raw_H2": 1.0139973958333333,
+          "primary_repair_xor_choice_H2_minus_H1": 0.6692708333333334,
+          "primary_repair_xor_raw_H2_minus_H1": 1.0137939453125,
+          "supporting_bridge_xor_choice_H2": 0.6796875,
+          "supporting_bridge_xor_raw_H2": 1.0335286458333333,
+          "primary_nearest_crossed_repair_choice_H2": 0.65625,
+          "state_accuracy_original_H2": 0.84375,
+          "state_accuracy_bridge_swap_H2": 0.8359375,
+          "state_accuracy_topology_repair_H2": 0.8333333333333334,
+          "repair_fraction_choice_H2": 0.9846743295019158
+        },
+        "relations": [
+          "ROUTES_TO",
+          "ENDS_AT",
+          "RETURNS"
+        ]
+      },
+      "1": {
+        "worlds": 24,
+        "metrics": {
+          "primary_repair_xor_choice_H2": 0.7083333333333334,
+          "primary_repair_xor_raw_H2": 1.0872395833333333,
+          "primary_repair_xor_choice_H2_minus_H1": 0.7083333333333334,
+          "primary_repair_xor_raw_H2_minus_H1": 1.0864664713541667,
+          "supporting_bridge_xor_choice_H2": 0.6822916666666666,
+          "supporting_bridge_xor_raw_H2": 1.0797526041666667,
+          "primary_nearest_crossed_repair_choice_H2": 0.7604166666666666,
+          "state_accuracy_original_H2": 0.8255208333333334,
+          "state_accuracy_bridge_swap_H2": 0.8567708333333334,
+          "state_accuracy_topology_repair_H2": 0.8515625,
+          "repair_fraction_choice_H2": 1.0381679389312979
+        },
+        "relations": [
+          "LINKS_TO",
+          "YIELDS",
+          "RESOLVES_TO"
+        ]
+      },
+      "2": {
+        "worlds": 24,
+        "metrics": {
+          "primary_repair_xor_choice_H2": 0.4453125,
+          "primary_repair_xor_raw_H2": 0.7138671875,
+          "primary_repair_xor_choice_H2_minus_H1": 0.4453125,
+          "primary_repair_xor_raw_H2_minus_H1": 0.71240234375,
+          "supporting_bridge_xor_choice_H2": 0.4479166666666667,
+          "supporting_bridge_xor_raw_H2": 0.7565104166666666,
+          "primary_nearest_crossed_repair_choice_H2": 0.6666666666666666,
+          "state_accuracy_original_H2": 0.7395833333333334,
+          "state_accuracy_bridge_swap_H2": 0.7083333333333334,
+          "state_accuracy_topology_repair_H2": 0.7369791666666666,
+          "repair_fraction_choice_H2": 0.9941860465116279
+        },
+        "relations": [
+          "POINTS_TO",
+          "ARRIVES_AT",
+          "TERMINATES_AT"
+        ]
+      },
+      "3": {
+        "worlds": 24,
+        "metrics": {
+          "primary_repair_xor_choice_H2": 0.5364583333333334,
+          "primary_repair_xor_raw_H2": 0.6673177083333334,
+          "primary_repair_xor_choice_H2_minus_H1": 0.5364583333333334,
+          "primary_repair_xor_raw_H2_minus_H1": 0.6670735677083334,
+          "supporting_bridge_xor_choice_H2": 0.5026041666666666,
+          "supporting_bridge_xor_raw_H2": 0.6761067708333334,
+          "primary_nearest_crossed_repair_choice_H2": 0.609375,
+          "state_accuracy_original_H2": 0.7473958333333334,
+          "state_accuracy_bridge_swap_H2": 0.7552083333333334,
+          "state_accuracy_topology_repair_H2": 0.78125,
+          "repair_fraction_choice_H2": 1.0673575129533681
+        },
+        "relations": [
+          "CONNECTS_TO",
+          "LEADS_TO",
+          "DELIVERS_TO"
+        ]
+      },
+      "4": {
+        "worlds": 24,
+        "metrics": {
+          "primary_repair_xor_choice_H2": 0.4036458333333333,
+          "primary_repair_xor_raw_H2": 0.6608072916666666,
+          "primary_repair_xor_choice_H2_minus_H1": 0.4036458333333333,
+          "primary_repair_xor_raw_H2_minus_H1": 0.6618245442708334,
+          "supporting_bridge_xor_choice_H2": 0.4270833333333333,
+          "supporting_bridge_xor_raw_H2": 0.7005208333333334,
+          "primary_nearest_crossed_repair_choice_H2": 0.6354166666666666,
+          "state_accuracy_original_H2": 0.7083333333333334,
+          "state_accuracy_bridge_swap_H2": 0.71875,
+          "state_accuracy_topology_repair_H2": 0.6848958333333334,
+          "repair_fraction_choice_H2": 0.9451219512195121
+        },
+        "relations": [
+          "FIRST_HOP",
+          "SECOND_ALPHA",
+          "SECOND_BETA"
+        ]
+      },
+      "5": {
+        "worlds": 24,
+        "metrics": {
+          "primary_repair_xor_choice_H2": 0.609375,
+          "primary_repair_xor_raw_H2": 1.060546875,
+          "primary_repair_xor_choice_H2_minus_H1": 0.609375,
+          "primary_repair_xor_raw_H2_minus_H1": 1.060302734375,
+          "supporting_bridge_xor_choice_H2": 0.6015625,
+          "supporting_bridge_xor_raw_H2": 1.0960286458333333,
+          "primary_nearest_crossed_repair_choice_H2": 0.5625,
+          "state_accuracy_original_H2": 0.828125,
+          "state_accuracy_bridge_swap_H2": 0.7734375,
+          "state_accuracy_topology_repair_H2": 0.8359375,
+          "repair_fraction_choice_H2": 1.0129870129870129
+        },
+        "relations": [
+          "MAPS_TO",
+          "PROJECTS_TO",
+          "CARRIES_TO"
+        ]
+      }
+    },
+    "ordered_focal_code_pair": {
+      "0": {
+        "worlds": 12,
+        "metrics": {
+          "primary_repair_xor_choice_H2": 0.5208333333333334,
+          "primary_repair_xor_raw_H2": 0.859375,
+          "primary_repair_xor_choice_H2_minus_H1": 0.5208333333333334,
+          "primary_repair_xor_raw_H2_minus_H1": 0.85888671875,
+          "supporting_bridge_xor_choice_H2": 0.5729166666666666,
+          "supporting_bridge_xor_raw_H2": 0.84765625,
+          "primary_nearest_crossed_repair_choice_H2": 0.5,
+          "state_accuracy_original_H2": 0.8177083333333334,
+          "state_accuracy_bridge_swap_H2": 0.7552083333333334,
+          "state_accuracy_topology_repair_H2": 0.765625,
+          "repair_fraction_choice_H2": 0.9090909090909092
+        },
+        "ordered_focal_codes": [
+          "red",
+          "blue"
+        ]
+      },
+      "1": {
+        "worlds": 12,
+        "metrics": {
+          "primary_repair_xor_choice_H2": 0.4583333333333333,
+          "primary_repair_xor_raw_H2": 0.8151041666666666,
+          "primary_repair_xor_choice_H2_minus_H1": 0.4583333333333333,
+          "primary_repair_xor_raw_H2_minus_H1": 0.814697265625,
+          "supporting_bridge_xor_choice_H2": 0.5520833333333334,
+          "supporting_bridge_xor_raw_H2": 0.96484375,
+          "primary_nearest_crossed_repair_choice_H2": 0.4166666666666667,
+          "state_accuracy_original_H2": 0.84375,
+          "state_accuracy_bridge_swap_H2": 0.7083333333333334,
+          "state_accuracy_topology_repair_H2": 0.75,
+          "repair_fraction_choice_H2": 0.830188679245283
+        },
+        "ordered_focal_codes": [
+          "red",
+          "green"
+        ]
+      },
+      "2": {
+        "worlds": 12,
+        "metrics": {
+          "primary_repair_xor_choice_H2": 0.5,
+          "primary_repair_xor_raw_H2": 0.8020833333333334,
+          "primary_repair_xor_choice_H2_minus_H1": 0.5,
+          "primary_repair_xor_raw_H2_minus_H1": 0.80078125,
+          "supporting_bridge_xor_choice_H2": 0.4479166666666667,
+          "supporting_bridge_xor_raw_H2": 0.8072916666666666,
+          "primary_nearest_crossed_repair_choice_H2": 0.65625,
+          "state_accuracy_original_H2": 0.734375,
+          "state_accuracy_bridge_swap_H2": 0.7135416666666666,
+          "state_accuracy_topology_repair_H2": 0.7864583333333334,
+          "repair_fraction_choice_H2": 1.1162790697674418
+        },
+        "ordered_focal_codes": [
+          "red",
+          "black"
+        ]
+      },
+      "3": {
+        "worlds": 12,
+        "metrics": {
+          "primary_repair_xor_choice_H2": 0.546875,
+          "primary_repair_xor_raw_H2": 0.9036458333333334,
+          "primary_repair_xor_choice_H2_minus_H1": 0.546875,
+          "primary_repair_xor_raw_H2_minus_H1": 0.9038899739583334,
+          "supporting_bridge_xor_choice_H2": 0.5416666666666666,
+          "supporting_bridge_xor_raw_H2": 0.8645833333333334,
+          "primary_nearest_crossed_repair_choice_H2": 0.6666666666666666,
+          "state_accuracy_original_H2": 0.765625,
+          "state_accuracy_bridge_swap_H2": 0.7760416666666666,
+          "state_accuracy_topology_repair_H2": 0.7708333333333334,
+          "repair_fraction_choice_H2": 1.0096153846153846
+        },
+        "ordered_focal_codes": [
+          "blue",
+          "red"
+        ]
+      },
+      "4": {
+        "worlds": 12,
+        "metrics": {
+          "primary_repair_xor_choice_H2": 0.5885416666666666,
+          "primary_repair_xor_raw_H2": 0.9036458333333334,
+          "primary_repair_xor_choice_H2_minus_H1": 0.5885416666666666,
+          "primary_repair_xor_raw_H2_minus_H1": 0.9032389322916666,
+          "supporting_bridge_xor_choice_H2": 0.5052083333333334,
+          "supporting_bridge_xor_raw_H2": 0.8860677083333334,
+          "primary_nearest_crossed_repair_choice_H2": 0.59375,
+          "state_accuracy_original_H2": 0.7239583333333334,
+          "state_accuracy_bridge_swap_H2": 0.78125,
+          "state_accuracy_topology_repair_H2": 0.8072916666666666,
+          "repair_fraction_choice_H2": 1.1649484536082473
+        },
+        "ordered_focal_codes": [
+          "blue",
+          "green"
+        ]
+      },
+      "5": {
+        "worlds": 12,
+        "metrics": {
+          "primary_repair_xor_choice_H2": 0.4947916666666667,
+          "primary_repair_xor_raw_H2": 0.8209635416666666,
+          "primary_repair_xor_choice_H2_minus_H1": 0.4947916666666667,
+          "primary_repair_xor_raw_H2_minus_H1": 0.821044921875,
+          "supporting_bridge_xor_choice_H2": 0.4947916666666667,
+          "supporting_bridge_xor_raw_H2": 0.8170572916666666,
+          "primary_nearest_crossed_repair_choice_H2": 0.78125,
+          "state_accuracy_original_H2": 0.7708333333333334,
+          "state_accuracy_bridge_swap_H2": 0.7239583333333334,
+          "state_accuracy_topology_repair_H2": 0.7708333333333334,
+          "repair_fraction_choice_H2": 1.0
+        },
+        "ordered_focal_codes": [
+          "blue",
+          "black"
+        ]
+      },
+      "6": {
+        "worlds": 12,
+        "metrics": {
+          "primary_repair_xor_choice_H2": 0.640625,
+          "primary_repair_xor_raw_H2": 0.724609375,
+          "primary_repair_xor_choice_H2_minus_H1": 0.640625,
+          "primary_repair_xor_raw_H2_minus_H1": 0.7239583333333334,
+          "supporting_bridge_xor_choice_H2": 0.640625,
+          "supporting_bridge_xor_raw_H2": 0.7200520833333334,
+          "primary_nearest_crossed_repair_choice_H2": 0.5416666666666666,
+          "state_accuracy_original_H2": 0.78125,
+          "state_accuracy_bridge_swap_H2": 0.859375,
+          "state_accuracy_topology_repair_H2": 0.78125,
+          "repair_fraction_choice_H2": 1.0
+        },
+        "ordered_focal_codes": [
+          "green",
+          "red"
+        ]
+      },
+      "7": {
+        "worlds": 12,
+        "metrics": {
+          "primary_repair_xor_choice_H2": 0.640625,
+          "primary_repair_xor_raw_H2": 0.9290364583333334,
+          "primary_repair_xor_choice_H2_minus_H1": 0.640625,
+          "primary_repair_xor_raw_H2_minus_H1": 0.9288736979166666,
+          "supporting_bridge_xor_choice_H2": 0.609375,
+          "supporting_bridge_xor_raw_H2": 1.0221354166666667,
+          "primary_nearest_crossed_repair_choice_H2": 0.6145833333333334,
+          "state_accuracy_original_H2": 0.8125,
+          "state_accuracy_bridge_swap_H2": 0.796875,
+          "state_accuracy_topology_repair_H2": 0.84375,
+          "repair_fraction_choice_H2": 1.0512820512820513
+        },
+        "ordered_focal_codes": [
+          "green",
+          "blue"
+        ]
+      },
+      "8": {
+        "worlds": 12,
+        "metrics": {
+          "primary_repair_xor_choice_H2": 0.5729166666666666,
+          "primary_repair_xor_raw_H2": 0.9733072916666666,
+          "primary_repair_xor_choice_H2_minus_H1": 0.5729166666666666,
+          "primary_repair_xor_raw_H2_minus_H1": 0.9732259114583334,
+          "supporting_bridge_xor_choice_H2": 0.5885416666666666,
+          "supporting_bridge_xor_raw_H2": 1.0162760416666667,
+          "primary_nearest_crossed_repair_choice_H2": 0.6875,
+          "state_accuracy_original_H2": 0.8072916666666666,
+          "state_accuracy_bridge_swap_H2": 0.78125,
+          "state_accuracy_topology_repair_H2": 0.7916666666666666,
+          "repair_fraction_choice_H2": 0.9734513274336283
+        },
+        "ordered_focal_codes": [
+          "green",
+          "black"
+        ]
+      },
+      "9": {
+        "worlds": 12,
+        "metrics": {
+          "primary_repair_xor_choice_H2": 0.578125,
+          "primary_repair_xor_raw_H2": 0.8430989583333334,
+          "primary_repair_xor_choice_H2_minus_H1": 0.578125,
+          "primary_repair_xor_raw_H2_minus_H1": 0.843505859375,
+          "supporting_bridge_xor_choice_H2": 0.5625,
+          "supporting_bridge_xor_raw_H2": 0.8424479166666666,
+          "primary_nearest_crossed_repair_choice_H2": 0.84375,
+          "state_accuracy_original_H2": 0.7552083333333334,
+          "state_accuracy_bridge_swap_H2": 0.8072916666666666,
+          "state_accuracy_topology_repair_H2": 0.7708333333333334,
+          "repair_fraction_choice_H2": 1.0277777777777777
+        },
+        "ordered_focal_codes": [
+          "black",
+          "red"
+        ]
+      },
+      "10": {
+        "worlds": 12,
+        "metrics": {
+          "primary_repair_xor_choice_H2": 0.484375,
+          "primary_repair_xor_raw_H2": 0.8704427083333334,
+          "primary_repair_xor_choice_H2_minus_H1": 0.484375,
+          "primary_repair_xor_raw_H2_minus_H1": 0.8701985677083334,
+          "supporting_bridge_xor_choice_H2": 0.484375,
+          "supporting_bridge_xor_raw_H2": 0.87890625,
+          "primary_nearest_crossed_repair_choice_H2": 0.71875,
+          "state_accuracy_original_H2": 0.75,
+          "state_accuracy_bridge_swap_H2": 0.734375,
+          "state_accuracy_topology_repair_H2": 0.75,
+          "repair_fraction_choice_H2": 1.0
+        },
+        "ordered_focal_codes": [
+          "black",
+          "blue"
+        ]
+      },
+      "11": {
+        "worlds": 12,
+        "metrics": {
+          "primary_repair_xor_choice_H2": 0.71875,
+          "primary_repair_xor_raw_H2": 0.9622395833333334,
+          "primary_repair_xor_choice_H2_minus_H1": 0.71875,
+          "primary_repair_xor_raw_H2_minus_H1": 0.96142578125,
+          "supporting_bridge_xor_choice_H2": 0.6822916666666666,
+          "supporting_bridge_xor_raw_H2": 1.017578125,
+          "primary_nearest_crossed_repair_choice_H2": 0.7604166666666666,
+          "state_accuracy_original_H2": 0.8229166666666666,
+          "state_accuracy_bridge_swap_H2": 0.859375,
+          "state_accuracy_topology_repair_H2": 0.859375,
+          "repair_fraction_choice_H2": 1.0534351145038168
+        },
+        "ordered_focal_codes": [
+          "black",
+          "green"
+        ]
+      }
+    },
+    "leave_one_relation_family_out": {
+      "0": {
+        "worlds": 120,
+        "metrics": {
+          "primary_repair_xor_choice_H2": 0.540625,
+          "primary_repair_xor_raw_H2": 0.8379557291666667,
+          "primary_repair_xor_choice_H2_minus_H1": 0.540625,
+          "primary_repair_xor_raw_H2_minus_H1": 0.8376139322916667,
+          "supporting_bridge_xor_choice_H2": 0.5322916666666667,
+          "supporting_bridge_xor_raw_H2": 0.8617838541666667,
+          "primary_nearest_crossed_repair_choice_H2": 0.646875,
+          "state_accuracy_original_H2": 0.7697916666666667,
+          "state_accuracy_bridge_swap_H2": 0.7625,
+          "state_accuracy_topology_repair_H2": 0.778125,
+          "repair_fraction_choice_H2": 1.015655577299413
+        },
+        "omitted_relations": [
+          "ROUTES_TO",
+          "ENDS_AT",
+          "RETURNS"
+        ]
+      },
+      "1": {
+        "worlds": 120,
+        "metrics": {
+          "primary_repair_xor_choice_H2": 0.5328125,
+          "primary_repair_xor_raw_H2": 0.8233072916666667,
+          "primary_repair_xor_choice_H2_minus_H1": 0.5328125,
+          "primary_repair_xor_raw_H2_minus_H1": 0.8230794270833334,
+          "supporting_bridge_xor_choice_H2": 0.5317708333333333,
+          "supporting_bridge_xor_raw_H2": 0.8525390625,
+          "primary_nearest_crossed_repair_choice_H2": 0.6260416666666667,
+          "state_accuracy_original_H2": 0.7734375,
+          "state_accuracy_bridge_swap_H2": 0.7583333333333333,
+          "state_accuracy_topology_repair_H2": 0.7744791666666667,
+          "repair_fraction_choice_H2": 1.0019588638589618
+        },
+        "omitted_relations": [
+          "LINKS_TO",
+          "YIELDS",
+          "RESOLVES_TO"
+        ]
+      },
+      "2": {
+        "worlds": 120,
+        "metrics": {
+          "primary_repair_xor_choice_H2": 0.5854166666666667,
+          "primary_repair_xor_raw_H2": 0.8979817708333333,
+          "primary_repair_xor_choice_H2_minus_H1": 0.5854166666666667,
+          "primary_repair_xor_raw_H2_minus_H1": 0.8978922526041667,
+          "supporting_bridge_xor_choice_H2": 0.5786458333333333,
+          "supporting_bridge_xor_raw_H2": 0.9171875,
+          "primary_nearest_crossed_repair_choice_H2": 0.6447916666666667,
+          "state_accuracy_original_H2": 0.790625,
+          "state_accuracy_bridge_swap_H2": 0.7880208333333333,
+          "state_accuracy_topology_repair_H2": 0.7973958333333333,
+          "repair_fraction_choice_H2": 1.0117011701170118
+        },
+        "omitted_relations": [
+          "POINTS_TO",
+          "ARRIVES_AT",
+          "TERMINATES_AT"
+        ]
+      },
+      "3": {
+        "worlds": 120,
+        "metrics": {
+          "primary_repair_xor_choice_H2": 0.5671875,
+          "primary_repair_xor_raw_H2": 0.9072916666666667,
+          "primary_repair_xor_choice_H2_minus_H1": 0.5671875,
+          "primary_repair_xor_raw_H2_minus_H1": 0.9069580078125,
+          "supporting_bridge_xor_choice_H2": 0.5677083333333334,
+          "supporting_bridge_xor_raw_H2": 0.9332682291666666,
+          "primary_nearest_crossed_repair_choice_H2": 0.65625,
+          "state_accuracy_original_H2": 0.7890625,
+          "state_accuracy_bridge_swap_H2": 0.7786458333333334,
+          "state_accuracy_topology_repair_H2": 0.7885416666666667,
+          "repair_fraction_choice_H2": 0.9990825688073393
+        },
+        "omitted_relations": [
+          "CONNECTS_TO",
+          "LEADS_TO",
+          "DELIVERS_TO"
+        ]
+      },
+      "4": {
+        "worlds": 120,
+        "metrics": {
+          "primary_repair_xor_choice_H2": 0.59375,
+          "primary_repair_xor_raw_H2": 0.90859375,
+          "primary_repair_xor_choice_H2_minus_H1": 0.59375,
+          "primary_repair_xor_raw_H2_minus_H1": 0.9080078125,
+          "supporting_bridge_xor_choice_H2": 0.5828125,
+          "supporting_bridge_xor_raw_H2": 0.9283854166666666,
+          "primary_nearest_crossed_repair_choice_H2": 0.6510416666666666,
+          "state_accuracy_original_H2": 0.796875,
+          "state_accuracy_bridge_swap_H2": 0.7859375,
+          "state_accuracy_topology_repair_H2": 0.8078125,
+          "repair_fraction_choice_H2": 1.0187667560321716
+        },
+        "omitted_relations": [
+          "FIRST_HOP",
+          "SECOND_ALPHA",
+          "SECOND_BETA"
+        ]
+      },
+      "5": {
+        "worlds": 120,
+        "metrics": {
+          "primary_repair_xor_choice_H2": 0.5526041666666667,
+          "primary_repair_xor_raw_H2": 0.8286458333333333,
+          "primary_repair_xor_choice_H2_minus_H1": 0.5526041666666667,
+          "primary_repair_xor_raw_H2_minus_H1": 0.8283121744791667,
+          "supporting_bridge_xor_choice_H2": 0.5479166666666667,
+          "supporting_bridge_xor_raw_H2": 0.8492838541666666,
+          "primary_nearest_crossed_repair_choice_H2": 0.665625,
+          "state_accuracy_original_H2": 0.7729166666666667,
+          "state_accuracy_bridge_swap_H2": 0.775,
+          "state_accuracy_topology_repair_H2": 0.7776041666666667,
+          "repair_fraction_choice_H2": 1.008555133079848
+        },
+        "omitted_relations": [
+          "MAPS_TO",
+          "PROJECTS_TO",
+          "CARRIES_TO"
+        ]
+      }
+    }
+  },
+  "confirmation": {
+    "decision": "CONFIRM_HRM_DEPTH_DEPENDENT_BRANCHING_COMPOSITION",
+    "confirmation_claim_eligible": true,
+    "composition_confirmed": true,
+    "depth_dependent_composition_confirmed": true,
+    "composition_gates_pass": true,
+    "composition_gates": {
+      "primary_repair_choice_H2_point_at_least_0_10": true,
+      "primary_repair_choice_H2_lower95_above_0": true,
+      "primary_repair_raw_H2_lower95_above_0": true,
+      "repair_choice_X_H2_lower95_above_0": true,
+      "repair_choice_Y_H2_lower95_above_0": true,
+      "crossed_locality_repair_choice_H2_lower95_above_0": true,
+      "original_accuracy_H2_point_at_least_0_65": true,
+      "original_accuracy_H2_lower95_above_0_50": true,
+      "bridge_swap_accuracy_H2_point_at_least_0_60": true,
+      "bridge_swap_accuracy_H2_lower95_above_0_50": true,
+      "topology_repair_accuracy_H2_point_at_least_0_60": true,
+      "topology_repair_accuracy_H2_lower95_above_0_50": true,
+      "repair_fraction_choice_H2_defined": true,
+      "repair_fraction_choice_H2_point_at_least_0_50": true,
+      "repair_fraction_choice_H2_lower95_at_least_0_50": true
+    },
+    "fixed_sequence_depth_test_reached": true,
+    "depth_dependent_composition_gates_pass": true,
+    "depth_gates": {
+      "primary_repair_choice_H2_minus_H1_point_at_least_0_05": true,
+      "primary_repair_choice_H2_minus_H1_lower95_above_0": true,
+      "primary_repair_raw_H2_minus_H1_lower95_above_0": true
+    }
+  }
+}

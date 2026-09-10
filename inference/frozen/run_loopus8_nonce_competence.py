@@ -7,7 +7,7 @@ import argparse
 import hashlib
 import json
 import sys
-from datetime import UTC, datetime
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Iterable
 
@@ -270,7 +270,7 @@ def main() -> None:
     )
     artifact = {
         "schema": SCHEMA,
-        "created_at": datetime.now(UTC).isoformat(),
+        "created_at": datetime.now(timezone.utc).isoformat(),
         "model_key": "loopus8",
         "model_repository": MODEL_REPOSITORY,
         "model_revision": MODEL_REVISION,

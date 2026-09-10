@@ -10,17 +10,19 @@ are run from the repository root.
 | Complete natural exit curves and coherent-repair fractions | paired question | all four endpoint natural files | `python analysis/analyze_natural_depth_curves.py` | `natural_depth_curves.json` |
 | LoopUS natural response localizes early and then saturates | paired question | `data/analysis_ready/natural/loopus_full_depth_*.json` | `python analysis/analyze_loopus_full_depth.py` | `loopus_full_depth.json` |
 | Ouro acquires exact-choice control over arbitrary fictional identities from K1 to K4 | fictional world | generated panel plus `fictional_ouro/` shards | `python tools/reproduce.py --only fictional-ouro` | `fictional_ouro/nonce_path_control_ouro26.json` |
+| Ouro acquisition persists across arrows, tuples, compact JSON, and mapping sentences on fresh worlds | 48 inference worlds; 24 disjoint gate worlds | surface panel plus `surface_orbit/` competence and treatment rows | `python tools/reproduce.py --only surface-orbit` | `surface_orbit_confirmation.json` |
 | LoopUS-8B starts with strong choice control; later loops sharpen margin without detectable choice acquisition | fictional world | generated panel plus `fictional_loopus8/` shards | `python tools/reproduce.py --only fictional-loopus` | `fictional_loopus8.json` |
+| HRM-Text-1B acquires linear path control from retained H1 to native H2 | fictional world | base panel plus `hrm_linear/` gate and treatment rows | `python tools/reproduce.py --only hrm-linear` | `hrm_linear.json` |
+| HRM-Text-1B also acquires relation-conditioned control on a branching task | fictional world | branching panel plus `hrm_branching/` gate and confirmation rows | `python tools/reproduce.py --only hrm-branching` | `hrm_branching.json` |
 | The same edit has a large on-path effect and a small off-path effect | held-out fictional world | structural panel plus `structural/` shards | `python tools/reproduce.py --only structural` | `structural_falsifiers.json` |
 | Graph connectivity remains influential when physical locality favors the other answer | held-out fictional world | same as above | same command | same output |
-| Exit supervision, rather than tying alone, changes when control becomes readable in the controlled model | training seed, then held-out world | 32 factorial run files | `python tools/reproduce.py --only factorial` | `training_factorial.json` |
+| Exit supervision, rather than tying alone, changes how control appears across readouts in the controlled model | training seed, then held-out world | 32 factorial run files | `python tools/reproduce.py --only factorial` | `training_factorial.json` |
+| Matching the token form used for likelihood scoring and generation explains most score-to-output disagreement, but wrong-candidate and non-candidate outputs remain | 2Wiki: relation path then pair; MuSiQue: pair | text-free `decoding_boundary/` rows | `python tools/reproduce.py --only decoding-boundary` | `decoding_boundary_audit.json` |
 
 `python tools/build_claim_table.py` extracts the headline estimates and
 intervals into a compact JSON and CSV crosswalk. `make reproduce` invokes it
 automatically after all analyses complete.
 
-Secondary output-boundary tests, natural-language corroboration, applicability
-screens, and stopped branches are indexed in
-`data/frozen_summaries/INDEX.json`. They are preserved as supporting evidence,
-not silently promoted to confirmatory results.
-
+The answer-boundary analysis is post-outcome rather than confirmatory.
+Secondary tests and stopped experiments are indexed in
+`data/frozen_summaries/INDEX.json` with their original evidence status.

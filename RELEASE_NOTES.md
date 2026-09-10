@@ -1,18 +1,11 @@
 # Anonymous review release
 
-This is the first self-contained statistical reproduction package for the
-submission. It includes:
+This release contains the analysis-ready score rows, generated panels,
+statistical analyses, frozen outputs, figures, and integrity checks used for
+the submission. It includes the HRM linear and branching confirmations, the
+four-format Ouro confirmation, and the post-outcome answer-boundary audit.
 
-- all central analysis-ready score rows;
-- complete generated fictional and structural panels;
-- all registered bootstrap implementations and seeds;
-- controlled-training records across the full confirmation grid;
-- expected JSON results and statistical figures;
-- prompt-schedule smoke tests for model-facing runners;
-- data, model, evidence-status, and claim crosswalk documentation;
-- checksum, schema, generator, privacy, and anonymity checks.
-
-Model weights and licensed benchmark text are intentionally outside the
-release. See `README.md` for the reviewer path and `DATA_LICENSE.md` for the
-content boundary.
-
+Generated prompts are released in full. Natural-question analyses use
+text-free rows because the benchmark text is licensed. Model weights and
+licensed benchmark text are excluded; `DATA_LICENSE.md` records the release
+boundary.

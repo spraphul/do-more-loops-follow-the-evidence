@@ -1,0 +1,738 @@
+{
+  "schema": "iclr2027.ouro26_surface_orbit_confirmation.result.v3",
+  "decision": "CONFIRM_SURFACE_ROBUST_ACQUISITION",
+  "primary_confirmation_passes": true,
+  "all_serialization_point_estimates_positive": true,
+  "worlds": 48,
+  "surface_realizations_per_world": 4,
+  "overall": {
+    "D1": {
+      "estimate": -0.0005696614583333334,
+      "ci95": [
+        -0.0024820963541666665,
+        0.0013031005859374851
+      ]
+    },
+    "C1": {
+      "estimate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    "D4": {
+      "estimate": 0.3489583333333333,
+      "ci95": [
+        0.3395182291666667,
+        0.3587239583333333
+      ]
+    },
+    "C4": {
+      "estimate": 0.2981770833333333,
+      "ci95": [
+        0.2786458333333333,
+        0.3170572916666667
+      ]
+    },
+    "G41": {
+      "estimate": 0.3495279947916667,
+      "ci95": [
+        0.3398030598958333,
+        0.3595784505208333
+      ]
+    },
+    "H41": {
+      "estimate": 0.2981770833333333,
+      "ci95": [
+        0.2786458333333333,
+        0.3170572916666667
+      ]
+    }
+  },
+  "by_serialization": {
+    "arrows": {
+      "D1": {
+        "estimate": 0.00439453125,
+        "ci95": [
+          0.00016276041666666666,
+          0.008626302083333334
+        ]
+      },
+      "C1": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "D4": {
+        "estimate": 0.3492838541666667,
+        "ci95": [
+          0.330078125,
+          0.369140625
+        ]
+      },
+      "C4": {
+        "estimate": 0.3463541666666667,
+        "ci95": [
+          0.3151041666666667,
+          0.3776041666666667
+        ]
+      },
+      "G41": {
+        "estimate": 0.3448893229166667,
+        "ci95": [
+          0.32568359375,
+          0.3649088541666667
+        ]
+      },
+      "H41": {
+        "estimate": 0.3463541666666667,
+        "ci95": [
+          0.3151041666666667,
+          0.3776041666666667
+        ]
+      }
+    },
+    "tuples": {
+      "D1": {
+        "estimate": -0.00537109375,
+        "ci95": [
+          -0.009602864583333334,
+          -0.0013020833333333333
+        ]
+      },
+      "C1": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "D4": {
+        "estimate": 0.3951822916666667,
+        "ci95": [
+          0.3668619791666667,
+          0.423828125
+        ]
+      },
+      "C4": {
+        "estimate": 0.3229166666666667,
+        "ci95": [
+          0.2760416666666667,
+          0.3671875
+        ]
+      },
+      "G41": {
+        "estimate": 0.4005533854166667,
+        "ci95": [
+          0.37255859375,
+          0.42919921875
+        ]
+      },
+      "H41": {
+        "estimate": 0.3229166666666667,
+        "ci95": [
+          0.2760416666666667,
+          0.3671875
+        ]
+      }
+    },
+    "json": {
+      "D1": {
+        "estimate": 0.0003255208333333333,
+        "ci95": [
+          -0.0030924479166666665,
+          0.0035807291666666665
+        ]
+      },
+      "C1": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "D4": {
+        "estimate": 0.3636067708333333,
+        "ci95": [
+          0.3447265625,
+          0.3821614583333333
+        ]
+      },
+      "C4": {
+        "estimate": 0.3307291666666667,
+        "ci95": [
+          0.2864583333333333,
+          0.375
+        ]
+      },
+      "G41": {
+        "estimate": 0.36328125,
+        "ci95": [
+          0.3447265625,
+          0.3819986979166667
+        ]
+      },
+      "H41": {
+        "estimate": 0.3307291666666667,
+        "ci95": [
+          0.2864583333333333,
+          0.375
+        ]
+      }
+    },
+    "sentences": {
+      "D1": {
+        "estimate": -0.0016276041666666667,
+        "ci95": [
+          -0.005696614583333333,
+          0.0022786458333333335
+        ]
+      },
+      "C1": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "D4": {
+        "estimate": 0.2877604166666667,
+        "ci95": [
+          0.2692057291666667,
+          0.3059895833333333
+        ]
+      },
+      "C4": {
+        "estimate": 0.19270833333333334,
+        "ci95": [
+          0.16145833333333334,
+          0.22395833333333334
+        ]
+      },
+      "G41": {
+        "estimate": 0.2893880208333333,
+        "ci95": [
+          0.2698567708333333,
+          0.3084309895833333
+        ]
+      },
+      "H41": {
+        "estimate": 0.19270833333333334,
+        "ci95": [
+          0.16145833333333334,
+          0.22395833333333334
+        ]
+      }
+    }
+  },
+  "by_morphology": {
+    "0": {
+      "D1": {
+        "estimate": -0.004231770833333333,
+        "ci95": [
+          -0.00830078125,
+          -0.00016276041666666666
+        ]
+      },
+      "C1": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "D4": {
+        "estimate": 0.3896484375,
+        "ci95": [
+          0.3665364583333333,
+          0.4143880208333333
+        ]
+      },
+      "C4": {
+        "estimate": 0.3645833333333333,
+        "ci95": [
+          0.3255208333333333,
+          0.4036458333333333
+        ]
+      },
+      "G41": {
+        "estimate": 0.3938802083333333,
+        "ci95": [
+          0.3701171875,
+          0.4189453125
+        ]
+      },
+      "H41": {
+        "estimate": 0.3645833333333333,
+        "ci95": [
+          0.3255208333333333,
+          0.4036458333333333
+        ]
+      }
+    },
+    "1": {
+      "D1": {
+        "estimate": 0.0027669270833333335,
+        "ci95": [
+          -0.0011393229166666667,
+          0.006673177083333333
+        ]
+      },
+      "C1": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "D4": {
+        "estimate": 0.3391927083333333,
+        "ci95": [
+          0.3157552083333333,
+          0.3623046875
+        ]
+      },
+      "C4": {
+        "estimate": 0.15104166666666666,
+        "ci95": [
+          0.11197916666666667,
+          0.19010416666666666
+        ]
+      },
+      "G41": {
+        "estimate": 0.33642578125,
+        "ci95": [
+          0.3134765625,
+          0.3592122395833333
+        ]
+      },
+      "H41": {
+        "estimate": 0.15104166666666666,
+        "ci95": [
+          0.11197916666666667,
+          0.19010416666666666
+        ]
+      }
+    },
+    "2": {
+      "D1": {
+        "estimate": -0.0022786458333333335,
+        "ci95": [
+          -0.00634765625,
+          0.0017903645833333333
+        ]
+      },
+      "C1": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "D4": {
+        "estimate": 0.3434244791666667,
+        "ci95": [
+          0.3203125,
+          0.3655598958333333
+        ]
+      },
+      "C4": {
+        "estimate": 0.4375,
+        "ci95": [
+          0.3958333333333333,
+          0.4791666666666667
+        ]
+      },
+      "G41": {
+        "estimate": 0.345703125,
+        "ci95": [
+          0.3230794270833333,
+          0.3676798502604166
+        ]
+      },
+      "H41": {
+        "estimate": 0.4375,
+        "ci95": [
+          0.3958333333333333,
+          0.4791666666666667
+        ]
+      }
+    },
+    "3": {
+      "D1": {
+        "estimate": 0.00146484375,
+        "ci95": [
+          -0.00244140625,
+          0.005208333333333333
+        ]
+      },
+      "C1": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "D4": {
+        "estimate": 0.3235677083333333,
+        "ci95": [
+          0.3069661458333333,
+          0.3401692708333333
+        ]
+      },
+      "C4": {
+        "estimate": 0.23958333333333334,
+        "ci95": [
+          0.20572916666666666,
+          0.2708333333333333
+        ]
+      },
+      "G41": {
+        "estimate": 0.3221028645833333,
+        "ci95": [
+          0.3046875,
+          0.3395182291666667
+        ]
+      },
+      "H41": {
+        "estimate": 0.23958333333333334,
+        "ci95": [
+          0.20572916666666666,
+          0.2708333333333333
+        ]
+      }
+    }
+  },
+  "by_question_wording": {
+    "0": {
+      "D1": {
+        "estimate": -0.0068359375,
+        "ci95": [
+          -0.01025390625,
+          -0.0032552083333333335
+        ]
+      },
+      "C1": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "D4": {
+        "estimate": 0.3854166666666667,
+        "ci95": [
+          0.3600260416666667,
+          0.4117838541666667
+        ]
+      },
+      "C4": {
+        "estimate": 0.3307291666666667,
+        "ci95": [
+          0.2890625,
+          0.3723958333333333
+        ]
+      },
+      "G41": {
+        "estimate": 0.3922526041666667,
+        "ci95": [
+          0.3660481770833333,
+          0.4195963541666667
+        ]
+      },
+      "H41": {
+        "estimate": 0.3307291666666667,
+        "ci95": [
+          0.2890625,
+          0.3723958333333333
+        ]
+      }
+    },
+    "1": {
+      "D1": {
+        "estimate": -0.0030924479166666665,
+        "ci95": [
+          -0.006022135416666667,
+          -0.00016276041666666666
+        ]
+      },
+      "C1": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "D4": {
+        "estimate": 0.3587239583333333,
+        "ci95": [
+          0.33984375,
+          0.3772786458333333
+        ]
+      },
+      "C4": {
+        "estimate": 0.3411458333333333,
+        "ci95": [
+          0.3072916666666667,
+          0.375
+        ]
+      },
+      "G41": {
+        "estimate": 0.36181640625,
+        "ci95": [
+          0.34326171875,
+          0.3800455729166667
+        ]
+      },
+      "H41": {
+        "estimate": 0.3411458333333333,
+        "ci95": [
+          0.3072916666666667,
+          0.375
+        ]
+      }
+    },
+    "2": {
+      "D1": {
+        "estimate": 0.005696614583333333,
+        "ci95": [
+          0.0013020833333333333,
+          0.009928385416666666
+        ]
+      },
+      "C1": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "D4": {
+        "estimate": 0.3326822916666667,
+        "ci95": [
+          0.3170572916666667,
+          0.3489583333333333
+        ]
+      },
+      "C4": {
+        "estimate": 0.109375,
+        "ci95": [
+          0.08333333333333333,
+          0.13541666666666666
+        ]
+      },
+      "G41": {
+        "estimate": 0.3269856770833333,
+        "ci95": [
+          0.31135660807291665,
+          0.3430989583333333
+        ]
+      },
+      "H41": {
+        "estimate": 0.109375,
+        "ci95": [
+          0.08333333333333333,
+          0.13541666666666666
+        ]
+      }
+    },
+    "3": {
+      "D1": {
+        "estimate": 0.001953125,
+        "ci95": [
+          -0.0027669270833333335,
+          0.006673177083333333
+        ]
+      },
+      "C1": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "D4": {
+        "estimate": 0.3190104166666667,
+        "ci95": [
+          0.2945963541666667,
+          0.3434244791666667
+        ]
+      },
+      "C4": {
+        "estimate": 0.4114583333333333,
+        "ci95": [
+          0.359375,
+          0.4635416666666667
+        ]
+      },
+      "G41": {
+        "estimate": 0.3170572916666667,
+        "ci95": [
+          0.29247639973958334,
+          0.3414713541666667
+        ]
+      },
+      "H41": {
+        "estimate": 0.4114583333333333,
+        "ci95": [
+          0.359375,
+          0.4635416666666667
+        ]
+      }
+    }
+  },
+  "competence": {
+    "decision": "PROMOTE_TO_TREATMENT",
+    "passes_competence_gate": true,
+    "worlds": 24,
+    "graph_correct_accuracy": 0.6927083333333334,
+    "world_bootstrap_ci95": [
+      0.6549479166666666,
+      0.73046875
+    ],
+    "accuracy_by_serialization": {
+      "arrows": 0.6979166666666666,
+      "tuples": 0.6822916666666666,
+      "json": 0.71875,
+      "sentences": 0.671875
+    },
+    "accuracy_by_query_arm": {
+      "A": 0.7161458333333334,
+      "B": 0.6692708333333334
+    },
+    "accuracy_by_candidate_order": {
+      "original": 0.6770833333333334,
+      "reversed": 0.7083333333333334
+    },
+    "requirements": {
+      "overall_at_least": 0.65,
+      "world_bootstrap_lower_strictly_above": 0.5,
+      "each_serialization_query_arm_and_candidate_order_at_least": 0.55
+    }
+  },
+  "resampling": "10000 percentile bootstrap draws over worlds, stratified by the 16 frozen morphology-by-wording offset blocks; all repeated conditions remain coupled within world",
+  "execution": {
+    "panel": {
+      "path": "surface_orbit_confirmation_v3.panel.json",
+      "sha256": "d2a88663190a6b4cb0aead5652dcace13a247a065988da1839e17cc850a155fe",
+      "canonical_sha256": "448bae9f9ed496a5a52d300d8c64c722ed4f4429933a648856ffdef6926d34f2"
+    },
+    "competence": {
+      "path": "competence.json",
+      "sha256": "0302cba411fb993bbfc40c7fe712018f1f1091a59e849d0f69ab1798ffd4e6bc",
+      "execution_audit": {
+        "checkpoint": {
+          "architecture": {
+            "architectures": [
+              "OuroForCausalLM"
+            ],
+            "hidden_size": 2048,
+            "model_type": "ouro",
+            "num_hidden_layers": 48,
+            "torch_dtype": "bfloat16",
+            "total_ut_steps": 4,
+            "vocab_size": 49152
+          },
+          "native_K_values": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "readout_selector": "exit_at_step=K-1",
+          "repository": "ByteDance/Ouro-2.6B",
+          "revision": "1ed04250da1a9936042725d302e81c8fa2ab5abd",
+          "runtime_truncation_readout_parity_required": true,
+          "snapshot_file_sha256": {
+            "config.json": "23b5c6942a9f0ca8619fb15acfaca93e02c169cdc4e03dbceb4d8a2df145697a",
+            "configuration_ouro.py": "950443e32929047aa08d02abad2e1888bc1914b3db988d3d675f70787f65dafb",
+            "merges.txt": "0b54e8aa4e53d5383e2e4bc635a56b43f9647f7b13832d5d9ecd8f82dac4f510",
+            "modeling_ouro.py": "c5c68fbb368ce2909c257ae2afc50719be8c91539333d3295e19312c4316f413",
+            "special_tokens_map.json": "55087bb8409060d9cb0f80495e34f4e0d8a84f68a799a6b0cab3132be0aae319",
+            "tokenizer.json": "fcb808fe5e7642f5299be28aea07fc7f6d4f4364c3ac5e408e15a772cbc8fa8d",
+            "tokenizer_config.json": "7e010da95d71b0fa1aa809552922c74cc1dd98d628f21ba39ca6c35aa18d5d91",
+            "vocab.json": "7b9de3f47796abf8d00ab96be299fea0dc9afdf1827f34e7e0b9fb44593efe5c"
+          },
+          "weight_blob_sha256": "2fdf9805a3510b7dc82959a2db4872ef767a5bdc55520c6a1b54fc3e463c1bba",
+          "weight_bytes": 5336011242
+        },
+        "native_readout_parity": {
+          "comparison": "four-step execution with exit_at_step=K-1 versus genuine K-step execution with no exit override",
+          "passes": true,
+          "per_K": {
+            "1": {
+              "answer_token_max_abs_logit_difference": 0.0,
+              "exact_equal": true,
+              "full_vocabulary_max_abs_logit_difference": 0.0,
+              "torch_allclose": true
+            },
+            "2": {
+              "answer_token_max_abs_logit_difference": 0.0,
+              "exact_equal": true,
+              "full_vocabulary_max_abs_logit_difference": 0.0,
+              "torch_allclose": true
+            },
+            "3": {
+              "answer_token_max_abs_logit_difference": 0.0,
+              "exact_equal": true,
+              "full_vocabulary_max_abs_logit_difference": 0.0,
+              "torch_allclose": true
+            },
+            "4": {
+              "answer_token_max_abs_logit_difference": 0.0,
+              "exact_equal": true,
+              "full_vocabulary_max_abs_logit_difference": 0.0,
+              "torch_allclose": true
+            }
+          }
+        },
+        "tokenization": {
+          "all_are_exact_one_token_extensions": true,
+          "labels": [
+            "A",
+            "B"
+          ],
+          "prompts_checked": 384
+        }
+      }
+    },
+    "runner_source_sha256": "85697fb85ba8a856ea93314212057940fe9cc3119eb4a440ad3e18d4ce696223",
+    "competence_source_sha256": "e6d566adf718b7f504bd39a34d28ea70a5e142777966771275eadc86ce1a7e7d",
+    "shards": [
+      {
+        "path": "shard_0.json",
+        "sha256": "c4e0f5d367f9aaab025f997dde4ffc8d413edab514146163290e2e18968d2b76"
+      },
+      {
+        "path": "shard_1.json",
+        "sha256": "11b9f572829184222b31af9bd4c69c47026facdab1f0edf5c566e7a09cebc8a4"
+      },
+      {
+        "path": "shard_2.json",
+        "sha256": "8afb58fab8afc20386e89c3f91852afa18f6480a7aee2b3b8729dc3b11be5951"
+      },
+      {
+        "path": "shard_3.json",
+        "sha256": "b1221d860ce0a3aac6ef9d855fb480657cd130fd6d4e8764f5e2dda6811ec23e"
+      },
+      {
+        "path": "shard_4.json",
+        "sha256": "8054d6b9f93096a6dd2fb33add58fb7c6900803f238b4dbe2ebe9ead8376131a"
+      },
+      {
+        "path": "shard_5.json",
+        "sha256": "4684ebae3d41aba80dcfcf4dcf6f24d6d1ab1a8ea741360417ea723d75106504"
+      },
+      {
+        "path": "shard_6.json",
+        "sha256": "6733de2e421cfb36cf2a767e3d55f88e94569024e7dea147a766de65175c7587"
+      },
+      {
+        "path": "shard_7.json",
+        "sha256": "28e7c33afc12262fd007a14d72c7bffe4987d0ffda77e9a70c041aa9f87e67ac"
+      }
+    ]
+  }
+}

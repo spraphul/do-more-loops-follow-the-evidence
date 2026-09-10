@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import hashlib
 import json
 import re
 import shutil
@@ -15,7 +16,14 @@ ROOT = Path(__file__).resolve().parents[1]
 TEXT_SUFFIXES = {
     ".csv", ".json", ".md", ".py", ".sh", ".tex", ".toml", ".txt", ".yaml", ".yml"
 }
-SKIP_PARTS = {".git", ".venv", ".pytest_cache", "__pycache__", "reproduced"}
+SKIP_PARTS = {
+    ".git",
+    ".venv",
+    ".venv-inference",
+    ".pytest_cache",
+    "__pycache__",
+    "reproduced",
+}
 
 
 def joined(*parts: str) -> str:
@@ -23,7 +31,6 @@ def joined(*parts: str) -> str:
 
 
 SENSITIVE_PATTERNS = {
-    "personal user name": re.compile(joined("prap", "sing"), re.IGNORECASE),
     "private project path": re.compile(joined("score-state", "-feedback"), re.IGNORECASE),
     "macOS user path": re.compile(re.escape(joined("/", "Users", "/"))),
     "Linux user path": re.compile(re.escape(joined("/", "home", "/"))),
@@ -34,6 +41,10 @@ SENSITIVE_PATTERNS = {
         joined("(?<![A-Za-z0-9])(?:", "hf_", "|", "sk-", ")[A-Za-z0-9_-]{16,}")
     ),
 }
+PRIVATE_TOKEN_SHA256 = {
+    "27a62d5ff83455ecc60ac2ece184fd7baf47c75ceb01f8d97c6f29abaebe9d06"
+}
+TOKEN_PATTERN = re.compile(r"[A-Za-z][A-Za-z0-9._-]*")
 NATURAL_FORBIDDEN_KEYS = {
     "answer",
     "continuation",
@@ -42,8 +53,27 @@ NATURAL_FORBIDDEN_KEYS = {
     "natural_question",
     "prompt",
     "question",
+    "subject",
+    "object",
+    "support_sentence",
     "source_item_id",
     "source_item_ids",
+}
+BOUNDARY_FORBIDDEN_KEYS = {
+    "alternate_candidate",
+    "continuation",
+    "generated_answer_span_raw",
+    "prompt",
+    "question",
+    "reference_candidate",
+    "relation_path",
+    "replay_top_token_text",
+    "snapshot_dir",
+    "stored_top_token_text",
+    "token_id",
+    "token_ids",
+    "token_text",
+    "top10",
 }
 
 
@@ -70,6 +100,11 @@ def scan_text(path: Path, failures: list[str]) -> None:
         if match:
             line = text.count("\n", 0, match.start()) + 1
             failures.append(f"{label}: {path.relative_to(ROOT)}:{line}")
+    for match in TOKEN_PATTERN.finditer(text):
+        digest = hashlib.sha256(match.group(0).lower().encode("utf-8")).hexdigest()
+        if digest in PRIVATE_TOKEN_SHA256:
+            line = text.count("\n", 0, match.start()) + 1
+            failures.append(f"personal user name: {path.relative_to(ROOT)}:{line}")
 
 
 def walk_keys(value: object, path: str = "$") -> Iterable[tuple[str, str]]:
@@ -89,6 +124,32 @@ def scan_natural_schema(failures: list[str]) -> None:
             if key.lower() in NATURAL_FORBIDDEN_KEYS:
                 failures.append(
                     f"natural text-bearing field {key!r}: {path.relative_to(ROOT)} {location}"
+                )
+    frozen = ROOT / "data/frozen_summaries"
+    for filename in ("ouro_natural_offpath.json", "ouro_natural_locality.json"):
+        path = frozen / filename
+        if not path.exists():
+            continue
+        payload = json.loads(path.read_text(encoding="utf-8"))
+        for key, location in walk_keys(payload):
+            if key.lower() in NATURAL_FORBIDDEN_KEYS:
+                failures.append(
+                    f"natural text-bearing field {key!r}: "
+                    f"{path.relative_to(ROOT)} {location}"
+                )
+
+
+def scan_boundary_schema(failures: list[str]) -> None:
+    directory = ROOT / "data/analysis_ready/decoding_boundary"
+    if not directory.exists():
+        return
+    for path in sorted(directory.glob("*.json")):
+        payload = json.loads(path.read_text(encoding="utf-8"))
+        for key, location in walk_keys(payload.get("rows", [])):
+            if key.lower() in BOUNDARY_FORBIDDEN_KEYS:
+                failures.append(
+                    f"boundary text/token-bearing field {key!r}: "
+                    f"{path.relative_to(ROOT)} {location}"
                 )
 
 
@@ -113,6 +174,7 @@ def main() -> None:
     for path in release_files():
         scan_text(path, failures)
     scan_natural_schema(failures)
+    scan_boundary_schema(failures)
     scan_pdf_metadata(failures)
     if failures:
         raise SystemExit("Anonymity audit failed:\n- " + "\n- ".join(sorted(set(failures))))
@@ -121,4 +183,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

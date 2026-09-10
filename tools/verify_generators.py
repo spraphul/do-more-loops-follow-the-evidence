@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Rebuild both fictional panels and require byte-identical output."""
+"""Rebuild all fictional panels and require byte-identical output."""
 
 from __future__ import annotations
 
@@ -30,6 +30,7 @@ def main() -> None:
         temporary = Path(directory)
         parent = temporary / "parent.json"
         structural = temporary / "structural.json"
+        surface = temporary / "surface.json"
         run(
             [
                 sys.executable,
@@ -48,17 +49,29 @@ def main() -> None:
                 str(structural),
             ]
         )
+        run(
+            [
+                sys.executable,
+                "data/generated/build_surface_orbit_confirmation.py",
+                "--output",
+                str(surface),
+            ]
+        )
         expected_parent = ROOT / "data/generated/nonce_path_control_v1.panel.json"
         expected_structural = (
             ROOT / "data/generated/nonce_structural_falsifiers_v1.panel.json"
+        )
+        expected_surface = (
+            ROOT / "data/generated/surface_orbit_confirmation_v3.panel.json"
         )
         if parent.read_bytes() != expected_parent.read_bytes():
             raise RuntimeError("fictional parent generator is not byte-identical")
         if structural.read_bytes() != expected_structural.read_bytes():
             raise RuntimeError("structural generator is not byte-identical")
+        if surface.read_bytes() != expected_surface.read_bytes():
+            raise RuntimeError("surface-orbit generator is not byte-identical")
     print("Generated panels rebuild byte-identically")
 
 
 if __name__ == "__main__":
     main()
-

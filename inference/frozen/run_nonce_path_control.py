@@ -15,7 +15,7 @@ import os
 import sys
 import types
 from collections import defaultdict
-from datetime import UTC, datetime
+from datetime import datetime, timezone
 from pathlib import Path
 from statistics import mean
 from typing import Any, Iterable
@@ -670,7 +670,7 @@ def main() -> None:
     runner = Path(__file__).resolve()
     artifact = {
         "schema": SCHEMA,
-        "created_at": datetime.now(UTC).isoformat(),
+        "created_at": datetime.now(timezone.utc).isoformat(),
         "mode": args.mode,
         "model_key": args.model,
         "mock": args.mock,

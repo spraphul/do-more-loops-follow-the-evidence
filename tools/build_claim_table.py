@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import argparse
 import csv
 import json
 from pathlib import Path
@@ -50,7 +51,10 @@ def build() -> dict[str, Any]:
     curves = load("natural_depth_curves.json")
     ouro = load("fictional_ouro/nonce_path_control_ouro26.json")
     loopus = load("fictional_loopus8.json")
+    hrm_linear = load("hrm_linear.json")
+    hrm_branching = load("hrm_branching.json")
     structural = load("structural_falsifiers.json")
+    surface = load("surface_orbit_confirmation.json")
     factorial = load("training_factorial.json")
     claims: list[dict[str, Any]] = []
 
@@ -152,6 +156,140 @@ def build() -> dict[str, Any]:
             )
         )
 
+    for claim_id, status, system, contrast, metric, source in (
+        (
+            "fictional-ouro-repair",
+            "prospective confirmation",
+            "Ouro-2.6B",
+            "K4",
+            ouro["result"]["deep_topology_recovery_fraction_F"],
+            "fictional_ouro/nonce_path_control_ouro26.json",
+        ),
+        (
+            "fictional-loopus-repair",
+            "frozen extension",
+            "LoopUS-8B",
+            "K8",
+            loopus["result"]["deep_topology_recovery_fraction_F"],
+            "fictional_loopus8.json",
+        ),
+    ):
+        claims.append(
+            record(
+                claim_id,
+                status,
+                system,
+                "arbitrary fictional two-hop worlds",
+                "topology-recovery fraction",
+                contrast,
+                metric,
+                "fraction",
+                source,
+            )
+        )
+
+    for claim_id, estimand, metric, unit in (
+        (
+            "hrm-linear-margin-acquisition",
+            "path-margin gain",
+            hrm_linear["result"]["H2_minus_H1_raw_margin_gain"],
+            "label-logit units",
+        ),
+        (
+            "hrm-linear-choice-acquisition",
+            "exact-choice gain",
+            hrm_linear["result"]["H2_minus_H1_choice_gain"],
+            "proportion",
+        ),
+        (
+            "hrm-linear-repair",
+            "topology-recovery fraction",
+            hrm_linear["result"]["H2_topology_recovery_fraction"],
+            "fraction",
+        ),
+    ):
+        claims.append(
+            record(
+                claim_id,
+                "prespecified model transfer",
+                "HRM-Text-1B",
+                "arbitrary fictional two-hop worlds",
+                estimand,
+                "H1 to H2",
+                metric,
+                unit,
+                "hrm_linear.json",
+            )
+        )
+
+    for claim_id, estimand, metric, unit in (
+        (
+            "hrm-branching-margin-acquisition",
+            "topology-repair raw-interaction gain",
+            hrm_branching["results"]["primary_repair_xor_raw_H2_minus_H1"],
+            "label-logit units",
+        ),
+        (
+            "hrm-branching-choice-acquisition",
+            "topology-repair choice-interaction gain",
+            hrm_branching["results"]["primary_repair_xor_choice_H2_minus_H1"],
+            "proportion",
+        ),
+        (
+            "hrm-branching-repair",
+            "choice-repair fraction",
+            hrm_branching["results"]["repair_fraction_choice_H2"],
+            "fraction",
+        ),
+    ):
+        claims.append(
+            record(
+                claim_id,
+                "fresh confirmation",
+                "HRM-Text-1B",
+                "relation-conditioned branching worlds",
+                estimand,
+                "H1 to H2" if "acquisition" in claim_id else "H2",
+                metric,
+                unit,
+                "hrm_branching.json",
+            )
+        )
+
+    for claim_id, estimand, key, unit in (
+        (
+            "surface-orbit-deep-path-control",
+            "four-rendering path contrast",
+            "D4",
+            "label-logit units",
+        ),
+        (
+            "surface-orbit-margin-acquisition",
+            "four-rendering path-margin gain",
+            "G41",
+            "label-logit units",
+        ),
+        (
+            "surface-orbit-choice-acquisition",
+            "four-rendering exact-choice gain",
+            "H41",
+            "proportion",
+        ),
+    ):
+        claims.append(
+            record(
+                claim_id,
+                "competence-qualified fresh confirmation",
+                "Ouro-2.6B",
+                "fresh fictional worlds across four renderings",
+                estimand,
+                "K1 to K4" if key != "D4" else "K4",
+                surface["overall"][key],
+                unit,
+                "surface_orbit_confirmation.json",
+            )
+        )
+
     for claim_id, estimand, key in (
         ("structural-on-off-specificity", "on-path minus off-path choice effect", "specificity_choice_K4"),
         ("structural-crossed-locality", "graph-directed choice under adverse locality", "graph_effect_choice_crossed_K4"),
@@ -201,8 +339,15 @@ def build() -> dict[str, Any]:
 
 
 def main() -> None:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--output-dir", type=Path, default=RESULTS)
+    args = parser.parse_args()
     payload = build()
-    output_dir = RESULTS
+    output_dir = (
+        args.output_dir
+        if args.output_dir.is_absolute()
+        else ROOT / args.output_dir
+    )
     output_dir.mkdir(parents=True, exist_ok=True)
     json_path = output_dir / "headline_results.json"
     csv_path = output_dir / "headline_results.csv"
@@ -221,7 +366,7 @@ def main() -> None:
         "source",
     )
     with csv_path.open("w", encoding="utf-8", newline="") as handle:
-        writer = csv.DictWriter(handle, fieldnames=fields)
+        writer = csv.DictWriter(handle, fieldnames=fields, lineterminator="\n")
         writer.writeheader()
         for item in payload["claims"]:
             row = dict(item)
@@ -235,4 +380,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

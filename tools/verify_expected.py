@@ -17,8 +17,13 @@ MAPPING = {
     "loopus-full-depth": "loopus_full_depth.json",
     "fictional-ouro": "fictional_ouro/nonce_path_control_ouro26.json",
     "fictional-loopus": "fictional_loopus8.json",
+    "hrm-linear": "hrm_linear.json",
+    "hrm-branching": "hrm_branching.json",
     "structural": "structural_falsifiers.json",
+    "surface-orbit": "surface_orbit_confirmation.json",
+    "decoding-boundary": "decoding_boundary_audit.json",
     "factorial": "training_factorial.json",
+    "headline": "headline_results.json",
 }
 
 
@@ -68,9 +73,13 @@ def main() -> None:
         expected = json.loads(expected_path.read_text(encoding="utf-8"))
         observed = json.loads(observed_path.read_text(encoding="utf-8"))
         compare(expected, observed)
+        if name == "headline":
+            expected_csv = ROOT / "expected/analysis/headline_results.csv"
+            observed_csv = ROOT / "reproduced/results/headline_results.csv"
+            if expected_csv.read_bytes() != observed_csv.read_bytes():
+                raise AssertionError("headline_results.csv differs from the frozen output")
         print(f"[match] {name}: {relative}")
 
 
 if __name__ == "__main__":
     main()
-

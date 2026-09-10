@@ -13,10 +13,17 @@ third-party model code are included here.
 
 ## Frozen runners
 
-`inference/frozen/` contains the exact panel schedulers, competence gates,
-score orientation, sharding, and execution audits used for the generated
-experiments. The runners accept explicit checkpoint and upstream-source paths;
-they never read a token from this repository.
+`inference/frozen/` contains the released Ouro and LoopUS panel schedulers,
+competence gates, score orientation, sharding, and execution audits. The
+runners accept explicit checkpoint and upstream-source paths; they never read
+a token from this repository.
+
+For HRM, the artifact releases both generated panels, raw A/B logits, gate and
+runner bindings, full-vocabulary H2 parity checks, and the complete CPU
+analyses. The source runner and result digests are recorded in
+`data/PROVENANCE.json`. The optional GPU runner is not presented as a
+self-contained replay because it depends on the upstream HRM implementation
+and checkpoint.
 
 The inexpensive schedule check is:
 
@@ -46,3 +53,8 @@ Natural model prompts cannot be distributed because they contain benchmark
 content. Their row-level scores, execution summaries, checkpoint revisions,
 and inference units are included for exact statistical replay.
 
+The same boundary applies to the post-outcome answer-boundary diagnostic. Its
+GPU replay required the licensed natural prompts, so the anonymous release
+ships the text-free row projection and complete CPU analysis and does not
+provide a self-contained model replay. The fresh four-format task is generated
+and is therefore distributed in full with its frozen panel.

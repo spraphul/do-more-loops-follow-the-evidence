@@ -10,7 +10,7 @@ import json
 import math
 import random
 from dataclasses import dataclass
-from datetime import UTC, datetime
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
@@ -417,7 +417,7 @@ def main() -> None:
     script = Path(__file__).resolve()
     artifact = {
         "schema": SCHEMA,
-        "created_at": datetime.now(UTC).isoformat(),
+        "created_at": datetime.now(timezone.utc).isoformat(),
         "condition": {"tying": args.tying, "supervision": args.supervision},
         "seed": args.seed,
         "script": {"path": str(script), "sha256": sha256_file(script)},

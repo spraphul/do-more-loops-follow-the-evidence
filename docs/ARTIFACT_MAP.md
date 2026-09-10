@@ -31,7 +31,11 @@ prompt cell are also public.
 | `data/analysis_ready/natural/` | Text-free paired natural score grids | yes |
 | `data/analysis_ready/fictional_ouro/` | Ouro competence and treatment rows | yes |
 | `data/analysis_ready/fictional_loopus8/` | LoopUS competence and treatment rows | yes |
+| `data/analysis_ready/hrm_linear/` | HRM linear gate and disjoint treatment rows | yes |
+| `data/analysis_ready/hrm_branching/` | HRM branching gate and disjoint confirmation rows | yes |
 | `data/analysis_ready/structural/` | On/off-path and locality-control rows | yes |
+| `data/analysis_ready/surface_orbit/` | Disjoint-gate and fresh four-rendering confirmation rows | yes |
+| `data/analysis_ready/decoding_boundary/` | Text-free row-level output-boundary diagnostic | yes |
 | `data/analysis_ready/factorial/` | Four conditions across eight confirmation seeds | yes |
 | `data/plot_ready/appendix/` | Small frozen tables for secondary appendix plots | no |
 | `data/frozen_summaries/` | Diagnostics and stopped-branch records | no |
@@ -48,3 +52,9 @@ prompt cell are also public.
 digest, public release path, public digest, and transformation class. It omits
 private source paths. `MANIFEST.sha256` independently binds the release files
 that a reviewer receives.
+
+The prompt-format and HRM branching panels are released byte-for-byte because
+every world and prompt is generated for this study. The boundary rows use a stricter projection because
+they originate from licensed natural-question panels. Pair and relation-path
+strata are pseudonymized, while benchmark prose, answer strings, generated
+text, decoded tokens, and raw token IDs are removed.

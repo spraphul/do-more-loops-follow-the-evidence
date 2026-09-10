@@ -1,0 +1,51 @@
+{
+  "code": {
+    "base_runner_sha256": "70066f03f64e22f22e66a46ef1949ef6ea2f51803aee328185f2f6c01d21861d",
+    "model_backend_sha256": "19c9559c23ae4366420e925b8420ec576b90c26fe3df1018af2eab78ba650e47",
+    "native_readout_scorer_sha256": "d7b0fd633d9812826bb836d9e6e64fc9be1e397052d1b4d8645ad56728bb0914",
+    "ouro14_binding_sha256": "1f03735029394c663547441c7d18ce0a2b9ed41a22a3c478b2911b7690484f66",
+    "ouro26_binding_sha256": "b76b91dc2b29d04a5ad86e453753a3998c2a7027a5dcc7f84ce8101f24fa3264",
+    "prompt_dependency_sha256": "266b0ec84f71dd75923e149e1c8336b2a6f400f9c59e7cfc67b7623169b00e9f",
+    "release_analysis_path": "analysis/analyze_surface_orbit.py",
+    "runner_sha256": "85697fb85ba8a856ea93314212057940fe9cc3119eb4a440ad3e18d4ce696223",
+    "shared_logit_runner_sha256": "5de3b0af527c288006711da09a4c404259f3ffb142327ff3d8f722983cfb1aac"
+  },
+  "date": "2026-09-09",
+  "design": {
+    "panel_canonical_sha256": "448bae9f9ed496a5a52d300d8c64c722ed4f4429933a648856ffdef6926d34f2",
+    "panel_file_sha256": "d2a88663190a6b4cb0aead5652dcace13a247a065988da1839e17cc850a155fe",
+    "panel_path": "data/generated/surface_orbit_confirmation_v3.panel.json",
+    "spec_path": "protocols/surface_orbit_confirmation_v3.md",
+    "spec_sha256": "61ce3927fcda372ad1efd37a45208281366d76344a39ffce72a521ac58fff197"
+  },
+  "evidence_status": {
+    "design": "adaptive_follow_up_after_v2_competence_stop",
+    "v2_confirmation_outcomes_scored": false,
+    "v2_gate_data_pooled_into_v3": false
+  },
+  "model": {
+    "dtype": "bfloat16",
+    "native_readout_K": [
+      1,
+      4
+    ],
+    "repository": "ByteDance/Ouro-2.6B",
+    "revision": "1ed04250da1a9936042725d302e81c8fa2ab5abd",
+    "weight_blob_sha256": "2fdf9805a3510b7dc82959a2db4872ef767a5bdc55520c6a1b54fc3e463c1bba"
+  },
+  "preflight": {
+    "deterministic_panel_rebuild_identical": true,
+    "full_mock_gate_treatment_analysis_passed": true,
+    "v3_real_model_outcomes_accessed": false
+  },
+  "schema": "iclr2027.ouro26_surface_orbit_confirmation.execution.v3",
+  "status": "frozen_before_v3_model_inference",
+  "workload": {
+    "confirmation_prompts": 1536,
+    "confirmation_scored_rows": 3072,
+    "confirmation_worlds": 48,
+    "gate_prompts": 384,
+    "gate_worlds": 24,
+    "planned_treatment_shards": 8
+  }
+}

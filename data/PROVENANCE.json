@@ -17,6 +17,22 @@
       "transformation": "replaced one author-machine parent-panel path; scientific cells unchanged"
     },
     {
+      "artifact_id": "surface_orbit_confirmation_panel_v3",
+      "release_canonical_sha256": "448bae9f9ed496a5a52d300d8c64c722ed4f4429933a648856ffdef6926d34f2",
+      "release_path": "data/generated/surface_orbit_confirmation_v3.panel.json",
+      "release_sha256": "d2a88663190a6b4cb0aead5652dcace13a247a065988da1839e17cc850a155fe",
+      "source_sha256": "d2a88663190a6b4cb0aead5652dcace13a247a065988da1839e17cc850a155fe",
+      "transformation": "none; fully generated fictional surface-orbit panel"
+    },
+    {
+      "artifact_id": "hrm_branching_confirmation_panel_v1",
+      "release_canonical_sha256": "e76bf583223dba4f6b46e970b592009b6b7f29bd9db0e30cd8b97c3217314f31",
+      "release_path": "data/generated/hrm_branching_confirmation_v1.panel.json",
+      "release_sha256": "1e3583f34bea3f0ddf02970bd70b4711c53bff7af9b8d8db98382e21a648f41c",
+      "source_sha256": "1e3583f34bea3f0ddf02970bd70b4711c53bff7af9b8d8db98382e21a648f41c",
+      "transformation": "none; fully generated fictional branching panel"
+    },
+    {
       "artifact_id": "natural_ouro26_2wiki",
       "release_path": "data/analysis_ready/natural/ouro26_2wiki.json",
       "release_sha256": "593a8104419da38f0a93e03436185e94cfa7466618278e9da95a119bd9a4bb27",
@@ -205,6 +221,251 @@
       "release_sha256": "3ae844b41b75d781b78521b7166be024f5a174d32aa9b4111ec04dccce327553",
       "source_sha256": "4b8bb6ce84bbdb9387f9297b5ae85ad3ca7f1b66110da398ad37ac8757bf0acd",
       "transformation": "score-only projection; prompts are recoverable from the released generated panel"
+    },
+    {
+      "artifact_id": "surface_orbit_competence",
+      "release_path": "data/analysis_ready/surface_orbit/competence.json",
+      "release_sha256": "0302cba411fb993bbfc40c7fe712018f1f1091a59e849d0f69ab1798ffd4e6bc",
+      "source_sha256": "e6d566adf718b7f504bd39a34d28ea70a5e142777966771275eadc86ce1a7e7d",
+      "transformation": "score-only projection; prompts are recoverable from the released generated panel"
+    },
+    {
+      "artifact_id": "surface_orbit_shard_0",
+      "release_path": "data/analysis_ready/surface_orbit/shard_0.json",
+      "release_sha256": "c4e0f5d367f9aaab025f997dde4ffc8d413edab514146163290e2e18968d2b76",
+      "source_sha256": "710eba5e77661d194933d8dfe93a4e87afe6bf396cec5e5a5d06f5a650a23a4a",
+      "transformation": "score-only projection; prompts are recoverable from the released generated panel"
+    },
+    {
+      "artifact_id": "surface_orbit_shard_1",
+      "release_path": "data/analysis_ready/surface_orbit/shard_1.json",
+      "release_sha256": "11b9f572829184222b31af9bd4c69c47026facdab1f0edf5c566e7a09cebc8a4",
+      "source_sha256": "f17cb4d8da2b5edad233c2fa50b333a1b3d1392b395d26de459235b16181d714",
+      "transformation": "score-only projection; prompts are recoverable from the released generated panel"
+    },
+    {
+      "artifact_id": "surface_orbit_shard_2",
+      "release_path": "data/analysis_ready/surface_orbit/shard_2.json",
+      "release_sha256": "8afb58fab8afc20386e89c3f91852afa18f6480a7aee2b3b8729dc3b11be5951",
+      "source_sha256": "89022c36e82c7e10d790291754c5fe2201e70766fb064ae5f797aa8bce20ae57",
+      "transformation": "score-only projection; prompts are recoverable from the released generated panel"
+    },
+    {
+      "artifact_id": "surface_orbit_shard_3",
+      "release_path": "data/analysis_ready/surface_orbit/shard_3.json",
+      "release_sha256": "b1221d860ce0a3aac6ef9d855fb480657cd130fd6d4e8764f5e2dda6811ec23e",
+      "source_sha256": "5919377d89f156b6c1de39a9970e931054e65da3af7673590bc60d640b06628d",
+      "transformation": "score-only projection; prompts are recoverable from the released generated panel"
+    },
+    {
+      "artifact_id": "surface_orbit_shard_4",
+      "release_path": "data/analysis_ready/surface_orbit/shard_4.json",
+      "release_sha256": "8054d6b9f93096a6dd2fb33add58fb7c6900803f238b4dbe2ebe9ead8376131a",
+      "source_sha256": "fee82e74a863fc4f0d07ccc146d40189faa39f29e92b35fcd8697fa0c08fa91e",
+      "transformation": "score-only projection; prompts are recoverable from the released generated panel"
+    },
+    {
+      "artifact_id": "surface_orbit_shard_5",
+      "release_path": "data/analysis_ready/surface_orbit/shard_5.json",
+      "release_sha256": "4684ebae3d41aba80dcfcf4dcf6f24d6d1ab1a8ea741360417ea723d75106504",
+      "source_sha256": "ebd0579d27c1b18e94885e1007477fd2804f1e3c7287b13df8405d397e7d07a7",
+      "transformation": "score-only projection; prompts are recoverable from the released generated panel"
+    },
+    {
+      "artifact_id": "surface_orbit_shard_6",
+      "release_path": "data/analysis_ready/surface_orbit/shard_6.json",
+      "release_sha256": "6733de2e421cfb36cf2a767e3d55f88e94569024e7dea147a766de65175c7587",
+      "source_sha256": "9eb694730f289340fe2a871af7b53e68c8c8b1564fa74654e9120d4db4b2b29c",
+      "transformation": "score-only projection; prompts are recoverable from the released generated panel"
+    },
+    {
+      "artifact_id": "surface_orbit_shard_7",
+      "release_path": "data/analysis_ready/surface_orbit/shard_7.json",
+      "release_sha256": "28e7c33afc12262fd007a14d72c7bffe4987d0ffda77e9a70c041aa9f87e67ac",
+      "source_sha256": "bc11a8df8e6c40b6d503783f0447dcb9bac4fe031727fd59c563e85a95d1fa07",
+      "transformation": "score-only projection; prompts are recoverable from the released generated panel"
+    },
+    {
+      "artifact_id": "hrm_linear_competence",
+      "release_path": "data/analysis_ready/hrm_linear/competence.json",
+      "release_sha256": "5b70caf18cf80589d0c53dade16fa101f26e3103504df38c5fc26ed5ed89ada0",
+      "source_sha256": "fecebbb0d0b2302d61270b20b5d6ecb13a898a187757ef06deac94d98b1d52e3",
+      "transformation": "fictional design coordinates and raw A/B logits; prompts are joined through the released generated panel"
+    },
+    {
+      "artifact_id": "hrm_linear_shard_0",
+      "release_path": "data/analysis_ready/hrm_linear/shard_0.json",
+      "release_sha256": "a1651d9bfff69113c763c9a678b24fa825f58da626ad2c7352c30e96f12e20ad",
+      "source_sha256": "eb6ee445a86d99781285d02aea189662c8a1db6464b8005014c55c30cd8e9508",
+      "transformation": "fictional design coordinates and raw A/B logits; prompts are joined through the released generated panel"
+    },
+    {
+      "artifact_id": "hrm_linear_shard_1",
+      "release_path": "data/analysis_ready/hrm_linear/shard_1.json",
+      "release_sha256": "f9d39d75c7d40ec6f3a56e281becd4f91371a8c06470451cedef0aec9612377f",
+      "source_sha256": "9c2d3589a1345d976716393a086a5ddeedf9a296fc0705d05840b143335b476e",
+      "transformation": "fictional design coordinates and raw A/B logits; prompts are joined through the released generated panel"
+    },
+    {
+      "artifact_id": "hrm_linear_shard_2",
+      "release_path": "data/analysis_ready/hrm_linear/shard_2.json",
+      "release_sha256": "1eebb20e4add76f5bea6ee3d6d637afe3b01283d9cbeb6176152bc972c78cb75",
+      "source_sha256": "09a0f7b86a72400e2ef9edcd0710791bfa2406c3623ed40821fab9126611c84a",
+      "transformation": "fictional design coordinates and raw A/B logits; prompts are joined through the released generated panel"
+    },
+    {
+      "artifact_id": "hrm_linear_shard_3",
+      "release_path": "data/analysis_ready/hrm_linear/shard_3.json",
+      "release_sha256": "20ab329932ca7cb432998d6f461726358fa380ce4469eaa6a05e53c7267a0e2b",
+      "source_sha256": "4a21046999f2bea8108ca9fc0f739364e01cd1501ea1586fe66fc45bd6061ee7",
+      "transformation": "fictional design coordinates and raw A/B logits; prompts are joined through the released generated panel"
+    },
+    {
+      "artifact_id": "hrm_linear_shard_4",
+      "release_path": "data/analysis_ready/hrm_linear/shard_4.json",
+      "release_sha256": "24bea4f7792fc4acf5aea12d6a893d78b468cb4b8796065670368349ea4c53d4",
+      "source_sha256": "15ee9bdb3eb97945889c85683e51a28094e0569a7b36be52d7418f9056d6a75e",
+      "transformation": "fictional design coordinates and raw A/B logits; prompts are joined through the released generated panel"
+    },
+    {
+      "artifact_id": "hrm_linear_shard_5",
+      "release_path": "data/analysis_ready/hrm_linear/shard_5.json",
+      "release_sha256": "15caf3df08359f9dbe23f14f49f457589090fe3936d203209177a65a2d63316a",
+      "source_sha256": "a1708f0857fe427b25a7db47e1bf34614d4372e605caaf723d510ffdfa6fdd01",
+      "transformation": "fictional design coordinates and raw A/B logits; prompts are joined through the released generated panel"
+    },
+    {
+      "artifact_id": "hrm_linear_shard_6",
+      "release_path": "data/analysis_ready/hrm_linear/shard_6.json",
+      "release_sha256": "57c4d09ee273e14112772b59d536c2f2ad6a751f0e77d2baf6fbb478bced302e",
+      "source_sha256": "1a85261fa4f0028460f7314471aaf7a714ad3ca8997a6f0e4602891519e8fad8",
+      "transformation": "fictional design coordinates and raw A/B logits; prompts are joined through the released generated panel"
+    },
+    {
+      "artifact_id": "hrm_linear_shard_7",
+      "release_path": "data/analysis_ready/hrm_linear/shard_7.json",
+      "release_sha256": "676dce90d975399edf73296e33744b14b447e66bb6e1bbfcebc77e8cf41c6280",
+      "source_sha256": "9e9dab649e0c5310f4a2de4d067e798ad5ca59ec0874bf2cab156ca39e4e987a",
+      "transformation": "fictional design coordinates and raw A/B logits; prompts are joined through the released generated panel"
+    },
+    {
+      "artifact_id": "hrm_branching_gate",
+      "release_path": "data/analysis_ready/hrm_branching/gate.json",
+      "release_sha256": "bd76d987794ba7324795e6d6f5655f6bb9c2d70f9c02d6b2ec7cbe4150575fbd",
+      "source_sha256": "197fe8c3a02f2df82dbb0a221296dd486a333964315bbf63c09a0c0e6877a1bb",
+      "transformation": "fictional design coordinates and raw A/B logits; prompts are joined through the released generated panel"
+    },
+    {
+      "artifact_id": "hrm_branching_shard_0",
+      "release_path": "data/analysis_ready/hrm_branching/shard_0.json",
+      "release_sha256": "82764ab13dc287b9f2dada4616e5e1924974169b7ff6afcff52f9f17b03862e2",
+      "source_sha256": "8662547c0481ba755a94b72409ee90fc7858eedbe5328e69e08964c4f414f8ad",
+      "transformation": "fictional design coordinates and raw A/B logits; prompts are joined through the released generated panel"
+    },
+    {
+      "artifact_id": "hrm_branching_shard_1",
+      "release_path": "data/analysis_ready/hrm_branching/shard_1.json",
+      "release_sha256": "e04d7f35affe587636667575b36e694d62a6c6857486d54c9baaf60a985db529",
+      "source_sha256": "1d9d0faf7981a212cd688d227ebb73f13f6f210cda6f34fb3f17c1bad173a20b",
+      "transformation": "fictional design coordinates and raw A/B logits; prompts are joined through the released generated panel"
+    },
+    {
+      "artifact_id": "hrm_branching_shard_2",
+      "release_path": "data/analysis_ready/hrm_branching/shard_2.json",
+      "release_sha256": "98866fcc8ac934b69a59ae447abfc3b3b7e57331f0cdc74d051619b09d287391",
+      "source_sha256": "3a2b08e783e994570a701c78a019c169ca9fbfdb4c2f69a77af28fb527e43a0c",
+      "transformation": "fictional design coordinates and raw A/B logits; prompts are joined through the released generated panel"
+    },
+    {
+      "artifact_id": "hrm_branching_shard_3",
+      "release_path": "data/analysis_ready/hrm_branching/shard_3.json",
+      "release_sha256": "08995942dbad25c4255e47d43e28f0d0b2d67ee8bc825e8b1729fb546de3b34e",
+      "source_sha256": "73d2ad1fbb4a20cbc51f1b6a7bfd18685be8254f0f37cdbe173b9d1a45f94a15",
+      "transformation": "fictional design coordinates and raw A/B logits; prompts are joined through the released generated panel"
+    },
+    {
+      "artifact_id": "hrm_branching_shard_4",
+      "release_path": "data/analysis_ready/hrm_branching/shard_4.json",
+      "release_sha256": "97070de52c2b83c1d3ddf82acb747c6fe11e9bd4456f76882eb8adb238ba6dbc",
+      "source_sha256": "9b58c3b05567805004a51b32369d69b1081c64c912cd4d3debeaf2719e79258a",
+      "transformation": "fictional design coordinates and raw A/B logits; prompts are joined through the released generated panel"
+    },
+    {
+      "artifact_id": "hrm_branching_shard_5",
+      "release_path": "data/analysis_ready/hrm_branching/shard_5.json",
+      "release_sha256": "282a776581ef465d7300a873bb2af194b0c4aa9c9c2ecd550109d589b5354b38",
+      "source_sha256": "1e40affb37b4d8205f57b00855efda0761c91a6569094f90d193d6f3a3eaf1aa",
+      "transformation": "fictional design coordinates and raw A/B logits; prompts are joined through the released generated panel"
+    },
+    {
+      "artifact_id": "hrm_branching_shard_6",
+      "release_path": "data/analysis_ready/hrm_branching/shard_6.json",
+      "release_sha256": "fb1f6d197451da362b6466134780d09738a80f561c5b05e21f49dd78dc4956cb",
+      "source_sha256": "04cfd7616bb8dedda627075d253057dd22e93e331d5e63ce1784b51c731d901a",
+      "transformation": "fictional design coordinates and raw A/B logits; prompts are joined through the released generated panel"
+    },
+    {
+      "artifact_id": "hrm_branching_shard_7",
+      "release_path": "data/analysis_ready/hrm_branching/shard_7.json",
+      "release_sha256": "0df36e7d1f19e3d16265c512b51393c8c9e8c8a6951f972bb4a6de5718a32c20",
+      "source_sha256": "1da74f9c657e19eac094cea42d0a079f4de4255631d034fa6104d09b4b725598",
+      "transformation": "fictional design coordinates and raw A/B logits; prompts are joined through the released generated panel"
+    },
+    {
+      "artifact_id": "hrm_branching_shard_8",
+      "release_path": "data/analysis_ready/hrm_branching/shard_8.json",
+      "release_sha256": "e5dcf5edaeb16c81b9162476a6fe4be2ccd8a8780f824ab226756a5631e1c2d4",
+      "source_sha256": "b9c44a69eeaca7f8b75a3eedf7c775a88d4449214bac7042feb6a10ecbb77f46",
+      "transformation": "fictional design coordinates and raw A/B logits; prompts are joined through the released generated panel"
+    },
+    {
+      "artifact_id": "hrm_branching_shard_9",
+      "release_path": "data/analysis_ready/hrm_branching/shard_9.json",
+      "release_sha256": "1838ec430447030d7e8595d008900b7de2b0aea975db03f2b9c5e2bc00801bfc",
+      "source_sha256": "6d706599cfa1894a4dacd6691d35a76b7bed15d207db3f28b73d2a229618f6b0",
+      "transformation": "fictional design coordinates and raw A/B logits; prompts are joined through the released generated panel"
+    },
+    {
+      "artifact_id": "hrm_branching_shard_10",
+      "release_path": "data/analysis_ready/hrm_branching/shard_10.json",
+      "release_sha256": "e559f4d1a7b7e00307a37ab67f850c5852103d2f24dbd41714b30642eacac03e",
+      "source_sha256": "b7090e4e113c6afbf3cd7840b4d8f623f6d2d68e1f1971442e33ffabc637540c",
+      "transformation": "fictional design coordinates and raw A/B logits; prompts are joined through the released generated panel"
+    },
+    {
+      "artifact_id": "hrm_branching_shard_11",
+      "release_path": "data/analysis_ready/hrm_branching/shard_11.json",
+      "release_sha256": "039f1132fdd0131c9df8fbcd3aeb9ee57a1a9837e8b9afb6ceb79e4625d8ed8b",
+      "source_sha256": "9e27b0917cea39dd529d398e3072f5449a99ce7898df813a171f43b45a8b7051",
+      "transformation": "fictional design coordinates and raw A/B logits; prompts are joined through the released generated panel"
+    },
+    {
+      "artifact_id": "decoding_boundary_shard_0",
+      "release_path": "data/analysis_ready/decoding_boundary/shard_0.json",
+      "release_sha256": "2c396006c64e89dbf22d605722ab6df40e815e12c8d1f79787d0d6e71ca8ae04",
+      "source_sha256": "3f7c44607d3238a6c88c33e2a5779768f2d41a583d87045640a02399316b0969",
+      "transformation": "text-free row-level projection with pseudonymous pair and relation-path IDs"
+    },
+    {
+      "artifact_id": "decoding_boundary_shard_1",
+      "release_path": "data/analysis_ready/decoding_boundary/shard_1.json",
+      "release_sha256": "d184a8e6178095465d9beb4c2211f7d77aa7a79ac7b45cf27afd2047f53ab67e",
+      "source_sha256": "ac5b4a0fce03a8074de037ce6d2069f9a47fb2e72fe4535c69911874518e7023",
+      "transformation": "text-free row-level projection with pseudonymous pair and relation-path IDs"
+    },
+    {
+      "artifact_id": "decoding_boundary_shard_2",
+      "release_path": "data/analysis_ready/decoding_boundary/shard_2.json",
+      "release_sha256": "0883a9e75ca86406f6c12237582980cd56c338305cbba36b45e38328f43da2c2",
+      "source_sha256": "447f85b3eaacd8c8108994780525d42b2d74bf06b65daaa20d56e5278fb1f8c3",
+      "transformation": "text-free row-level projection with pseudonymous pair and relation-path IDs"
+    },
+    {
+      "artifact_id": "decoding_boundary_shard_3",
+      "release_path": "data/analysis_ready/decoding_boundary/shard_3.json",
+      "release_sha256": "5e842c8768c6e34c0a37f6d98e17525d88a1354ff530db538f29dde6b67ef566",
+      "source_sha256": "e6091f69afc299af2f5f112ef43c2e1258e3eb222245a57f4634cafc36fddeb6",
+      "transformation": "text-free row-level projection with pseudonymous pair and relation-path IDs"
     },
     {
       "artifact_id": "factorial_seed101_tied_multi",
@@ -440,7 +701,7 @@
     {
       "artifact_id": "ouro_candidate_state_transplant",
       "release_path": "data/frozen_summaries/ouro_candidate_state_transplant.json",
-      "release_sha256": "748eb96c5ad5581973a2ce81fe1f4a735a880c6b205e9b7369977b9ffe00af80",
+      "release_sha256": "77b93814bb881a153472b6ecbbefe8f48f1af0803ffabd5a9c8fc80f8d271bcf",
       "source_sha256": "e1d9b5eab0bdd8308a738f3bc4cefe8515f049314e660763d5941cf1f25a0357",
       "transformation": "curated frozen summary; row-level text-bearing payload excluded"
     },
@@ -475,7 +736,7 @@
     {
       "artifact_id": "ouro_natural_offpath",
       "release_path": "data/frozen_summaries/ouro_natural_offpath.json",
-      "release_sha256": "15e2a2801687cb02904aaecd8a7ad25438bcd03ea445f10c36ecc2efe43b8f42",
+      "release_sha256": "cd7c49939370a4463e1cefb27293241eae937a184478f642cc23738558d40089",
       "source_sha256": "909fe2dcbd3fd2b78f5545332e6b430f45bd9ed18167a01620369aca2b1faf7b",
       "transformation": "curated frozen summary; row-level text-bearing payload excluded"
     },
@@ -489,7 +750,7 @@
     {
       "artifact_id": "ouro_natural_locality",
       "release_path": "data/frozen_summaries/ouro_natural_locality.json",
-      "release_sha256": "4badf9ff85fdd0d4cea3dfc6832da1ee78a92b533ab3262425586fdaf8fa7f31",
+      "release_sha256": "08c8e6da2161eaf5a05c6cde3b81cd2f31c5de4e7ad67f506ba2fe01c32c816d",
       "source_sha256": "fd38c329614f46cda78e839b2a17cb944092001eec3fe4d1f42e1c4df8af07fc",
       "transformation": "curated frozen summary; row-level text-bearing payload excluded"
     },
@@ -569,8 +830,99 @@
       "release_sha256": "b0bec4e60516c5fe737b1d7aae7a39a9b5d1b81f45dc6b92dd40297cd74dd211",
       "source_sha256": "7537d540ed3b80a17cb9eb7d30da441bc9629f6efbfdf1d1aff1897cd39efb84",
       "transformation": "curated frozen summary; row-level text-bearing payload excluded"
+    },
+    {
+      "artifact_id": "hrm_linear_protocol_v1",
+      "release_path": "protocols/hrm_linear_treatment_v1.md",
+      "release_sha256": "f549748155d04fa03d4a6e78badb974e05900e39453a1745605ab30b72b9b008",
+      "source_sha256": "f549748155d04fa03d4a6e78badb974e05900e39453a1745605ab30b72b9b008",
+      "transformation": "none; protocol text contains no private path or identity"
+    },
+    {
+      "artifact_id": "surface_orbit_protocol_v3",
+      "release_path": "protocols/surface_orbit_confirmation_v3.md",
+      "release_sha256": "98dffb542ec2e6d7ef4c7b943d5865bba9f8d30d5debf1418542df2df92168a9",
+      "source_sha256": "61ce3927fcda372ad1efd37a45208281366d76344a39ffce72a521ac58fff197",
+      "transformation": "terminology shortened; scientific protocol unchanged"
+    },
+    {
+      "artifact_id": "decoding_boundary_protocol_v1",
+      "release_path": "protocols/decoding_boundary_audit_v1.md",
+      "release_sha256": "ed70b187f0cfc0f64a9aaf7d85fe07f42797ced547ec020ce70be7002cc69e2b",
+      "source_sha256": "93d32b1073afc22b89c5e346682a8c248f3c0263f9962ece8ba089d803160835",
+      "transformation": "terminology shortened; scientific protocol unchanged"
+    },
+    {
+      "artifact_id": "hrm_branching_protocol_v1",
+      "release_path": "protocols/hrm_branching_confirmation_v1.md",
+      "release_sha256": "cbcbf347ac57bcce98b0522a1ec06dde42cd3bffa84a30af862b1461f51fd6a7",
+      "source_sha256": "3263bc37b2891f93b5963a2fce74d283e42b66cde0d3643f9f4c3b81de43a91e",
+      "transformation": "removed machine-specific execution commands after the frozen scientific protocol"
+    },
+    {
+      "artifact_id": "surface_orbit_execution_binding_v3",
+      "release_path": "protocols/surface_orbit_execution_v3.json",
+      "release_sha256": "c84eea95558fbb772387c3232806b233684e3c8d9b3f15e7ed0ed8f4741f70a5",
+      "source_sha256": "db687f5a3490b3a8692422ac1116e87a00a8d529fa4821ed57be61c5fb9a2a5e",
+      "transformation": "private workspace paths replaced by release-relative paths"
     }
   ],
   "release_boundary": "Original source hashes are retained without private source paths. Release hashes bind the anonymous projections distributed here.",
-  "schema": "evidence-loops.anonymous-release.v1"
+  "schema": "evidence-loops.anonymous-release.v1",
+  "source_code_and_result_bindings": {
+    "boundary_analysis_wrapper": {
+      "source_sha256": "f7393dc902ca1cedd23478c27cfcfbe6be3fc58fae608e6925956f7efd00a408"
+    },
+    "boundary_gpu_runner": {
+      "source_sha256": "5931f1eef4892ba89f77c7006bc81fe0c8305ae38032db94e25ce3791d6625d3"
+    },
+    "boundary_protocol": {
+      "source_sha256": "93d32b1073afc22b89c5e346682a8c248f3c0263f9962ece8ba089d803160835"
+    },
+    "boundary_source_result": {
+      "source_sha256": "c8aea8d7273095b0c3b679502d64ca45339398577a74758a394cc01753d0133a"
+    },
+    "boundary_upstream_2wiki": {
+      "source_sha256": "41b21e5c777522b4f413ddf7af1e70f1821deda29ab884118c8ac208632ef796"
+    },
+    "boundary_upstream_musique": {
+      "source_sha256": "cdcf20369fdcdaa52fff3bc042e20ad988e2ccd6bd0d630074cca038a3edd8db"
+    },
+    "hrm_branching_protocol": {
+      "source_sha256": "3263bc37b2891f93b5963a2fce74d283e42b66cde0d3643f9f4c3b81de43a91e"
+    },
+    "hrm_branching_source_analysis": {
+      "source_sha256": "23e4ebf79474a53f6e61768337b0674fe3ba8323358dc4e450a345d5b2a7fdfa"
+    },
+    "hrm_branching_source_result": {
+      "source_sha256": "1ed20a8ca98997198a49568d9bddeb2cf902cd4b14cbb59f7037805c6779d2dd"
+    },
+    "hrm_linear_protocol": {
+      "source_sha256": "f549748155d04fa03d4a6e78badb974e05900e39453a1745605ab30b72b9b008"
+    },
+    "hrm_linear_source_analysis": {
+      "source_sha256": "ef2ec09fceef49818195fd577fa4cdd0105a0bb70f5f552348df2e3d034cf084"
+    },
+    "hrm_linear_source_result": {
+      "source_sha256": "6bcfe915672f621d2f9709a886ae50309934151f7564305655f7defe2a3635e1"
+    },
+    "surface_base_runner": {
+      "source_sha256": "70066f03f64e22f22e66a46ef1949ef6ea2f51803aee328185f2f6c01d21861d"
+    },
+    "surface_execution_binding": {
+      "source_sha256": "db687f5a3490b3a8692422ac1116e87a00a8d529fa4821ed57be61c5fb9a2a5e"
+    },
+    "surface_prompt_dependency": {
+      "source_sha256": "266b0ec84f71dd75923e149e1c8336b2a6f400f9c59e7cfc67b7623169b00e9f"
+    },
+    "surface_protocol": {
+      "source_sha256": "61ce3927fcda372ad1efd37a45208281366d76344a39ffce72a521ac58fff197"
+    },
+    "surface_runner": {
+      "source_sha256": "85697fb85ba8a856ea93314212057940fe9cc3119eb4a440ad3e18d4ce696223"
+    },
+    "surface_source_result": {
+      "source_sha256": "2cade6c11e3fc1b127d98c4c1fb095cf99b5668de757bfeff801d774b6b90293"
+    }
+  }
 }

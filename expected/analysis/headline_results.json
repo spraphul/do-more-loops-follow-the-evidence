@@ -243,6 +243,171 @@
       "source": "fictional_loopus8.json"
     },
     {
+      "claim_id": "fictional-ouro-repair",
+      "evidence_status": "prospective confirmation",
+      "system": "Ouro-2.6B",
+      "panel": "arbitrary fictional two-hop worlds",
+      "estimand": "topology-recovery fraction",
+      "contrast": "K4",
+      "estimate": 1.0316679779701023,
+      "ci95": [
+        1.0048675775571765,
+        1.058448387936905
+      ],
+      "unit": "fraction",
+      "source": "fictional_ouro/nonce_path_control_ouro26.json"
+    },
+    {
+      "claim_id": "fictional-loopus-repair",
+      "evidence_status": "frozen extension",
+      "system": "LoopUS-8B",
+      "panel": "arbitrary fictional two-hop worlds",
+      "estimand": "topology-recovery fraction",
+      "contrast": "K8",
+      "estimate": 1.0820173946844176,
+      "ci95": [
+        1.0612282217083417,
+        1.1035332205512463
+      ],
+      "unit": "fraction",
+      "source": "fictional_loopus8.json"
+    },
+    {
+      "claim_id": "hrm-linear-margin-acquisition",
+      "evidence_status": "prespecified model transfer",
+      "system": "HRM-Text-1B",
+      "panel": "arbitrary fictional two-hop worlds",
+      "estimand": "path-margin gain",
+      "contrast": "H1 to H2",
+      "estimate": 3.7681640625,
+      "ci95": [
+        3.6215299479166667,
+        3.915172932942708
+      ],
+      "unit": "label-logit units",
+      "source": "hrm_linear.json"
+    },
+    {
+      "claim_id": "hrm-linear-choice-acquisition",
+      "evidence_status": "prespecified model transfer",
+      "system": "HRM-Text-1B",
+      "panel": "arbitrary fictional two-hop worlds",
+      "estimand": "exact-choice gain",
+      "contrast": "H1 to H2",
+      "estimate": 0.8958333333333334,
+      "ci95": [
+        0.8739583333333333,
+        0.915625
+      ],
+      "unit": "proportion",
+      "source": "hrm_linear.json"
+    },
+    {
+      "claim_id": "hrm-linear-repair",
+      "evidence_status": "prespecified model transfer",
+      "system": "HRM-Text-1B",
+      "panel": "arbitrary fictional two-hop worlds",
+      "estimand": "topology-recovery fraction",
+      "contrast": "H1 to H2",
+      "estimate": 1.0445373505631954,
+      "ci95": [
+        1.0268916917890722,
+        1.06247474367468
+      ],
+      "unit": "fraction",
+      "source": "hrm_linear.json"
+    },
+    {
+      "claim_id": "hrm-branching-margin-acquisition",
+      "evidence_status": "fresh confirmation",
+      "system": "HRM-Text-1B",
+      "panel": "relation-conditioned branching worlds",
+      "estimand": "topology-repair raw-interaction gain",
+      "contrast": "H1 to H2",
+      "estimate": 0.8669772677951388,
+      "ci95": [
+        0.8164669460720486,
+        0.9170605129665799
+      ],
+      "unit": "label-logit units",
+      "source": "hrm_branching.json"
+    },
+    {
+      "claim_id": "hrm-branching-choice-acquisition",
+      "evidence_status": "fresh confirmation",
+      "system": "HRM-Text-1B",
+      "panel": "relation-conditioned branching worlds",
+      "estimand": "topology-repair choice-interaction gain",
+      "contrast": "H1 to H2",
+      "estimate": 0.5620659722222222,
+      "ci95": [
+        0.5260416666666666,
+        0.5963541666666666
+      ],
+      "unit": "proportion",
+      "source": "hrm_branching.json"
+    },
+    {
+      "claim_id": "hrm-branching-repair",
+      "evidence_status": "fresh confirmation",
+      "system": "HRM-Text-1B",
+      "panel": "relation-conditioned branching worlds",
+      "estimand": "choice-repair fraction",
+      "contrast": "H2",
+      "estimate": 1.009353078721746,
+      "ci95": [
+        0.9662830632876332,
+        1.0522514792437607
+      ],
+      "unit": "fraction",
+      "source": "hrm_branching.json"
+    },
+    {
+      "claim_id": "surface-orbit-deep-path-control",
+      "evidence_status": "competence-qualified fresh confirmation",
+      "system": "Ouro-2.6B",
+      "panel": "fresh fictional worlds across four renderings",
+      "estimand": "four-rendering path contrast",
+      "contrast": "K4",
+      "estimate": 0.3489583333333333,
+      "ci95": [
+        0.3395182291666667,
+        0.3587239583333333
+      ],
+      "unit": "label-logit units",
+      "source": "surface_orbit_confirmation.json"
+    },
+    {
+      "claim_id": "surface-orbit-margin-acquisition",
+      "evidence_status": "competence-qualified fresh confirmation",
+      "system": "Ouro-2.6B",
+      "panel": "fresh fictional worlds across four renderings",
+      "estimand": "four-rendering path-margin gain",
+      "contrast": "K1 to K4",
+      "estimate": 0.3495279947916667,
+      "ci95": [
+        0.3398030598958333,
+        0.3595784505208333
+      ],
+      "unit": "label-logit units",
+      "source": "surface_orbit_confirmation.json"
+    },
+    {
+      "claim_id": "surface-orbit-choice-acquisition",
+      "evidence_status": "competence-qualified fresh confirmation",
+      "system": "Ouro-2.6B",
+      "panel": "fresh fictional worlds across four renderings",
+      "estimand": "four-rendering exact-choice gain",
+      "contrast": "K1 to K4",
+      "estimate": 0.2981770833333333,
+      "ci95": [
+        0.2786458333333333,
+        0.3170572916666667
+      ],
+      "unit": "proportion",
+      "source": "surface_orbit_confirmation.json"
+    },
+    {
       "claim_id": "structural-on-off-specificity",
       "evidence_status": "prospective confirmation",
       "system": "Ouro-2.6B",

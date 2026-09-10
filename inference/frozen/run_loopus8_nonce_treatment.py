@@ -7,7 +7,7 @@ import argparse
 import hashlib
 import json
 import sys
-from datetime import UTC, datetime
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
@@ -139,7 +139,7 @@ def main() -> None:
     runner = Path(__file__).resolve()
     artifact = {
         "schema": SCHEMA,
-        "created_at": datetime.now(UTC).isoformat(),
+        "created_at": datetime.now(timezone.utc).isoformat(),
         "mode": "treatment",
         "model_key": "loopus8",
         "mock": args.mock,

@@ -21,9 +21,11 @@ def main() -> None:
     OUT.mkdir(parents=True, exist_ok=True)
     parent_panel = "data/generated/nonce_path_control_v1.panel.json"
     structural_panel = "data/generated/nonce_structural_falsifiers_v1.panel.json"
+    surface_panel = "data/generated/surface_orbit_confirmation_v3.panel.json"
     parent_output = OUT / "ouro_schedule_smoke.json"
     loopus_output = OUT / "loopus_schedule_smoke.json"
     structural_output = OUT / "structural_schedule_smoke.json"
+    surface_output = OUT / "surface_orbit_schedule_smoke.json"
 
     run(
         [
@@ -36,6 +38,20 @@ def main() -> None:
             parent_panel,
             "--output",
             str(parent_output),
+            "--smoke-worlds",
+            "2",
+            "--mock",
+        ]
+    )
+    run(
+        [
+            "inference/frozen/run_ouro_surface_orbit.py",
+            "--mode",
+            "smoke",
+            "--panel",
+            surface_panel,
+            "--output",
+            str(surface_output),
             "--smoke-worlds",
             "2",
             "--mock",
@@ -72,6 +88,7 @@ def main() -> None:
         parent_output: 1,
         loopus_output: 8,
         structural_output: 1,
+        surface_output: 8,
     }
     for path, minimum in expected_minimum_rows.items():
         payload = json.loads(path.read_text(encoding="utf-8"))
@@ -82,4 +99,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

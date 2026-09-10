@@ -12,7 +12,6 @@
 - Public release digests separated from private-source digests.
 - Secondary analyses retain their original evidence status.
 
-Run `python tools/audit_anonymity.py` immediately before uploading the
-repository. The audit deliberately fails closed on credential-shaped strings
-and known private path forms.
-
+The `make verify` target runs `python tools/audit_anonymity.py`. The audit
+returns an error when it finds credential-shaped strings or known private path
+forms.

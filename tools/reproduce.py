@@ -27,6 +27,10 @@ def commands() -> dict[str, list[str]]:
     results = ROOT / "reproduced/results"
     panel = ROOT / "data/generated/nonce_path_control_v1.panel.json"
     structural_panel = ROOT / "data/generated/nonce_structural_falsifiers_v1.panel.json"
+    surface_panel = ROOT / "data/generated/surface_orbit_confirmation_v3.panel.json"
+    hrm_branching_panel = (
+        ROOT / "data/generated/hrm_branching_confirmation_v1.panel.json"
+    )
     return {
         "natural-scale": [PYTHON, "analysis/analyze_scale_invariant_natural.py"],
         "natural-curves": [PYTHON, "analysis/analyze_natural_depth_curves.py"],
@@ -55,6 +59,32 @@ def commands() -> dict[str, list[str]]:
             "--markdown-output",
             str(results / "fictional_loopus8.md"),
         ],
+        "hrm-linear": [
+            PYTHON,
+            "analysis/analyze_hrm_linear.py",
+            "--competence-artifact",
+            "data/analysis_ready/hrm_linear/competence.json",
+            "--inputs",
+            *paths("data/analysis_ready/hrm_linear/shard_*.json"),
+            "--json-output",
+            str(results / "hrm_linear.json"),
+            "--markdown-output",
+            str(results / "hrm_linear.md"),
+        ],
+        "hrm-branching": [
+            PYTHON,
+            "analysis/analyze_hrm_branching.py",
+            "--panel",
+            str(hrm_branching_panel),
+            "--gate-artifact",
+            "data/analysis_ready/hrm_branching/gate.json",
+            "--inputs",
+            *paths("data/analysis_ready/hrm_branching/shard_*.json"),
+            "--json-output",
+            str(results / "hrm_branching.json"),
+            "--markdown-output",
+            str(results / "hrm_branching.md"),
+        ],
         "structural": [
             PYTHON,
             "analysis/analyze_structural_falsifiers.py",
@@ -68,6 +98,30 @@ def commands() -> dict[str, list[str]]:
             str(results / "structural_falsifiers.json"),
             "--markdown-output",
             str(results / "structural_falsifiers.md"),
+        ],
+        "surface-orbit": [
+            PYTHON,
+            "analysis/analyze_surface_orbit.py",
+            "--panel",
+            str(surface_panel),
+            "--competence-artifact",
+            "data/analysis_ready/surface_orbit/competence.json",
+            "--inputs",
+            *paths("data/analysis_ready/surface_orbit/shard_*.json"),
+            "--json-output",
+            str(results / "surface_orbit_confirmation.json"),
+            "--markdown-output",
+            str(results / "surface_orbit_confirmation.md"),
+        ],
+        "decoding-boundary": [
+            PYTHON,
+            "analysis/analyze_decoding_boundary.py",
+            "--inputs",
+            *paths("data/analysis_ready/decoding_boundary/shard_*.json"),
+            "--json-output",
+            str(results / "decoding_boundary_audit.json"),
+            "--markdown-output",
+            str(results / "decoding_boundary_audit.md"),
         ],
         "factorial": [
             PYTHON,
@@ -122,7 +176,10 @@ def main() -> None:
     if args.only:
         selected = {name: selected[name] for name in args.only}
     (ROOT / "reproduced/results").mkdir(parents=True, exist_ok=True)
-    print(f"Running {len(selected)} frozen analyses with {args.jobs} worker(s)")
+    print(
+        f"Running {len(selected)} frozen analyses with {args.jobs} worker(s)",
+        flush=True,
+    )
     failures: list[str] = []
     with ThreadPoolExecutor(max_workers=args.jobs) as executor:
         futures = {
@@ -134,7 +191,7 @@ def main() -> None:
             try:
                 _, elapsed, output = future.result()
                 tail = output.strip().splitlines()[-1] if output.strip() else "complete"
-                print(f"[ok] {name}: {elapsed:.1f}s ({tail})")
+                print(f"[ok] {name}: {elapsed:.1f}s ({tail})", flush=True)
             except Exception as error:
                 failures.append(str(error))
                 print(f"[failed] {name}", file=sys.stderr)
@@ -145,8 +202,11 @@ def main() -> None:
     if set(selected) == all_names:
         subprocess.run([PYTHON, "tools/build_claim_table.py"], cwd=ROOT, check=True)
     if not args.skip_compare:
+        verify_names = list(selected)
+        if set(selected) == all_names:
+            verify_names.append("headline")
         subprocess.run(
-            [PYTHON, "tools/verify_expected.py", "--names", *selected],
+            [PYTHON, "tools/verify_expected.py", "--names", *verify_names],
             cwd=ROOT,
             check=True,
         )
@@ -154,4 +214,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

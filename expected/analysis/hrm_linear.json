@@ -1,0 +1,250 @@
+{
+  "schema": "evidence-loops.hrm-linear-analysis.v1",
+  "status": "prespecified_model_transfer",
+  "model_key": "hrm_text_1b",
+  "model_repository": "sapientinc/HRM-Text-1B",
+  "model_revision": "1f82ac2b71222f0c100a224a33f24b44a3000b6d",
+  "decision": "SUPPORT_HRM_TOPOLOGY_SENSITIVE_PATH_CONTROL",
+  "competence": {
+    "decision": "PROMOTE_TO_TREATMENT",
+    "passes_competence_gate": true,
+    "gate_depth": 2,
+    "worlds": 48,
+    "rows": 192,
+    "graph_correct_accuracy": {
+      "estimate": 0.9088541666666666,
+      "ci95": [
+        0.8671875,
+        0.9479166666666666
+      ],
+      "bootstrap_replicates": 10000,
+      "resampling": "48 worlds stratified within six relation families"
+    },
+    "query_arm_accuracy": {
+      "A": 0.9166666666666666,
+      "B": 0.9010416666666666
+    },
+    "candidate_order_accuracy": {
+      "original": 0.90625,
+      "reversed": 0.9114583333333334
+    },
+    "requirements": {
+      "lower95_strictly_above": 0.5,
+      "point_at_least": 0.65,
+      "each_query_arm_point_at_least": 0.55,
+      "each_candidate_order_point_at_least": 0.55
+    },
+    "descriptive_original_accuracy_by_H_exit": {
+      "H1": 0.5,
+      "H2": 0.9088541666666666
+    },
+    "H1_is_not_a_promotion_endpoint": true
+  },
+  "execution": {
+    "shard_count": 8,
+    "inputs": [
+      {
+        "path": "shard_0.json",
+        "sha256": "a1651d9bfff69113c763c9a678b24fa825f58da626ad2c7352c30e96f12e20ad"
+      },
+      {
+        "path": "shard_1.json",
+        "sha256": "f9d39d75c7d40ec6f3a56e281becd4f91371a8c06470451cedef0aec9612377f"
+      },
+      {
+        "path": "shard_2.json",
+        "sha256": "1eebb20e4add76f5bea6ee3d6d637afe3b01283d9cbeb6176152bc972c78cb75"
+      },
+      {
+        "path": "shard_3.json",
+        "sha256": "20ab329932ca7cb432998d6f461726358fa380ce4469eaa6a05e53c7267a0e2b"
+      },
+      {
+        "path": "shard_4.json",
+        "sha256": "24bea4f7792fc4acf5aea12d6a893d78b468cb4b8796065670368349ea4c53d4"
+      },
+      {
+        "path": "shard_5.json",
+        "sha256": "15caf3df08359f9dbe23f14f49f457589090fe3936d203209177a65a2d63316a"
+      },
+      {
+        "path": "shard_6.json",
+        "sha256": "57c4d09ee273e14112772b59d536c2f2ad6a751f0e77d2baf6fbb478bced302e"
+      },
+      {
+        "path": "shard_7.json",
+        "sha256": "676dce90d975399edf73296e33744b14b447e66bb6e1bbfcebc77e8cf41c6280"
+      }
+    ]
+  },
+  "result": {
+    "decision": "SUPPORT_HRM_TOPOLOGY_SENSITIVE_PATH_CONTROL",
+    "primary_worlds": 240,
+    "primary_split": "240 worlds untouched by the HRM competence gate",
+    "primary_world_ids_sha256": "480dfe02403f544654e73b89524aefd7881e624bd5dca94cb0f7b3a6d505b123",
+    "bootstrap": {
+      "replicates": 10000,
+      "seed": 8947295920106612835,
+      "resampling": "40 whole worlds within each of six relation families"
+    },
+    "by_H_exit": {
+      "1": {
+        "path_margin_D": {
+          "estimate": 0.0003255208333333333,
+          "ci95": [
+            -0.0006998697916666667,
+            0.0013671875
+          ],
+          "bootstrap_replicates": 10000,
+          "finite_replicates": 10000
+        },
+        "choice_control_C": {
+          "estimate": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "bootstrap_replicates": 10000,
+          "finite_replicates": 10000
+        },
+        "original_accuracy": {
+          "estimate": 0.5,
+          "ci95": [
+            0.5,
+            0.5
+          ],
+          "bootstrap_replicates": 10000,
+          "finite_replicates": 10000
+        },
+        "swap_accuracy": {
+          "estimate": 0.5,
+          "ci95": [
+            0.5,
+            0.5
+          ],
+          "bootstrap_replicates": 10000,
+          "finite_replicates": 10000
+        }
+      },
+      "2": {
+        "path_margin_D": {
+          "estimate": 3.7684895833333334,
+          "ci95": [
+            3.621611328125,
+            3.91640625
+          ],
+          "bootstrap_replicates": 10000,
+          "finite_replicates": 10000
+        },
+        "choice_control_C": {
+          "estimate": 0.8958333333333334,
+          "ci95": [
+            0.8739583333333333,
+            0.915625
+          ],
+          "bootstrap_replicates": 10000,
+          "finite_replicates": 10000
+        },
+        "original_accuracy": {
+          "estimate": 0.9369791666666667,
+          "ci95": [
+            0.9223958333333333,
+            0.9505208333333334
+          ],
+          "bootstrap_replicates": 10000,
+          "finite_replicates": 10000
+        },
+        "swap_accuracy": {
+          "estimate": 0.9588541666666667,
+          "ci95": [
+            0.9458333333333333,
+            0.9703125
+          ],
+          "bootstrap_replicates": 10000,
+          "finite_replicates": 10000
+        }
+      }
+    },
+    "H2_minus_H1_choice_gain": {
+      "estimate": 0.8958333333333334,
+      "ci95": [
+        0.8739583333333333,
+        0.915625
+      ],
+      "bootstrap_replicates": 10000,
+      "finite_replicates": 10000
+    },
+    "H2_minus_H1_raw_margin_gain": {
+      "estimate": 3.7681640625,
+      "ci95": [
+        3.6215299479166667,
+        3.915172932942708
+      ],
+      "bootstrap_replicates": 10000,
+      "finite_replicates": 10000
+    },
+    "H2_repair_increment": {
+      "estimate": 3.936328125,
+      "ci95": [
+        3.791012369791667,
+        4.083727213541667
+      ],
+      "bootstrap_replicates": 10000,
+      "finite_replicates": 10000
+    },
+    "H2_topology_recovery_fraction": {
+      "estimate": 1.0445373505631954,
+      "ci95": [
+        1.0268916917890722,
+        1.06247474367468
+      ],
+      "point_denominator": 3.7684895833333334,
+      "bootstrap_replicates": 10000,
+      "finite_replicates": 10000,
+      "estimable": true
+    },
+    "H2_repair_accuracy": {
+      "estimate": 0.9578125,
+      "ci95": [
+        0.9453125,
+        0.9692708333333333
+      ],
+      "bootstrap_replicates": 10000,
+      "finite_replicates": 10000
+    },
+    "depth_dependent_bridge_swap_sensitivity_passes": true,
+    "topology_sensitive_path_control_passes": true,
+    "leave_one_relation_family_out": {
+      "0": {
+        "choice_gain": 0.886875,
+        "raw_gain": 3.68697265625,
+        "repair_increment": 3.85
+      },
+      "1": {
+        "choice_gain": 0.89125,
+        "raw_gain": 3.76912109375,
+        "repair_increment": 3.9265625
+      },
+      "2": {
+        "choice_gain": 0.915,
+        "raw_gain": 3.86810546875,
+        "repair_increment": 4.02453125
+      },
+      "3": {
+        "choice_gain": 0.888125,
+        "raw_gain": 3.69390625,
+        "repair_increment": 3.87625
+      },
+      "4": {
+        "choice_gain": 0.894375,
+        "raw_gain": 3.77806640625,
+        "repair_increment": 3.9609375
+      },
+      "5": {
+        "choice_gain": 0.899375,
+        "raw_gain": 3.8128125,
+        "repair_increment": 3.9796875
+      }
+    }
+  }
+}

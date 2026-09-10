@@ -1,0 +1,728 @@
+{
+  "schema": "evidence-loops.decoding-boundary.result.v1",
+  "status": "post_outcome_diagnostic",
+  "bootstrap": {
+    "replicates": 10000,
+    "seed": 20260914,
+    "2Wiki": "relation path then whole pair",
+    "MuSiQue": "whole pair"
+  },
+  "bindings": {
+    "runner_source_sha256": "5931f1eef4892ba89f77c7006bc81fe0c8305ae38032db94e25ce3791d6625d3",
+    "full_inventory_sha256": "d4fb9c2c345e336424fb37b2f95899b95b37c67fe028b616639819f7c5d34f5c",
+    "shards": [
+      {
+        "path": "shard_0.json",
+        "sha256": "2c396006c64e89dbf22d605722ab6df40e815e12c8d1f79787d0d6e71ca8ae04"
+      },
+      {
+        "path": "shard_1.json",
+        "sha256": "d184a8e6178095465d9beb4c2211f7d77aa7a79ac7b45cf27afd2047f53ab67e"
+      },
+      {
+        "path": "shard_2.json",
+        "sha256": "0883a9e75ca86406f6c12237582980cd56c338305cbba36b45e38328f43da2c2"
+      },
+      {
+        "path": "shard_3.json",
+        "sha256": "5e842c8768c6e34c0a37f6d98e17525d88a1354ff530db538f29dde6b67ef566"
+      }
+    ]
+  },
+  "datasets": {
+    "2Wiki": {
+      "metrics": {
+        "registered_pairwise_state_accuracy": {
+          "estimate": 0.5745967741935484,
+          "ci95": [
+            0.5352822580645161,
+            0.6189516129032258
+          ]
+        },
+        "registered_greedy_identity_agreement_given_adherence": {
+          "estimate": 0.6651376146788991,
+          "ci95": [
+            0.5797736524995929,
+            0.7463448986602541
+          ]
+        },
+        "registered_graph_response_D1": {
+          "estimate": -0.010234848145515688,
+          "ci95": [
+            -0.07339904293898612,
+            0.04399144317834608
+          ]
+        },
+        "registered_graph_response_D3": {
+          "estimate": 0.6217325839304155,
+          "ci95": [
+            0.4427564589727309,
+            0.8108219060325814
+          ]
+        },
+        "registered_graph_response_G31": {
+          "estimate": 0.6319674320759312,
+          "ci95": [
+            0.44626914126978773,
+            0.8255810391638547
+          ]
+        },
+        "registered_choice_control_C1": {
+          "estimate": -0.014112903225806495,
+          "ci95": [
+            -0.03830645161290325,
+            0.0020161290322580627
+          ]
+        },
+        "registered_choice_control_C3": {
+          "estimate": 0.14919354838709675,
+          "ci95": [
+            0.07056451612903225,
+            0.23790322580645162
+          ]
+        },
+        "registered_choice_control_H31": {
+          "estimate": 0.16330645161290325,
+          "ci95": [
+            0.08467741935483869,
+            0.25201612903225806
+          ]
+        },
+        "bare_pairwise_state_accuracy": {
+          "estimate": 0.6068548387096774,
+          "ci95": [
+            0.5584677419354839,
+            0.6592741935483871
+          ]
+        },
+        "bare_greedy_identity_agreement_given_adherence": {
+          "estimate": 0.9840182648401826,
+          "ci95": [
+            0.9623893805309734,
+            0.9977973568281938
+          ]
+        },
+        "bare_graph_response_D1": {
+          "estimate": 0.008175497093508321,
+          "ci95": [
+            -0.036673610705521796,
+            0.05120330234208413
+          ]
+        },
+        "bare_graph_response_D3": {
+          "estimate": 0.4948037303082885,
+          "ci95": [
+            0.3537832654644585,
+            0.6467523259741643
+          ]
+        },
+        "bare_graph_response_G31": {
+          "estimate": 0.48662823321478016,
+          "ci95": [
+            0.3299006536700612,
+            0.6496299955182739
+          ]
+        },
+        "bare_choice_control_C1": {
+          "estimate": 0.0,
+          "ci95": [
+            -0.032258064516129004,
+            0.032258064516129004
+          ]
+        },
+        "bare_choice_control_C3": {
+          "estimate": 0.21370967741935487,
+          "ci95": [
+            0.1169354838709677,
+            0.3185483870967742
+          ]
+        },
+        "bare_choice_control_H31": {
+          "estimate": 0.21370967741935487,
+          "ci95": [
+            0.10483870967741932,
+            0.3306451612903225
+          ]
+        },
+        "two_surface_pairwise_state_accuracy": {
+          "estimate": 0.6028225806451613,
+          "ci95": [
+            0.5544354838709677,
+            0.6532258064516129
+          ]
+        },
+        "two_surface_greedy_identity_agreement_given_adherence": {
+          "estimate": 0.9840182648401826,
+          "ci95": [
+            0.9611231101511879,
+            1.0
+          ]
+        },
+        "two_surface_graph_response_D1": {
+          "estimate": 0.010325840866323453,
+          "ci95": [
+            -0.03154902440899798,
+            0.049408457357663464
+          ]
+        },
+        "two_surface_graph_response_D3": {
+          "estimate": 0.4962179452665484,
+          "ci95": [
+            0.3546731164138583,
+            0.6489824523339494
+          ]
+        },
+        "two_surface_graph_response_G31": {
+          "estimate": 0.48589210440022496,
+          "ci95": [
+            0.33234198739359555,
+            0.6461580743546039
+          ]
+        },
+        "two_surface_choice_control_C1": {
+          "estimate": 0.0,
+          "ci95": [
+            -0.028225806451612878,
+            0.028225806451612878
+          ]
+        },
+        "two_surface_choice_control_C3": {
+          "estimate": 0.20564516129032262,
+          "ci95": [
+            0.1088709677419355,
+            0.3064516129032258
+          ]
+        },
+        "two_surface_choice_control_H31": {
+          "estimate": 0.20564516129032262,
+          "ci95": [
+            0.10080645161290319,
+            0.31854838709677413
+          ]
+        },
+        "K1_boundary_correct_candidate_prefix": {
+          "estimate": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "K1_boundary_wrong_candidate_prefix": {
+          "estimate": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "K1_boundary_shared_candidate_prefix": {
+          "estimate": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "K1_boundary_outside_candidate_prefixes": {
+          "estimate": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "K1_boundary_correct_candidate_rank_mean": {
+          "estimate": 5309.564516129032,
+          "ci95": [
+            4077.738205645161,
+            6655.485131048386
+          ]
+        },
+        "K1_boundary_correct_candidate_rank_at_most_10": {
+          "estimate": 0.004032258064516129,
+          "ci95": [
+            0.0,
+            0.016129032258064516
+          ]
+        },
+        "K1_boundary_any_candidate_rank_at_most_10": {
+          "estimate": 0.008064516129032258,
+          "ci95": [
+            0.0,
+            0.03225806451612903
+          ]
+        },
+        "K1_boundary_replay_top1_matches_stored": {
+          "estimate": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "K3_boundary_correct_candidate_prefix": {
+          "estimate": 0.530241935483871,
+          "ci95": [
+            0.4798387096774194,
+            0.5806451612903226
+          ]
+        },
+        "K3_boundary_wrong_candidate_prefix": {
+          "estimate": 0.3326612903225806,
+          "ci95": [
+            0.2762096774193548,
+            0.3870967741935484
+          ]
+        },
+        "K3_boundary_shared_candidate_prefix": {
+          "estimate": 0.016129032258064516,
+          "ci95": [
+            0.0,
+            0.04838709677419355
+          ]
+        },
+        "K3_boundary_outside_candidate_prefixes": {
+          "estimate": 0.12096774193548387,
+          "ci95": [
+            0.06451612903225806,
+            0.18951612903225806
+          ]
+        },
+        "K3_boundary_correct_candidate_rank_mean": {
+          "estimate": 1.8830645161290323,
+          "ci95": [
+            1.7036290322580645,
+            2.0826612903225805
+          ]
+        },
+        "K3_boundary_correct_candidate_rank_at_most_10": {
+          "estimate": 0.9919354838709677,
+          "ci95": [
+            0.9798387096774194,
+            1.0
+          ]
+        },
+        "K3_boundary_any_candidate_rank_at_most_10": {
+          "estimate": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "K3_boundary_replay_top1_matches_stored": {
+          "estimate": 0.9858870967741935,
+          "ci95": [
+            0.9717741935483871,
+            0.9979838709677419
+          ]
+        },
+        "registered_to_bare_prediction_status_change_including_ties": {
+          "estimate": 0.3467741935483871,
+          "ci95": [
+            0.2721774193548387,
+            0.42545362903225736
+          ]
+        },
+        "registered_to_bare_prediction_reversal_given_non_ties": {
+          "estimate": 0.3441295546558704,
+          "ci95": [
+            0.2686770140428677,
+            0.4239350912778905
+          ]
+        },
+        "correct_prefix_but_final_not_correct": {
+          "estimate": 0.0020161290322580645,
+          "ci95": [
+            0.0,
+            0.008064516129032258
+          ]
+        },
+        "boundary_replay_top1_matches_stored": {
+          "estimate": 0.9929435483870968,
+          "ci95": [
+            0.9858870967741935,
+            0.998991935483871
+          ]
+        }
+      },
+      "details": {
+        "rows_K1_K3": 992,
+        "rows_K3": 496,
+        "pairs": 124,
+        "correct_candidate_first_token_rank_by_K": {
+          "1": {
+            "median": 1723.0,
+            "p25": 143.0,
+            "p75": 8166.75,
+            "maximum": 38263
+          },
+          "3": {
+            "median": 1.0,
+            "p25": 1.0,
+            "p75": 2.0,
+            "maximum": 15
+          }
+        },
+        "boundary_to_final_counts": {
+          "correct_candidate_prefix__final_correct": 262,
+          "correct_candidate_prefix__final_invalid": 1,
+          "outside_candidate_prefixes__final_correct": 2,
+          "outside_candidate_prefixes__final_invalid": 57,
+          "outside_candidate_prefixes__final_wrong_candidate": 1,
+          "shared_candidate_prefix__final_correct": 4,
+          "shared_candidate_prefix__final_wrong_candidate": 4,
+          "wrong_candidate_prefix__final_wrong_candidate": 165
+        },
+        "K3_greedy_agreement_denominators": {
+          "registered": 436,
+          "bare": 438,
+          "two_surface": 438
+        },
+        "K3_registered_to_bare_non_tied_rows": 494,
+        "privacy_note": "Decoded first-token strings and tokenizer IDs are excluded from the anonymous release; all paper-facing categories and ranks are retained."
+      }
+    },
+    "MuSiQue": {
+      "metrics": {
+        "registered_pairwise_state_accuracy": {
+          "estimate": 0.5513157894736842,
+          "ci95": [
+            0.5223684210526316,
+            0.5815789473684211
+          ]
+        },
+        "registered_greedy_identity_agreement_given_adherence": {
+          "estimate": 0.6666666666666666,
+          "ci95": [
+            0.5946725571725572,
+            0.7363636363636363
+          ]
+        },
+        "registered_graph_response_D1": {
+          "estimate": -0.025983501735486483,
+          "ci95": [
+            -0.08475107544346859,
+            0.03090976652346159
+          ]
+        },
+        "registered_graph_response_D3": {
+          "estimate": 0.4853602258782638,
+          "ci95": [
+            0.3186885241144582,
+            0.6598484736367276
+          ]
+        },
+        "registered_graph_response_G31": {
+          "estimate": 0.5113437276137502,
+          "ci95": [
+            0.34564037163006633,
+            0.6824333071708678
+          ]
+        },
+        "registered_choice_control_C1": {
+          "estimate": -0.026315789473684237,
+          "ci95": [
+            -0.052631578947368474,
+            0.0
+          ]
+        },
+        "registered_choice_control_C3": {
+          "estimate": 0.10263157894736841,
+          "ci95": [
+            0.044736842105263186,
+            0.1631578947368421
+          ]
+        },
+        "registered_choice_control_H31": {
+          "estimate": 0.12894736842105264,
+          "ci95": [
+            0.06578947368421056,
+            0.19473684210526315
+          ]
+        },
+        "bare_pairwise_state_accuracy": {
+          "estimate": 0.5815789473684211,
+          "ci95": [
+            0.55,
+            0.6157894736842106
+          ]
+        },
+        "bare_greedy_identity_agreement_given_adherence": {
+          "estimate": 0.9847560975609756,
+          "ci95": [
+            0.9667673716012085,
+            0.9970414201183432
+          ]
+        },
+        "bare_graph_response_D1": {
+          "estimate": 0.020808543657001695,
+          "ci95": [
+            -0.016507354912004973,
+            0.06626779032380957
+          ]
+        },
+        "bare_graph_response_D3": {
+          "estimate": 0.37789050889642617,
+          "ci95": [
+            0.25845440799860575,
+            0.501752670181817
+          ]
+        },
+        "bare_graph_response_G31": {
+          "estimate": 0.3570819652394245,
+          "ci95": [
+            0.2294806875955117,
+            0.48890533604708153
+          ]
+        },
+        "bare_choice_control_C1": {
+          "estimate": -0.010526315789473717,
+          "ci95": [
+            -0.03157894736842104,
+            0.010526315789473606
+          ]
+        },
+        "bare_choice_control_C3": {
+          "estimate": 0.16315789473684206,
+          "ci95": [
+            0.09999999999999998,
+            0.231578947368421
+          ]
+        },
+        "bare_choice_control_H31": {
+          "estimate": 0.17368421052631577,
+          "ci95": [
+            0.1105263157894737,
+            0.23684210526315796
+          ]
+        },
+        "two_surface_pairwise_state_accuracy": {
+          "estimate": 0.5921052631578947,
+          "ci95": [
+            0.5578947368421052,
+            0.6263157894736842
+          ]
+        },
+        "two_surface_greedy_identity_agreement_given_adherence": {
+          "estimate": 0.9786585365853658,
+          "ci95": [
+            0.9596250852690913,
+            0.993920972644377
+          ]
+        },
+        "two_surface_graph_response_D1": {
+          "estimate": 0.01884701475657753,
+          "ci95": [
+            -0.01780867760926035,
+            0.06116010199780947
+          ]
+        },
+        "two_surface_graph_response_D3": {
+          "estimate": 0.3782351993307549,
+          "ci95": [
+            0.25860415223745814,
+            0.5022690800262192
+          ]
+        },
+        "two_surface_graph_response_G31": {
+          "estimate": 0.35938818457417737,
+          "ci95": [
+            0.2353863792939882,
+            0.4899696922247721
+          ]
+        },
+        "two_surface_choice_control_C1": {
+          "estimate": -0.0052631578947368585,
+          "ci95": [
+            -0.026315789473684292,
+            0.015789473684210575
+          ]
+        },
+        "two_surface_choice_control_C3": {
+          "estimate": 0.18421052631578944,
+          "ci95": [
+            0.11578947368421055,
+            0.25263157894736843
+          ]
+        },
+        "two_surface_choice_control_H31": {
+          "estimate": 0.1894736842105263,
+          "ci95": [
+            0.12105263157894741,
+            0.2578947368421053
+          ]
+        },
+        "K1_boundary_correct_candidate_prefix": {
+          "estimate": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "K1_boundary_wrong_candidate_prefix": {
+          "estimate": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "K1_boundary_shared_candidate_prefix": {
+          "estimate": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "K1_boundary_outside_candidate_prefixes": {
+          "estimate": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "K1_boundary_correct_candidate_rank_mean": {
+          "estimate": 5071.063157894737,
+          "ci95": [
+            3926.162697368421,
+            6299.212960526315
+          ]
+        },
+        "K1_boundary_correct_candidate_rank_at_most_10": {
+          "estimate": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "K1_boundary_any_candidate_rank_at_most_10": {
+          "estimate": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "K1_boundary_replay_top1_matches_stored": {
+          "estimate": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "K3_boundary_correct_candidate_prefix": {
+          "estimate": 0.49736842105263157,
+          "ci95": [
+            0.45526315789473687,
+            0.5394736842105263
+          ]
+        },
+        "K3_boundary_wrong_candidate_prefix": {
+          "estimate": 0.35789473684210527,
+          "ci95": [
+            0.32105263157894737,
+            0.39473684210526316
+          ]
+        },
+        "K3_boundary_shared_candidate_prefix": {
+          "estimate": 0.010526315789473684,
+          "ci95": [
+            0.0,
+            0.031578947368421054
+          ]
+        },
+        "K3_boundary_outside_candidate_prefixes": {
+          "estimate": 0.13421052631578947,
+          "ci95": [
+            0.08947368421052632,
+            0.18421052631578946
+          ]
+        },
+        "K3_boundary_correct_candidate_rank_mean": {
+          "estimate": 2.6526315789473682,
+          "ci95": [
+            2.3157236842105267,
+            3.0211184210526305
+          ]
+        },
+        "K3_boundary_correct_candidate_rank_at_most_10": {
+          "estimate": 0.9736842105263158,
+          "ci95": [
+            0.9578947368421052,
+            0.9868421052631579
+          ]
+        },
+        "K3_boundary_any_candidate_rank_at_most_10": {
+          "estimate": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "K3_boundary_replay_top1_matches_stored": {
+          "estimate": 0.9815789473684211,
+          "ci95": [
+            0.968421052631579,
+            0.9921052631578947
+          ]
+        },
+        "registered_to_bare_prediction_status_change_including_ties": {
+          "estimate": 0.35526315789473684,
+          "ci95": [
+            0.2894736842105263,
+            0.4236842105263158
+          ]
+        },
+        "registered_to_bare_prediction_reversal_given_non_ties": {
+          "estimate": 0.35356200527704484,
+          "ci95": [
+            0.2868421052631579,
+            0.42216358839050133
+          ]
+        },
+        "correct_prefix_but_final_not_correct": {
+          "estimate": 0.002631578947368421,
+          "ci95": [
+            0.0,
+            0.007894736842105263
+          ]
+        },
+        "boundary_replay_top1_matches_stored": {
+          "estimate": 0.9907894736842106,
+          "ci95": [
+            0.9842105263157894,
+            0.9960526315789474
+          ]
+        }
+      },
+      "details": {
+        "rows_K1_K3": 760,
+        "rows_K3": 380,
+        "pairs": 95,
+        "correct_candidate_first_token_rank_by_K": {
+          "1": {
+            "median": 1135.0,
+            "p25": 93.0,
+            "p75": 6997.0,
+            "maximum": 37684
+          },
+          "3": {
+            "median": 1.0,
+            "p25": 1.0,
+            "p75": 3.0,
+            "maximum": 32
+          }
+        },
+        "boundary_to_final_counts": {
+          "correct_candidate_prefix__final_correct": 188,
+          "correct_candidate_prefix__final_invalid": 1,
+          "outside_candidate_prefixes__final_invalid": 51,
+          "shared_candidate_prefix__final_correct": 3,
+          "shared_candidate_prefix__final_wrong_candidate": 1,
+          "wrong_candidate_prefix__final_wrong_candidate": 136
+        },
+        "K3_greedy_agreement_denominators": {
+          "registered": 327,
+          "bare": 328,
+          "two_surface": 328
+        },
+        "K3_registered_to_bare_non_tied_rows": 379,
+        "privacy_note": "Decoded first-token strings and tokenizer IDs are excluded from the anonymous release; all paper-facing categories and ranks are retained."
+      }
+    }
+  }
+}
